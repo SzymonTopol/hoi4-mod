@@ -1,3 +1,5 @@
+###### SIEMA SIEMA ŁUKI ######
+
 focus_tree = {
 	id = polish_focus
 	
