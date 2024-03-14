@@ -95,7 +95,7 @@ focus_tree = {
 		}
 
 		available = {
-			
+			has_sanation_left_opposition = yes
 		}
 
 		
