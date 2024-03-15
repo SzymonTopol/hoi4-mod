@@ -31,6 +31,8 @@ puppet = CCR
 puppet = RCl
 puppet = SPT
 
+#country_lock_all_division_template = yes
+
 set_convoys = 20
 
 1939.1.1 = {
