@@ -944,3 +944,18 @@ UNT = {
 	color = rgb { 17 30 30 }
 	color_ui = rgb { 17 30 30 }
 }
+
+RCL = {
+	color = { 115 44 67 }
+	color_ui = { 115 44 67 }
+}
+
+CCR = {
+	color = { 133 20 103 }
+	color_ui = { 133 20 103 }
+}
+
+SPT = {
+	color = { 92 16 72 }
+	color_ui = { 92 16 72 }
+}

@@ -282,3 +282,6 @@ IAS = "countries/Isthmo Amerindia.txt"
 
 COM = "countries/Commonwealth.txt"
 UNT = "countries/Untouched.txt"
+RCL = "countries/Russ_council.txt"
+CCR = "countries/Cossack_crownland.txt"
+SPT = "countries/Strategos_protectorate.txt"
