@@ -15,6 +15,7 @@ state = {
 			infrastructure = 1
 		}
 		add_core_of = UNT
+		set_demilitarized_zone = yes
 	}
 
 	provinces = {

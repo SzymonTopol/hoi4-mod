@@ -19,6 +19,7 @@ state={
 
 		}
 		add_core_of = UNT
+		set_demilitarized_zone = yes
 	}
 
 	provinces={

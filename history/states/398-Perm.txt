@@ -24,6 +24,7 @@ state = {
 				arms_factory = 2
 			}
 		}
+		set_demilitarized_zone = yes
 	}
 
 	provinces = {
