@@ -17,8 +17,8 @@ state = {
 			}
 		}
 		add_core_of = COM
-		start_resistance = CRO #Yugoslavia shouldn't resist occupation
-		set_compliance = 70 #TODO_Manu: Check if this is okay when it comes to collab government
+		#start_resistance = CRO #Yugoslavia shouldn't resist occupation
+		#set_compliance = 70 #TODO_Manu: Check if this is okay when it comes to collab government
 
 		#CONTROLLED BY ITALY AT GAME START -> ITALIAN NAMES
 		set_state_name = STATE_163_ITA

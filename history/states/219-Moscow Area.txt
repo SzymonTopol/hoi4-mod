@@ -4,7 +4,7 @@ state={
 	name="STATE_219"
 	manpower = 8335992
 	
-	state_category = megalopolis
+	state_category = town
 	resources={
 		steel=16 # was: 28
 	}
@@ -12,13 +12,11 @@ state={
 	history={
 		owner = UNT
 		victory_points = {
-			6380 50 
+			6380 10 
 		}
 		buildings = {
-			infrastructure = 4 #was: 8
-			arms_factory = 7
-			industrial_complex = 3
-			air_base = 10
+			infrastructure = 1 #was: 8
+			
 		}
 		add_core_of = UNT
 		1939.1.1 = {

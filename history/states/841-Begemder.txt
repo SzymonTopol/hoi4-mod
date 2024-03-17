@@ -2,8 +2,8 @@ state = {
 	id = 841 # Begemder
 	name = "STATE_841"
 	manpower = 1100000
-	resources = {
-	}
+	#resources = {
+	#}
 	
 	state_category = pastoral
 
