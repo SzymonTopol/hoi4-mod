@@ -16,13 +16,13 @@ state = {
 		#	11313 1 # Salihorsk was not founded until 1958 earliest
 		#}
 
-		owner = UNT
+		owner = COM
 
 		buildings = {
 			infrastructure = 3 #was: 5
 		}
 
-		add_core_of = UNT
+		add_core_of = COM
 	}
 
 	provinces = {

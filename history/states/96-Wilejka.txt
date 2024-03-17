@@ -9,11 +9,11 @@ state={
 		victory_points = {
 			406 1
 		}
-		owner = UNT
+		owner = COM
 		buildings = {
 			infrastructure = 2
 		}
-		add_core_of = UNT
+		add_core_of = COM
 	}
 
 	provinces={
