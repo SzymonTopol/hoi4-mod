@@ -11,14 +11,14 @@ state = {
 	}
 
 	history = {
-		owner = UNT
+		owner = CCR
 		buildings = {
 			infrastructure = 2
 		}
 		victory_points = {
 			3672 5 
 		}
-		add_core_of = UNT
+		add_core_of = CCR
 	}
 
 	provinces = {

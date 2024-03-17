@@ -10,7 +10,7 @@ state={
 	}
 
 	history={
-		owner = UNT
+		owner = RCL
 		victory_points = {
 			6380 10 
 		}
@@ -18,7 +18,7 @@ state={
 			infrastructure = 1 #was: 8
 			
 		}
-		add_core_of = UNT
+		add_core_of = RCL
 		1939.1.1 = {
 			buildings = {
 				industrial_complex = 4

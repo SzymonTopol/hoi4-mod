@@ -9,12 +9,12 @@ state={
 		victory_points = {
 			3581 3
 		}
-		owner = UNT
+		owner = COM
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 2
 		}
-		add_core_of = UNT
+		add_core_of = COM
 
 		1939.3.14 = {
 			owner = SLO

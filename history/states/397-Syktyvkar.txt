@@ -9,12 +9,12 @@ state = {
 		victory_points = {
 			108 1 
 		}
-		owner = UNT
+		owner = RCL
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = UNT
+		add_core_of = RCL
 	}
 
 	provinces = {
