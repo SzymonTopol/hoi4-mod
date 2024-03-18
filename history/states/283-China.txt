@@ -6,8 +6,8 @@ state = {
 	}
 
 	history = {
-		owner = RCL
-		add_core_of = RCL
+		owner = UNT
+		add_core_of = UNT
 
 		buildings = {
 			infrastructure = 2

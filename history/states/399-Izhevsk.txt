@@ -9,11 +9,11 @@ state = {
 	}
 
 	history = {
-		owner = UNT
+		owner = RCL
 		buildings = {
 			infrastructure = 2
 		}
-		add_core_of = UNT
+		add_core_of = RCL
 		
 		victory_points = {
 			6278 1 
