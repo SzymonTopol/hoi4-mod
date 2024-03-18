@@ -6,7 +6,7 @@ state={
 	
 	history=
 	{
-		owner = UNT
+		owner = SPT
 		buildings = {
 			infrastructure = 2
 			13005 = {

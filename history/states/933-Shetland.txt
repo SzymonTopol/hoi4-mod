@@ -5,12 +5,12 @@ state = {
 	
 	state_category = tiny_island
 
-	#resources = {
-	#}
+	resources = {
+	}
 
 	history = {
-		owner = UNT
-		add_core_of = UNT
+		owner = SPT
+		add_core_of = SPT
 
 		buildings = {
 			infrastructure = 1	

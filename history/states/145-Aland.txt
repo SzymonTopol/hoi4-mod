@@ -7,7 +7,7 @@ state=
 	state_category = small_island
 	
 	history = {
-		owner = UNT
+		owner = SPT
 		
 		victory_points = { #Mariehman
 			9228 1
@@ -19,7 +19,7 @@ state=
 				naval_base = 1
 			}
 		}
-		add_core_of = UNT
+		add_core_of = SPT
 	}
 	
 	provinces=	{
