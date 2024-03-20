@@ -5,6 +5,12 @@ set_technology = {
 	infantry_weapons = 1
 }
 
+set_research_slots = 3
+set_stability = 0.5
+add_command_power = 20
+
+set_oob = "COM_1936"
+
 #recruit_character = ALG_ar
 #recruit_character = ALG_acr
 #recruit_character = ALG_mt
@@ -31,7 +37,7 @@ puppet = CCR
 puppet = RCl
 puppet = SPT
 
-#country_lock_all_division_template = yes
+country_lock_all_division_template = yes
 
 set_convoys = 20
 
