@@ -36,6 +36,13 @@ set_oob = "COM_1936"
 puppet = CCR
 puppet = RCl
 puppet = SPT
+puppet = BAY
+
+create_faction = Commonwalth
+add_to_faction = CCR
+add_to_faction = RCL
+add_to_faction = SPT
+add_to_faction = BAY
 
 country_lock_all_division_template = yes
 
