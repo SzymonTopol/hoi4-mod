@@ -937,8 +937,8 @@ QUE = {
 #NOWE, DODANE PRZEZ NAS
 
 COM = {
-	color = rgb { 0 204 204 }
-	color_ui = rgb { 0 204 204 }
+	color = rgb { 153 0 95 }
+	color_ui = rgb { 153 0 95 }
 }
 
 UNT = {
@@ -947,18 +947,18 @@ UNT = {
 }
 
 RCL = {
-	color = { 115 44 67 }
-	color_ui = { 115 44 67 }
+	color = rgb { 115 44 67 }
+	color_ui = rgb { 115 44 67 }
 }
 
 CCR = {
-	color = { 133 20 103 }
-	color_ui = { 133 20 103 }
+	color = { 149 17 121 }
+	color_ui = { 149 17 121 }
 }
 
 SPT = {
-	color = { 92 16 72 }
-	color_ui = { 92 16 72 }
+	color = rgb { 92 16 72 }
+	color_ui = rgb { 92 16 72 }
 }
 
 BAY = {
