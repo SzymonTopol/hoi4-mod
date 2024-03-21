@@ -965,3 +965,8 @@ BAY = {
 	color = rgb { 233  231  246 }
 	color_ui = rgb { 233  231  246 }
 }
+
+BRN = {
+	color = rgb { 183 151 153 }
+	color_ui = rgb { 183 151 153 }
+}

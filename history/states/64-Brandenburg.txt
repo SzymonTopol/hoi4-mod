@@ -2,16 +2,16 @@
 state={
 	id=64
 	name="STATE_64"
-	manpower = 7265029
+	manpower = 3265029
 	buildings_max_level_factor = 1
 
 	state_category = megalopolis
 
 
 	history={
-		owner = UNT
+		owner = BRN
 		victory_points = {
-			6521 50 
+			6521 10 
 		}
 		victory_points = {
 			3522 5 
@@ -24,16 +24,7 @@ state={
 			air_base = 6
 
 		}
-		add_core_of = UNT
-
-		1939.1.1 = {
-			buildings = {
-				air_base = 10
-				anti_air_building = 5
-				arms_factory = 10
-				industrial_complex = 7
-			}
-		}
+		add_core_of = BRN
 	}
 
 	provinces={
