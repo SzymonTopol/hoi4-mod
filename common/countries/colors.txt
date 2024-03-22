@@ -972,6 +972,6 @@ BRN = {
 }
 
 RHI = {
-	color = rgb { 55 161 159 }
-	color_ui = rgb { 55 161 159 }
+	color = rgb { 179 134 66 }
+	color_ui = rgb { 179 134 66 }
 }
