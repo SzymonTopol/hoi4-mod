@@ -10,7 +10,7 @@ state={
 	}
 
 	history={
-		owner = UNT
+		owner = RHI
 		#victory_points = { 6529 1 }
 		#victory_points = { 549 1 }
 		#victory_points = { 678 5 }
@@ -51,7 +51,7 @@ state={
 			air_base = 2
 
 		}
-		add_core_of = UNT
+		add_core_of = RHI
 	}
 
 	provinces={

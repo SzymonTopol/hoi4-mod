@@ -37,12 +37,15 @@ puppet = CCR
 puppet = RCl
 puppet = SPT
 puppet = BAY
+puppet = RHI
 
-create_faction = Commonwalth
+create_faction = Commonwealth
 add_to_faction = CCR
 add_to_faction = RCL
 add_to_faction = SPT
 add_to_faction = BAY
+add_to_faction = RHI
+
 
 country_lock_all_division_template = yes
 
