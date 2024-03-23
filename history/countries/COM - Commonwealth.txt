@@ -38,6 +38,8 @@ puppet = RCl
 puppet = SPT
 puppet = BAY
 puppet = RHI
+puppet = WEI
+puppet = BRN
 
 create_faction = Commonwealth
 add_to_faction = CCR
@@ -45,7 +47,8 @@ add_to_faction = RCL
 add_to_faction = SPT
 add_to_faction = BAY
 add_to_faction = RHI
-
+add_to_faction = WEI
+add_to_faction = BRN
 
 country_lock_all_division_template = yes
 

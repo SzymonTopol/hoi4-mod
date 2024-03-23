@@ -975,3 +975,8 @@ RHI = {
 	color = rgb { 179 134 66 }
 	color_ui = rgb { 179 134 66 }
 }
+
+WEI = {
+	color = rgb { 134 150 69 }
+	color_ui = rgb { 134 150 69 }
+}

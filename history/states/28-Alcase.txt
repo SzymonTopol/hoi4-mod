@@ -5,9 +5,9 @@ state={
 	manpower = 821200
 	
 	state_category = city
-	resources={
-		steel=42 #was 100 # was: 236
-	}
+	#resources={
+	#	steel=42 #was 100 # was: 236
+	#}
 
 	history={
 		owner = RHI
