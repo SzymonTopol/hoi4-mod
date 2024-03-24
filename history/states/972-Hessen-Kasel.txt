@@ -1,0 +1,30 @@
+
+state={
+	id=972
+	name="STATE_972"
+	manpower = 1142841
+
+	state_category = large_city
+
+	history={
+		owner = UNT
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 2
+		}
+		#victory_points = {
+		#	6488 20.0 
+		#}
+		victory_points = {
+			564 3
+		}
+		add_core_of = UNT
+	}
+
+	provinces={
+		564 6549 9524 11533 
+	}
+
+	local_supplies=15.0 
+}
