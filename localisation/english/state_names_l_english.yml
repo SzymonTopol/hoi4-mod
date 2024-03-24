@@ -48,7 +48,7 @@
  STATE_47:0 "Attica"
  STATE_48:0 "Sofia"
  STATE_49:0 "Ankara"
- STATE_50:0 "Württemberg"
+ STATE_50:0 "Baden"
  STATE_51:0 "Rhineland"
  STATE_52:0 "Oberbayern"
  STATE_53:0 "Niederbayern"
@@ -986,5 +986,5 @@
  STATE_968: "Amazon" # impassables
  STATE_969: "Rio Branco"
  STATE_970: "Lorraine"
- 
+ STATE_971: "Wurttemberg"
 
