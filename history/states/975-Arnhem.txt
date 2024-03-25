@@ -1,0 +1,30 @@
+
+state={
+	id=975
+	name="STATE_975"
+	manpower = 311784
+
+	state_category = large_city
+
+	history={
+		owner = HAN
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 2
+		}
+		victory_points = {
+			9363 2.0 
+		}
+		#victory_points = {
+		#	564 3
+		#}
+		add_core_of = HAN
+	}
+
+	provinces={
+		11318 9363 9309 9403
+	}
+
+	local_supplies=15.0 
+}

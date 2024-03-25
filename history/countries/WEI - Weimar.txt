@@ -51,7 +51,7 @@ create_country_leader = {
 	name = "Łuki Postrożny"
 	desc = ""
 	picture = GFX_portrait_Ahmed_Ben_Bella
-	ideology = centrism
+	ideology = conservatism
 	#traits = {
 	#	#
 	#}

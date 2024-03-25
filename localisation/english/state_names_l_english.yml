@@ -988,4 +988,6 @@
  STATE_970: "Lorraine"
  STATE_971: "Wurttemberg"
  STATE_972: "Hessen-Kasel"
-
+ STATE_973: "Wurzburg"
+ STATE_974: "Magdeburg"
+ STATE_975: "Arnhem"

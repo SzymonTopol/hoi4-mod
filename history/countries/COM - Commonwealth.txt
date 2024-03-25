@@ -21,6 +21,7 @@ puppet = BAY
 puppet = RHI
 puppet = WEI
 puppet = BRN
+puppet = HAN
 
 create_faction = Commonwealth
 add_to_faction = CCR
@@ -30,6 +31,7 @@ add_to_faction = BAY
 add_to_faction = RHI
 add_to_faction = WEI
 add_to_faction = BRN
+add_to_faction = HAN
 
 country_lock_all_division_template = yes
 
