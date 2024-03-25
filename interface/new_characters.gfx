@@ -1,0 +1,7 @@
+spriteTypes = {
+	### GER
+	spriteType = {
+		name = "GFX_portrait_com_luki"
+		texturefile = "gfx/leaders/COM/portrait_com_luki.dds"
+	}
+}

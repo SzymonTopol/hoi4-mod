@@ -1,0 +1,18 @@
+characters={
+	COM_luki={
+		name= COM_luki_aaa
+		portraits={
+			civilian={
+				#large="GFX_portrait_cuba_jose_barnet"
+				large= "GFX_portrait_com_luki"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits = {
+				colonial_communist
+			}
+			expire="1965.1.1.1"
+		}
+	}	
+}
