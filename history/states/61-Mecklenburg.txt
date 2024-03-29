@@ -7,7 +7,7 @@ state={
 	state_category = town
 
 	history={
-		owner = UNT
+		owner = MEK
 		victory_points = {
 			321 5
 		}
@@ -16,14 +16,14 @@ state={
 		}
 		buildings = {
 			infrastructure = 3
-			arms_factory = 3
+			industrial_complex = 3
 			321 = {
 				naval_base = 6
 
 			}
 			air_base = 3
 		}
-		add_core_of = UNT
+		add_core_of = MEK
 	}
 
 	provinces={

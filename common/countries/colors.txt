@@ -680,10 +680,10 @@ D50 = {
 #	color_ui = rgb { 233  231  246 }
 #}
 
-MEK = {
-	color = rgb { 186 245 86 }
-	color_ui = rgb { 186 245 86 }
-}
+#MEK = {
+#	color = rgb { 186 245 86 }
+#	color_ui = rgb { 186 245 86 }
+#}
 PRE = {
 	color = rgb { 160  160  160 }
 	color_ui = rgb { 160  160  160 }
@@ -700,10 +700,10 @@ SAX = {
 #	color = rgb { 255 204 153 }
 #	color_ui = rgb { 255 204 153 }
 #}
-SHL = {
-	color = rgb { 51 51 255 }
-	color_ui = rgb { 51 51 255 }
-}
+#SHL = {
+#	color = rgb { 51 51 255 }
+#	color_ui = rgb { 51 51 255 }
+#}
 ALT = {
 	color = rgb { 204 255 255 }
 	color_ui = rgb { 0 230 230 }
@@ -1019,4 +1019,24 @@ HES = {
 DOR = {
 	color = rgb { 56 45 207 }
 	color_ui = rgb { 56 45 207 }
+}
+
+SHL = {
+	color = rgb { 209 82 107 }
+	color_ui = rgb { 209 82 107 }
+}
+
+HLS = {
+	color = rgb { 51 51 255 }
+	color_ui = rgb { 51 51 255 }
+}
+
+MEK = {
+	color = rgb { 186 245 86 }
+	color_ui = rgb { 186 245 86 }
+}
+
+SCA = {
+	color = rgb { 115 44 67 }
+	color_ui = rgb { 115 44 67 }
 }

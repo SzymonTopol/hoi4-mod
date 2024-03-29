@@ -8,12 +8,12 @@ state = {
 		victory_points = {
 			317 3 
 		}
-		owner = UNT
+		owner = SHL
 		buildings = {
 			infrastructure = 3
-			arms_factory = 1
+			industrial_complex = 1
 		}
-		add_core_of = UNT
+		add_core_of = SHL
 	}
 
 	provinces = {

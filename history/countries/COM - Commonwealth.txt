@@ -29,6 +29,10 @@ puppet = WRZ
 puppet = DOR
 puppet = ANH
 puppet = HES
+puppet = SCA
+puppet = MEK
+puppet = SHL
+puppet = HLS
 
 create_faction = Commonwealth
 add_to_faction = CCR
@@ -46,6 +50,10 @@ add_to_faction = WRZ
 add_to_faction = DOR
 add_to_faction = ANH
 add_to_faction = HES
+add_to_faction = SCA
+add_to_faction = MEK
+add_to_faction = SHL
+add_to_faction = HLS
 
 
 country_lock_all_division_template = yes
