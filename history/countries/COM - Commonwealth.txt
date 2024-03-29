@@ -26,6 +26,9 @@ puppet = WUR
 puppet = BAD
 puppet = FRK
 puppet = WRZ
+puppet = DOR
+puppet = ANH
+puppet = HES
 
 create_faction = Commonwealth
 add_to_faction = CCR
@@ -40,6 +43,10 @@ add_to_faction = WUR
 add_to_faction = BAD
 add_to_faction = FRK
 add_to_faction = WRZ
+add_to_faction = DOR
+add_to_faction = ANH
+add_to_faction = HES
+
 
 country_lock_all_division_template = yes
 

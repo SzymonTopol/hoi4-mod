@@ -934,7 +934,7 @@ QUE = {
 	color_ui = rgb { 0 31 77 }
 }
 
-#NOWE, DODANE PRZEZ NAS
+#NOWE, DODANE PRZEZ NAS, lub zmodyfikowane z powyżej
 
 COM = {
 	color = rgb { 153 0 95 }
@@ -1004,4 +1004,19 @@ FRK = {
 WRZ = {
 	color = rgb { 148 70 75 }
 	color_ui = rgb { 148 70 75 }
+}
+
+ANH = {
+	color = rgb { 66 135 245 }
+	color_ui = rgb { 66 135 245 }
+}
+
+HES = {
+	color = rgb { 173 89 10 }
+	color_ui = rgb { 173 89 10 }
+}
+
+DOR = {
+	color = rgb { 56 45 207 }
+	color_ui = rgb { 56 45 207 }
 }
