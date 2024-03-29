@@ -995,3 +995,13 @@ BAD = {
 	color = rgb { 40 87 158 }
 	color_ui = rgb { 40 87 158 }
 }
+
+FRK = {
+	color = rgb { 56 82 63 }
+	color_ui = rgb { 56 82 63 }
+}
+
+WRZ = {
+	color = rgb { 148 70 75 }
+	color_ui = rgb { 148 70 75 }
+}
