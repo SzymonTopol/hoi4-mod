@@ -1,0 +1,41 @@
+ideas = {
+
+	country = {
+		non_playable_country = {
+			picture = usa_great_depression_3
+			
+			allowed = {
+				tag = UNT #działa tylko na UNT
+				#always = no
+			}
+
+			available = {
+			}
+
+			cancel = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 100
+				consumer_goods_factor = 100.00
+				conscription_factor = -100.00
+				join_faction_tension = 100.00
+				local_resources_factor = -100.00
+				production_factory_max_efficiency_factor = -100.00
+				ai_focus_defense_factor = 200
+				ai_focus_aggressive_factor = -200
+				air_doctrine_cost_factor = 300
+				land_doctrine_cost_factor = 300
+				stability_weekly = -20
+				war_support_weekly = -20
+			}
+		}
+		
+	}
+}
