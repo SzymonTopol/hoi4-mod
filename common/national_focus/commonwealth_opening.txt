@@ -1,0 +1,155 @@
+###### SIEMA SIEMA ŁUKI ######
+
+focus_tree = {
+	id = polish_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = COM
+		}
+	}
+	default = no
+
+	focus = {
+		id = COM_royal_speach
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		x = 3
+		y = 0
+		completion_reward = { }
+	}
+
+	focus = {
+		id = COM_tour_to_lublin
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		x = 2
+		y = 0
+		relative_position_id = COM_royal_speach
+		completion_reward = { }
+	}
+
+	focus = {
+		id = COM_commonwealth_tour
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		x = 1.5
+		y = 1
+		prerequisite = {focus = COM_tour_to_lublin }
+		relative_position_id = COM_tour_to_lublin
+		completion_reward = { }
+	}
+
+	focus = {
+		id = COM_one_step_forward
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = COM_royal_speach
+		prerequisite = { focus = COM_royal_speach}
+		prerequisite = {focus = COM_tour_to_lublin }
+		completion_reward = { }
+	}
+
+	focus = {
+		id = COM_left_crackdown
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		x = -4
+		y = 1
+		relative_position_id = COM_one_step_forward
+		prerequisite = { focus = COM_one_step_forward}
+		mutually_exclusive = { focus = COM_right_crackdown}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = COM_right_crackdown
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = COM_one_step_forward
+		prerequisite = { focus = COM_one_step_forward}
+		mutually_exclusive = { focus = COM_left_crackdown}
+		completion_reward = {
+			annex_country = {
+				target = RCL
+				transfer_troops = yes
+			}
+		 }
+	}
+
+	focus = {
+		id = COM_pommeranian_excercises
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		x = -5
+		y = 2
+		relative_position_id = COM_one_step_forward
+		prerequisite = {
+			focus = COM_one_step_forward
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = COM_grand_sejm_meeting
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		x = 0
+		y = 2
+		relative_position_id = COM_one_step_forward
+		prerequisite = {
+			focus = COM_one_step_forward
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = COM_appoint_new_administrators
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = COM_one_step_forward
+		}
+		relative_position_id = COM_one_step_forward
+		completion_reward = { }
+	}
+
+	focus = {
+		id = COM_fight_corruption
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		x = 2
+		y = 0
+		prerequisite = {
+			focus = COM_one_step_forward
+		}
+		relative_position_id = COM_appoint_new_administrators
+		completion_reward = { }
+	}
+
+	focus = {
+		id = COM_rebalancing_the_system
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = COM_appoint_new_administrators
+		}
+		prerequisite = {
+			focus = COM_fight_corruption
+		}
+		relative_position_id = COM_appoint_new_administrators
+		completion_reward = { }
+	}
+
+}
