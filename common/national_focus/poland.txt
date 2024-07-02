@@ -1,4 +1,5 @@
 ###### SIEMA SIEMA ŁUKI ######
+# TO JEST CEL TYLKO NA KRADNIĘCIE I NAŚLADOWANIE #
 
 focus_tree = {
 	id = polish_focus

@@ -1,0 +1,23 @@
+focus_tree = {
+	id = liberals_starting_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = COM
+		}
+	}
+	default = no
+
+	focus = {
+		id = COM_expanded_sejm_session
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		x = 3
+		y = 0
+		completion_reward = { }
+	}
+
+}

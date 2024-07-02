@@ -1,7 +1,5 @@
-###### SIEMA SIEMA ŁUKI ######
-
 focus_tree = {
-	id = polish_focus
+	id = commonwealth_starting_focus
 	
 	country = {
 		factor = 0
@@ -19,7 +17,9 @@ focus_tree = {
 		cost = 5
 		x = 3
 		y = 0
-		completion_reward = { }
+		completion_reward = { 
+			#country_event = commonwealth.1 #TYLKO NA POTRZEBY SPRAWDZANIA CZY DZIAŁA
+		}
 	}
 
 	focus = {
@@ -52,7 +52,12 @@ focus_tree = {
 		relative_position_id = COM_royal_speach
 		prerequisite = { focus = COM_royal_speach}
 		prerequisite = {focus = COM_tour_to_lublin }
-		completion_reward = { }
+		
+		completion_reward = { 
+			hidden_effect = {
+				country_event = commonwealth.1 #TU POWINNO ZACHODZIĆ PRZEJŚCIE
+			}
+		}
 	}
 
 	focus = {
