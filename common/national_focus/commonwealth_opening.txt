@@ -12,7 +12,7 @@ focus_tree = {
 	default = no
 
 	focus = {
-		id = COM_royal_speach
+		id = COM_royal_speech
 		icon = GFX_goal_generic_major_war
 		cost = 5
 		x = 3
@@ -28,7 +28,7 @@ focus_tree = {
 		cost = 5
 		x = 2
 		y = 0
-		relative_position_id = COM_royal_speach
+		relative_position_id = COM_royal_speech
 		completion_reward = { }
 	}
 
@@ -45,12 +45,12 @@ focus_tree = {
 
 	focus = {
 		id = COM_one_step_forward
-		icon = GFX_goal_generic_major_war
+		icon = GFX_goal_generic_demand_territory
 		cost = 5
 		x = 1
 		y = 1
-		relative_position_id = COM_royal_speach
-		prerequisite = { focus = COM_royal_speach}
+		relative_position_id = COM_royal_speech
+		prerequisite = { focus = COM_royal_speech}
 		prerequisite = {focus = COM_tour_to_lublin }
 		
 		completion_reward = { 
@@ -91,7 +91,7 @@ focus_tree = {
 
 	focus = {
 		id = COM_pommeranian_excercises
-		icon = GFX_goal_generic_major_war
+		icon = GFX_goal_generic_cavalry
 		cost = 5
 		x = -5
 		y = 2
@@ -104,7 +104,7 @@ focus_tree = {
 
 	focus = {
 		id = COM_grand_sejm_meeting
-		icon = GFX_goal_generic_major_war
+		icon = GFX_goal_generic_national_unity
 		cost = 5
 		x = 0
 		y = 2
