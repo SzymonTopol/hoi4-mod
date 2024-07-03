@@ -14,10 +14,55 @@ focus_tree = {
 	focus = {
 		id = COM_military_cabinet
 		icon = GFX_goal_generic_major_war
-		cost = 5
+		cost = 1
 		x = 3
 		y = 0
 		completion_reward = { }
+	}
+
+	focus = {
+		id = COM_recal_advisors
+		icon = GFX_goal_generic_major_war
+		cost = 1
+		x = 0
+		y = 1
+		relative_position_id = COM_military_cabinet
+		completion_reward = { }
+		prerequisite = { focus = COM_military_cabinet }
+	}
+
+	focus = {
+		id = COM_disband_sejm
+		icon = GFX_goal_generic_major_war
+		cost = 1
+		x = -1
+		y = 1
+		relative_position_id = COM_recal_advisors
+		completion_reward = { }
+		prerequisite = { focus = COM_recal_advisors }
+	}
+
+	focus = {
+		id = COM_postpone_elections
+		icon = GFX_goal_generic_major_war
+		cost = 1
+		x = 1
+		y = 1
+		relative_position_id = COM_recal_advisors
+		completion_reward = { }
+		prerequisite = { focus = COM_recal_advisors }
+	}
+
+	focus = {
+		id = COM_declare_martial_law
+		icon = GFX_goal_generic_major_war
+		cost = 1
+		x = 1
+		y = 1
+		relative_position_id = COM_disband_sejm
+		completion_reward = { }
+		prerequisite = { focus = COM_disband_sejm }
+		prerequisite = { focus = COM_postpone_elections}
 	}
 
 }

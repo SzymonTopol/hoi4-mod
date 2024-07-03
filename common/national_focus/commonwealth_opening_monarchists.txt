@@ -14,10 +14,56 @@ focus_tree = {
 	focus = {
 		id = COM_regency_council
 		icon = GFX_goal_generic_major_war
-		cost = 5
+		cost = 1
 		x = 3
 		y = 0
 		completion_reward = { }
 	}
+
+	focus = {
+		id = COM_szlachta_convention
+		icon = GFX_goal_generic_major_war
+		cost = 1
+		x = -1
+		y = 1
+		relative_position_id = COM_regency_council
+		completion_reward = { }
+		prerequisite = {focus = COM_regency_council}
+	}
+
+	focus = {
+		id = COM_transfer_units
+		icon = GFX_goal_generic_major_war
+		cost = 1
+		x = 1
+		y = 1
+		relative_position_id = COM_regency_council
+		completion_reward = { }
+		prerequisite = {focus = COM_regency_council}
+	}
+
+	focus = {
+		id = COM_new_candidate
+		icon = GFX_goal_generic_major_war
+		cost = 1
+		x = 1
+		y = 1
+		relative_position_id = COM_szlachta_convention
+		completion_reward = { }
+		prerequisite = {focus = COM_szlachta_convention}
+		prerequisite = {focus = COM_transfer_units}
+	}
+
+	focus = {
+		id = COM_vote_of_no_confidence
+		icon = GFX_goal_generic_major_war
+		cost = 1
+		x = 0
+		y = 1
+		relative_position_id = COM_new_candidate
+		completion_reward = { }
+		prerequisite = {focus = COM_new_candidate}
+	}
+
 
 }
