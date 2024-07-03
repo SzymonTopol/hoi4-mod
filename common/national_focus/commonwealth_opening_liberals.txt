@@ -17,7 +17,11 @@ focus_tree = {
 		cost = 5
 		x = 3
 		y = 0
-		completion_reward = { }
+		completion_reward = {
+			start_civil_war = {
+				ideology = democratic
+			}
+		 }
 	}
 
 }

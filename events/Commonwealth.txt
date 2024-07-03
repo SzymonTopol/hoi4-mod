@@ -1,24 +1,34 @@
 add_namespace = commonwealth
 
-country_event = {
-	id = commonwealth.1
-	title = commonwealth.1.t
-	desc = commonwealth.1.d
-	picture = GFX_report_event_generic_funeral
 
-	is_triggered_only = yes
+country_event = { #monarch death
+    id = commonwealth.1
+    title = commonwealth.1.t
+    desc = commonwealth.1.d
+    picture = GFX_report_event_generic_funeral
 
-	option = {
-		name = commonwealth.1.a
+    is_triggered_only = yes
 
-		COM = {
-			country_event = { id = commonwealth.2}
-		}
-	}
+    #mean_time_to_happen = { #nie działa opóźnienie, później zrobię
+    #    days = 4  # Delay in days
+    #}
 
+    trigger = {
+    }
+
+    option = {
+        name = commonwealth.1.a
+
+        hidden_effect = {
+            COM = {
+                country_event = { id = commonwealth.2 }
+            }
+        }
+    }
 }
 
-country_event = {
+
+country_event = { #sejm argument
 	id = commonwealth.2
 	title = commonwealth.2.t
 	desc = commonwealth.2.d
@@ -29,14 +39,17 @@ country_event = {
 	option = {
 		name = commonwealth.2.a
 
-		COM = {
-			country_event = { id = commonwealth.3}
+		hidden_effect = {
+			COM = {
+				country_event = { id = commonwealth.3}
+			}
 		}
+
 	}
 
 }
 
-country_event = {
+country_event = { #army stops responding
 	id = commonwealth.3
 	title = commonwealth.3.t
 	desc = commonwealth.3.d
@@ -47,14 +60,17 @@ country_event = {
 	option = {
 		name = commonwealth.3.a
 
-		COM = {
-			country_event = { id = commonwealth.4}
+		hidden_effect = {	
+			COM = {
+				country_event = { id = commonwealth.4}
+			}
 		}
+
 	}
 
 }
 
-country_event = {
+country_event = { #the nobility calls a convention
 	id = commonwealth.4
 	title = commonwealth.4.t
 	desc = commonwealth.4.d
@@ -65,14 +81,17 @@ country_event = {
 	option = {
 		name = commonwealth.4.a
 
-		COM = {
-			country_event = { id = commonwealth.5}
+		hidden_effect = {
+			COM = {
+				country_event = { id = commonwealth.5}
+			}
 		}
+
 	}
 
 }
 
-country_event = {
+country_event = { #students go to the streets
 	id = commonwealth.5
 	title = commonwealth.5.t
 	desc = commonwealth.5.d
@@ -83,14 +102,17 @@ country_event = {
 	option = {
 		name = commonwealth.5.a
 
-		COM = {
-			country_event = { id = commonwealth.6}
+		hidden_effect = {
+			COM = {
+				country_event = { id = commonwealth.6}
+			}
 		}
+
 	}
 
 }
 
-country_event = {
+country_event = { #a deep breath
 	id = commonwealth.6
 	title = commonwealth.6.t
 	desc = commonwealth.6.d
@@ -101,25 +123,34 @@ country_event = {
 	option = {
 		name = commonwealth.6.a #conservatives route
 
-		COM = {
-			load_focus_tree = conservatives_starting_focus
+		hidden_effect = {
+			COM = {
+				load_focus_tree = conservatives_starting_focus
+			}
 		}
+
 	}
 
 	option = {
 		name = commonwealth.6.b #liberals route
 
-		COM = {
-			load_focus_tree = liberals_starting_focus
+		hidden_effect = {
+			COM = {
+				load_focus_tree = liberals_starting_focus
+			}
 		}
+	
 	}
 
 	option = {
 		name = commonwealth.6.c #monarchists route
 
-		COM = {
-			load_focus_tree = monarchists_starting_focus
+		hidden_effect = {
+			COM = {
+				load_focus_tree = monarchists_starting_focus
+			}
 		}
+
 	}
 
 }
