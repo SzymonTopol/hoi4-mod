@@ -281,10 +281,14 @@ IAS = "countries/Isthmo Amerindia.txt"
 #DODANE PRZEZ NAS
 
 COM = "countries/Commonwealth.txt"
+
 UNT = "countries/Untouched.txt"
+
 RCL = "countries/Russ_council.txt"
 CCR = "countries/Cossack_crownland.txt"
+
 SPT = "countries/Strategos_protectorate.txt"
+
 BAY = "countries/Bavaria.txt"
 BRN = "countries/Brandenburg.txt"
 RHI = "countries/Rhineland.txt"
@@ -300,4 +304,11 @@ DOR = "countries/Dortmund.txt"
 SHL = "countries/Schleswig.txt"
 HLS = "countries/Holstein.txt"
 MEK = "countries/Mecklenburg.txt"
+
 SCA = "countries/Strategic_crossings_administration.txt"
+
+CCO = "countries/Commonwealth_conservatives.txt"
+CLB = "countries/Commonwealth_liberals.txt"
+CMO = "countries/Commonwealth_monarchists.txt"
+CNA = "countries/Commonwealth_nationalists.txt"
+CCM = "countries/Commonwealth_communists.txt"

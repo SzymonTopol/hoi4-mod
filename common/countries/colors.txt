@@ -1040,3 +1040,28 @@ SCA = {
 	color = rgb { 115 44 67 }
 	color_ui = rgb { 115 44 67 }
 }
+
+CCO = {
+	color = rgb { 219 119 133 }
+	color_ui = rgb { 219 119 133 }
+}
+
+CLB = {
+	color = rgb { 0 143 154 }
+	color_ui = rgb { 0 143 154 }
+}
+
+CMO = {
+	color = rgb { 90 0 54 }
+	color_ui = rgb { 90 0 54 }
+}
+
+CNA = {
+	color = rgb { 102 51 0 }
+	color_ui = rgb { 102 51 0 }
+}
+
+CCM = {
+	color = rgb { 218 33 33 }
+	color_ui = rgb { 218 33 33 }
+}
