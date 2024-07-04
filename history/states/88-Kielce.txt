@@ -7,7 +7,8 @@ state={
 	}
 
 	history={
-		owner = COM
+		owner = CCO
+		#owner = COM
 		victory_points = {
 			9427 20 
 		}

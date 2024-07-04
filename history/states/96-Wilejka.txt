@@ -6,10 +6,11 @@ state={
 	state_category = rural
 	
 	history={
+		owner = CNA
 		victory_points = {
 			406 1
 		}
-		owner = COM
+		#owner = COM
 		buildings = {
 			infrastructure = 2
 		}
