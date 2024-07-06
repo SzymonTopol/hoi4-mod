@@ -13,45 +13,21 @@ def main():
     
     print(tag)
 
-    neu = tag + "_neutrality.tga"
 
-    com = tag + "_communism.tga"
+####   FLAGI   ####
 
-    dem = tag + "_democratic.tga"
+    ideologies = ["_neutrality.tga","_communism.tga","_democratic.tga","_fascism.tga"]
+    sizes = ["","medium","small"]
 
-    fsc = tag + "_fascism.tga"
+    for i in ideologies:
+        for s in sizes:
+            destination = os.path.join("gfx","flags",s,tag+i)
+            origin = os.path.join("Temp",s,"CCM"+i)
+            print(origin)
+            print(destination)
 
-    path = os.path.join("gfx", "flags", neu)
-    shutil.copy("Temp\CCM_neutrality.tga", path)
-    path = os.path.join("gfx", "flags", "small", neu)
-    shutil.copy("Temp\small\CCM_neutrality.tga", path)
-    path = os.path.join("gfx", "flags", "medium", neu)
-    shutil.copy("Temp\medium\CCM_neutrality.tga", path)
-
-    path = os.path.join("gfx", "flags", com)
-    shutil.copy("Temp\CCM_communism.tga", path)
-    path = os.path.join("gfx", "flags", "small", com)
-    shutil.copy("Temp\small\CCM_communism.tga", path)
-    path = os.path.join("gfx", "flags", "medium", com)
-    shutil.copy("Temp\medium\CCM_communism.tga", path)
-
-    path = os.path.join("gfx", "flags", dem)
-    shutil.copy("Temp\CCM_democratic.tga", path)
-    path = os.path.join("gfx", "flags", "small", dem)
-    shutil.copy("Temp\small\CCM_democratic.tga", path)
-    path = os.path.join("gfx", "flags", "medium", dem)
-    shutil.copy("Temp\medium\CCM_democratic.tga", path)
-
-    path = os.path.join("gfx", "flags", fsc)
-    shutil.copy("Temp\CCM_fascism.tga", path)
-    path = os.path.join("gfx", "flags", "small", fsc)
-    shutil.copy("Temp\small\CCM_fascism.tga", path)
-    path = os.path.join("gfx", "flags", "medium", fsc)
-    shutil.copy("Temp\medium\CCM_fascism.tga", path)
-
-
-    print("Pomyślnie skopiowano pliki")
-
+            shutil.copy(origin,destination)
+    
 main()
 
 '''
