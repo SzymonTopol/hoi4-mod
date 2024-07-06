@@ -61,7 +61,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = COM_arrest_oppositon_leaders
 		prerequisite = {focus = COM_arrest_oppositon_leaders}
-		completion_reward = { }
+		completion_reward = {
+			CLB = {
+				change_tag_from = COM
+			}
+		 }
 	}
 
 }

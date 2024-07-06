@@ -61,7 +61,11 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = COM_new_candidate
-		completion_reward = { }
+		completion_reward = { 
+			CMO = {
+				change_tag_from = COM
+			}
+		}
 		prerequisite = {focus = COM_new_candidate}
 	}
 
