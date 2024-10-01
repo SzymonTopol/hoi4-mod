@@ -24,3 +24,10 @@ set_popularities = {
 	communism = 25
 	neutrality = 25
 }
+
+create_country_leader = { #TEMP LEADER
+	name = "Łuki Postrożny"
+	desc = ""
+	picture = GFX_portrait_Ahmed_Ben_Bella
+	ideology = liberalism
+}

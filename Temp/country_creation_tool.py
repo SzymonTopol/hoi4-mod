@@ -34,6 +34,7 @@ main()
 TO DO
 
 2.Tag (sprawdzanie, czy istnieje)
+2.5 Wybieranie co chcę zrobić (że wpisujesz numer i to robi)
 3.gfx i graphical_culture
 4.folder history (capital, ideologies)
 5.Lokalizacja
