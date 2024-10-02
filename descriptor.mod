@@ -6,4 +6,4 @@ tags={
 	"Events"
 }
 name="Commonwealth Resurgent"
-supported_version="1.14.1"
+supported_version="1.14.8"
