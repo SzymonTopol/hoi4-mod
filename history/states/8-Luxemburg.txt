@@ -22,7 +22,7 @@ state=
 		add_core_of = RHI
 	}
 
-	provinces= { 6583 	}
+	provinces= { 6583 13375 }
 
 	local_supplies=0.0 
 }

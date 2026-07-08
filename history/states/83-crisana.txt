@@ -19,9 +19,7 @@ state={
 		add_core_of = COM
 	}
 
-	provinces={
-		696 6682 6697 9640 
-	}
+	provinces={ 696 6682 6697 9640 }
 
 	local_supplies=0.0 
 }

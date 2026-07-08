@@ -24,9 +24,9 @@ state={
 			6560 = {
 				naval_base = 3
 			}
-			6598 = {
-				naval_base = 8
-			}
+			# 6598 = {
+			# 	naval_base = 8
+			# }
 		}
 		
 		add_extra_state_shared_building_slots = 2
@@ -34,9 +34,7 @@ state={
 		add_core_of = UNT
 	}
 
-	provinces={
-		516 3576 6446 6560 6598 9574 11419 13068 
-	}
+	provinces={ 516 3576 6446 6560 }
 
 	local_supplies=0.0 
 }

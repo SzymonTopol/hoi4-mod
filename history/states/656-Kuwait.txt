@@ -19,9 +19,7 @@ state={
 		}
 
 	}
-	provinces={
-		8085
-	}
+	provinces={ 8085 13366 13367 }
 
 	local_supplies=0.0 
 }

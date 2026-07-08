@@ -19,9 +19,7 @@ state={
 		add_core_of = SPT
 	}
 	
-	provinces={
-		1751 
-	}
+	provinces={ 1751 }
 
 	local_supplies=0.0 
 }

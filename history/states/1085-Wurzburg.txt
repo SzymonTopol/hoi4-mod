@@ -1,0 +1,30 @@
+
+state={
+	id=1085
+	name="STATE_1085"
+	manpower = 511784
+
+	state_category = large_city
+
+	history={
+		owner = WRZ
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 2
+		}
+		victory_points = {
+			11445 5.0 
+		}
+		#victory_points = {
+		#	564 3
+		#}
+		add_core_of = WRZ
+	}
+
+	provinces={
+		3397 11445 6594 11417 13116
+	}
+
+	local_supplies=15.0 
+}

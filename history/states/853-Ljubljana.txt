@@ -17,9 +17,7 @@ state=
 		}
 		add_core_of = COM
 	}
-	provinces={
-		6650 9627
-	}
+	provinces={ 6650 9627 }
 	
 	local_supplies=5.0 
 }

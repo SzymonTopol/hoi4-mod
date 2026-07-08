@@ -23,9 +23,7 @@ state={
 		add_core_of = UNT
 	}
 
-	provinces={
-		221 271 296 322 3287 11221 11253 
-	}
+	provinces={ 221 271 296 322 3287 11221 11253 }
 
 	local_supplies=0.0 
 }

@@ -17,9 +17,7 @@ state={
 
 	}
 
-	provinces={
-		1910 2041 2084 10821 
-	}
+	provinces={ 1910 2041 2084 10821 }
 
 	local_supplies=0.0 
 }

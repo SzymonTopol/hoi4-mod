@@ -21,9 +21,7 @@ state={
 		}
 	}
 	
-	provinces={
-		4286 7302 12159 
-	}
+	provinces={ 4286 7302 12159 }
 
 	local_supplies=0.0 
 }

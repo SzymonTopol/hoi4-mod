@@ -16,9 +16,7 @@ state=
 		}
 	}
 	
-	provinces={
-		13051 	
-	}
+	provinces={ 13051 }
 
 	local_supplies=0.0 
 }

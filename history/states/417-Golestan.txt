@@ -19,9 +19,7 @@ state={
 		add_core_of = UNT
 	}
 
-	provinces={
-		1982 2065 8040 8125 10922 
-	}
+	provinces={ 1982 2065 8040 8125 10922 }
 
 	local_supplies=0.0 
 }

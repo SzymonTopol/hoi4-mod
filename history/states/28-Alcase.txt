@@ -54,9 +54,7 @@ state={
 		add_core_of = RHI
 	}
 
-	provinces={
-		549 3629 9559 11502 
-	}
+	provinces={ 549 3629 9559 11502 }
 
 	local_supplies=14.0 
 }

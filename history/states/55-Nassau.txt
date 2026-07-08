@@ -22,9 +22,7 @@ state={
 		add_core_of = FRK
 	}
 
-	provinces={
-		589 3524 3574 6444 6488 9486 9547 11560
-	}
+	provinces={ 589 3524 3574 6444 6488 9486 9547 11560 }
 
 	local_supplies=15.0 
 }

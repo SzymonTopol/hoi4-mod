@@ -12,19 +12,17 @@ state={
 		buildings = {
 			infrastructure = 2
 			air_base = 4
-			5074 = {
-				naval_base = 3
+			# 5074 = {
+			# 	naval_base = 3
 
-			}
+			# }
 			
 		}
 		add_core_of = UNT
 
 	}
 
-	provinces={
-		2029 4976 5074 12821 12894 13079 
-	}
+	provinces={ 2029 4976 12821 12894 13079 }
 	
 	buildings_max_level_factor=1.000
 	state_category=pastoral

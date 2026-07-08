@@ -25,9 +25,7 @@ state=
 		}
 		add_core_of = UNT
 	}
-	provinces={
-		7959 8006
-	}
+	provinces={ 7959 8006 }
 
 	local_supplies=0.0 
 }

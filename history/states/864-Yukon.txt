@@ -1,9 +1,7 @@
 state={
 	id=864
 	name="STATE_864"
-	provinces={
-		3606 7869 7891 
-	}
+	provinces={ 3606 7869 7891 }
 	history = {
 		owner = UNT
 		add_core_of = UNT

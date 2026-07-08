@@ -16,9 +16,7 @@ state = {
 		add_core_of = SHL
 	}
 
-	provinces = {
-		317 3231 11366
- 	}
+	provinces = { 317 3231 11366 }
 
 	local_supplies = 0.0 
 }

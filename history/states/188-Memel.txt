@@ -26,9 +26,7 @@ state=
 			controller = GER
 		}
 	}
-	provinces={
-		3288 	
-	}
+	provinces={ 3288 }
 
 	local_supplies=0.0 
 }
