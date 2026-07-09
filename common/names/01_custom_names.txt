@@ -1,0 +1,233 @@
+UNT = {
+	male = {
+		names = { "John" "Bob" "Lucas" "Marcus" "Alexander" "Alex" "Peter" "Jonas" "Jim" "Johannes" }
+		surnames = { }
+		callsigns = { }
+	}
+	female = {
+		names = { "Anna" "Maria" }
+		surnames = { }
+		callsigns = { }
+	}
+	surnames = { "Smith" "Jones" "Taylor" "Brown" "Williams" "Wilson" "Evans" "Walker" "White" "Roberts" }
+	callsigns = { "Easy Kill" "Demon" }
+
+	prefix = o_operation
+	operation = {
+		0 = { o_default_operation }
+	}
+	use_geographical_default_operation_names = yes
+	offensive_operation_suffix = o_strat_offensive_default
+	defensive_operation_suffix = o_strat_defensive_default
+	naval_operation_suffix = o_strat_naval_default
+}
+
+# --- COMMONWEALTH FACTIONS (Polish Fallback Style) ---
+
+COM = {
+	male = { names = { Jakub Kacper Filip Szymon Jan Antoni Michał Wojciech Mateusz Bartosz Tomasz Grzegorz Zbigniew Piotr Maksymilian Paweł Łukasz Marcin Igor Leszek } }
+	female = { names = { "Zofia" "Wiktoria" "Natalia" "Renata" "Elżbieta" } }
+	surnames = { "Kowalczyk" "Wójcik" "Woźniak" "Mazur" "Krawczyk" "Kaczmarek" }
+	callsigns = { "Easy Kill" "Demon" }
+	prefix = o_operation
+	operation = { 0 = { o_default_operation } }
+	use_geographical_default_operation_names = yes
+	offensive_operation_suffix = o_strat_offensive_default
+	defensive_operation_suffix = o_strat_defensive_default
+	naval_operation_suffix = o_strat_naval_default
+}
+
+CCO = {
+	male = { names = { Jakub Kacper Filip Szymon Jan Antoni Michał Wojciech Mateusz Bartosz Tomasz Grzegorz Zbigniew Piotr Maksymilian Paweł Łukasz Marcin Igor Leszek } }
+	female = { names = { "Zofia" "Wiktoria" "Natalia" "Renata" "Elżbieta" } }
+	surnames = { "Kowalczyk" "Wójcik" "Woźniak" "Mazur" "Krawczyk" "Kaczmarek" }
+	callsigns = { "Easy Kill" "Demon" }
+	prefix = o_operation
+	operation = { 0 = { o_default_operation } }
+	use_geographical_default_operation_names = yes
+	offensive_operation_suffix = o_strat_offensive_default
+	defensive_operation_suffix = o_strat_defensive_default
+	naval_operation_suffix = o_strat_naval_default
+}
+
+CLB = {
+	male = { names = { Jakub Kacper Filip Szymon Jan Antoni Michał Wojciech Mateusz Bartosz Tomasz Grzegorz Zbigniew Piotr Maksymilian Paweł Łukasz Marcin Igor Leszek } }
+	female = { names = { "Zofia" "Wiktoria" "Natalia" "Renata" "Elżbieta" } }
+	surnames = { "Kowalczyk" "Wójcik" "Woźniak" "Mazur" "Krawczyk" "Kaczmarek" }
+	callsigns = { "Easy Kill" "Demon" }
+	prefix = o_operation
+	operation = { 0 = { o_default_operation } }
+	use_geographical_default_operation_names = yes
+	offensive_operation_suffix = o_strat_offensive_default
+	defensive_operation_suffix = o_strat_defensive_default
+	naval_operation_suffix = o_strat_naval_default
+}
+
+CMO = {
+	male = { names = { Jakub Kacper Filip Szymon Jan Antoni Michał Wojciech Mateusz Bartosz Tomasz Grzegorz Zbigniew Piotr Maksymilian Paweł Łukasz Marcin Igor Leszek } }
+	female = { names = { "Zofia" "Wiktoria" "Natalia" "Renata" "Elżbieta" } }
+	surnames = { "Kowalczyk" "Wójcik" "Woźniak" "Mazur" "Krawczyk" "Kaczmarek" }
+	callsigns = { "Easy Kill" "Demon" }
+	prefix = o_operation
+	operation = { 0 = { o_default_operation } }
+	use_geographical_default_operation_names = yes
+	offensive_operation_suffix = o_strat_offensive_default
+	defensive_operation_suffix = o_strat_defensive_default
+	naval_operation_suffix = o_strat_naval_default
+}
+
+CNA = {
+	male = { names = { Jakub Kacper Filip Szymon Jan Antoni Michał Wojciech Mateusz Bartosz Tomasz Grzegorz Zbigniew Piotr Maksymilian Paweł Łukasz Marcin Igor Leszek } }
+	female = { names = { "Zofia" "Wiktoria" "Natalia" "Renata" "Elżbieta" } }
+	surnames = { "Kowalczyk" "Wójcik" "Woźniak" "Mazur" "Krawczyk" "Kaczmarek" }
+	callsigns = { "Easy Kill" "Demon" }
+	prefix = o_operation
+	operation = { 0 = { o_default_operation } }
+	use_geographical_default_operation_names = yes
+	offensive_operation_suffix = o_strat_offensive_default
+	defensive_operation_suffix = o_strat_defensive_default
+	naval_operation_suffix = o_strat_naval_default
+}
+
+CCM = {
+	male = { names = { Jakub Kacper Filip Szymon Jan Antoni Michał Wojciech Mateusz Bartosz Tomasz Grzegorz Zbigniew Piotr Maksymilian Paweł Łukasz Marcin Igor Leszek } }
+	female = { names = { "Zofia" "Wiktoria" "Natalia" "Renata" "Elżbieta" } }
+	surnames = { "Kowalczyk" "Wójcik" "Woźniak" "Mazur" "Krawczyk" "Kaczmarek" }
+	callsigns = { "Easy Kill" "Demon" }
+	prefix = o_operation
+	operation = { 0 = { o_default_operation } }
+	use_geographical_default_operation_names = yes
+	offensive_operation_suffix = o_strat_offensive_default
+	defensive_operation_suffix = o_strat_defensive_default
+	naval_operation_suffix = o_strat_naval_default
+}
+
+
+# --- COSSACK & RUSSIAN FACTIONS (Slavic Fallback Style) ---
+
+RCL = {
+	male = { names = { Aleksandr Aleksey Andrey Anton Boris Dmitry Fyodor Gennady Georgy Grigory Igor Ilya Iosif Ivan Kirill Konstantin Lavr Leonid Lev Maksim Mikhail Nikita Nikolay Noy Oleg Pavel Pyotr Roman Semyon Sergey Valery Vasily Viktor Vladimir Vladislav Yegor Yevgeny Yury } }
+	female = { names = { Afanasiya Albina Aleksandra Anastasiya Elena Elvira Lydia Lyudmila Margarita Muza Natalya Olga Sofiya Svetlana Valentina Yelena } }
+	surnames = { Akhnazarov Akimenko Alekseyev Antonov Azarov Badanov Chibisov Frolov Grishin Ivanov Konev Konstantinov Makarov Pavlov }
+	callsigns = { "Anvil" "Hammer" }
+	prefix = o_operatsiya
+	operation = { 0 = { o_mercury } }
+	use_geographical_default_operation_names = yes
+	offensive_operation_suffix = o_strat_offensive_ru
+	defensive_operation_suffix = o_strat_defensive_ru
+	naval_operation_suffix = o_strat_naval_ru
+}
+
+CCR = {
+	male = { names = { Aleksandr Aleksey Andrey Anton Boris Dmitry Fyodor Gennady Georgy Grigory Igor Ilya Iosif Ivan Kirill Konstantin Lavr Leonid Lev Maksim Mikhail Nikita Nikolay Noy Oleg Pavel Pyotr Roman Semyon Sergey Valery Vasily Viktor Vladimir Vladislav Yegor Yevgeny Yury } }
+	female = { names = { Afanasiya Albina Aleksandra Anastasiya Elena Elvira Lydia Lyudmila Margarita Muza Natalya Olga Sofiya Svetlana Valentina Yelena } }
+	surnames = { Akhnazarov Akimenko Alekseyev Antonov Azarov Badanov Chibisov Frolov Grishin Ivanov Konev Konstantinov Makarov Pavlov }
+	callsigns = { "Anvil" "Hammer" }
+	prefix = o_operatsiya
+	operation = { 0 = { o_mercury } }
+	use_geographical_default_operation_names = yes
+	offensive_operation_suffix = o_strat_offensive_ru
+	defensive_operation_suffix = o_strat_defensive_ru
+	naval_operation_suffix = o_strat_naval_ru
+}
+
+SPT = {
+	male = { names = { Aleksandr Aleksey Andrey Anton Boris Dmitry Fyodor Gennady Georgy Grigory Igor Ilya Iosif Ivan Kirill Konstantin Lavr Leonid Lev Maksim Mikhail Nikita Nikolay Noy Oleg Pavel Pyotr Roman Semyon Sergey Valery Vasily Viktor Vladimir Vladislav Yegor Yevgeny Yury } }
+	female = { names = { Afanasiya Albina Aleksandra Anastasiya Elena Elvira Lydia Lyudmila Margarita Muza Natalya Olga Sofiya Svetlana Valentina Yelena } }
+	surnames = { Akhnazarov Akimenko Alekseyev Antonov Azarov Badanov Chibisov Frolov Grishin Ivanov Konev Konstantinov Makarov Pavlov }
+	callsigns = { "Anvil" "Hammer" }
+	prefix = o_operatsiya
+	operation = { 0 = { o_mercury } }
+	use_geographical_default_operation_names = yes
+	offensive_operation_suffix = o_strat_offensive_ru
+	defensive_operation_suffix = o_strat_defensive_ru
+	naval_operation_suffix = o_strat_naval_ru
+}
+
+SCA = {
+	male = { names = { Aleksandr Aleksey Andrey Anton Boris Dmitry Fyodor Gennady Georgy Grigory Igor Ilya Iosif Ivan Kirill Konstantin Lavr Leonid Lev Maksim Mikhail Nikita Nikolay Noy Oleg Pavel Pyotr Roman Semyon Sergey Valery Vasily Viktor Vladimir Vladislav Yegor Yevgeny Yury } }
+	female = { names = { Afanasiya Albina Aleksandra Anastasiya Elena Elvira Lydia Lyudmila Margarita Muza Natalya Olga Sofiya Svetlana Valentina Yelena } }
+	surnames = { Akhnazarov Akimenko Alekseyev Antonov Azarov Badanov Chibisov Frolov Grishin Ivanov Konev Konstantinov Makarov Pavlov }
+	callsigns = { "Anvil" "Hammer" }
+	prefix = o_operatsiya
+	operation = { 0 = { o_mercury } }
+	use_geographical_default_operation_names = yes
+	offensive_operation_suffix = o_strat_offensive_ru
+	defensive_operation_suffix = o_strat_defensive_ru
+	naval_operation_suffix = o_strat_naval_ru
+}
+
+
+# --- GERMANIC DUCHIES & STATES (German Fallback Style) ---
+
+WEI = {
+	male = { names = { Adolf Alfred Anton Christian Dieter Emil Erich Erwin Felix Fritz Gabriel Gerhard Gunther Hans Heinrich Heinz Helmuth Hermann Horst Joachim Karl Ludwig Marco Markus Max Maximilian Otto Paul Peter Philipp Ralph Samuel Staffan Theodor Tobias Walter Wilhelm } }
+	female = { names = { Jessica Emma Hanna Sofia Marie Hildegard } }
+	surnames = { Barkhorn Becker Behrmann Beisswenger Berglen Blum Brandt Brendel Dietrich Duttmann Ehrler Fischer Graf Haas Hafner Hartmann Hoffmann Huber Kirschner Konig Kraus Kuhn Lang Lehmann Lipfert Meyer Muller Rall Roth Schmidt Schneider Schulte Schulz Sommer Stotz Sturm Vogt Wagner Weber Wilbs Winkler Winter Wolff Zimmermann }
+	callsigns = { "Bubi" "Assi" }
+	prefix = o_unternehmen
+	operation = { 0 = { o_ostwind } }
+}
+
+BAD = {
+	male = { names = { Adolf Alfred Anton Christian Dieter Emil Erich Erwin Felix Fritz Gabriel Gerhard Gunther Hans Heinrich Heinz Helmuth Hermann Horst Joachim Karl Ludwig Marco Markus Max Maximilian Otto Paul Peter Philipp Ralph Samuel Staffan Theodor Tobias Walter Wilhelm } }
+	female = { names = { Jessica Emma Hanna Sofia Marie Hildegard } }
+	surnames = { Barkhorn Becker Behrmann Beisswenger Berglen Blum Brandt Brendel Dietrich Duttmann Ehrler Fischer Graf Haas Hafner Hartmann Hoffmann Huber Kirschner Konig Kraus Kuhn Lang Lehmann Lipfert Meyer Muller Rall Roth Schmidt Schneider Schulte Schulz Sommer Stotz Sturm Vogt Wagner Weber Wilbs Winkler Winter Wolff Zimmermann }
+	callsigns = { "Bubi" "Assi" }
+	prefix = o_unternehmen
+	operation = { 0 = { o_ostwind } }
+}
+
+WRZ = {
+	male = { names = { Adolf Alfred Anton Christian Dieter Emil Erich Erwin Felix Fritz Gabriel Gerhard Gunther Hans Heinrich Heinz Helmuth Hermann Horst Joachim Karl Ludwig Marco Markus Max Maximilian Otto Paul Peter Philipp Ralph Samuel Staffan Theodor Tobias Walter Wilhelm } }
+	female = { names = { Jessica Emma Hanna Sofia Marie Hildegard } }
+	surnames = { Barkhorn Becker Behrmann Beisswenger Berglen Blum Brandt Brendel Dietrich Duttmann Ehrler Fischer Graf Haas Hafner Hartmann Hoffmann Huber Kirschner Konig Kraus Kuhn Lang Lehmann Lipfert Meyer Muller Rall Roth Schmidt Schneider Schulte Schulz Sommer Stotz Sturm Vogt Wagner Weber Wilbs Winkler Winter Wolff Zimmermann }
+	callsigns = { "Bubi" "Assi" }
+	prefix = o_unternehmen
+	operation = { 0 = { o_ostwind } }
+}
+
+ANH = {
+	male = { names = { Adolf Alfred Anton Christian Dieter Emil Erich Erwin Felix Fritz Gabriel Gerhard Gunther Hans Heinrich Heinz Helmuth Hermann Horst Joachim Karl Ludwig Marco Markus Max Maximilian Otto Paul Peter Philipp Ralph Samuel Staffan Theodor Tobias Walter Wilhelm } }
+	female = { names = { Jessica Emma Hanna Sofia Marie Hildegard } }
+	surnames = { Barkhorn Becker Behrmann Beisswenger Berglen Blum Brandt Brendel Dietrich Duttmann Ehrler Fischer Graf Haas Hafner Hartmann Hoffmann Huber Kirschner Konig Kraus Kuhn Lang Lehmann Lipfert Meyer Muller Rall Roth Schmidt Schneider Schulte Schulz Sommer Stotz Sturm Vogt Wagner Weber Wilbs Winkler Winter Wolff Zimmermann }
+	callsigns = { "Bubi" "Assi" }
+	prefix = o_unternehmen
+	operation = { 0 = { o_ostwind } }
+}
+
+DOR = {
+	male = { names = { Adolf Alfred Anton Christian Dieter Emil Erich Erwin Felix Fritz Gabriel Gerhard Gunther Hans Heinrich Heinz Helmuth Hermann Horst Joachim Karl Ludwig Marco Markus Max Maximilian Otto Paul Peter Philipp Ralph Samuel Staffan Theodor Tobias Walter Wilhelm } }
+	female = { names = { Jessica Emma Hanna Sofia Marie Hildegard } }
+	surnames = { Barkhorn Becker Behrmann Beisswenger Berglen Blum Brandt Brendel Dietrich Duttmann Ehrler Fischer Graf Haas Hafner Hartmann Hoffmann Huber Kirschner Konig Kraus Kuhn Lang Lehmann Lipfert Meyer Muller Rall Roth Schmidt Schneider Schulte Schulz Sommer Stotz Sturm Vogt Wagner Weber Wilbs Winkler Winter Wolff Zimmermann }
+	callsigns = { "Bubi" "Assi" }
+	prefix = o_unternehmen
+	operation = { 0 = { o_ostwind } }
+}
+
+HLS = {
+	male = { names = { Adolf Alfred Anton Christian Dieter Emil Erich Erwin Felix Fritz Gabriel Gerhard Gunther Hans Heinrich Heinz Helmuth Hermann Horst Joachim Karl Ludwig Marco Markus Max Maximilian Otto Paul Peter Philipp Ralph Samuel Staffan Theodor Tobias Walter Wilhelm } }
+	female = { names = { Jessica Emma Hanna Sofia Marie Hildegard } }
+	surnames = { Barkhorn Becker Behrmann Beisswenger Berglen Blum Brandt Brendel Dietrich Duttmann Ehrler Fischer Graf Haas Hafner Hartmann Hoffmann Huber Kirschner Konig Kraus Kuhn Lang Lehmann Lipfert Meyer Muller Rall Roth Schmidt Schneider Schulte Schulz Sommer Stotz Sturm Vogt Wagner Weber Wilbs Winkler Winter Wolff Zimmermann }
+	callsigns = { "Bubi" "Assi" }
+	prefix = o_unternehmen
+	operation = { 0 = { o_ostwind } }
+}
+
+BRG = {
+	male = { names = { Adolf Alfred Anton Christian Dieter Emil Erich Erwin Felix Fritz Gabriel Gerhard Gunther Hans Heinrich Heinz Helmuth Hermann Horst Joachim Karl Ludwig Marco Markus Max Maximilian Otto Paul Peter Philipp Ralph Samuel Staffan Theodor Tobias Walter Wilhelm } }
+	female = { names = { Jessica Emma Hanna Sofia Marie Hildegard } }
+	surnames = { Barkhorn Becker Behrmann Beisswenger Berglen Blum Brandt Brendel Dietrich Duttmann Ehrler Fischer Graf Haas Hafner Hartmann Hoffmann Huber Kirschner Konig Kraus Kuhn Lang Lehmann Lipfert Meyer Muller Rall Roth Schmidt Schneider Schulte Schulz Sommer Stotz Sturm Vogt Wagner Weber Wilbs Winkler Winter Wolff Zimmermann }
+	callsigns = { "Bubi" "Assi" }
+	prefix = o_unternehmen
+	operation = { 0 = { o_ostwind } }
+}
+
+FRK = {
+	male = { names = { Adolf Alfred Anton Christian Dieter Emil Erich Erwin Felix Fritz Gabriel Gerhard Gunther Hans Heinrich Heinz Helmuth Hermann Horst Joachim Karl Ludwig Marco Markus Max Maximilian Otto Paul Peter Philipp Ralph Samuel Staffan Theodor Tobias Walter Wilhelm } }
+	female = { names = { Jessica Emma Hanna Sofia Marie Hildegard } }
+	surnames = { Barkhorn Becker Behrmann Beisswenger Berglen Blum Brandt Brendel Dietrich Duttmann Ehrler Fischer Graf Haas Hafner Hartmann Hoffmann Huber Kirschner Konig Kraus Kuhn Lang Lehmann Lipfert Meyer Muller Rall Roth Schmidt Schneider Schulte Schulz Sommer Stotz Sturm Vogt Wagner Weber Wilbs Winkler Winter Wolff Zimmermann }
+	callsigns = { "Bubi" "Assi" }
+	prefix = o_unternehmen
+	operation = { 0 = { o_ostwind } }
+}
