@@ -13,8 +13,7 @@ state = {
 	history = {
 
 		owner = UNT
-		add_core_of = ZAM
-		add_core_of = BAR
+		add_core_of = UNT
 
 		victory_points = {
 			697 1 # Mongu

@@ -13,8 +13,8 @@ state = {
 	history = {
 
 		owner = UNT
-
 		add_core_of = UNT
+
 
 		buildings = {
 			infrastructure = 3 #was: 5

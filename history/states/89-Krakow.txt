@@ -10,12 +10,12 @@ state={
 		#	6483 1
 		#}
 		owner = COM
+		add_core_of = COM
 		buildings = {
 			infrastructure = 3
 			air_base = 3
 
 		}
-		add_core_of = COM
 
 	}
 

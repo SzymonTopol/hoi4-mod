@@ -11,6 +11,7 @@ state={
 
 	history={
 		owner = UNT
+		add_core_of = UNT
 		victory_points = {
 			11834 10
 		}
@@ -26,7 +27,6 @@ state={
 				coastal_bunker = 1
 			}
 		}
-		add_core_of = UNT
 		1939.1.1 = {
 			buildings = {
 				dockyard = 2

@@ -8,6 +8,7 @@ state = {
 
 	history = {
 		owner = RCL
+		add_core_of = RCL
 		victory_points = {
 			3338 5 
 		}
@@ -19,7 +20,6 @@ state = {
 				naval_base = 3
 			}
 		}
-		add_core_of = RCL
 		1939.1.1 = {
 			buildings = {
 				industrial_complex = 2

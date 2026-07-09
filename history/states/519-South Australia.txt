@@ -5,6 +5,7 @@ state={
 
 	history={
 		owner = UNT
+		add_core_of = UNT
 		buildings = {
 			infrastructure = 1
 			12910 = {
@@ -16,7 +17,6 @@ state={
 		victory_points = {
 			12910 15 
 		}
-		add_core_of = UNT
 
 	}
 

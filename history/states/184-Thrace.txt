@@ -15,12 +15,12 @@ state={
 			11905 1 
 		}
 		owner = COM
+		add_core_of = COM
 		buildings = {
 			infrastructure = 1
 			arms_factory = 1
 
 		}
-		add_core_of = COM
 		add_claim_by = BUL
 	}
 

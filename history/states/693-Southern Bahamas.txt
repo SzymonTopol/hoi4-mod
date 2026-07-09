@@ -6,8 +6,8 @@ state={
 	state_category = tiny_island
 
 	history={
-		add_core_of = SPT
 		owner = SPT
+		add_core_of = SPT
 		buildings = {
 			infrastructure = 2
 			10440 = {

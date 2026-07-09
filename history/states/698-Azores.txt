@@ -7,6 +7,7 @@ state={
 	
 	history={
 		owner = SPT
+		add_core_of = SPT
 		victory_points = {
 			1751 3 
 		}
@@ -16,7 +17,6 @@ state={
 				naval_base = 3
 			}
 		}
-		add_core_of = SPT
 	}
 	
 	provinces={ 1751 }

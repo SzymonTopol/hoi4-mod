@@ -11,11 +11,11 @@ state = {
 			476 3
 		}
 		owner = COM
+		add_core_of = COM
 		buildings = {
 			infrastructure = 3 #was: 5
 			air_base = 3
 		}
-		add_core_of = COM
 	}
 
 	provinces = { 476 6455 6480 9423 9435 9481 }

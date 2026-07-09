@@ -7,6 +7,7 @@ state = {
 	state_category = town
 	history = {
 		owner = UNT
+		add_core_of = UNT
 		victory_points = {
 			9990 1 
 		}
@@ -18,7 +19,6 @@ state = {
 				naval_base = 2
 			}
 		}
-		add_core_of = UNT
 	}
 
 	provinces = { 3901 9990 10027 12066 12098 }

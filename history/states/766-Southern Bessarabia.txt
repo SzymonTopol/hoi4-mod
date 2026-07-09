@@ -10,8 +10,8 @@ state=
 		victory_points = {
 			6727 1
 		}
-		add_core_of = COM
 		owner = COM
+		add_core_of = COM
 		buildings = {
 			infrastructure = 2
 			dockyard = 1

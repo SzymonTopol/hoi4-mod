@@ -8,6 +8,7 @@ state = {
 
 	history = {
 		owner = RCL
+		add_core_of = RCL
 		buildings = {
 			infrastructure = 3 #was: 5
 			industrial_complex = 1
@@ -19,7 +20,6 @@ state = {
 		victory_points = {
 			4354 1 
 		}
-		add_core_of = RCL
 		set_demilitarized_zone = yes
 	}
 

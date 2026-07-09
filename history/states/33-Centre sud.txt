@@ -11,11 +11,11 @@ state={
 			651 1
 		}
 		owner = UNT
+		add_core_of = UNT
 		
 		buildings = {
 			infrastructure = 3
 		}
-		add_core_of = UNT
 	}
 
 	provinces={ 651 669 3621 3626 3655 6648 6651 9629 11869 }

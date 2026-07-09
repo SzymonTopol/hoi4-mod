@@ -8,6 +8,7 @@ state=
 	history=
 	{
 		owner = UNT
+		add_core_of = UNT
 		buildings = {
 			infrastructure = 3 #was: 5
 			arms_factory = 1
@@ -23,7 +24,6 @@ state=
 		victory_points = {
 			1221 1 
 		}
-		add_core_of = UNT
 	}
 
 	provinces={ 1221 1288 1388 4233 4288 7323 10236 10265 10272 12236 }

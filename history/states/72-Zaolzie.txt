@@ -7,11 +7,11 @@ state={
 	
 	history={
 		owner = COM
+		add_core_of = COM
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
 		}
-		add_core_of = COM
 
 		1939.3.14 = {
 			owner = POL

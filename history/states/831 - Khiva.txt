@@ -9,12 +9,12 @@ state = {
 			12465 1
 		}
 		owner = UNT
+		add_core_of = UNT
 		buildings = {
 			infrastructure = 2
 
 		}
 		
-		add_core_of = UNT
 		
 	}
 

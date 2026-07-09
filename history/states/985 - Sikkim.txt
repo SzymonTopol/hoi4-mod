@@ -12,8 +12,7 @@ state={
 
 	history={
 		owner = UNT
-		add_core_of = RAJ
-		add_core_of = SKK
+		add_core_of = UNT
 		buildings = {
 			infrastructure = 1
 		}

@@ -17,6 +17,7 @@ state={
 			11965 1
 		}
 		owner = COM
+		add_core_of = COM
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
@@ -30,7 +31,6 @@ state={
 			}
 
 		}
-		add_core_of = COM
 
 	}
 

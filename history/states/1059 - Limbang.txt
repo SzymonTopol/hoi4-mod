@@ -15,9 +15,7 @@ state = {
 	history = {
 
 		owner = UNT
-		add_core_of = MAL
-		add_core_of = SAR
-		add_core_of = BRN 
+		add_core_of = UNT
 
 		victory_points = {
 			13378 1 # Limbang

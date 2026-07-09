@@ -8,10 +8,10 @@ state=
 	
 	history = {	
 		owner = UNT
+		add_core_of = UNT
 		buildings = {
 			infrastructure = 1 #TODO_Manu: Was 2
 		}
-		add_core_of = UNT
 		
 		victory_points = { #Salla
 			197 1

@@ -4,6 +4,7 @@ state={
 
 	history={
 		owner = UNT
+		add_core_of = UNT
 		buildings = {
 			infrastructure = 1
 			10548 = {
@@ -12,7 +13,6 @@ state={
 			}
 
 		}
-		add_core_of = UNT
 
 	}
 

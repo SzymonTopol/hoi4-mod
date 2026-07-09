@@ -6,6 +6,7 @@ state={
 	state_category = town
 	history={
 		owner = COM
+		add_core_of = COM
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 2
@@ -13,7 +14,6 @@ state={
 		victory_points = {
 			9508 10
 		}
-		add_core_of = COM
 
 		1939.1.1 = {
 			buildings = {

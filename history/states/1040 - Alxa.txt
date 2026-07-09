@@ -8,9 +8,7 @@ state={
 	history={
 
 		owner = UNT
-		add_core_of = XSM
-		add_core_of = CHI
-		add_core_of = PRC
+		add_core_of = UNT
 
 		victory_points = {
 			4783 1 # Ejin Banner

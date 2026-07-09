@@ -15,11 +15,11 @@ state = {
 			11598 1
 		}
 		owner = UNT
+		add_core_of = UNT
 		buildings = {
 			infrastructure = 2 # was 3 before split
 			industrial_complex = 1 #Bolzano's industrial zone started in 1934-35 (Steel meels, Lancia...)
 		}
-		add_core_of = UNT
 		add_claim_by = AUS
 	}
 

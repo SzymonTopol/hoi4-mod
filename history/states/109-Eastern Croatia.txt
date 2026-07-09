@@ -8,6 +8,7 @@ state={
 
 	history={
 		owner = COM
+		add_core_of = COM
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 3
@@ -15,7 +16,6 @@ state={
 		victory_points = {
 			11581 3 
 		}
-		add_core_of = COM
 	}
 
 	provinces={ 624 3592 3596 3627 6647 9595 9611 11577 11580 11581 11594 }

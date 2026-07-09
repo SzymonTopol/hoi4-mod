@@ -5,6 +5,7 @@ state={
 
 	history={
 		owner = COM
+		add_core_of = COM
 		victory_points = {
 			6222 3 #Jelgava
 		}
@@ -22,7 +23,6 @@ state={
 			}
 
 		}
-		add_core_of = COM
 
 	}
 

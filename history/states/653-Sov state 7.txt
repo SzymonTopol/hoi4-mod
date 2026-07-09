@@ -8,6 +8,7 @@ state={
 
 	history={
 		owner = UNT
+		add_core_of = UNT
 		victory_points = {
 			1821 5
 		}
@@ -18,7 +19,6 @@ state={
 			air_base = 1
 
 		}
-		add_core_of = UNT
 		1939.1.1 = {
 			buildings = {
 				arms_factory = 3

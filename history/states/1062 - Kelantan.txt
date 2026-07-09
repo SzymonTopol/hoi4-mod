@@ -14,7 +14,7 @@ state = {
 	history = {
 
 		owner = UNT
-		add_core_of = MAL
+		add_core_of = UNT
 
 		victory_points = {
 			7329 1 # Kota Bharu

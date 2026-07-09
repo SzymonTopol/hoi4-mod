@@ -9,7 +9,7 @@ state={
 
 	history={
 		owner = UNT
-		add_core_of = GOW
+		add_core_of = UNT
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1

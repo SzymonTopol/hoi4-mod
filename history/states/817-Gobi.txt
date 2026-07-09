@@ -5,13 +5,13 @@ state={
 
 	history={
 		owner = UNT
+		add_core_of = UNT
 		buildings = {
 			infrastructure = 1
 		}
 		victory_points = {
 			12612 1 #Sainshand
 		}
-		add_core_of = UNT
 	}
 	manpower=11000
 	buildings_max_level_factor=1.000

@@ -22,6 +22,7 @@ state={
 			1205 1
 		}
 		owner = COM
+		add_core_of = COM
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -30,7 +31,6 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = COM
 	}
 
 	provinces = { 841 1106 1205 3914 3980 9805 9837 9916 10203 11786 11895 12001 }

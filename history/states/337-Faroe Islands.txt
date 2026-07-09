@@ -7,13 +7,13 @@ state = {
 	
 	history = {
 		owner = SPT
+		add_core_of = SPT
 		buildings = {
 			infrastructure = 2
 			13003 = {
 				naval_base = 1
 			}
 		}
-		add_core_of = SPT
 
 		victory_points = { #Tórshavn
 			13003 1

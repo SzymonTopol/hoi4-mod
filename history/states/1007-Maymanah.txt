@@ -11,11 +11,10 @@ state={
 	provinces={ 7448 7584 10896 12248 12877 }
 	history={
 		owner = UNT
+		add_core_of = UNT
 		buildings = {
 			infrastructure = 1 
 		}
-		add_core_of = AFG
-		add_core_of = TMS
 		victory_points = {
 			12248 1
 		}

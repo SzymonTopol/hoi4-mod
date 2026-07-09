@@ -12,11 +12,11 @@ state={
 			9388 1
 		}
 		owner = COM
+		add_core_of = COM
 		buildings = {
 			infrastructure = 3
 			fuel_silo = 1
 		}
-		add_core_of = COM
 
 		1939.1.1 = {
 			buildings = {

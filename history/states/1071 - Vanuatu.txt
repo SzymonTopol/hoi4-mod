@@ -9,7 +9,7 @@ state = {
 	history = {
 
 		owner = UNT
-		add_core_of = VAN
+		add_core_of = UNT
 
 		victory_points = {
 			12120 1 # Port Vila 

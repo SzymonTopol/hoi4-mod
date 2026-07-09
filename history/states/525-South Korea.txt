@@ -8,6 +8,7 @@ state=
 	history=
 	{
 		owner = UNT
+		add_core_of = UNT
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
@@ -23,7 +24,6 @@ state=
 			7125 3 
 		}
 
-		add_core_of = UNT
 
 	}
 	provinces={ 1100 7125 7221 10036 }

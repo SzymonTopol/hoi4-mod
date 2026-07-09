@@ -7,7 +7,7 @@ state = {
 	
 	history = {
 		owner = UNT
-		add_core_of = BRM
+		add_core_of = UNT
 
 		buildings = {
 			infrastructure = 2

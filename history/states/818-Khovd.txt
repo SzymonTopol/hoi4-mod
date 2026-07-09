@@ -5,13 +5,13 @@ state={
 
 	history={
 		owner = UNT
+		add_core_of = UNT
 		buildings = {
 			infrastructure = 1
 		}
 		victory_points = {
 			7843 1 #Ulaangom
 		}
-		add_core_of = UNT
 	}
 	manpower=149000
 	buildings_max_level_factor=1.000

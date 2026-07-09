@@ -3,8 +3,8 @@ characters={
 		name= COM_luki_aaa
 		portraits={
 			civilian={
-				#large="GFX_portrait_cuba_jose_barnet"
 				large= "GFX_portrait_com_luki"
+				#large="GFX_portrait_cuba_jose_barnet"
 			}
 		}
 		country_leader={

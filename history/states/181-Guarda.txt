@@ -12,6 +12,7 @@ state={
 
 	history={
 		owner = UNT
+		add_core_of = UNT
 		victory_points = {
 			9787 1
 		}
@@ -22,7 +23,6 @@ state={
 			infrastructure = 2
 			industrial_complex = 2
 		}
-		add_core_of = UNT
 	}
 
 	provinces={ 845 889 938 3969 6818 6996 9787 11885 }

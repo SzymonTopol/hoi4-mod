@@ -15,6 +15,7 @@ state = {
 			105 1 
 		}
 		owner = RCL
+		add_core_of = RCL
 		buildings = {
 			infrastructure = 1
 			12530 = {
@@ -22,7 +23,6 @@ state = {
 			}
 
 		}
-		add_core_of = RCL
 	}
 
 	provinces = { 105 198 3147 6040 6192 9205 10207 11047 11119 12530 }

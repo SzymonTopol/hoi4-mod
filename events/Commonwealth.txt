@@ -1,32 +1,47 @@
 add_namespace = commonwealth
 
-
-country_event = { #monarch death
-    id = commonwealth.1
-    title = commonwealth.1.t
-    desc = commonwealth.1.d
-    picture = GFX_report_event_generic_funeral
-
-    is_triggered_only = yes
-
-    #mean_time_to_happen = { #nie działa opóźnienie, później zrobię
-    #    days = 4  # Delay in days
-    #}
-
-    trigger = {
-    }
-
-    option = {
-        name = commonwealth.1.a
-
-        hidden_effect = {
-            COM = {
-                country_event = { id = commonwealth.2 }
-            }
-        }
-    }
+# Hidden starter event to accurately trigger the chain 75-100 days from game start
+country_event = {
+	id = commonwealth.0
+	hidden = yes
+	
+	trigger = {
+		tag = COM
+		date > 1935.12.31 # Fires as soon as the game starts
+	}
+	
+	fire_only_once = yes
+	
+	immediate = {
+		# 75 days base delay + up to 25 random days = 75 to 100 days
+		country_event = { id = commonwealth.1 days = 75 random_days = 25 }
+	}
 }
 
+country_event = { #monarch death
+	id = commonwealth.1
+	title = commonwealth.1.t
+	desc = commonwealth.1.d
+	picture = GFX_report_event_generic_funeral
+
+	is_triggered_only = yes
+
+	immediate = {
+		# Swaps the tree immediately upon event pop-up, canceling current focus
+		load_focus_tree = empty_focus
+	}
+
+	option = {
+		name = commonwealth.1.a
+
+		hidden_effect = {
+			COM = {
+				# 1 day base + up to 6 random days = 1 to 7 days
+				country_event = { id = commonwealth.2 days = 1 random_days = 6 }
+			}
+		}
+	}
+}
 
 country_event = { #sejm argument
 	id = commonwealth.2
@@ -41,7 +56,7 @@ country_event = { #sejm argument
 
 		hidden_effect = {
 			COM = {
-				country_event = { id = commonwealth.3}
+				country_event = { id = commonwealth.3 days = 1 random_days = 6 }
 			}
 		}
 
@@ -62,7 +77,7 @@ country_event = { #army stops responding
 
 		hidden_effect = {	
 			COM = {
-				country_event = { id = commonwealth.4}
+				country_event = { id = commonwealth.4 days = 1 random_days = 6 }
 			}
 		}
 
@@ -83,7 +98,7 @@ country_event = { #the nobility calls a convention
 
 		hidden_effect = {
 			COM = {
-				country_event = { id = commonwealth.5}
+				country_event = { id = commonwealth.5 days = 1 random_days = 6 }
 			}
 		}
 
@@ -104,7 +119,7 @@ country_event = { #students go to the streets
 
 		hidden_effect = {
 			COM = {
-				country_event = { id = commonwealth.6}
+				country_event = { id = commonwealth.6 days = 1 random_days = 6 }
 			}
 		}
 
@@ -122,6 +137,9 @@ country_event = { #a deep breath
 
 	option = {
 		name = commonwealth.6.a #conservatives route
+		
+		# Adds the hover description text
+		custom_effect_tooltip = commonwealth_unlock_focuses_tt
 
 		hidden_effect = {
 			COM = {
@@ -133,6 +151,8 @@ country_event = { #a deep breath
 
 	option = {
 		name = commonwealth.6.b #liberals route
+		
+		custom_effect_tooltip = commonwealth_unlock_focuses_tt
 
 		hidden_effect = {
 			COM = {
@@ -144,6 +164,8 @@ country_event = { #a deep breath
 
 	option = {
 		name = commonwealth.6.c #monarchists route
+		
+		custom_effect_tooltip = commonwealth_unlock_focuses_tt
 
 		hidden_effect = {
 			COM = {

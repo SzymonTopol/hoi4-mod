@@ -7,7 +7,8 @@ state={
 
 	state_category = large_city
 	history={
-		owner = BAD
+		owner = WUR
+		add_core_of = WUR
 		victory_points = {
 			9517 10
 		}
@@ -29,7 +30,6 @@ state={
 			industrial_complex = 3
 			air_base = 3
 		}
-		add_core_of = BAD
 
 	}
 

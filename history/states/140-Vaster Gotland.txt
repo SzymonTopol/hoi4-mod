@@ -10,6 +10,7 @@ state = {
 
 	history = {
 		owner = UNT
+		add_core_of = UNT
 		victory_points = {
 			383 10 
 		}
@@ -26,7 +27,6 @@ state = {
 			}
 
 		}
-		add_core_of = UNT
 
 	}
 

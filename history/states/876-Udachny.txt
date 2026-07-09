@@ -4,6 +4,7 @@ state = {
 
 	history = {
 		owner = UNT
+		add_core_of = UNT
 
 		#victory_points = {
 		#	6085 1  #Udachny was founded in 1955
@@ -13,7 +14,6 @@ state = {
 			infrastructure = 1
 		}
 
-		add_core_of = UNT
 
 	}
 

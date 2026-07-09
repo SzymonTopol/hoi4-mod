@@ -8,6 +8,7 @@ state={
 
 	history={
 		owner = UNT
+		add_core_of = UNT
 		buildings = {
 			infrastructure = 2
 		}
@@ -20,7 +21,6 @@ state={
 			9989 1 #Sidi Barrani
 		}
 
-		add_core_of = UNT
 	}
 
 	provinces={ 5078 7079 7148 9989 10061 11910 11967 12033 12091 }

@@ -4,6 +4,7 @@ state = {
 
 	history = {
 		owner = CCR
+		add_core_of = CCR
 		victory_points = {
 			11617 1 
 		}
@@ -13,7 +14,6 @@ state = {
 			
 
 		}
-		add_core_of = CCR
 		1939.1.1 = {
 			buildings = {
 				industrial_complex = 1

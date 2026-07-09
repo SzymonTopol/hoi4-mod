@@ -12,6 +12,7 @@ state = {
 
 	history = {
 		owner = UNT
+		add_core_of = UNT
 		victory_points = { #Bologna
 			6606 5
 		}
@@ -29,7 +30,6 @@ state = {
 				naval_base = 2
 			}
 		}
-		add_core_of = UNT
 	}
 
 	provinces = { 782 3773 3976 6606 6790 6793 6985 9752 9924 }

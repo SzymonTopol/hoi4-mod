@@ -6,6 +6,7 @@ state={
 
 	history={
 		owner = SPT
+		add_core_of = SPT
 		buildings = {
 			infrastructure = 1
 			
@@ -14,7 +15,6 @@ state={
 			}
 
 		}
-		add_core_of = SPT
 		add_claim_by = SOM
 	}
 

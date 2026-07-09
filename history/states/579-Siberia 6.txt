@@ -11,10 +11,10 @@ state = {
 			1684 1
 		}
 		owner = UNT
+		add_core_of = UNT
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = UNT
 		set_demilitarized_zone = yes
 	}
 

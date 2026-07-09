@@ -12,6 +12,7 @@ state = {
 	}
 	history={
 		owner = UNT
+		add_core_of = UNT
 
 		victory_points = { #Kemi
 			11164 2
@@ -32,7 +33,6 @@ state = {
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = UNT
 
 	}
 

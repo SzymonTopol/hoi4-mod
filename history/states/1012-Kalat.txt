@@ -7,9 +7,7 @@ state={
 
 	history = {
 		owner = UNT
-		add_core_of = KLT
-		add_core_of = PAK
-		add_core_of = BLC
+		add_core_of = UNT
 
 		buildings = {
 			infrastructure = 1 #was: 5

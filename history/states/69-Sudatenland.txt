@@ -21,6 +21,7 @@ state=
 			11401 3
 		}
 		owner = COM
+		add_core_of = COM
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 2
@@ -55,7 +56,6 @@ state=
 			}
 
 		}
-		add_core_of = COM
 
 		1938.9.30 = {
 			owner = GER

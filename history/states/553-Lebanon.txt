@@ -8,6 +8,7 @@ state={
 
 	history={
 		owner = UNT
+		add_core_of = UNT
 		victory_points = {
 			792 5 
 		}
@@ -20,7 +21,6 @@ state={
 			}
 		}
 
-		add_core_of = UNT
 	}
 
 	provinces={ 792 1108 11919 }

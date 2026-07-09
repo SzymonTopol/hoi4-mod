@@ -12,6 +12,7 @@ state={
 
 	history={
 		owner = UNT
+		add_core_of = UNT
 		victory_points = {
 			2097 10
 		}
@@ -33,7 +34,6 @@ state={
 			# 	naval_base = 1
 			# }
 		}
-		add_core_of = UNT
 		add_claim_by = KUR
 	}
 

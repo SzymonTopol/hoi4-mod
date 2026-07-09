@@ -12,11 +12,11 @@ state = {
 
 	history = {
 		owner = RCL
+		add_core_of = RCL
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = RCL
 	}
 
 	provinces = { 154 6016 6177 6538 9099 9121 9230 10723 11182 }

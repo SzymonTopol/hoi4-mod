@@ -4,6 +4,7 @@ state={
 
 	history={
 		owner = UNT
+		add_core_of = UNT
 		victory_points = {
 			3790 1
 		}
@@ -24,7 +25,6 @@ state={
 
 			}
 		}
-		add_core_of = UNT
 		add_extra_state_shared_building_slots = 1 
 
 	}

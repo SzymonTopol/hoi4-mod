@@ -11,7 +11,7 @@ state={
 	local_supplies=0.000
 	history={
 		owner = UNT
-		add_core_of = RAS
+		add_core_of = UNT
 		buildings = {
 			infrastructure = 1
 		}

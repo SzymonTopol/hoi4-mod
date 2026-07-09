@@ -18,10 +18,10 @@ state={
 			9511 3
 		}
 		owner = COM
+		add_core_of = COM
 		buildings = {
 			infrastructure = 3
 		}
-		add_core_of = COM
 	}
 
 	provinces={ 479 6512 9457 9511 11467 }

@@ -13,6 +13,7 @@ state={
 			3296 1 #Ventspils
 		}
 		owner = COM
+		add_core_of = COM
 		buildings = {
 			infrastructure = 3 #was: 5
 			9262 = {
@@ -20,7 +21,6 @@ state={
 			}
 			dockyard = 1
 		}
-		add_core_of = COM
 	}
 
 	provinces={ 3194 3296 3319 6322 9262 11246 }

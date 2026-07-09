@@ -1,161 +1,181 @@
 focus_tree = {
-	id = commonwealth_starting_focus
-	
-	country = {
-		factor = 0
-		
-		modifier = {
-			add = 10
-			tag = COM
-		}
-	}
-	default = no
+    id = commonwealth_starting_focus
+    
+    country = {
+        factor = 0
+        
+        modifier = {
+            add = 10
+            tag = COM
+        }
+    }
+    default = no
 
-	focus = {
-		id = COM_royal_speech
-		icon = GFX_goal_generic_major_war
-		cost = 5
-		x = 3
-		y = 0
-		completion_reward = { 
-			#country_event = commonwealth.1 #TYLKO NA POTRZEBY SPRAWDZANIA CZY DZIAŁA
-		}
-	}
+    focus = {
+        id = COM_royal_speech
+        icon = GFX_SOV_romanov_reconstruction_ccp_2d_sov_compatibility
+        cost = 5
+        x = 3
+        y = 0
+        completion_reward = { 
+            add_political_power = 35
+        }
+    }
 
-	focus = {
-		id = COM_tour_to_lublin
-		icon = GFX_goal_generic_major_war
-		cost = 5
-		x = 2
-		y = 0
-		relative_position_id = COM_royal_speech
-		completion_reward = { }
-	}
+    focus = {
+        id = COM_tour_to_lublin
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = 2
+        y = 0
+        relative_position_id = COM_royal_speech
+        completion_reward = { 
+            add_stability = 0.02
+        }
+    }
 
-	focus = {
-		id = COM_commonwealth_tour
-		icon = GFX_goal_generic_major_war
-		cost = 5
-		x = 1.5
-		y = 1
-		prerequisite = {focus = COM_tour_to_lublin }
-		relative_position_id = COM_tour_to_lublin
-		completion_reward = { }
-	}
+    focus = {
+        id = COM_commonwealth_tour
+        icon = GFX_focus_generic_railroad   
+        cost = 5
+        x = 1.5
+        y = 1
+        prerequisite = { focus = COM_tour_to_lublin }
+        relative_position_id = COM_tour_to_lublin
+        completion_reward = { 
+            add_stability = 0.05
+        }
+    }
 
-	focus = {
-		id = COM_one_step_forward
-		icon = GFX_goal_generic_demand_territory
-		cost = 5
-		x = 1
-		y = 1
-		relative_position_id = COM_royal_speech
-		prerequisite = { focus = COM_royal_speech}
-		prerequisite = {focus = COM_tour_to_lublin }
-		
-		completion_reward = { 
-			hidden_effect = {
-				
-				country_event = commonwealth.1 #TU POWINNO ZACHODZIĆ PRZEJŚCIE
-			}
-		}
-	}
+    focus = {
+        id = COM_one_step_forward
+        icon = GFX_goal_generic_demand_territory
+        cost = 5
+        x = 1
+        y = 1
+        relative_position_id = COM_royal_speech
+        prerequisite = { focus = COM_royal_speech }
+        prerequisite = { focus = COM_tour_to_lublin }
+        
+        completion_reward = { 
+            add_political_power = 150
+        }
+    }
 
-	focus = {
-		id = COM_left_crackdown
-		icon = GFX_goal_generic_major_war
-		cost = 5
-		x = -4
-		y = 1
-		relative_position_id = COM_one_step_forward
-		prerequisite = { focus = COM_one_step_forward}
-		mutually_exclusive = { focus = COM_right_crackdown}
-		completion_reward = { }
-	}
+    focus = {
+        id = COM_left_crackdown
+        icon = GFX_goal_anti_comintern_pact
+        cost = 5
+        x = -4
+        y = 1
+        relative_position_id = COM_one_step_forward
+        prerequisite = { focus = COM_one_step_forward }
+        mutually_exclusive = { focus = COM_right_crackdown }
+        completion_reward = { 
+            add_popularity = {
+                ideology = communism
+                popularity = -0.04
+            }
+        }
+    }
 
-	focus = {
-		id = COM_right_crackdown
-		icon = GFX_goal_generic_major_war
-		cost = 5
-		x = -2
-		y = 1
-		relative_position_id = COM_one_step_forward
-		prerequisite = { focus = COM_one_step_forward}
-		mutually_exclusive = { focus = COM_left_crackdown}
-		completion_reward = {
-			annex_country = {
-				target = RCL
-				transfer_troops = yes
-			}
-		 }
-	}
+    focus = {
+        id = COM_right_crackdown
+        icon = GFX_focus_generic_anti_fascist_diplomacy
+        cost = 5
+        x = -2
+        y = 1
+        relative_position_id = COM_one_step_forward
+        prerequisite = { focus = COM_one_step_forward }
+        mutually_exclusive = { focus = COM_left_crackdown }
+        completion_reward = {
+            add_popularity = {
+                ideology = fascism
+                popularity = -0.04
+            }
+         }
+    }
 
-	focus = {
-		id = COM_pommeranian_excercises
-		icon = GFX_goal_generic_cavalry
-		cost = 5
-		x = -5
-		y = 2
-		relative_position_id = COM_one_step_forward
-		prerequisite = {
-			focus = COM_one_step_forward
-		}
-		completion_reward = { }
-	}
+    focus = {
+        id = COM_pommeranian_excercises
+        icon = GFX_goal_generic_cavalry
+        cost = 5
+        x = -5
+        y = 2
+        relative_position_id = COM_one_step_forward
+        prerequisite = {
+            focus = COM_one_step_forward
+        }
+        completion_reward = { 
+			army_experience = 10
+			navy_experience = 10
+        }
+    }
 
-	focus = {
-		id = COM_grand_sejm_meeting
-		icon = GFX_goal_generic_national_unity
-		cost = 5
-		x = 0
-		y = 2
-		relative_position_id = COM_one_step_forward
-		prerequisite = {
-			focus = COM_one_step_forward
-		}
-		completion_reward = { }
-	}
+    focus = {
+        id = COM_grand_sejm_meeting
+        icon = GFX_goal_generic_national_unity
+        cost = 5
+        x = 0
+        y = 2
+        relative_position_id = COM_one_step_forward
+        prerequisite = {
+            focus = COM_one_step_forward
+        }
+        completion_reward = { 
+            add_popularity = {
+                ideology = neutrality
+                popularity = 0.03
+            }
+        }
+    }
 
-	focus = {
-		id = COM_appoint_new_administrators
-		icon = GFX_goal_generic_major_war
-		cost = 5
-		x = 2
-		y = 1
-		prerequisite = {
-			focus = COM_one_step_forward
-		}
-		relative_position_id = COM_one_step_forward
-		completion_reward = { }
-	}
+    focus = {
+        id = COM_appoint_new_administrators
+        icon = GFX_focus_ARG_strengthening_the_concordancia
+        cost = 5
+        x = 2
+        y = 1
+        prerequisite = {
+            focus = COM_one_step_forward
+        }
+        relative_position_id = COM_one_step_forward
+        completion_reward = { 
+            add_political_power = 75
+        }
+    }
 
-	focus = {
-		id = COM_fight_corruption
-		icon = GFX_goal_generic_major_war
-		cost = 5
-		x = 2
-		y = 0
-		prerequisite = {
-			focus = COM_one_step_forward
-		}
-		relative_position_id = COM_appoint_new_administrators
-		completion_reward = { }
-	}
+    focus = {
+        id = COM_fight_corruption
+        icon = GFX_focus_AUS_lawmaking_leniency
+        cost = 5
+        x = 2
+        y = 0
+        prerequisite = {
+            focus = COM_one_step_forward
+        }
+        relative_position_id = COM_appoint_new_administrators
+        completion_reward = { 
+            add_stability = 0.05
+        }
+    }
 
-	focus = {
-		id = COM_rebalancing_the_system
-		icon = GFX_goal_generic_major_war
-		cost = 5
-		x = 1
-		y = 1
-		prerequisite = {
-			focus = COM_appoint_new_administrators
-		}
-		prerequisite = {
-			focus = COM_fight_corruption
-		}
-		relative_position_id = COM_appoint_new_administrators
-		completion_reward = { }
-	}
+    focus = {
+        id = COM_rebalancing_the_system
+        icon = GFX_focus_ARG_defense_and_democracy
+        cost = 5
+        x = 1
+        y = 1
+        prerequisite = {
+            focus = COM_appoint_new_administrators
+        }
+        prerequisite = {
+            focus = COM_fight_corruption
+        }
+        relative_position_id = COM_appoint_new_administrators
+        completion_reward = { 
+            add_political_power = 150
+        }
+    }
 
 }

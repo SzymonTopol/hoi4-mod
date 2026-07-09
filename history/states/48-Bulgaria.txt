@@ -12,6 +12,7 @@ state={
 
 	history={
 		owner = COM
+		add_core_of = COM
 		victory_points = { #Sofia
 			949 15 
 		}
@@ -23,7 +24,6 @@ state={
 			industrial_complex = 6
 			air_base = 3
 		}
-		add_core_of = COM
 	}
 
 	provinces={ 793 935 949 965 3908 3971 9771 11754 }

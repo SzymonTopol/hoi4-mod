@@ -6,7 +6,7 @@ state={
 	manpower = 3523000
 	history={
 		owner = UNT
-		add_core_of = CIP
+		add_core_of = UNT
 		buildings = {
 			infrastructure = 1
 		}

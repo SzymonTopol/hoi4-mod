@@ -8,11 +8,11 @@ state={
 
 	history={
 		owner = RCL
+		add_core_of = RCL
 		buildings = {
 			infrastructure = 3 #was: 5
 			air_base = 3
 		}
-		add_core_of = RCL
 		victory_points = {
 			9098 1
 		}

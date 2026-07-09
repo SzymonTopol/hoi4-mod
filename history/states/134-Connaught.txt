@@ -9,6 +9,7 @@ state=
 
 	history= {
 		owner = UNT
+		add_core_of = UNT
 		victory_points = {
 			9303 3 #Galway
 		}
@@ -18,7 +19,6 @@ state=
 		buildings = {
 			infrastructure = 3 #was: 6
 		}
-		add_core_of = UNT
 	}
 
 	provinces=

@@ -7,7 +7,7 @@ state={
 
 	history={
 		owner = UNT
-		add_core_of = ATJ
+		add_core_of = UNT
 		start_resistance = yes
 		set_resistance = 75
 		set_compliance = 2

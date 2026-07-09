@@ -12,6 +12,7 @@ state={
 
 	history={
 		owner = COM
+		add_core_of = COM
 		victory_points = {
 			9570 10 
 		}
@@ -26,7 +27,6 @@ state={
 			industrial_complex = 1
 			air_base = 6
 		}
-		add_core_of = COM
 
 		1939.1.1 = {
 			buildings = {

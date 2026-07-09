@@ -11,8 +11,7 @@ state={
 	provinces={ 7519 10781 10826 12314 12653 }
 	history={
 		owner = UNT
-		add_core_of = AFG
-		add_core_of = TAJ
+		add_core_of = UNT
 		victory_points = {
 			10781 1
 		}

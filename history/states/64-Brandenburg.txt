@@ -10,6 +10,7 @@ state={
 
 	history={
 		owner = BRG
+		add_core_of = BRG
 		victory_points = {
 			6521 5 
 		}
@@ -20,7 +21,6 @@ state={
 			air_base = 3
 
 		}
-		add_core_of = BRG
 	}
 
 	provinces={ 375 478 3367 3499 6521 9428 9456 9496 11219 11415 11444 11505 }

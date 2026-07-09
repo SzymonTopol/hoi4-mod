@@ -11,6 +11,7 @@ state={
 
 	history={
 		owner = UNT
+		add_core_of = UNT
 		buildings = {
 			infrastructure = 3 #was: 5
 			air_base = 1
@@ -24,7 +25,6 @@ state={
 		victory_points = {
 			2211 1 
 		}
-		add_core_of = UNT
 	}
 	provinces={ 2197 2203 5195 8212 12966 12974 }
 

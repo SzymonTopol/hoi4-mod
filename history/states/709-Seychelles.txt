@@ -8,6 +8,7 @@ state={
 	history=
 	{
 		owner = SPT
+		add_core_of = SPT
 		buildings = {
 			infrastructure = 2
 			2188 = {

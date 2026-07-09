@@ -12,7 +12,7 @@ state = {
 	history = {
 		
 		owner = UNT
-		add_core_of = VIN
+		add_core_of = UNT
 
 		victory_points = {
 			4401 5 # Saigon

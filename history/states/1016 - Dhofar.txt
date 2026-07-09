@@ -8,8 +8,7 @@ state = {
 	history = {
 
 		owner = UNT
-		add_core_of = OMA
-		add_core_of = FSA
+		add_core_of = UNT
 
 		buildings = {
 			infrastructure = 1

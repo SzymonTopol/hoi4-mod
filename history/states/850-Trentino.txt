@@ -11,10 +11,10 @@ state = {
 			9598 1
 		}
 		owner = UNT
+		add_core_of = UNT
 		buildings = {
 			infrastructure = 2 #was 3 before split
 		}
-		add_core_of = UNT
 		add_claim_by = AUS
 	}
 

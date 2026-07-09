@@ -11,11 +11,11 @@ state={
 			9602 3 
 		}
 		owner = COM
+		add_core_of = COM
 		buildings = {
 			infrastructure = 2
 
 		}
-		add_core_of = COM
 
 	}
 
