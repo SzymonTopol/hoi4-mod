@@ -13,8 +13,8 @@ state = {
 
 	history = {
 
-		owner = UNT
-		add_core_of = AUS
+		owner = COM
+		add_core_of = COM
 
 		buildings = {
 			infrastructure = 3 

@@ -7,7 +7,9 @@ state = {
 	}
 
 	history = {
-		owner = UNT
+		owner = COM
+		add_core_of = COM
+
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1
@@ -18,8 +20,7 @@ state = {
 		victory_points = {
 			867 1
 		}
-		add_core_of = YUG
-		add_core_of = MAC
+		
 	}
 
 	provinces = { 833 867 11856 } 

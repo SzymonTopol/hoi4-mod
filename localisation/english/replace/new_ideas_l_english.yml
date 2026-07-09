@@ -1,7 +1,7 @@
 ﻿l_english:
  ABILITY_TOOLTIP_NAME:0 "$NAME|H$"
  ABILITY_TOOLTIP_NAME_CANCEL:0 "§RCancel: $NAME|H$§!"
- ABILITY_TOOLTIP_COST:0 "Command Power Cost: $VALUE|H$"
+
  ABILITY_TOOLTIP_DETAILED_COST:0 "    - Base cost: $VALUE|H2$ (each for $UNITS|H0$ battalions)"
  ABILITY_TOOLTIP_DETAILED_COST_FACTOR:0 "    - Abilities cost: $FACTOR|+%$"
  ABILITY_TOOLTIP_DAILY_COST:0 "Command Power Daily Cost: $VALUE|H2$"
@@ -10,7 +10,7 @@
  ABILITY_TOOLTIP_IS_ALREADY_ACTIVE:0 "§RAbility is already active.§!"
  ABILITY_TOOLTIP_IS_IN_COOLDOWN:0 "§RAbility is in cooldown.§!"
  ABILITY_LEADER_CANNOT_USE_ABILITIES:1 "§RUnit Leader sick or wounded and cannot use abilities.§!"
- ABILITY_TOOLTIP_DURATION:0 "Duration: $VALUE|H$"
+
  ABILITY_TOOLTIP_COOLDOWN:0 "Cooldown: $VALUE|H$"
  ABILITY_TOOLTIP_ALREADY_ACTIVE_GROUP:0 "§RThis Ability is already active at the Army Group level.§!"
  ABILITY_TOOLTIP_ALREADY_ACTIVE_CHILD_GROUPS:0 "§RThis Ability is already active for all child groups.§!"
@@ -19,10 +19,9 @@
  ABILITY_DUR_HOURS:0 "$num|H$ hours"
  ABILITY_DUR_DAYS:0 "$num|H$ days"
  ABILITY_LAST_STAND:0 "Last Stand"
- ABILITY_LAST_STAND_TOOLTIP:0 "Last Stand ($LEADER$)"
  ABILITY_LAST_STAND_DESC:0 "Your armies will get a defensive bonus at the expense of some disadvantages."
  ABILITY_FORCE_ATTACK:0 "Force Attack"
- ABILITY_FORCE_ATTACK_TOOLTIP:0 "Force Attack ($LEADER$)"
+
  ABILITY_FORCE_ATTACK_DESC:0 "Your armies will get an offensive bonus at the expense of some disadvantages."
  ABILITY_STAFF_OFFICE_PLAN:0 "Staff Office Plan"
  ABILITY_STAFF_OFFICE_PLAN_DESC:0 "Your units will get a major boost to their planning speed."

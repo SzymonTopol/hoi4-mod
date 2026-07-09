@@ -13,8 +13,8 @@ state = {
 
 	history = {
 
-		owner = UNT
-		add_core_of = HUN
+		owner = COM
+		add_core_of = COM
 
 		victory_points = {
 			11610 5 

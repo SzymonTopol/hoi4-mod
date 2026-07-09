@@ -7,3 +7,4 @@ tags={
 }
 name="Commonwealth Resurgent"
 supported_version="1.19.2.0"
+replace_path="history/countries"

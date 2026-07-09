@@ -1,0 +1,33 @@
+﻿l_english:
+
+#############################################
+################### NASZE ###################
+#############################################
+
+#Commonwealth
+
+commonwealth.1.t: "The King has died!"
+commonwealth.1.d: "Earlier this morning, Sigismund V was leaving his mansion when disaster struck. His leg slipped on the stairs, causing our monarch to tumble all the way down and fracture his spine. This event threw a wrench into his plans of reforming the state. As the procession carrying his body moves forward in Warsaw, the question on many minds is: What now?"
+commonwealth.1.a: "Time to mourn this great man"
+
+commonwealth.2.t: "The Sejm argument"
+commonwealth.2.d: "Today, on the floor of the Commonwealth Sejm, an argument erupted between a liberal and a monarchist, each having their own ideas on how we should proceed following the untimely death of our monarch. Monarchists want to elect a new one as quickly as possible, while the liberals prefer to postpone it a little."
+commonwealth.2.a: "Please stop arguing, he just died!"
+
+commonwealth.3.t: "Army stops responding"
+commonwealth.3.d: "With the Sejm in deadlock and no monarch reigning over the Commonwealth, frantic and conflicting orders are being sent to almost every division. Given the utter state of Commonwealth organization, divisions and generals have begun to stop responding to these calls one by one, opting to simply wait out the chaos. While their actions are somewhat understandable, it is also deeply unsettling for some that the army doesn't listen to the government."
+commonwealth.3.a: "Oh crumbs..."
+
+commonwealth.4.t: "The nobility calls a convention"
+commonwealth.4.d: "Following the disagreements within the Sejm, the Szlachta decided to proceed with the election of a new monarch by calling a special nobility convention. In response, the governing coalition announced that they wouldn't recognize Szlachta's chosen monarch without their oversight."
+commonwealth.4.a: "Things are heating up"
+
+commonwealth.5.t: "Students take to the streets"
+commonwealth.5.d: "Students dissatisfied with their current state and the lack of government help have opted to go out to the streets, demanding sweeping reforms. There are reports of far-right and far-left agitators present within these protest groups."
+commonwealth.5.a: "Don't they have anything better to do?"
+
+commonwealth.6.t: "A deep breath"
+commonwealth.6.d: "The situation within the Commonwealth is quickly reaching a breaking point. If we don't do anything, we risk an all-out state collapse. Faced with this situation, each of the major political blocs has drafted a different plan to keep the Commonwealth together: \n \n§gThe conservatives plan to use parts of the army sympathetic to their cause to appoint a military cabinet, which will bring order to the country.§!\n \n§CThe liberals have already begun plans to temporarily extend the current session of Parliament and then extend it until the crisis is resolved.§!\n \n§RThe monarchists call for a regency council to take charge of the state until a new monarch is elected.§!\n \nIt appears that the status quo will be altered, but by whom?\n"
+commonwealth.6.a: "§gThe military cabint takes charge§!"
+commonwealth.6.b: "§CSejm session is extended§!"
+commonwealth.6.c: "§RThe Regency council moves forward§!"

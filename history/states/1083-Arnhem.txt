@@ -1,4 +1,4 @@
-﻿
+
 state={
 	id=1083
 	name="STATE_1083"
@@ -12,6 +12,10 @@ state={
 			infrastructure = 4
 			arms_factory = 1
 			industrial_complex = 2
+
+			11318 = {
+				naval_base = 1
+			}
 		}
 		victory_points = {
 			9363 2.0 

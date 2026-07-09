@@ -1,0 +1,11 @@
+entity = {
+	name = "ITA_mechanized_vehicle_1_entity"
+}
+
+entity = {
+	name = "GER_super_heavy_armor_entity"
+}
+
+entity = {
+	name = "SOV_super_heavy_armor_entity"
+}
