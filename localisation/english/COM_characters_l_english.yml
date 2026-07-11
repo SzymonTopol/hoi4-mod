@@ -1,0 +1,23 @@
+﻿l_english:
+ # Character Names
+ COM_sigismund_v_name:0 "Sigismund V"
+ COM_interregnum_name:0 "Interregnum"
+ COM_military_cabinet_name:0 "The Military Cabinet"
+ COM_extended_sejm_name:0 "The Extended Sejm"
+ COM_regency_council_name:0 "The Regency Council"
+
+ # Trait Names & Descriptions
+ COM_reformer_trait:0 "Cautious Reformer"
+ COM_reformer_trait_desc:0 "Aware of the growing rot within the Commonwealth, this leader is attempting to push through much-needed reforms without upsetting the fragile balance of power."
+
+ COM_unstable_interregnum:0 "Power Vacuum"
+ COM_unstable_interregnum_desc:0 "With the throne empty and the state paralyzed, chaos reigns. The lack of central authority is tearing the nation apart."
+
+ COM_military_cabinet_trait:0 "Rule by Decree"
+ COM_military_cabinet_trait_desc:0 "The military has taken the reins of the state. Order will be maintained at all costs, even if it means prioritizing the armed forces over civilian needs."
+
+ COM_parliamentary_rule:0 "Extended Session"
+ COM_parliamentary_rule_desc:0 "The Sejm has seized temporary executive control. While bureaucratic, it provides a semblance of democratic stability."
+
+ COM_regency_council_trait:0 "Awaiting a Monarch"
+ COM_regency_council_trait_desc:0 "The state is governed by a council of nobles holding the throne in trust. While it maintains tradition, the lack of a true monarch leaves the nation feeling adrift."

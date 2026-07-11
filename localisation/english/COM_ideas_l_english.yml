@@ -1,0 +1,15 @@
+﻿l_english:
+ COM_slowly_stagnating_economy:0 "Slowly Stagnating Economy"
+ COM_slowly_stagnating_economy_desc:0 "Despite our extensive network of client states, the bad investments of the spoils have led to economy slowly chugging itself."
+ 
+ COM_underfunded_research:0 "Underfunded Research"
+ COM_underfunded_research_desc:0 "A lack of government funding has severely hampered our scientific community's ability to innovate."
+ 
+ COM_rise_of_radicalism:0 "Rise of Radicalism"
+ COM_rise_of_radicalism_desc:0 "Political instability and economic woes are driving the populace toward radical ideologies."
+ 
+ COM_overextended_military:0 "Overextended Military"
+ COM_overextended_military_desc:0 "Our military is stretched thin across the globe, and our forces are struggling to maintain control over our vast territories.\n\n§RWhile this spirit is active, we cannot edit, create, or disband division templates§!"
+
+ COM_against_all_odds:0 "Against All Odds"
+ COM_against_all_odds_desc:0 "No matter how dire the situation becomes, our people endured far worse. We will persevere and overcome the challenges ahead."

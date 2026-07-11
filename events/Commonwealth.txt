@@ -2,183 +2,211 @@ add_namespace = commonwealth
 
 # Hidden starter event to accurately trigger the chain 75-100 days from game start
 country_event = {
-	id = commonwealth.0
-	hidden = yes
-	
-	trigger = {
-		tag = COM
-		date > 1935.12.31 # Fires as soon as the game starts
-	}
-	
-	fire_only_once = yes
-	
-	immediate = {
-		# 75 days base delay + up to 25 random days = 75 to 100 days
-		country_event = { id = commonwealth.1 days = 75 random_days = 25 }
-	}
+    id = commonwealth.0
+    hidden = yes
+    
+    trigger = {
+        tag = COM
+        date > 1935.12.31 
+    }
+    
+    fire_only_once = yes
+    
+    immediate = {
+        country_event = { id = commonwealth.1 days = 60 random_days = 25 } #it is important to include 14 day delay of event holding
+    }
 }
 
 country_event = { #monarch death
-	id = commonwealth.1
-	title = commonwealth.1.t
-	desc = commonwealth.1.d
-	picture = GFX_report_event_generic_funeral
+    id = commonwealth.1
+    title = commonwealth.1.t
+    desc = commonwealth.1.d
+    picture = GFX_report_event_generic_funeral
 
-	is_triggered_only = yes
+    is_triggered_only = yes
 
-	immediate = {
-		# Swaps the tree immediately upon event pop-up, canceling current focus
-		load_focus_tree = empty_focus
-	}
+    immediate = {
+        load_focus_tree = empty_focus
+        
+        retire_character = COM_sigismund_v
+        
+        add_country_leader_role = {
+            character = COM_interregnum
+            promote_leader = yes
+            country_leader = {
+                ideology = despotism
+                traits = { COM_unstable_interregnum }
+            }
+        }
+    }
+    option = {
+        name = commonwealth.1.a
+        
+        add_stability = -0.05
 
-	option = {
-		name = commonwealth.1.a
-
-		hidden_effect = {
-			COM = {
-				# 1 day base + up to 6 random days = 1 to 7 days
-				country_event = { id = commonwealth.2 days = 1 random_days = 6 }
-			}
-		}
-	}
+        hidden_effect = {
+            COM = {
+                country_event = { id = commonwealth.2 days = 1 random_days = 6 }
+            }
+        }
+    }
 }
 
 country_event = { #sejm argument
-	id = commonwealth.2
-	title = commonwealth.2.t
-	desc = commonwealth.2.d
-	picture = GFX_report_event_generic_funeral
+    id = commonwealth.2
+    title = commonwealth.2.t
+    desc = commonwealth.2.d
+    picture = GFX_report_event_ITA_democratic_parlament
 
-	is_triggered_only = yes
+    is_triggered_only = yes
 
-	option = {
-		name = commonwealth.2.a
+    option = {
+        name = commonwealth.2.a
+        
+        add_political_power = -25
 
-		hidden_effect = {
-			COM = {
-				country_event = { id = commonwealth.3 days = 1 random_days = 6 }
-			}
-		}
-
-	}
-
+        hidden_effect = {
+            COM = {
+                country_event = { id = commonwealth.3 days = 1 random_days = 6 }
+            }
+        }
+    }
 }
 
 country_event = { #army stops responding
-	id = commonwealth.3
-	title = commonwealth.3.t
-	desc = commonwealth.3.d
-	picture = GFX_report_event_generic_funeral
+    id = commonwealth.3
+    title = commonwealth.3.t
+    desc = commonwealth.3.d
+    picture = GFX_report_event_ARG_coup_detat
 
-	is_triggered_only = yes
+    is_triggered_only = yes
 
-	option = {
-		name = commonwealth.3.a
+    option = {
+        name = commonwealth.3.a
+        
+        add_war_support = -0.05
+        add_command_power = -10
 
-		hidden_effect = {	
-			COM = {
-				country_event = { id = commonwealth.4 days = 1 random_days = 6 }
-			}
-		}
-
-	}
-
+        hidden_effect = {   
+            COM = {
+                country_event = { id = commonwealth.4 days = 1 random_days = 6 }
+            }
+        }
+    }
 }
 
 country_event = { #the nobility calls a convention
-	id = commonwealth.4
-	title = commonwealth.4.t
-	desc = commonwealth.4.d
-	picture = GFX_report_event_generic_funeral
+    id = commonwealth.4
+    title = commonwealth.4.t
+    desc = commonwealth.4.d
+    picture = GFX_report_event_generic_peaceful_annexation
 
-	is_triggered_only = yes
+    is_triggered_only = yes
 
-	option = {
-		name = commonwealth.4.a
+    option = {
+        name = commonwealth.4.a
+        
+        add_political_power = -20
 
-		hidden_effect = {
-			COM = {
-				country_event = { id = commonwealth.5 days = 1 random_days = 6 }
-			}
-		}
-
-	}
-
+        hidden_effect = {
+            COM = {
+                country_event = { id = commonwealth.5 days = 1 random_days = 6 }
+            }
+        }
+    }
 }
 
 country_event = { #students go to the streets
-	id = commonwealth.5
-	title = commonwealth.5.t
-	desc = commonwealth.5.d
-	picture = GFX_report_event_generic_funeral
+    id = commonwealth.5
+    title = commonwealth.5.t
+    desc = commonwealth.5.d
+    picture = GFX_report_event_DEN_celebration
 
-	is_triggered_only = yes
+    is_triggered_only = yes
 
-	option = {
-		name = commonwealth.5.a
+    option = {
+        name = commonwealth.5.a
+        
+        add_stability = -0.03
 
-		hidden_effect = {
-			COM = {
-				country_event = { id = commonwealth.6 days = 1 random_days = 6 }
-			}
-		}
-
-	}
-
+        hidden_effect = {
+            COM = {
+                country_event = { id = commonwealth.6 days = 1 random_days = 6 }
+            }
+        }
+    }
 }
 
 country_event = { #a deep breath
-	id = commonwealth.6
-	title = commonwealth.6.t
-	desc = commonwealth.6.d
-	picture = GFX_report_event_generic_funeral
+    id = commonwealth.6
+    title = commonwealth.6.t
+    desc = commonwealth.6.d
+    # picture = GFX_report_event_generic_funeral
 
-	is_triggered_only = yes
+    is_triggered_only = yes
 
-	option = {
-		name = commonwealth.6.a #conservatives route
-		
-		# Adds the hover description text
-		custom_effect_tooltip = commonwealth_unlock_focuses_tt
+    option = {
+        name = commonwealth.6.a #conservatives route (Military Cabinet, Non-Aligned)
+        
+        custom_effect_tooltip = commonwealth_unlock_focuses_tt
+        
+        retire_character = COM_interregnum
+        
+        add_country_leader_role = {
+            character = COM_military_cabinet
+            promote_leader = yes
+            country_leader = {
+                ideology = despotism
+                traits = { COM_military_cabinet_trait }
+            }
+        }
 
-		hidden_effect = {
-			COM = {
-				load_focus_tree = conservatives_starting_focus
-			}
-		}
+        hidden_effect = {
+            COM = { load_focus_tree = conservatives_starting_focus }
+        }
+    }
 
-	}
+    option = {
+        name = commonwealth.6.b #liberals route (Extended Sejm, Democratic)
+        
+        custom_effect_tooltip = commonwealth_unlock_focuses_tt
+        
+        set_politics = { ruling_party = democratic }
+        retire_character = COM_interregnum
+        
+        add_country_leader_role = {
+            character = COM_extended_sejm
+            promote_leader = yes
+            country_leader = {
+                ideology = liberalism
+                traits = { COM_parliamentary_rule }
+            }
+        }
 
-	option = {
-		name = commonwealth.6.b #liberals route
-		
-		custom_effect_tooltip = commonwealth_unlock_focuses_tt
+        hidden_effect = {
+            COM = { load_focus_tree = liberals_starting_focus }
+        }
+    }
 
-		hidden_effect = {
-			COM = {
-				load_focus_tree = liberals_starting_focus
-			}
-		}
-	
-	}
+    option = {
+        name = commonwealth.6.c #monarchists route (Regency Council, Non-Aligned)
+        
+        custom_effect_tooltip = commonwealth_unlock_focuses_tt
+        
+        # set_politics = { ruling_party = neutrality }
+        retire_character = COM_interregnum
+        
+        add_country_leader_role = {
+            character = COM_regency_council
+            promote_leader = yes
+            country_leader = {
+                ideology = oligarchism
+                traits = { COM_regency_council_trait }
+            }
+        }
 
-	option = {
-		name = commonwealth.6.c #monarchists route
-		
-		custom_effect_tooltip = commonwealth_unlock_focuses_tt
-
-		hidden_effect = {
-			COM = {
-				load_focus_tree = monarchists_starting_focus
-			}
-		}
-
-	}
-
+        hidden_effect = {
+            COM = { load_focus_tree = monarchists_starting_focus }
+        }
+    }
 }
-
-#add_namespace = conservatives
-#
-#add_namespace = liberals
-#
-#add_namespace = monarchists

@@ -25,7 +25,7 @@ add_command_power = 20
 
 set_oob = "COM_1936"
 
-recruit_character = COM_luki
+country_lock_all_division_template = yes
 
 #ustawnianie startowych puppetów (będzie ich sporo)
 puppet = CCR
@@ -69,18 +69,21 @@ add_to_faction = MEK
 add_to_faction = SHL
 add_to_faction = HLS
 
-
-country_lock_all_division_template = yes
-
 set_convoys = 20
 
-
 set_politics = {
-	ruling_party = neutrality
-	last_election = "1936.1.1"
-	election_frequency = 48
-	elections_allowed = no
+    ruling_party = neutrality
+    last_election = "1936.1.1"
+    election_frequency = 48
+    elections_allowed = no
 }
+
+recruit_character = COM_sigismund_v
+recruit_character = COM_interregnum
+recruit_character = COM_military_cabinet
+recruit_character = COM_extended_sejm
+recruit_character = COM_regency_council
+
 
 set_popularities = {
 	democratic = 20
@@ -89,13 +92,10 @@ set_popularities = {
 	neutrality = 60
 }
 
-#eate_country_leader = {
-#	name = "Łuki Postrożny"
-#	desc = ""
-#	#picture = GFX_Portrait_Afghanistan_Mohammed_Zahir_Shah #GFX_portrait_Ahmed_Ben_Bella #
-#	picture = gfx
-#	ideology = despotism
-#	#traits = {
-#	#	#
-#	#}
-#
+add_ideas = {
+	COM_slowly_stagnating_economy
+	COM_underfunded_research
+	COM_rise_of_radicalism
+	COM_overextended_military
+	COM_against_all_odds
+}

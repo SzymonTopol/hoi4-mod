@@ -27,7 +27,8 @@ commonwealth.5.d: "Students dissatisfied with their current state and the lack o
 commonwealth.5.a: "Don't they have anything better to do?"
 
 commonwealth.6.t: "A deep breath"
-commonwealth.6.d: "The situation within the Commonwealth is quickly reaching a breaking point. If we don't do anything, we risk an all-out state collapse. Faced with this situation, each of the major political blocs has drafted a different plan to keep the Commonwealth together: \n \n§gThe conservatives plan to use parts of the army sympathetic to their cause to appoint a military cabinet, which will bring order to the country.§!\n \n§CThe liberals have already begun plans to temporarily extend the current session of Parliament and then extend it until the crisis is resolved.§!\n \n§RThe monarchists call for a regency council to take charge of the state until a new monarch is elected.§!\n \nIt appears that the status quo will be altered, but by whom?\n"
-commonwealth.6.a: "§gThe military cabint takes charge§!"
+commonwealth.6.d: "The situation within the Commonwealth is quickly reaching a breaking point. If we don't do anything, we risk an all-out state collapse. Faced with this situation, each of the major political blocs has drafted a different plan to keep the Commonwealth together: \n \n§BThe conservatives plan to use parts of the army sympathetic to their cause to appoint a military cabinet, which will bring order to the country.§!\n \n§CThe liberals have already begun plans to temporarily extend the current session of Parliament and then extend it until the crisis is resolved.§!\n \n§RThe monarchists call for a regency council to take charge of the state until a new monarch is elected.§!\n \nIt appears that the status quo will be altered, but by whom?\n"
+commonwealth.6.a: "§gThe military cabinet takes charge§!"
 commonwealth.6.b: "§CSejm session is extended§!"
 commonwealth.6.c: "§RThe Regency council moves forward§!"
+commonwealth_unlock_focuses_tt: "Unlocks new focuses"

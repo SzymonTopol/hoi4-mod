@@ -1,0 +1,72 @@
+ideas = {
+	country = {
+		
+		COM_slowly_stagnating_economy = {
+			picture = ETH_customs_barrier_ITA
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.10
+				production_factory_max_efficiency_factor = -0.15
+			}
+		}
+
+		COM_underfunded_research = {
+			picture = jap_duplicate_research
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = -0.12
+			}
+		}
+
+		COM_rise_of_radicalism = {
+			picture = chi_war_of_resistance3
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = 0.02
+				fascism_drift = 0.02
+			}
+		}
+
+		COM_overextended_military = {
+			picture = MEX_callistas
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = -0.20
+			}
+
+			
+    		on_add = {
+    		    country_lock_all_division_template = yes
+    		}
+		
+    		
+    		on_remove = {
+    		    country_lock_all_division_template = no
+    		}
+		}
+
+		COM_against_all_odds = {
+			picture = FRA_matignon_agreements
+			allowed = { always = yes }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			
+			modifier = {
+				surrender_limit = 0.08
+			}
+		}
+		
+	}
+}

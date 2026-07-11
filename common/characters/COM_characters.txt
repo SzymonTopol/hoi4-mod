@@ -1,0 +1,53 @@
+characters = {
+    
+    COM_sigismund_v = {
+        name = COM_sigismund_v_name
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/LIT/portrait_lit_antanas_smetona.dds"
+            }
+        }
+        country_leader = {
+            ideology = despotism
+            traits = { COM_reformer_trait }
+            expire = "1965.1.1"
+            id = -1
+        }
+    }
+
+    COM_interregnum = {
+        name = COM_interregnum_name
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/POL/portrait_POL_Sejmik_Regency.dds"
+            }
+        }
+    }
+
+    COM_military_cabinet = {
+        name = COM_military_cabinet_name
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/SWE/Portrait_SWE_nordic_defense_council.dds"
+            }
+        }
+    }
+
+    COM_extended_sejm = {
+        name = COM_extended_sejm_name
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/POL/Portrait_POL_the_sejm.dds"
+            }
+        }
+    }
+
+    COM_regency_council = {
+        name = COM_regency_council_name
+        portraits = {
+            civilian = {
+                large = "gfx/leaders/RAJ/Portrait_RAJ_the_board_of_directors.dds"
+            }
+        }
+    }
+}

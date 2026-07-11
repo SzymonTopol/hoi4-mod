@@ -1,0 +1,32 @@
+leader_traits = {
+    
+    COM_reformer_trait = {
+        random = no
+        political_power_gain = 0.10
+        production_factory_max_efficiency_factor = 0.05
+    }
+    
+    COM_unstable_interregnum = {
+        random = no
+        stability_factor = -0.20 # Fixed!
+        political_power_gain = -0.25
+    }
+
+    COM_military_cabinet_trait = {
+        random = no
+        army_org_factor = 0.05
+        consumer_goods_factor = 0.05
+    }
+
+    COM_parliamentary_rule = {
+        random = no
+        political_power_gain = 0.15
+        stability_factor = 0.05 # Fixed!
+    }
+
+    COM_regency_council_trait = {
+        random = no
+        stability_factor = -0.05 # Fixed!
+        political_power_gain = 0.05
+    }
+}
