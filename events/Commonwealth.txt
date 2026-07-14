@@ -163,6 +163,8 @@ country_event = { #a deep breath
 
         hidden_effect = {
             COM = { load_focus_tree = conservatives_starting_focus }
+            set_country_flag = COM_chose_conservatives
+            country_event = { id = commonwealth.7 days = 30 }
         }
     }
 
@@ -185,6 +187,8 @@ country_event = { #a deep breath
 
         hidden_effect = {
             COM = { load_focus_tree = liberals_starting_focus }
+            set_country_flag = COM_chose_liberals
+            country_event = { id = commonwealth.7 days = 30 }
         }
     }
 
@@ -207,6 +211,169 @@ country_event = { #a deep breath
 
         hidden_effect = {
             COM = { load_focus_tree = monarchists_starting_focus }
+            set_country_flag = COM_chose_monarchists
+            country_event = { id = commonwealth.7 days = 10 random_days = 2 }
         }
+    }
+}
+
+country_event = {
+    id = commonwealth.7
+    title = commonwealth.7.t
+    desc = commonwealth.7.d
+    picture = GFX_report_event_generic_conflict
+
+    is_triggered_only = yes
+
+    immediate = {
+
+        load_focus_tree = empty_focus
+        
+        88 = { add_core_of = CCO }
+        807 = { add_core_of = CLB }
+        259 = { add_core_of = CMO }
+
+        CCO = { transfer_state = 88 }
+        CLB = { transfer_state = 807 }
+        CMO = { transfer_state = 259 }
+        
+        if = {
+            limit = { has_country_flag = COM_chose_conservatives }
+            CCO = { change_tag_from = ROOT }
+        }
+        else_if = {
+            limit = { has_country_flag = COM_chose_liberals }
+            CLB = { change_tag_from = ROOT }
+        }
+        else_if = {
+            limit = { has_country_flag = COM_chose_monarchists }
+            CMO = { change_tag_from = ROOT }
+        }
+
+        # 5. Clean up the flags
+        clr_country_flag = COM_chose_conservatives
+        clr_country_flag = COM_chose_liberals
+        clr_country_flag = COM_chose_monarchists
+    }
+    option = {
+         name = commonwealth.7.a
+    }
+}
+
+country_event = {
+    id = commonwealth.8
+    title = commonwealth.8.t
+    desc = commonwealth.8.d
+    picture = GFX_report_event_generic_conflict
+
+    is_triggered_only = yes
+
+    immediate = {
+        # ==========================================
+        # PHASE 1: TRANSFER MARKED STATES AND CORES
+        # ==========================================
+        every_state = {
+            limit = { has_state_flag = marked_by_CCO }
+            add_core_of = CCO
+            CCO = { transfer_state = PREV } # PREV targets the state from the loop
+        }
+        every_state = {
+            limit = { has_state_flag = marked_by_CLB }
+            add_core_of = CLB
+            CLB = { transfer_state = PREV }
+        }
+        every_state = {
+            limit = { has_state_flag = marked_by_CMO }
+            add_core_of = CMO
+            CMO = { transfer_state = PREV }
+        }
+
+        # ==========================================
+        # PHASE 2: SPAWN 2 MILITIAS PER OWNED STATE
+        # ==========================================
+        
+        # Conservatives
+        CCO = {
+            division_template = {
+                name = "Conservative Militia"
+                regiments = {
+                    infantry = { x = 0 y = 0 }
+                    infantry = { x = 0 y = 1 }
+                    infantry = { x = 0 y = 2 }
+                    infantry = { x = 1 y = 0 }
+                    infantry = { x = 1 y = 1 }
+                    infantry = { x = 1 y = 2 }
+                }
+            }
+            
+            every_owned_state = {
+                create_unit = {
+                    owner = CCO 
+                    # Everything must be packed into this one ridiculous string!
+                    division = "name = \"Conservative Militia\" division_template = \"Conservative Militia\" start_equipment_factor = 0.7"
+                }
+                create_unit = {
+                    owner = CCO 
+                    division = "name = \"Conservative Militia\" division_template = \"Conservative Militia\" start_equipment_factor = 0.7"
+                }
+            }
+        }
+
+        # Liberals
+        CLB = {
+            division_template = {
+                name = "Liberal Militia"
+                regiments = {
+                    infantry = { x = 0 y = 0 }
+                    infantry = { x = 0 y = 1 }
+                    infantry = { x = 0 y = 2 }
+                    infantry = { x = 1 y = 0 }
+                    infantry = { x = 1 y = 1 }
+                    infantry = { x = 1 y = 2 }
+                }
+            }
+            
+            every_owned_state = {
+                create_unit = {
+                    owner = CLB 
+                    division = "name = \"Liberal Militia\" division_template = \"Liberal Militia\" start_equipment_factor = 0.7"
+                }
+                create_unit = {
+                    owner = CLB 
+                    division = "name = \"Liberal Militia\" division_template = \"Liberal Militia\" start_equipment_factor = 0.7"
+                }
+            }
+        }
+
+        # Monarchists
+        CMO = {
+            division_template = {
+                name = "Royalist Militia"
+                regiments = {
+                    infantry = { x = 0 y = 0 }
+                    infantry = { x = 0 y = 1 }
+                    infantry = { x = 0 y = 2 }
+                    infantry = { x = 1 y = 0 }
+                    infantry = { x = 1 y = 1 }
+                    infantry = { x = 1 y = 2 }
+                }
+            }
+            
+            every_owned_state = {
+                create_unit = {
+                    owner = CMO 
+                    division = "name = \"Royalist Militia\" division_template = \"Royalist Militia\" start_equipment_factor = 0.7"
+                }
+                create_unit = {
+                    owner = CMO 
+                    division = "name = \"Royalist Militia\" division_template = \"Royalist Militia\" start_equipment_factor = 0.7"
+                }
+            }
+        }
+    }
+
+    option = {
+        name = commonwealth.8.a
+        # Any immediate war declarations can go here!
     }
 }

@@ -1,0 +1,87 @@
+com_civil_war_scramble_category = {
+
+    claim_com_state_decision = {
+        icon = generic_decision
+        
+        state_target = yes 
+        
+        target_trigger = {
+            FROM = {
+                is_owned_by = COM
+                NOT = { state = 88 }
+                NOT = { state = 807 }
+                NOT = { state = 259 }
+                NOT = { state = 96 }
+                NOT = { state = 45 }
+                NOT = { has_state_flag = com_cw_state_marked }
+            }
+        }
+
+        cost = 1
+        fire_only_once = yes 
+        
+        available = {
+            NOT = { has_country_flag = com_scramble_cooldown }
+        }
+
+        ai_will_do = {
+            base = 1
+            modifier = {
+                add = 100
+                FROM = {
+                    any_neighbor_state = {
+                        OR = {
+                            is_owned_by = ROOT 
+                            AND = { ROOT = { tag = CCO } has_state_flag = marked_by_CCO }
+                            AND = { ROOT = { tag = CLB } has_state_flag = marked_by_CLB }
+                            AND = { ROOT = { tag = CMO } has_state_flag = marked_by_CMO }
+                        }
+                    }
+                }
+            }
+        }
+
+        complete_effect = {
+            # This flag now automatically deletes itself after 2 days!
+            set_country_flag = { 
+                flag = com_scramble_cooldown 
+                value = 1
+                days = 2 
+            }
+            FROM = { 
+                custom_effect_tooltip = com_state_secured_tt 
+
+                hidden_effect = {
+                    set_state_flag = com_cw_state_marked
+
+                    if = { limit = { ROOT = { tag = CCO } } set_state_flag = marked_by_CCO }
+                    if = { limit = { ROOT = { tag = CLB } } set_state_flag = marked_by_CLB }
+                    if = { limit = { ROOT = { tag = CMO } } set_state_flag = marked_by_CMO }
+                }
+            }
+
+            # 5. ENDGAME CHECK: Are all valid states gone?
+            if = {
+                limit = {
+                    NOT = {
+                        any_state = {
+                            is_owned_by = COM
+                            NOT = { state = 88 }
+                            NOT = { state = 807 }
+                            NOT = { state = 259 }
+                            NOT = { state = 96 }
+                            NOT = { state = 45 }
+                            NOT = { has_state_flag = com_cw_state_marked }
+                        }
+                    }
+                    # We add this so the event doesn't fire 3 times if paused
+                    NOT = { has_global_flag = ready_for_COM_civil_war } 
+                }
+                set_global_flag = ready_for_COM_civil_war
+                
+                # This triggers the 5-day timer for the country that clicked the last state
+                country_event = { id = commonwealth.8 days = 5 } 
+            }
+        }
+    }
+}

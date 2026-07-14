@@ -1,0 +1,11 @@
+com_civil_war_scramble_category = {
+    icon = generic_operations
+    
+    allowed = {
+        OR = {
+            tag = CCO
+            tag = CLB
+            tag = CMO
+        }
+    }
+}

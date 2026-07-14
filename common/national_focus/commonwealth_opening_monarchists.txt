@@ -14,10 +14,15 @@ focus_tree = {
 	focus = {
 		id = COM_regency_council
 		icon = GFX_goal_generic_major_war
-		cost = 1
+		cost = 2
 		x = 3
 		y = 0
-		completion_reward = { }
+		completion_reward = { 
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+		}
 	}
 
 	focus = {
@@ -27,7 +32,9 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = COM_regency_council
-		completion_reward = { }
+		completion_reward = { 
+			add_stability = 0.05
+		}
 		prerequisite = {focus = COM_regency_council}
 	}
 
@@ -38,7 +45,10 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = COM_regency_council
-		completion_reward = { }
+		completion_reward = { 
+			add_war_support = -0.20
+			add_stability = -0.05
+		}
 		prerequisite = {focus = COM_regency_council}
 	}
 
@@ -49,7 +59,12 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = COM_szlachta_convention
-		completion_reward = { }
+		completion_reward = { 
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+		}
 		prerequisite = {focus = COM_szlachta_convention}
 		prerequisite = {focus = COM_transfer_units}
 	}
@@ -62,9 +77,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = COM_new_candidate
 		completion_reward = { 
-			CMO = {
-				change_tag_from = COM
-			}
+			add_stability = -0.60
 		}
 		prerequisite = {focus = COM_new_candidate}
 	}
