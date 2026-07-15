@@ -6,6 +6,8 @@ com_civil_war_scramble_category = {
             tag = CCO
             tag = CLB
             tag = CMO
+            tag = CNA
+            tag = CCM
         }
     }
 }

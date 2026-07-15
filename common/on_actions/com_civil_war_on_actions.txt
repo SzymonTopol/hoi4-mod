@@ -1,0 +1,93 @@
+on_actions = {
+    on_capitulation = {
+        effect = {
+            # ROOT is the country capitulating (the loser)
+            # FROM is the country they are capitulating to (the winner)
+            
+            if = {
+                limit = {
+                    # Is the loser one of our factions?
+                    OR = { tag = CCO tag = CLB tag = CMO tag = CNA tag = CCM}
+                    # Is the winner one of our factions?
+                    FROM = { OR = { tag = CCO tag = CLB tag = CMO tag = CNA tag = CCM } }
+                }
+                
+                # 1. Give the winner cores on the loser's land to prevent resistance
+                ROOT = {
+                    every_owned_state = {
+                        add_core_of = FROM
+                    }
+                }
+
+                # 2. The winner instantly annexes the loser
+                FROM = {
+                    annex_country = {
+                        target = ROOT
+                        transfer_troops = yes # They absorb the loser's surviving militias!
+                    }
+                }
+            }
+        }
+    }
+
+	on_state_control_changed = {
+        effect = {
+            # ROOT = Conqueror (Country)
+            # FROM = Loser (Country)
+            # FROM.FROM = State changing hands
+            
+            # --- PENALIZE THE LOSER ---
+            if = {
+                limit = {
+                    FROM = {
+                        OR = { tag = CCO tag = CLB tag = CMO tag = CNA tag = CCM }
+                    }
+                    # Scope shifts to the State, checks if it's a core of the Loser
+                    FROM.FROM = { is_core_of = FROM } 
+                }
+                
+                FROM = {
+                    # Apply modifier if they don't have it
+                    if = {
+                        limit = { NOT = { has_dynamic_modifier = com_state_lost_demoralization } }
+                        set_variable = { com_demoralization_var = 0 }
+                        add_dynamic_modifier = { modifier = com_state_lost_demoralization }
+                    }
+                    
+                    # Worsen the penalty
+                    subtract_from_variable = { com_demoralization_var = 0.025 }
+                    
+                    # Cap at -50%
+                    if = {
+                        limit = { check_variable = { com_demoralization_var < -0.49 } }
+                        set_variable = { com_demoralization_var = -0.5 }
+                    }
+                }
+            }
+            
+            # --- REWARD THE CONQUEROR (IF RETAKING CORES) ---
+            if = {
+                limit = {
+                    ROOT = {
+                        OR = { tag = CCO tag = CLB tag = CMO tag = CNA tag = CCM }
+                        has_dynamic_modifier = com_state_lost_demoralization
+                    }
+                    # Scope shifts to the State, checks if it's a core of the Conqueror
+                    FROM.FROM = { is_core_of = ROOT }
+                }
+                
+                ROOT = {
+                    # Heal the penalty
+                    add_to_variable = { com_demoralization_var = 0.025 }
+                    
+                    # Remove entirely if back to 0
+                    if = {
+                        limit = { check_variable = { com_demoralization_var > -0.001 } }
+                        set_variable = { com_demoralization_var = 0 }
+                        remove_dynamic_modifier = { modifier = com_state_lost_demoralization }
+                    }
+                }
+            }
+        }
+    }
+}

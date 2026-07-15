@@ -141,7 +141,7 @@ country_event = { #a deep breath
     id = commonwealth.6
     title = commonwealth.6.t
     desc = commonwealth.6.d
-    # picture = GFX_report_event_generic_funeral
+    picture = GFX_report_event_BEL_paul_van_zeeland
 
     is_triggered_only = yes
 
@@ -212,21 +212,20 @@ country_event = { #a deep breath
         hidden_effect = {
             COM = { load_focus_tree = monarchists_starting_focus }
             set_country_flag = COM_chose_monarchists
-            country_event = { id = commonwealth.7 days = 10 random_days = 2 }
+            country_event = { id = commonwealth.7 days = 10 random_days = 6 }
         }
     }
 }
 
-country_event = {
+country_event = { #Too little too late
     id = commonwealth.7
     title = commonwealth.7.t
     desc = commonwealth.7.d
-    picture = GFX_report_event_generic_conflict
+    picture = GFX_report_event_soldiers_marching
 
     is_triggered_only = yes
 
     immediate = {
-
         load_focus_tree = empty_focus
         
         88 = { add_core_of = CCO }
@@ -237,45 +236,206 @@ country_event = {
         CLB = { transfer_state = 807 }
         CMO = { transfer_state = 259 }
         
+        # Wrapped in is_ai = no so it only forces the tag switch if a human is playing!
         if = {
-            limit = { has_country_flag = COM_chose_conservatives }
+            limit = { 
+                is_ai = no
+                has_country_flag = COM_chose_conservatives 
+            }
             CCO = { change_tag_from = ROOT }
         }
         else_if = {
-            limit = { has_country_flag = COM_chose_liberals }
+            limit = { 
+                is_ai = no
+                has_country_flag = COM_chose_liberals 
+            }
             CLB = { change_tag_from = ROOT }
         }
         else_if = {
-            limit = { has_country_flag = COM_chose_monarchists }
+            limit = { 
+                is_ai = no
+                has_country_flag = COM_chose_monarchists 
+            }
             CMO = { change_tag_from = ROOT }
         }
 
-        # 5. Clean up the flags
+        # ==========================================
+        # THIS ACTUALLY STARTS THE MISSIONS & OFFSET TURNS
+        # ==========================================
+        CCO = { activate_mission = release_cna_mission }
+        CLB = { activate_mission = release_ccm_mission }
+
+        # START THE OFFSET COOLDOWN SYSTEM
+        # CCO goes immediately (no flag).
+        CLB = { set_country_flag = { flag = com_scramble_cooldown value = 1 days = 1 } }
+        CMO = { set_country_flag = { flag = com_scramble_cooldown value = 1 days = 2 } }
+
+        # Clean up the flags
         clr_country_flag = COM_chose_conservatives
         clr_country_flag = COM_chose_liberals
         clr_country_flag = COM_chose_monarchists
     }
     option = {
          name = commonwealth.7.a
+         custom_effect_tooltip = commonwealth_can_mark_states_for_civil_war_tt
     }
 }
 
-country_event = {
+country_event = { #The Commonwealth Civil War
     id = commonwealth.8
     title = commonwealth.8.t
     desc = commonwealth.8.d
-    picture = GFX_report_event_generic_conflict
+    picture = GFX_report_event_ger_civil_war
 
     is_triggered_only = yes
 
     immediate = {
+        
         # ==========================================
-        # PHASE 1: TRANSFER MARKED STATES AND CORES
+        # POINT 1: THE ELITE GUARD TEMPLATE & SPAWN
         # ==========================================
+        CCO = {
+            division_template = {
+                name = "Elite Guard"
+                regiments = {
+                    infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 }
+                    infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 }
+                    infantry = { x = 2 y = 0 } infantry = { x = 2 y = 1 } infantry = { x = 2 y = 2 }
+                }
+                support = {
+                    artillery = { x = 0 y = 0 }
+                    engineer = { x = 0 y = 1 }
+                }
+            }
+        }
+        88 = { 
+            create_unit = { owner = CCO division = "name = \"Elite Guard\" division_template = \"Elite Guard\" start_equipment_factor = 1.0 start_experience_factor = 0.3" }
+            create_unit = { owner = CCO division = "name = \"Elite Guard\" division_template = \"Elite Guard\" start_equipment_factor = 1.0 start_experience_factor = 0.3" }
+            create_unit = { owner = CCO division = "name = \"Elite Guard\" division_template = \"Elite Guard\" start_equipment_factor = 1.0 start_experience_factor = 0.3" }
+        }
+        
+        CLB = {
+            division_template = {
+                name = "Elite Guard"
+                regiments = {
+                    infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 }
+                    infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 }
+                    infantry = { x = 2 y = 0 } infantry = { x = 2 y = 1 } infantry = { x = 2 y = 2 }
+                }
+                support = {
+                    artillery = { x = 0 y = 0 }
+                    engineer = { x = 0 y = 1 }
+                }
+            }
+        }
+        807 = {
+            create_unit = { owner = CLB division = "name = \"Elite Guard\" division_template = \"Elite Guard\" start_equipment_factor = 1.0 start_experience_factor = 0.3" }
+            create_unit = { owner = CLB division = "name = \"Elite Guard\" division_template = \"Elite Guard\" start_equipment_factor = 1.0 start_experience_factor = 0.3" }
+            create_unit = { owner = CLB division = "name = \"Elite Guard\" division_template = \"Elite Guard\" start_equipment_factor = 1.0 start_experience_factor = 0.3" }
+        }
+
+        CMO = {
+            division_template = {
+                name = "Elite Guard"
+                regiments = {
+                    infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 }
+                    infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 }
+                    infantry = { x = 2 y = 0 } infantry = { x = 2 y = 1 } infantry = { x = 2 y = 2 }
+                }
+                support = {
+                    artillery = { x = 0 y = 0 }
+                    engineer = { x = 0 y = 1 }
+                }
+            }
+        }
+        259 = { 
+            create_unit = { owner = CMO division = "name = \"Elite Guard\" division_template = \"Elite Guard\" start_equipment_factor = 1.0 start_experience_factor = 0.3" }
+            create_unit = { owner = CMO division = "name = \"Elite Guard\" division_template = \"Elite Guard\" start_equipment_factor = 1.0 start_experience_factor = 0.3" }
+            create_unit = { owner = CMO division = "name = \"Elite Guard\" division_template = \"Elite Guard\" start_equipment_factor = 1.0 start_experience_factor = 0.3" }
+        }
+
+        # =====================================================================
+        # PHASE 1: RESOLVE OVERLAPPING CLAIMS & TRANSFER STATES
+        # =====================================================================
+        
+        # 1. First, loop through all states to resolve conflicts randomly
+        every_state = {
+            limit = {
+                # Find states that have more than one mark flag
+                OR = {
+                    AND = { has_state_flag = marked_by_CCO has_state_flag = marked_by_CLB }
+                    AND = { has_state_flag = marked_by_CCO has_state_flag = marked_by_CMO }
+                    AND = { has_state_flag = marked_by_CCO has_state_flag = marked_by_CNA }
+                    AND = { has_state_flag = marked_by_CCO has_state_flag = marked_by_CCM }
+                    AND = { has_state_flag = marked_by_CLB has_state_flag = marked_by_CMO }
+                    AND = { has_state_flag = marked_by_CLB has_state_flag = marked_by_CNA }
+                    AND = { has_state_flag = marked_by_CLB has_state_flag = marked_by_CCM }
+                    AND = { has_state_flag = marked_by_CMO has_state_flag = marked_by_CNA }
+                    AND = { has_state_flag = marked_by_CMO has_state_flag = marked_by_CCM }
+                    AND = { has_state_flag = marked_by_CNA has_state_flag = marked_by_CCM }
+                }
+            }
+            
+            # Pick one faction and strip the flags of the others
+            random_list = {
+                20 = {
+                    modifier = {
+                        factor = 0
+                        NOT = { has_state_flag = marked_by_CCO }
+                    }
+                    clr_state_flag = marked_by_CLB
+                    clr_state_flag = marked_by_CMO
+                    clr_state_flag = marked_by_CNA
+                    clr_state_flag = marked_by_CCM
+                }
+                20 = {
+                    modifier = {
+                        factor = 0
+                        NOT = { has_state_flag = marked_by_CLB }
+                    }
+                    clr_state_flag = marked_by_CCO
+                    clr_state_flag = marked_by_CMO
+                    clr_state_flag = marked_by_CNA
+                    clr_state_flag = marked_by_CCM
+                }
+                20 = {
+                    modifier = {
+                        factor = 0
+                        NOT = { has_state_flag = marked_by_CMO }
+                    }
+                    clr_state_flag = marked_by_CCO
+                    clr_state_flag = marked_by_CLB
+                    clr_state_flag = marked_by_CNA
+                    clr_state_flag = marked_by_CCM
+                }
+                20 = {
+                    modifier = {
+                        factor = 0
+                        NOT = { has_state_flag = marked_by_CNA }
+                    }
+                    clr_state_flag = marked_by_CCO
+                    clr_state_flag = marked_by_CLB
+                    clr_state_flag = marked_by_CMO
+                    clr_state_flag = marked_by_CCM
+                }
+                20 = {
+                    modifier = {
+                        factor = 0
+                        NOT = { has_state_flag = marked_by_CCM }
+                    }
+                    clr_state_flag = marked_by_CCO
+                    clr_state_flag = marked_by_CLB
+                    clr_state_flag = marked_by_CMO
+                    clr_state_flag = marked_by_CNA
+                }
+            }
+        }
+
+        # 2. Perform state transfers with zero overlaps!
         every_state = {
             limit = { has_state_flag = marked_by_CCO }
             add_core_of = CCO
-            CCO = { transfer_state = PREV } # PREV targets the state from the loop
+            CCO = { transfer_state = PREV }
         }
         every_state = {
             limit = { has_state_flag = marked_by_CLB }
@@ -287,6 +447,43 @@ country_event = {
             add_core_of = CMO
             CMO = { transfer_state = PREV }
         }
+        every_state = {
+            limit = { has_state_flag = marked_by_CNA }
+            add_core_of = CNA
+            CNA = { transfer_state = PREV }
+        }
+        every_state = {
+            limit = { has_state_flag = marked_by_CCM }
+            add_core_of = CCM
+            CCM = { transfer_state = PREV }
+        }
+
+        # 2. Now perform clean state transfers with zero overlaps!
+        every_state = {
+            limit = { has_state_flag = marked_by_CCO }
+            add_core_of = CCO
+            CCO = { transfer_state = PREV }
+        }
+        every_state = {
+            limit = { has_state_flag = marked_by_CLB }
+            add_core_of = CLB
+            CLB = { transfer_state = PREV }
+        }
+        every_state = {
+            limit = { has_state_flag = marked_by_CMO }
+            add_core_of = CMO
+            CMO = { transfer_state = PREV }
+        }
+        every_state = {
+            limit = { has_state_flag = marked_by_CNA }
+            add_core_of = CNA
+            CNA = { transfer_state = PREV }
+        }
+        every_state = {
+            limit = { has_state_flag = marked_by_CCM }
+            add_core_of = CCM
+            CCM = { transfer_state = PREV }
+        }
 
         # ==========================================
         # PHASE 2: SPAWN 2 MILITIAS PER OWNED STATE
@@ -297,19 +494,14 @@ country_event = {
             division_template = {
                 name = "Conservative Militia"
                 regiments = {
-                    infantry = { x = 0 y = 0 }
-                    infantry = { x = 0 y = 1 }
-                    infantry = { x = 0 y = 2 }
-                    infantry = { x = 1 y = 0 }
-                    infantry = { x = 1 y = 1 }
-                    infantry = { x = 1 y = 2 }
+                    infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 }
+                    infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 }
                 }
             }
             
             every_owned_state = {
                 create_unit = {
                     owner = CCO 
-                    # Everything must be packed into this one ridiculous string!
                     division = "name = \"Conservative Militia\" division_template = \"Conservative Militia\" start_equipment_factor = 0.7"
                 }
                 create_unit = {
@@ -324,12 +516,8 @@ country_event = {
             division_template = {
                 name = "Liberal Militia"
                 regiments = {
-                    infantry = { x = 0 y = 0 }
-                    infantry = { x = 0 y = 1 }
-                    infantry = { x = 0 y = 2 }
-                    infantry = { x = 1 y = 0 }
-                    infantry = { x = 1 y = 1 }
-                    infantry = { x = 1 y = 2 }
+                    infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 }
+                    infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 }
                 }
             }
             
@@ -350,12 +538,8 @@ country_event = {
             division_template = {
                 name = "Royalist Militia"
                 regiments = {
-                    infantry = { x = 0 y = 0 }
-                    infantry = { x = 0 y = 1 }
-                    infantry = { x = 0 y = 2 }
-                    infantry = { x = 1 y = 0 }
-                    infantry = { x = 1 y = 1 }
-                    infantry = { x = 1 y = 2 }
+                    infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 }
+                    infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 }
                 }
             }
             
@@ -370,10 +554,210 @@ country_event = {
                 }
             }
         }
+
+        if = { limit = { country_exists = CNA }
+            CNA = {
+                division_template = {
+                    name = "Fringe Militia"
+                    regiments = {
+                        infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 }
+                        infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 }
+                    }
+                }
+
+                every_owned_state = {
+                    create_unit = {
+                        owner = CNA 
+                        division = "name = \"Fringe Militia\" division_template = \"Fringe Militia\" start_equipment_factor = 1.0"
+                    }
+                    create_unit = {
+                        owner = CNA 
+                        division = "name = \"Fringe Militia\" division_template = \"Fringe Militia\" start_equipment_factor = 1.0"
+                    }
+                }
+                division_template = {
+                name = "Elite Force"
+                regiments = {
+                    infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 }
+                    infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 }
+                    infantry = { x = 2 y = 0 } infantry = { x = 2 y = 1 } infantry = { x = 2 y = 2 }
+                }
+                support = {
+                    artillery = { x = 0 y = 0 }
+                    engineer = { x = 0 y = 1 }
+                }
+            }
+            }
+
+            96 = {
+                create_unit = { owner = CNA division = "name = \"Elite Force\" division_template = \"Elite Force\" start_equipment_factor = 1.0 start_experience_factor = 0.3" }
+                create_unit = { owner = CNA division = "name = \"Elite Force\" division_template = \"Elite Force\" start_equipment_factor = 1.0 start_experience_factor = 0.3" }
+                create_unit = { owner = CNA division = "name = \"Elite Force\" division_template = \"Elite Force\" start_equipment_factor = 1.0 start_experience_factor = 0.3" }
+            }
+        }
+
+        if = { limit = { country_exists = CCM }
+            CCM = {
+                division_template = {
+                    name = "Revolutionary Militia"
+                    regiments = {
+                        infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 }
+                        infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 }
+                    }
+                }
+
+                every_owned_state = {
+                    create_unit = {
+                        owner = CCM 
+                        division = "name = \"Revolutionary Militia\" division_template = \"Revolutionary Militia\" start_equipment_factor = 1.0"
+                    }
+                    create_unit = {
+                        owner = CCM 
+                        division = "name = \"Revolutionary Militia\" division_template = \"Revolutionary Militia\" start_equipment_factor = 1.0"
+                    }
+                }
+
+                division_template = {
+                name = "Elite Force"
+                regiments = {
+                    infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 }
+                    infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 }
+                    infantry = { x = 2 y = 0 } infantry = { x = 2 y = 1 } infantry = { x = 2 y = 2 }
+                }
+                support = {
+                    artillery = { x = 0 y = 0 }
+                    engineer = { x = 0 y = 1 }
+                }
+            }
+            }
+            45 = {
+                create_unit = { owner = CCM division = "name = \"Elite Force\" division_template = \"Elite Force\" start_equipment_factor = 1.0 start_experience_factor = 0.3" }
+                create_unit = { owner = CCM division = "name = \"Elite Force\" division_template = \"Elite Force\" start_equipment_factor = 1.0 start_experience_factor = 0.3" }
+                create_unit = { owner = CCM division = "name = \"Elite Force\" division_template = \"Elite Force\" start_equipment_factor = 1.0 start_experience_factor = 0.3" }
+            }
+        }
+
+        # ==========================================
+        # POINT 4: FAILSAFES FOR 96 & 45
+        # ==========================================
+        if = {
+            limit = { NOT = { country_exists = CNA } }
+            CCO = {transfer_state = 96 }
+            96 = {
+                add_core_of = CCO
+                create_unit = { owner = CCO division = "name = \"Conservative Militia\" division_template = \"Conservative Militia\" start_equipment_factor = 0.7" }
+                create_unit = { owner = CCO division = "name = \"Conservative Militia\" division_template = \"Conservative Militia\" start_equipment_factor = 0.7" }
+                create_unit = { owner = CCO division = "name = \"Conservative Militia\" division_template = \"Conservative Militia\" start_equipment_factor = 0.7" }
+                create_unit = { owner = CCO division = "name = \"Conservative Militia\" division_template = \"Conservative Militia\" start_equipment_factor = 0.7" }
+                create_unit = { owner = CCO division = "name = \"Conservative Militia\" division_template = \"Conservative Militia\" start_equipment_factor = 0.7" }
+                create_unit = { owner = CCO division = "name = \"Conservative Militia\" division_template = \"Conservative Militia\" start_equipment_factor = 0.7" }
+            }
+
+        }
+        if = {
+            limit = { NOT = { country_exists = CCM } }
+            CLB = {transfer_state = 45 }
+            45 = {
+                add_core_of = CLB
+                create_unit = { owner = CLB division = "name = \"Liberal Militia\" division_template = \"Liberal Militia\" start_equipment_factor = 0.7" }
+                create_unit = { owner = CLB division = "name = \"Liberal Militia\" division_template = \"Liberal Militia\" start_equipment_factor = 0.7" }
+                create_unit = { owner = CLB division = "name = \"Liberal Militia\" division_template = \"Liberal Militia\" start_equipment_factor = 0.7" }
+                create_unit = { owner = CLB division = "name = \"Liberal Militia\" division_template = \"Liberal Militia\" start_equipment_factor = 0.7" }
+                create_unit = { owner = CLB division = "name = \"Liberal Militia\" division_template = \"Liberal Militia\" start_equipment_factor = 0.7" }
+                create_unit = { owner = CLB division = "name = \"Liberal Militia\" division_template = \"Liberal Militia\" start_equipment_factor = 0.7" }
+            }
+        }
     }
 
     option = {
         name = commonwealth.8.a
-        # Any immediate war declarations can go here!
+        
+        # Add the combat spirit to the Main Ring
+        CCO = {
+            add_ideas = com_civil_war_fervor
+            declare_war_on = { target = CLB type = civil_war }
+        }
+        CLB = {
+            add_ideas = com_civil_war_fervor
+            declare_war_on = { target = CMO type = civil_war }
+        }
+        CMO = {
+            add_ideas = com_civil_war_fervor
+            declare_war_on = { target = CCO type = civil_war }
+        }
+        
+        # Add to CNA if they exist
+        if = {
+            limit = { country_exists = CNA }
+            CNA = {
+                add_ideas = com_civil_war_fervor
+                declare_war_on = { target = CLB type = civil_war }
+                declare_war_on = { target = CMO type = civil_war }
+                declare_war_on = { target = CCO type = civil_war }
+            }
+        }
+        
+        # Add to CCM if they exist
+        if = {
+            limit = { country_exists = CCM }
+            CCM = {
+                add_ideas = com_civil_war_fervor
+                declare_war_on = { target = CLB type = civil_war }
+                declare_war_on = { target = CMO type = civil_war }
+                declare_war_on = { target = CCO type = civil_war }
+                
+                if = {
+                    limit = { country_exists = CNA }
+                    declare_war_on = { target = CNA type = civil_war }
+                }
+            }
+        }
+    }
+}
+
+country_event = { # CNA Breakaway
+    id = commonwealth.9
+    title = commonwealth.9.t
+    desc = commonwealth.9.d
+    is_triggered_only = yes
+
+    immediate = {
+        # Release the fringe faction
+        96 = { add_core_of = CNA }
+        CNA = { transfer_state = 96 }
+        CNA = { load_focus_tree = empty_focus }
+    }
+
+    option = {
+        name = commonwealth.9.a
+        trigger = { is_ai = no } # Stops the AI from stealing your camera
+        CNA = { change_tag_from = ROOT }
+    }
+    option = {
+        name = commonwealth.9.b
+        ai_chance = { base = 100 } # AI stays put safely
+    }
+}
+
+country_event = { # CCM Breakaway
+    id = commonwealth.10
+    title = commonwealth.10.t
+    desc = commonwealth.10.d
+    is_triggered_only = yes
+
+    immediate = {
+        45 = { add_core_of = CCM }
+        CCM = { transfer_state = 45 }
+        CCM = { load_focus_tree = empty_focus }
+    }
+
+    option = {
+        name = commonwealth.10.a
+        trigger = { is_ai = no } # Stops the AI from stealing your camera
+        CCM = { change_tag_from = ROOT }
+    }
+    option = {
+        name = commonwealth.10.b
+        ai_chance = { base = 100 } # AI stays put safely
     }
 }

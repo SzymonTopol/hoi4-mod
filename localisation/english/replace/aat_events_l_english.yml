@@ -35,4 +35,9 @@ commonwealth_unlock_focuses_tt: "Unlocks new focuses"
 
 commonwealth.7.t: "Too little too late"
 commonwealth.7.d: "Despite our best efforts, the situation within the Commonwealth has deteriorated beyond repair. Seeing no other way, our opponents began amasing guns and supporters. If we are to survive, we must do the same."
-commonwealth.7.a: "FOR THE COMMONWEALTH!"
+commonwealth.7.a: "Time for action is now"
+commonwealth_can_mark_states_for_civil_war_tt: "Unlocks the ability to secure states for the civil war via decision tab."
+
+commonwealth.8.t: "The Commonwealth Civil War"
+commonwealth.8.d: "The last few weeks cemented the Commonwealth's fate. Each side solidified their own part of Commonwealth and are gearing up for the biggest hurdle of their lives."
+commonwealth.8.a: "FOR THE COMMONWEALTH!"

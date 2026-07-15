@@ -1,7 +1,135 @@
 com_civil_war_scramble_category = {
 
+    # ----------------------------------------------------
+    # VISUAL MAP MARKERS FOR SECURED STATES
+    # ----------------------------------------------------
+    view_cco_secured_states = {
+        icon = generic_map_mode
+        cost = 0
+        allowed = { tag = CCO }
+        visible = { tag = CCO }
+        available = { always = no } 
+        
+        highlight_states = {
+            highlight_states_trigger = {
+                has_state_flag = marked_by_CCO
+            }
+        }
+    }
+
+    view_clb_secured_states = {
+        icon = generic_map_mode
+        cost = 0
+        allowed = { tag = CLB }
+        visible = { tag = CLB }
+        available = { always = no } 
+        
+        highlight_states = {
+            highlight_states_trigger = {
+                has_state_flag = marked_by_CLB
+            }
+        }
+    }
+
+    view_cmo_secured_states = {
+        icon = generic_map_mode
+        cost = 0
+        allowed = { tag = CMO }
+        visible = { tag = CMO }
+        available = { always = no } 
+        
+        highlight_states = {
+            highlight_states_trigger = {
+                has_state_flag = marked_by_CMO
+            }
+        }
+    }
+
+    view_cna_secured_states = {
+        icon = generic_map_mode
+        cost = 0
+        allowed = { tag = CNA }
+        visible = { tag = CNA }
+        available = { always = no } 
+        
+        highlight_states = {
+            highlight_states_trigger = {
+                has_state_flag = marked_by_CNA
+            }
+        }
+    }
+
+    view_ccm_secured_states = {
+        icon = generic_map_mode
+        cost = 0
+        allowed = { tag = CCM }
+        visible = { tag = CCM }
+        available = { always = no } 
+        
+        highlight_states = {
+            highlight_states_trigger = {
+                has_state_flag = marked_by_CCM
+            }
+        }
+    }
+
+    # ----------------------------------------------------
+    # BREAKAWAY TIMERS (Missions)
+    # ----------------------------------------------------
+    release_cna_mission = {
+        icon = generic_operations
+        allowed = { tag = CCO }
+        
+        fire_only_once = yes # Stops the mission from looping
+        
+        available = {
+            has_country_flag = succeed_cna_early_flag
+        }
+        
+        days_mission_timeout = 25 
+        is_good = no 
+        
+        cancel_trigger = {
+            has_country_flag = cancel_cna_release
+        }
+        
+        timeout_effect = { 
+            country_event = { id = commonwealth.9 } 
+        } 
+    }
+
+    release_ccm_mission = {
+        icon = generic_operations
+        allowed = { tag = CLB }
+        
+        fire_only_once = yes # Stops the mission from looping
+        
+        available = {
+            has_country_flag = succeed_ccm_early_flag
+        }
+        
+        days_mission_timeout = 25 
+        is_good = no
+        
+        cancel_trigger = {
+            has_country_flag = cancel_ccm_release
+        }
+        
+        timeout_effect = { 
+            country_event = { id = commonwealth.10 } 
+        } 
+    }
+
+    # ----------------------------------------------------
+    # THE SCRAMBLE DECISION (Sluggish Fringe Expansion)
+    # ----------------------------------------------------
     claim_com_state_decision = {
         icon = generic_decision
+        
+        # Bulletproofing: ONLY these tags can ever evaluate this decision
+        allowed = { 
+            OR = { tag = CCO tag = CLB tag = CMO tag = CNA tag = CCM }
+        }
         
         state_target = yes 
         
@@ -17,8 +145,7 @@ com_civil_war_scramble_category = {
             }
         }
 
-        cost = 1
-        fire_only_once = yes 
+        cost = 0 
         
         available = {
             NOT = { has_country_flag = com_scramble_cooldown }
@@ -26,6 +153,72 @@ com_civil_war_scramble_category = {
 
         ai_will_do = {
             base = 1
+            
+            # UNIQUE FACTION WISH LISTS
+            modifier = {
+                add = 200
+                ROOT = { tag = CCO }
+                FROM = { 
+                    OR = { state = 65 } OR = { state = 66 } OR = { state = 67 } OR = { state = 762 } 
+                    OR = { state = 74 } OR = { state = 72 } OR = { state = 69 } OR = { state = 9 } 
+                    OR = { state = 75 } OR = { state = 972 } OR = { state = 4 } OR = { state = 70 } 
+                    OR = { state = 71 } OR = { state = 73 } OR = { state = 89 } OR = { state = 91 } 
+                    OR = { state = 93 } OR = { state = 94 } OR = { state = 92 } OR = { state = 10 } 
+                    OR = { state = 90 } OR = { state = 199 } OR = { state = 198 } OR = { state = 664 }
+                    OR = { state = 43 } OR = { state = 154 } OR = { state = 76 } OR = { state = 83 } 
+                    OR = { state = 84 } OR = { state = 82 } OR = { state = 764 } OR = { state = 109 } 
+                    OR = { state = 155 } OR = { state = 974 } OR = { state = 973 } OR = { state = 975 } 
+                    OR = { state = 976 } OR = { state = 152 } OR = { state = 102 } OR = { state = 736 } 
+                    OR = { state = 853 } OR = { state = 852 } OR = { state = 103 } OR = { state = 104 } 
+                    OR = { state = 804 }     
+                }
+            }
+            modifier = {
+                add = 200
+                ROOT = { tag = CLB }
+                FROM = { 
+                    OR = { state = 62 } OR = { state = 63 } OR = { state = 68 } OR = { state = 86 } 
+                    OR = { state = 87 } OR = { state = 98 } OR = { state = 97 } OR = { state = 5 } 
+                    OR = { state = 85 } OR = { state = 763 } OR = { state = 188 } OR = { state = 814 } 
+                    OR = { state = 11 } OR = { state = 815 } OR = { state = 189 } OR = { state = 190 } 
+                    OR = { state = 809 } OR = { state = 808 } OR = { state = 12 } OR = { state = 13 } 
+                    OR = { state = 813 } OR = { state = 812 } OR = { state = 811 } 
+                } 
+            }
+            modifier = {
+                add = 200
+                ROOT = { tag = CMO }
+                FROM = {
+                    OR = { state = 204 } OR = { state = 241 } OR = { state = 224 } OR = { state = 194 } 
+                    OR = { state = 193 } OR = { state = 225 } OR = { state = 220 } OR = { state = 240 } 
+                    OR = { state = 228 } OR = { state = 221 } OR = { state = 227 } OR = { state = 226 } 
+                    OR = { state = 200 } OR = { state = 218 } OR = { state = 196 } OR = { state = 137 } 
+                    OR = { state = 201 } OR = { state = 202 } OR = { state = 203 } OR = { state = 199 } 
+                    OR = { state = 198 } OR = { state = 197 } OR = { state = 192 } OR = { state = 834 }
+                    OR = { state = 78 } OR = { state = 79 } OR = { state = 766 } OR = { state = 46 } 
+                    OR = { state = 83 } OR = { state = 84 } OR = { state = 81 } OR = { state = 801 } 
+                    OR = { state = 211 } OR = { state = 212 } OR = { state = 341 } OR = { state = 48 } 
+                    OR = { state = 184 } OR = { state = 77 } OR = { state = 971 } OR = { state = 10 } 
+                } 
+            }
+            modifier = {
+                add = 200
+                ROOT = { tag = CNA }
+                FROM = { 
+                    OR = { state = 808 } OR = { state = 809 } OR = { state = 815 } OR = { state = 11 } 
+                    OR = { state = 784 } OR = { state = 95 } OR = { state = 206 } OR = { state = 207 } 
+                } 
+            }
+            modifier = {
+                add = 200
+                ROOT = { tag = CCM }
+                FROM = { 
+                    OR = { state = 155 } OR = { state = 974 } OR = { state = 973 } OR = { state = 109 } 
+                    OR = { state = 764 } OR = { state = 82 } OR = { state = 107 } OR = { state = 108 }  
+                } 
+            }
+
+            # CONNECTED BORDER LOGIC
             modifier = {
                 add = 100
                 FROM = {
@@ -35,6 +228,8 @@ com_civil_war_scramble_category = {
                             AND = { ROOT = { tag = CCO } has_state_flag = marked_by_CCO }
                             AND = { ROOT = { tag = CLB } has_state_flag = marked_by_CLB }
                             AND = { ROOT = { tag = CMO } has_state_flag = marked_by_CMO }
+                            AND = { ROOT = { tag = CNA } has_state_flag = marked_by_CNA }
+                            AND = { ROOT = { tag = CCM } has_state_flag = marked_by_CCM }
                         }
                     }
                 }
@@ -42,25 +237,40 @@ com_civil_war_scramble_category = {
         }
 
         complete_effect = {
-            # This flag now automatically deletes itself after 2 days!
-            set_country_flag = { 
-                flag = com_scramble_cooldown 
-                value = 1
-                days = 2 
+            # THE SPLIT COOLDOWN LOGIC
+            # Main factions expand rapidly (3 days)
+            if = {
+                limit = { OR = { tag = CCO tag = CLB tag = CMO } }
+                set_country_flag = { flag = com_scramble_cooldown value = 1 days = 3 }
             }
+            # Fringe factions expand sluggishly (6 days)
+            if = {
+                limit = { OR = { tag = CNA tag = CCM } }
+                set_country_flag = { flag = com_scramble_cooldown value = 1 days = 6 }
+            }
+
             FROM = { 
                 custom_effect_tooltip = com_state_secured_tt 
-
                 hidden_effect = {
                     set_state_flag = com_cw_state_marked
-
                     if = { limit = { ROOT = { tag = CCO } } set_state_flag = marked_by_CCO }
                     if = { limit = { ROOT = { tag = CLB } } set_state_flag = marked_by_CLB }
                     if = { limit = { ROOT = { tag = CMO } } set_state_flag = marked_by_CMO }
+                    if = { limit = { ROOT = { tag = CNA } } set_state_flag = marked_by_CNA }
+                    if = { limit = { ROOT = { tag = CCM } } set_state_flag = marked_by_CCM }
                 }
             }
 
-            # 5. ENDGAME CHECK: Are all valid states gone?
+            # ==========================================
+            # ARRAY ADDITION FOR MAP HIGHLIGHTS
+            # ==========================================
+            if = { limit = { tag = CCO } add_to_array = { cco_marked_states = FROM } }
+            if = { limit = { tag = CLB } add_to_array = { clb_marked_states = FROM } }
+            if = { limit = { tag = CMO } add_to_array = { cmo_marked_states = FROM } }
+            if = { limit = { tag = CNA } add_to_array = { cna_marked_states = FROM } }
+            if = { limit = { tag = CCM } add_to_array = { ccm_marked_states = FROM } }
+
+            # ENDGAME CHECK
             if = {
                 limit = {
                     NOT = {
@@ -74,12 +284,9 @@ com_civil_war_scramble_category = {
                             NOT = { has_state_flag = com_cw_state_marked }
                         }
                     }
-                    # We add this so the event doesn't fire 3 times if paused
                     NOT = { has_global_flag = ready_for_COM_civil_war } 
                 }
                 set_global_flag = ready_for_COM_civil_war
-                
-                # This triggers the 5-day timer for the country that clicked the last state
                 country_event = { id = commonwealth.8 days = 5 } 
             }
         }

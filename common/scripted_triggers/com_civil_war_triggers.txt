@@ -1,0 +1,5 @@
+is_marked_by_cco = { has_state_flag = marked_by_CCO }
+is_marked_by_clb = { has_state_flag = marked_by_CLB }
+is_marked_by_cmo = { has_state_flag = marked_by_CMO }
+is_marked_by_cna = { has_state_flag = marked_by_CNA }
+is_marked_by_ccm = { has_state_flag = marked_by_CCM }

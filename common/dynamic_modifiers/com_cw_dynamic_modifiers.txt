@@ -1,0 +1,7 @@
+com_state_lost_demoralization = {
+    enable = { always = yes }
+    icon = generic_morale_bonus # This gives it a standard icon in the UI
+    
+    # Dynamic modifiers ARE allowed to read variables!
+    surrender_limit = com_demoralization_var 
+}
