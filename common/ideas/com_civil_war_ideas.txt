@@ -4,10 +4,12 @@ ideas = {
         com_civil_war_fervor = {
             allowed = { always = yes }
             modifier = {
-                army_attack_factor = 0.10      
-                army_defence_factor = -0.10        
-                max_dig_in = -10          
+                army_attack_factor = 0.15      
+                army_defence_factor = -0.20        
+                max_dig_in = -20
+                ai_focus_aggressive_factor = 1.00          
             }
+            picture = CZE_planning_bonus
         }
     }
 }

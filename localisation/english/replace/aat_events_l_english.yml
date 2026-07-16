@@ -38,6 +38,29 @@ commonwealth.7.d: "Despite our best efforts, the situation within the Commonweal
 commonwealth.7.a: "Time for action is now"
 commonwealth_can_mark_states_for_civil_war_tt: "Unlocks the ability to secure states for the civil war via decision tab."
 
-commonwealth.8.t: "The Commonwealth Civil War"
-commonwealth.8.d: "The last few weeks cemented the Commonwealth's fate. Each side solidified their own part of Commonwealth and are gearing up for the biggest hurdle of their lives."
+commonwealth.8.t: "The Commonwealth Civil War - backend"
+commonwealth.8.d: "The last few weeks cemented the Commonwealth's fate. Each side solidified their own part of Commonwealth and are gearing up for the biggest hurdle of their lives. THIS IS A BACKEND EVENT, IT SHOULD NOT BE SEEN BY PLAYERS. IT IS USED TO SETUP THE CIVIL WAR."
 commonwealth.8.a: "FOR THE COMMONWEALTH!"
+
+commonwealth.9.t: "Nationalists leave the faction"
+commonwealth.9.d: "Growing tensions between the old guard of the party and a new radical wing boiled over. The nationalists despite lower support decided to leave our faction and begun setting up their own cells in the north east."
+commonwealth.9.a: "The Commonwealth will be roborn!"
+commonwealth.9.b: "These radicals only made us look bad."
+
+commonwealth.10.t: "Communists move their revolution south"
+commonwealth.10.d: "Unable to find a compromise solution, the communist faction left the coalition and decided to pitch their wagon to the insurgent hideouts around Backa."
+commonwealth.10.a: "Revolution begins now."
+commonwealth.10.b: "They weren't usefull anyways"
+
+commonwealth.11.t: "The Commonwealth Civil War"
+commonwealth.11.d: "The last few weeks cemented the Commonwealth's fate. Each side solidified their own part of Commonwealth and are gearing up for the biggest hurdle of their lives."
+commonwealth.11.a: "FOR THE COMMONWEALTH!"
+commonwealth_civilwar_info_tt: "§RLoosing land will worsen the situtation for your faction, lowering the defense and surrender limit.§!"
+
+commonwealth.12.t:0 "[cw_loser.GetNameDefCap] Defeated!"
+commonwealth.12.d:0 "Following a brutal series of campaigns, the breakaway government of [cw_loser.GetNameDef] has officially collapsed. All of their remaining territory and stockpiled equipment have fallen under [cw_winner.GetAdjective] control."
+commonwealth.12.a:0 "The war continues."
+
+mapmode_com_scramble_map_mode:0 "Commonwealth Scramble"
+mapmode_com_scramble_map_mode_name:0 "Commonwealth Scramble Map"
+mapmode_com_scramble_map_mode_desc:0 "Shows the current territorial claims of all breakaway factions during the crisis."

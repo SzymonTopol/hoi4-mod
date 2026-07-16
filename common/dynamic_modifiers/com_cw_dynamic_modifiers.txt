@@ -1,7 +1,8 @@
 com_state_lost_demoralization = {
     enable = { always = yes }
-    icon = generic_morale_bonus # This gives it a standard icon in the UI
+    icon = POL_the_peasants_strike
     
     # Dynamic modifiers ARE allowed to read variables!
     surrender_limit = com_demoralization_var 
+    army_defence_factor = com_demoralization_var
 }

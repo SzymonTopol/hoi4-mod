@@ -237,6 +237,13 @@ country_event = { #Too little too late
         CMO = { transfer_state = 259 }
         
         # Wrapped in is_ai = no so it only forces the tag switch if a human is playing!
+
+        # ==========================================
+        # THIS ACTUALLY STARTS THE MISSIONS & SCRAMBLE
+        # ==========================================
+        CCO = { activate_mission = release_cna_mission }
+        CLB = { activate_mission = release_ccm_mission }
+
         if = {
             limit = { 
                 is_ai = no
@@ -258,17 +265,7 @@ country_event = { #Too little too late
             }
             CMO = { change_tag_from = ROOT }
         }
-
-        # ==========================================
-        # THIS ACTUALLY STARTS THE MISSIONS & OFFSET TURNS
-        # ==========================================
-        CCO = { activate_mission = release_cna_mission }
-        CLB = { activate_mission = release_ccm_mission }
-
-        # START THE OFFSET COOLDOWN SYSTEM
-        # CCO goes immediately (no flag).
-        CLB = { set_country_flag = { flag = com_scramble_cooldown value = 1 days = 1 } }
-        CMO = { set_country_flag = { flag = com_scramble_cooldown value = 1 days = 2 } }
+        # Offset flags removed! All active factions will now grab their first state simultaneously on Day 1.
 
         # Clean up the flags
         clr_country_flag = COM_chose_conservatives
@@ -281,16 +278,30 @@ country_event = { #Too little too late
     }
 }
 
-country_event = { #The Commonwealth Civil War
+country_event = { #The Commonwealth Civil War - setup krajów, przeniesienie kontroli, tworzenie jednostek, wypowiadanie wojny
     id = commonwealth.8
     title = commonwealth.8.t
     desc = commonwealth.8.d
     picture = GFX_report_event_ger_civil_war
 
+    hidden = yes
+
     is_triggered_only = yes
 
     immediate = {
         
+        COM = {
+            # 1. Delete all 80k troops in the field
+            every_country_division = {
+                destroy_unit = yes
+            }
+            # 2. Drain the void stockpile so CCM loots absolutely nothing
+            add_equipment_to_stockpile = { type = infantry_equipment amount = -999999 }
+            add_equipment_to_stockpile = { type = artillery_equipment amount = -999999 }
+            add_equipment_to_stockpile = { type = support_equipment amount = -999999 }
+            add_equipment_to_stockpile = { type = motorized_equipment amount = -999999 }
+        }
+
         # ==========================================
         # POINT 1: THE ELITE GUARD TEMPLATE & SPAWN
         # ==========================================
@@ -499,14 +510,14 @@ country_event = { #The Commonwealth Civil War
                 }
             }
             
-            every_owned_state = {
+            every_owned_state = { #Ponieważ konserwatyści są okrążeni z każdej strony, będą mieć więcej wyposażenia (ale nie za dużo, bo eko mają)
                 create_unit = {
                     owner = CCO 
-                    division = "name = \"Conservative Militia\" division_template = \"Conservative Militia\" start_equipment_factor = 0.7"
+                    division = "name = \"Conservative Militia\" division_template = \"Conservative Militia\" start_equipment_factor = 0.70"
                 }
                 create_unit = {
                     owner = CCO 
-                    division = "name = \"Conservative Militia\" division_template = \"Conservative Militia\" start_equipment_factor = 0.7"
+                    division = "name = \"Conservative Militia\" division_template = \"Conservative Militia\" start_equipment_factor = 0.70"
                 }
             }
         }
@@ -524,11 +535,11 @@ country_event = { #The Commonwealth Civil War
             every_owned_state = {
                 create_unit = {
                     owner = CLB 
-                    division = "name = \"Liberal Militia\" division_template = \"Liberal Militia\" start_equipment_factor = 0.7"
+                    division = "name = \"Liberal Militia\" division_template = \"Liberal Militia\" start_equipment_factor = 0.5"
                 }
                 create_unit = {
                     owner = CLB 
-                    division = "name = \"Liberal Militia\" division_template = \"Liberal Militia\" start_equipment_factor = 0.7"
+                    division = "name = \"Liberal Militia\" division_template = \"Liberal Militia\" start_equipment_factor = 0.5"
                 }
             }
         }
@@ -543,14 +554,14 @@ country_event = { #The Commonwealth Civil War
                 }
             }
             
-            every_owned_state = {
+            every_owned_state = { #Z jakiegoś powodu rojaliści mają problemy z utrzymaniem się (mniejsza eko, więc damy im więcej wyposażenia na dzień dobry)
                 create_unit = {
                     owner = CMO 
-                    division = "name = \"Royalist Militia\" division_template = \"Royalist Militia\" start_equipment_factor = 0.7"
+                    division = "name = \"Royalist Militia\" division_template = \"Royalist Militia\" start_equipment_factor = 0.85"
                 }
                 create_unit = {
                     owner = CMO 
-                    division = "name = \"Royalist Militia\" division_template = \"Royalist Militia\" start_equipment_factor = 0.7"
+                    division = "name = \"Royalist Militia\" division_template = \"Royalist Militia\" start_equipment_factor = 0.85"
                 }
             }
         }
@@ -675,15 +686,15 @@ country_event = { #The Commonwealth Civil War
         # Add the combat spirit to the Main Ring
         CCO = {
             add_ideas = com_civil_war_fervor
-            declare_war_on = { target = CLB type = civil_war }
+            declare_war_on = { target = CLB type = annex_everything } 
         }
         CLB = {
             add_ideas = com_civil_war_fervor
-            declare_war_on = { target = CMO type = civil_war }
+            declare_war_on = { target = CMO type = annex_everything } 
         }
         CMO = {
             add_ideas = com_civil_war_fervor
-            declare_war_on = { target = CCO type = civil_war }
+            declare_war_on = { target = CCO type = annex_everything } 
         }
         
         # Add to CNA if they exist
@@ -691,9 +702,9 @@ country_event = { #The Commonwealth Civil War
             limit = { country_exists = CNA }
             CNA = {
                 add_ideas = com_civil_war_fervor
-                declare_war_on = { target = CLB type = civil_war }
-                declare_war_on = { target = CMO type = civil_war }
-                declare_war_on = { target = CCO type = civil_war }
+                declare_war_on = { target = CLB type = annex_everything }
+                declare_war_on = { target = CMO type = annex_everything }
+                declare_war_on = { target = CCO type = annex_everything }
             }
         }
         
@@ -702,15 +713,23 @@ country_event = { #The Commonwealth Civil War
             limit = { country_exists = CCM }
             CCM = {
                 add_ideas = com_civil_war_fervor
-                declare_war_on = { target = CLB type = civil_war }
-                declare_war_on = { target = CMO type = civil_war }
-                declare_war_on = { target = CCO type = civil_war }
+                declare_war_on = { target = CLB type = annex_everything }
+                declare_war_on = { target = CMO type = annex_everything }
+                declare_war_on = { target = CCO type = annex_everything }
                 
                 if = {
                     limit = { country_exists = CNA }
-                    declare_war_on = { target = CNA type = civil_war }
+                    declare_war_on = { target = CNA type = annex_everything }
                 }
             }
+        }
+
+        # Broadcast the frontend event to the new factions
+        every_country = {
+            limit = {
+                OR = { tag = CCO tag = CLB tag = CMO tag = CNA tag = CCM }
+            }
+            country_event = { id = commonwealth.11 }
         }
     }
 }
@@ -720,6 +739,7 @@ country_event = { # CNA Breakaway
     title = commonwealth.9.t
     desc = commonwealth.9.d
     is_triggered_only = yes
+    picture = GFX_report_event_polish_army
 
     immediate = {
         # Release the fringe faction
@@ -744,6 +764,7 @@ country_event = { # CCM Breakaway
     title = commonwealth.10.t
     desc = commonwealth.10.d
     is_triggered_only = yes
+    picture = GFX_report_event_saf_civil_war
 
     immediate = {
         45 = { add_core_of = CCM }
@@ -759,5 +780,33 @@ country_event = { # CCM Breakaway
     option = {
         name = commonwealth.10.b
         ai_chance = { base = 100 } # AI stays put safely
+    }
+}
+
+country_event = { #Commonwealth Civil War - Frontend Event (popup)
+    id = commonwealth.11
+    title = commonwealth.11.t
+    desc = commonwealth.11.d
+    picture = GFX_report_event_ger_civil_war
+
+    is_triggered_only = yes
+
+    option = {
+        name = commonwealth.11.a
+
+        custom_effect_tooltip = commonwealth_civilwar_info_tt
+    }
+}
+
+country_event = { #Fall of faction X to the faction Y
+    id = commonwealth.12
+    title = commonwealth.12.t
+    desc = commonwealth.12.d
+    picture = GFX_report_event_DEN_denmark_surrenders
+
+    is_triggered_only = yes
+
+    option = {
+        name = commonwealth.12.a
     }
 }

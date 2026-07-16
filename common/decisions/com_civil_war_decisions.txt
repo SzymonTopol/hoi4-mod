@@ -3,75 +3,120 @@ com_civil_war_scramble_category = {
     # ----------------------------------------------------
     # VISUAL MAP MARKERS FOR SECURED STATES
     # ----------------------------------------------------
-    view_cco_secured_states = {
-        icon = generic_map_mode
-        cost = 0
-        allowed = { tag = CCO }
-        visible = { tag = CCO }
-        available = { always = no } 
+    # view_cco_secured_states = {
+    #     icon = generic_map_mode
+    #     cost = 0
+    #     allowed = { tag = CCO }
         
-        highlight_states = {
-            highlight_states_trigger = {
-                has_state_flag = marked_by_CCO
-            }
-        }
-    }
+    #     visible = { 
+    #         tag = CCO 
+    #         NOT = { has_global_flag = ready_for_COM_civil_war } 
+    #     }
+        
+    #     available = { always = no } 
+        
+    #     # ==========================================
+    #     # THE SILVER BULLET
+    #     # Target the country instead of the state. 
+    #     # This locks the pin to the capital without blinding the highlight!
+    #     # ==========================================
+    #     country_target = yes
+    #     target_trigger = {
+    #         tag = CCO
+    #     }
+        
+    #     highlight_states = {
+    #         highlight_states_trigger = {
+    #             has_state_flag = marked_by_CCO
+    #         }
+    #     }
+    # }
 
-    view_clb_secured_states = {
-        icon = generic_map_mode
-        cost = 0
-        allowed = { tag = CLB }
-        visible = { tag = CLB }
-        available = { always = no } 
-        
-        highlight_states = {
-            highlight_states_trigger = {
-                has_state_flag = marked_by_CLB
-            }
-        }
-    }
+    # view_clb_secured_states = {
+    #     icon = generic_map_mode
+    #     cost = 0
+    #     allowed = { tag = CLB }
 
-    view_cmo_secured_states = {
-        icon = generic_map_mode
-        cost = 0
-        allowed = { tag = CMO }
-        visible = { tag = CMO }
-        available = { always = no } 
+    #     visible = { 
+    #         tag = CLB
+    #         NOT = { has_global_flag = ready_for_COM_civil_war } 
+    #     }
+    #     available = { always = no } 
         
-        highlight_states = {
-            highlight_states_trigger = {
-                has_state_flag = marked_by_CMO
-            }
-        }
-    }
+    #     state_target = yes
+    #     target_trigger = {
+    #         FROM = { is_capital = yes }
+    #     }
 
-    view_cna_secured_states = {
-        icon = generic_map_mode
-        cost = 0
-        allowed = { tag = CNA }
-        visible = { tag = CNA }
-        available = { always = no } 
-        
-        highlight_states = {
-            highlight_states_trigger = {
-                has_state_flag = marked_by_CNA
-            }
-        }
-    }
+    #     highlight_states = {
+    #         highlight_states_trigger = {
+    #             has_state_flag = marked_by_CLB
+    #         }
+    #     }
+    # }
 
-    view_ccm_secured_states = {
-        icon = generic_map_mode
-        cost = 0
-        allowed = { tag = CCM }
-        visible = { tag = CCM }
-        available = { always = no } 
+    # view_cmo_secured_states = {
+    #     icon = generic_map_mode
+    #     cost = 0
+    #     allowed = { tag = CMO }
+    #     visible = { tag = CMO 
+    #         NOT = { has_global_flag = ready_for_COM_civil_war } 
+    #     }
+    #     available = { always = no } 
         
-        highlight_states = {
-            highlight_states_trigger = {
-                has_state_flag = marked_by_CCM
-            }
-        }
-    }
+    #     state_target = yes
+    #     target_trigger = {
+    #         FROM = { is_capital = yes }
+    #     }
+        
+    #     highlight_states = {
+    #         highlight_states_trigger = {
+    #             has_state_flag = marked_by_CMO
+    #         }
+    #     }
+    # }
+
+    # view_cna_secured_states = {
+    #     icon = generic_map_mode
+    #     cost = 0
+    #     allowed = { tag = CNA }
+    #     visible = { tag = CNA 
+    #         NOT = { has_global_flag = ready_for_COM_civil_war } 
+    #     }
+    #     available = { always = no } 
+        
+    #     state_target = yes
+    #     target_trigger = {
+    #         FROM = { is_capital = yes }
+    #     }
+
+    #     highlight_states = {
+    #         highlight_states_trigger = {
+    #             has_state_flag = marked_by_CNA
+    #         }
+    #     }
+    # }
+
+    # view_ccm_secured_states = {
+    #     icon = generic_map_mode
+    #     cost = 0
+    #     allowed = { tag = CCM }
+    #     visible = { tag = CCM 
+    #         NOT = { has_global_flag = ready_for_COM_civil_war } 
+    #     }
+    #     available = { always = no } 
+        
+    #     state_target = yes
+    #     target_trigger = {
+    #         FROM = { is_capital = yes }
+    #     }
+        
+    #     highlight_states = {
+    #         highlight_states_trigger = {
+    #             has_state_flag = marked_by_CCM
+    #         }
+    #     }
+    # }
 
     # ----------------------------------------------------
     # BREAKAWAY TIMERS (Missions)
@@ -121,12 +166,11 @@ com_civil_war_scramble_category = {
     }
 
     # ----------------------------------------------------
-    # THE SCRAMBLE DECISION (Sluggish Fringe Expansion)
+    # THE SCRAMBLE DECISION (Simultaneous FFA & Working Blobbing)
     # ----------------------------------------------------
     claim_com_state_decision = {
         icon = generic_decision
         
-        # Bulletproofing: ONLY these tags can ever evaluate this decision
         allowed = { 
             OR = { tag = CCO tag = CLB tag = CMO tag = CNA tag = CCM }
         }
@@ -154,7 +198,9 @@ com_civil_war_scramble_category = {
         ai_will_do = {
             base = 1
             
+            # ==========================================
             # UNIQUE FACTION WISH LISTS
+            # ==========================================
             modifier = {
                 add = 200
                 ROOT = { tag = CCO }
@@ -218,13 +264,16 @@ com_civil_war_scramble_category = {
                 } 
             }
 
-            # CONNECTED BORDER LOGIC
+            # ==================================================
+            # WORKING BLOBBING LOGIC (Contiguous + Core Anchors)
+            # ==================================================
+            
+            # Modifier 1: Reward states that expand your active frontline (+100)
             modifier = {
                 add = 100
                 FROM = {
                     any_neighbor_state = {
                         OR = {
-                            is_owned_by = ROOT 
                             AND = { ROOT = { tag = CCO } has_state_flag = marked_by_CCO }
                             AND = { ROOT = { tag = CLB } has_state_flag = marked_by_CLB }
                             AND = { ROOT = { tag = CMO } has_state_flag = marked_by_CMO }
@@ -234,19 +283,43 @@ com_civil_war_scramble_category = {
                     }
                 }
             }
+
+            # Modifier 2: Heavily reward filling out tiles touching your physical starting capitals (+150)
+            # This mathematically creates a "cluster" shape around their cores instead of a thin snake
+            modifier = {
+                add = 150
+                FROM = {
+                    any_neighbor_state = {
+                        OR = {
+                            AND = { ROOT = { tag = CCO } state = 88 }
+                            AND = { ROOT = { tag = CLB } state = 807 }
+                            AND = { ROOT = { tag = CMO } state = 259 }
+                            AND = { ROOT = { tag = CNA } state = 96 }
+                            AND = { ROOT = { tag = CCM } state = 45 }
+                        }
+                    }
+                }
+            }
         }
 
         complete_effect = {
-            # THE SPLIT COOLDOWN LOGIC
-            # Main factions expand rapidly (3 days)
+            # THE SPLIT COOLDOWN LOGIC 
             if = {
-                limit = { OR = { tag = CCO tag = CLB tag = CMO } }
-                set_country_flag = { flag = com_scramble_cooldown value = 1 days = 3 }
+                limit = { OR = { tag = CLB tag = CMO } }
+                set_country_flag = { flag = com_scramble_cooldown value = 1 days = 2 }
             }
-            # Fringe factions expand sluggishly (6 days)
+
+            if = { #Z uwagi na centralne położenie konserwatystów, ich cooldown jest krótszy
+                limit = { tag = CCO }
+                set_country_flag = { flag = com_scramble_cooldown value = 1 days = 2 }
+            }
             if = {
-                limit = { OR = { tag = CNA tag = CCM } }
-                set_country_flag = { flag = com_scramble_cooldown value = 1 days = 6 }
+                limit = { tag = CCM }
+                set_country_flag = { flag = com_scramble_cooldown value = 1 days = 5 }
+            }
+            if = {
+                limit = { tag = CNA }
+                set_country_flag = { flag = com_scramble_cooldown value = 1 days = 4 }
             }
 
             FROM = { 
@@ -261,15 +334,14 @@ com_civil_war_scramble_category = {
                 }
             }
 
-            # ==========================================
             # ARRAY ADDITION FOR MAP HIGHLIGHTS
-            # ==========================================
             if = { limit = { tag = CCO } add_to_array = { cco_marked_states = FROM } }
             if = { limit = { tag = CLB } add_to_array = { clb_marked_states = FROM } }
             if = { limit = { tag = CMO } add_to_array = { cmo_marked_states = FROM } }
             if = { limit = { tag = CNA } add_to_array = { cna_marked_states = FROM } }
             if = { limit = { tag = CCM } add_to_array = { ccm_marked_states = FROM } }
 
+            # ENDGAME CHECK
             # ENDGAME CHECK
             if = {
                 limit = {
@@ -287,7 +359,9 @@ com_civil_war_scramble_category = {
                     NOT = { has_global_flag = ready_for_COM_civil_war } 
                 }
                 set_global_flag = ready_for_COM_civil_war
-                country_event = { id = commonwealth.8 days = 5 } 
+                
+                # Target CCO specifically so the backend setup ONLY runs once!
+                CCO = { country_event = { id = commonwealth.8 days = 5 } } 
             }
         }
     }
