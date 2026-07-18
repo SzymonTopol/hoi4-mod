@@ -1,6 +1,6 @@
 com_state_lost_demoralization = {
+    icon = GFX_idea_POL_the_peasants_strike # Added the full sprite prefix here
     enable = { always = yes }
-    icon = POL_the_peasants_strike
     
     # Dynamic modifiers ARE allowed to read variables!
     surrender_limit = com_demoralization_var 

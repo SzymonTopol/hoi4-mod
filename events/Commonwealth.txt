@@ -513,11 +513,11 @@ country_event = { #The Commonwealth Civil War - setup krajów, przeniesienie kon
             every_owned_state = { #Ponieważ konserwatyści są okrążeni z każdej strony, będą mieć więcej wyposażenia (ale nie za dużo, bo eko mają)
                 create_unit = {
                     owner = CCO 
-                    division = "name = \"Conservative Militia\" division_template = \"Conservative Militia\" start_equipment_factor = 0.70"
+                    division = "name = \"Conservative Militia\" division_template = \"Conservative Militia\" start_equipment_factor = 0.60"
                 }
                 create_unit = {
                     owner = CCO 
-                    division = "name = \"Conservative Militia\" division_template = \"Conservative Militia\" start_equipment_factor = 0.70"
+                    division = "name = \"Conservative Militia\" division_template = \"Conservative Militia\" start_equipment_factor = 0.60"
                 }
             }
         }
@@ -535,11 +535,11 @@ country_event = { #The Commonwealth Civil War - setup krajów, przeniesienie kon
             every_owned_state = {
                 create_unit = {
                     owner = CLB 
-                    division = "name = \"Liberal Militia\" division_template = \"Liberal Militia\" start_equipment_factor = 0.5"
+                    division = "name = \"Liberal Militia\" division_template = \"Liberal Militia\" start_equipment_factor = 0.4"
                 }
                 create_unit = {
                     owner = CLB 
-                    division = "name = \"Liberal Militia\" division_template = \"Liberal Militia\" start_equipment_factor = 0.5"
+                    division = "name = \"Liberal Militia\" division_template = \"Liberal Militia\" start_equipment_factor = 0.4"
                 }
             }
         }
@@ -557,11 +557,11 @@ country_event = { #The Commonwealth Civil War - setup krajów, przeniesienie kon
             every_owned_state = { #Z jakiegoś powodu rojaliści mają problemy z utrzymaniem się (mniejsza eko, więc damy im więcej wyposażenia na dzień dobry)
                 create_unit = {
                     owner = CMO 
-                    division = "name = \"Royalist Militia\" division_template = \"Royalist Militia\" start_equipment_factor = 0.85"
+                    division = "name = \"Royalist Militia\" division_template = \"Royalist Militia\" start_equipment_factor = 0.7"
                 }
                 create_unit = {
                     owner = CMO 
-                    division = "name = \"Royalist Militia\" division_template = \"Royalist Militia\" start_equipment_factor = 0.85"
+                    division = "name = \"Royalist Militia\" division_template = \"Royalist Militia\" start_equipment_factor = 0.7"
                 }
             }
         }
@@ -584,6 +584,10 @@ country_event = { #The Commonwealth Civil War - setup krajów, przeniesienie kon
                     create_unit = {
                         owner = CNA 
                         division = "name = \"Fringe Militia\" division_template = \"Fringe Militia\" start_equipment_factor = 1.0"
+                    }
+                    create_unit = {
+                        owner = CNA 
+                        division = "name = \"Fringe Militia\" division_template = \"Fringe Militia\" start_equipment_factor = 0.3"
                     }
                 }
                 division_template = {
@@ -625,6 +629,10 @@ country_event = { #The Commonwealth Civil War - setup krajów, przeniesienie kon
                     create_unit = {
                         owner = CCM 
                         division = "name = \"Revolutionary Militia\" division_template = \"Revolutionary Militia\" start_equipment_factor = 1.0"
+                    }
+                    create_unit = {
+                        owner = CCM 
+                        division = "name = \"Revolutionary Militia\" division_template = \"Revolutionary Militia\" start_equipment_factor = 0.7"
                     }
                 }
 

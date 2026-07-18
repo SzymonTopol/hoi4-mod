@@ -1,0 +1,15 @@
+﻿l_english:
+ # ----------------------------------------------------
+ # THE SCRAMBLE DECISION
+ # ----------------------------------------------------
+ claim_com_state_decision:0 "Secure [From.GetName]"
+ claim_com_state_decision_desc:0 "Send operatives to secure [From.GetName] before the other factions can establish a foothold."
+
+ # ----------------------------------------------------
+ # BREAKAWAY MISSIONS
+ # ----------------------------------------------------
+ release_cna_mission:0 "Nationalists breaking point"
+ release_cna_mission_desc:0 "The rift between the Nationalists and the Old Guard of the party is growing."
+
+ release_ccm_mission:0 "Communists grow impatient"
+ release_ccm_mission_desc:0 "The Communist faction is growing impatient with the current state of affairs and is looking to take matters into their own hands."

@@ -1,128 +1,10 @@
 com_civil_war_scramble_category = {
 
     # ----------------------------------------------------
-    # VISUAL MAP MARKERS FOR SECURED STATES
-    # ----------------------------------------------------
-    # view_cco_secured_states = {
-    #     icon = generic_map_mode
-    #     cost = 0
-    #     allowed = { tag = CCO }
-        
-    #     visible = { 
-    #         tag = CCO 
-    #         NOT = { has_global_flag = ready_for_COM_civil_war } 
-    #     }
-        
-    #     available = { always = no } 
-        
-    #     # ==========================================
-    #     # THE SILVER BULLET
-    #     # Target the country instead of the state. 
-    #     # This locks the pin to the capital without blinding the highlight!
-    #     # ==========================================
-    #     country_target = yes
-    #     target_trigger = {
-    #         tag = CCO
-    #     }
-        
-    #     highlight_states = {
-    #         highlight_states_trigger = {
-    #             has_state_flag = marked_by_CCO
-    #         }
-    #     }
-    # }
-
-    # view_clb_secured_states = {
-    #     icon = generic_map_mode
-    #     cost = 0
-    #     allowed = { tag = CLB }
-
-    #     visible = { 
-    #         tag = CLB
-    #         NOT = { has_global_flag = ready_for_COM_civil_war } 
-    #     }
-    #     available = { always = no } 
-        
-    #     state_target = yes
-    #     target_trigger = {
-    #         FROM = { is_capital = yes }
-    #     }
-
-    #     highlight_states = {
-    #         highlight_states_trigger = {
-    #             has_state_flag = marked_by_CLB
-    #         }
-    #     }
-    # }
-
-    # view_cmo_secured_states = {
-    #     icon = generic_map_mode
-    #     cost = 0
-    #     allowed = { tag = CMO }
-    #     visible = { tag = CMO 
-    #         NOT = { has_global_flag = ready_for_COM_civil_war } 
-    #     }
-    #     available = { always = no } 
-        
-    #     state_target = yes
-    #     target_trigger = {
-    #         FROM = { is_capital = yes }
-    #     }
-        
-    #     highlight_states = {
-    #         highlight_states_trigger = {
-    #             has_state_flag = marked_by_CMO
-    #         }
-    #     }
-    # }
-
-    # view_cna_secured_states = {
-    #     icon = generic_map_mode
-    #     cost = 0
-    #     allowed = { tag = CNA }
-    #     visible = { tag = CNA 
-    #         NOT = { has_global_flag = ready_for_COM_civil_war } 
-    #     }
-    #     available = { always = no } 
-        
-    #     state_target = yes
-    #     target_trigger = {
-    #         FROM = { is_capital = yes }
-    #     }
-
-    #     highlight_states = {
-    #         highlight_states_trigger = {
-    #             has_state_flag = marked_by_CNA
-    #         }
-    #     }
-    # }
-
-    # view_ccm_secured_states = {
-    #     icon = generic_map_mode
-    #     cost = 0
-    #     allowed = { tag = CCM }
-    #     visible = { tag = CCM 
-    #         NOT = { has_global_flag = ready_for_COM_civil_war } 
-    #     }
-    #     available = { always = no } 
-        
-    #     state_target = yes
-    #     target_trigger = {
-    #         FROM = { is_capital = yes }
-    #     }
-        
-    #     highlight_states = {
-    #         highlight_states_trigger = {
-    #             has_state_flag = marked_by_CCM
-    #         }
-    #     }
-    # }
-
-    # ----------------------------------------------------
     # BREAKAWAY TIMERS (Missions)
     # ----------------------------------------------------
     release_cna_mission = {
-        icon = generic_operations
+        icon = GFX_decision_generic_political_discourse
         allowed = { tag = CCO }
         
         fire_only_once = yes # Stops the mission from looping
@@ -144,7 +26,7 @@ com_civil_war_scramble_category = {
     }
 
     release_ccm_mission = {
-        icon = generic_operations
+        icon = GFX_decision_generic_political_discourse
         allowed = { tag = CLB }
         
         fire_only_once = yes # Stops the mission from looping
@@ -169,7 +51,7 @@ com_civil_war_scramble_category = {
     # THE SCRAMBLE DECISION (Simultaneous FFA & Working Blobbing)
     # ----------------------------------------------------
     claim_com_state_decision = {
-        icon = generic_decision
+        icon = GFX_decision_generic_operation
         
         allowed = { 
             OR = { tag = CCO tag = CLB tag = CMO tag = CNA tag = CCM }
@@ -202,7 +84,7 @@ com_civil_war_scramble_category = {
             # UNIQUE FACTION WISH LISTS
             # ==========================================
             modifier = {
-                add = 200
+                add = 2000
                 ROOT = { tag = CCO }
                 FROM = { 
                     OR = { state = 65 } OR = { state = 66 } OR = { state = 67 } OR = { state = 762 } 
@@ -220,7 +102,7 @@ com_civil_war_scramble_category = {
                 }
             }
             modifier = {
-                add = 200
+                add = 2000
                 ROOT = { tag = CLB }
                 FROM = { 
                     OR = { state = 62 } OR = { state = 63 } OR = { state = 68 } OR = { state = 86 } 
@@ -232,7 +114,7 @@ com_civil_war_scramble_category = {
                 } 
             }
             modifier = {
-                add = 200
+                add = 2000
                 ROOT = { tag = CMO }
                 FROM = {
                     OR = { state = 204 } OR = { state = 241 } OR = { state = 224 } OR = { state = 194 } 
@@ -248,7 +130,7 @@ com_civil_war_scramble_category = {
                 } 
             }
             modifier = {
-                add = 200
+                add = 2000
                 ROOT = { tag = CNA }
                 FROM = { 
                     OR = { state = 808 } OR = { state = 809 } OR = { state = 815 } OR = { state = 11 } 
@@ -256,7 +138,7 @@ com_civil_war_scramble_category = {
                 } 
             }
             modifier = {
-                add = 200
+                add = 2000
                 ROOT = { tag = CCM }
                 FROM = { 
                     OR = { state = 155 } OR = { state = 974 } OR = { state = 973 } OR = { state = 109 } 
@@ -270,7 +152,7 @@ com_civil_war_scramble_category = {
             
             # Modifier 1: Reward states that expand your active frontline (+100)
             modifier = {
-                add = 100
+                add = 200
                 FROM = {
                     any_neighbor_state = {
                         OR = {
@@ -287,7 +169,7 @@ com_civil_war_scramble_category = {
             # Modifier 2: Heavily reward filling out tiles touching your physical starting capitals (+150)
             # This mathematically creates a "cluster" shape around their cores instead of a thin snake
             modifier = {
-                add = 150
+                add = 300
                 FROM = {
                     any_neighbor_state = {
                         OR = {
@@ -315,11 +197,11 @@ com_civil_war_scramble_category = {
             }
             if = {
                 limit = { tag = CCM }
-                set_country_flag = { flag = com_scramble_cooldown value = 1 days = 5 }
+                set_country_flag = { flag = com_scramble_cooldown value = 1 days = 6 }
             }
             if = {
                 limit = { tag = CNA }
-                set_country_flag = { flag = com_scramble_cooldown value = 1 days = 4 }
+                set_country_flag = { flag = com_scramble_cooldown value = 1 days = 3 }
             }
 
             FROM = { 

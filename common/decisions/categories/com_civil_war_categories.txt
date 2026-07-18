@@ -10,4 +10,40 @@ com_civil_war_scramble_category = {
             tag = CCM
         }
     }
+
+    on_map_area = {
+        name = view_cco_secured_states_on_map
+        target_array = ROOT.cco_marked_states
+        zoom = 600
+        
+    }
+
+    on_map_area = {
+        name = view_clb_secured_states_on_map
+        target_array = ROOT.clb_marked_states
+        zoom = 600
+        
+    }
+
+    on_map_area = {
+        name = view_cmo_secured_states_on_map
+        target_array = ROOT.cmo_marked_states
+        zoom = 600
+        
+    }
+
+    on_map_area = {
+        name = view_cna_secured_states_on_map
+        target_array = ROOT.cna_marked_states
+        zoom = 600
+        
+    }
+
+    on_map_area = {
+        name = view_ccm_secured_states_on_map
+        target_array = ROOT.ccm_marked_states
+        zoom = 600
+        
+    }
+
 }
