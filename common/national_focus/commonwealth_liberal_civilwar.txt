@@ -1,0 +1,151 @@
+focus_tree = {
+    id = commonwealth_liberal_civilwar
+
+    country = {
+        factor = 0
+        
+        modifier = {
+            add = 10
+            tag = CLB
+        }
+    }
+    default = no
+
+    focus = {
+        id = CLB_northern_sympathizers
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = 2
+        y = 0
+        completion_reward = { 
+            add_stability = 0.02
+        }
+    }
+
+    focus = {
+        id = CLB_redirect_funds
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = -3
+        y = 1
+        relative_position_id = CLB_northern_sympathizers
+        completion_reward = { 
+            add_stability = 0.02
+        }
+        prerequisite = {
+            focus = CLB_northern_sympathizers
+        }
+    }
+
+    focus = {
+        id = CLB_media_war
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = -2
+        y = 2
+        relative_position_id = CLB_northern_sympathizers
+        completion_reward = { 
+            add_stability = 0.02
+        }
+        prerequisite = {
+            focus = CLB_northern_sympathizers
+        }
+    }
+
+    focus = {
+        id = CLB_pull_administration_favors #SCA <- przejściowscy
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = -1
+        y = 1
+        relative_position_id = CLB_northern_sympathizers
+        completion_reward = { 
+            add_stability = 0.02
+        }
+        prerequisite = {
+            focus = CLB_northern_sympathizers
+        }
+    }
+
+    focus = {
+        id = CLB_arm_students
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = 1
+        y = 1
+        relative_position_id = CLB_northern_sympathizers
+        completion_reward = { 
+            add_stability = 0.02
+        }
+        prerequisite = {
+            focus = CLB_northern_sympathizers
+        }
+    }
+
+    focus = {
+        id = CLB_dismiss_radical_adjitators
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = 3
+        y = 1
+        relative_position_id = CLB_northern_sympathizers
+        completion_reward = { 
+            add_stability = 0.02
+        }
+        prerequisite = {
+            focus = CLB_northern_sympathizers
+        }
+    }
+
+    focus = {
+        id = CLB_appeal_to_population
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = 4
+        y = 2
+        relative_position_id = CLB_northern_sympathizers
+        completion_reward = { 
+            add_stability = 0.02
+        }
+        prerequisite = {
+            focus = CLB_northern_sympathizers
+        }
+    }
+
+    focus = {
+        id = CLB_gdansk_transit_commision
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = 5
+        y = 1
+        relative_position_id = CLB_northern_sympathizers
+        completion_reward = { 
+            add_stability = 0.02
+        }
+        prerequisite = {
+            focus = CLB_northern_sympathizers
+        }
+        
+        available = {
+            controls_state = 85 #gdańsk
+        }
+    }
+
+    focus = {
+        id = CLB_profesional_training
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = 1
+        y = 1
+        relative_position_id = CLB_pull_administration_favors
+        completion_reward = { 
+            add_stability = 0.02
+        }
+        prerequisite = {
+            focus = CLB_pull_administration_favors
+        }
+        prerequisite = {
+            focus = CLB_arm_students
+        }
+    }
+}

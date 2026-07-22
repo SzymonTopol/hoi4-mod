@@ -1,0 +1,240 @@
+focus_tree = {
+    id = commonwealth_communist_civilwar
+
+    country = {
+        factor = 0
+        
+        modifier = {
+            add = 10
+            tag = CCM
+        }
+    }
+    default = no
+
+    continuous_focus_position = {
+        x = 1000
+        y = 50
+    }
+
+    focus = {
+        id = CCM_revolution_approaches
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = 2
+        y = 0
+        #relative_position_id = COM_royal_speech
+        completion_reward = { 
+            add_stability = 0.02
+        }
+    }
+
+    focus = {
+        id = CCM_reform_people_council
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = 0
+        y = 1
+        relative_position_id = CCM_revolution_approaches
+        completion_reward = { 
+            add_stability = 0.02
+        }
+        prerequisite = {
+            focus = CCM_revolution_approaches
+        }
+    }
+
+    focus = {
+        id = CCM_red_army
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = 0
+        y = 1
+        relative_position_id = CCM_reform_people_council
+        completion_reward = { 
+            add_stability = 0.02
+        }
+        prerequisite = {
+            focus = CCM_reform_people_council
+        }
+    }
+
+    focus = {
+        id = CCM_international_brigades
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = -3
+        y = 1
+        relative_position_id = CCM_red_army
+        completion_reward = { 
+            add_stability = 0.02
+        }
+        prerequisite = {
+            focus = CCM_red_army
+        }
+    }
+
+    focus = {
+        id = CCM_common_soldiers
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = -1
+        y = 1
+        relative_position_id = CCM_red_army
+        completion_reward = { 
+            add_stability = 0.02
+        }
+        prerequisite = {
+            focus = CCM_red_army
+        }
+    }
+
+    focus = {
+        id = CCM_sway_youth
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = 1
+        y = 1
+        relative_position_id = CCM_red_army
+        completion_reward = { 
+            add_stability = 0.02
+        }
+        prerequisite = {
+            focus = CCM_red_army
+        }
+    }
+
+    focus = {
+        id = CCM_mountain_staches
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = 3
+        y = 1
+        relative_position_id = CCM_red_army
+        completion_reward = { 
+            add_stability = 0.02
+        }
+        prerequisite = {
+            focus = CCM_red_army
+        }
+    }
+
+    focus = {
+        id = CCM_forward_batalions
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = 1
+        y = 1
+        relative_position_id = CCM_international_brigades
+        completion_reward = { 
+            add_stability = 0.02
+        }
+        prerequisite = {
+            focus = CCM_international_brigades
+        }
+        prerequisite = {
+            focus = CCM_common_soldiers
+        }
+    }
+
+    focus = {
+        id = CCM_new_supporters
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = 1
+        y = 1
+        relative_position_id = CCM_common_soldiers
+        completion_reward = { 
+            add_stability = 0.02
+        }
+        prerequisite = {
+            focus = CCM_common_soldiers
+        }
+        prerequisite = {
+            focus = CCM_sway_youth
+        }
+    }
+
+    focus = {
+        id = CCM_means_of_production
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = 0
+        y = 1
+        relative_position_id = CCM_mountain_staches
+        completion_reward = { 
+            add_stability = 0.02
+        }
+        prerequisite = {
+            focus = CCM_mountain_staches
+        }
+    }
+
+    focus = {
+        id = CCM_land_aquistion
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = -1
+        y = 1
+        relative_position_id = CCM_means_of_production
+        completion_reward = { 
+            add_stability = 0.02
+        }
+        prerequisite = {
+            focus = CCM_sway_youth
+        }
+        prerequisite = {
+            focus = CCM_means_of_production
+        }
+    }
+
+    focus = {
+        id = CCM_way_of_word
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = 0
+        y = 2
+        relative_position_id = CCM_new_supporters
+        completion_reward = { 
+            add_stability = 0.02
+        }
+        prerequisite = {
+            focus = CCM_forward_batalions
+        }
+        prerequisite = {
+            focus = CCM_new_supporters
+        }
+        prerequisite = {
+            focus = CCM_land_aquistion
+        }
+    }
+
+    focus = {
+        id = CCM_sound_of_rifle
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = 0
+        y = 1
+        relative_position_id = CCM_way_of_word
+        completion_reward = { 
+            add_stability = 0.02
+        }
+        prerequisite = {
+            focus = CCM_way_of_word
+        }
+    }
+
+    focus = {
+        id = CCM_roar_of_revolution
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = 0
+        y = 1
+        relative_position_id = CCM_sound_of_rifle
+        completion_reward = { 
+            add_stability = 0.02
+        }
+        prerequisite = {
+            focus = CCM_sound_of_rifle
+        }
+    }
+}

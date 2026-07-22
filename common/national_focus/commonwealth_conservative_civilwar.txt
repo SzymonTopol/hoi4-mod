@@ -1,0 +1,156 @@
+focus_tree = {
+    id = commonwealth_conservative_civilwar
+
+    country = {
+        factor = 0
+        
+        modifier = {
+            add = 10
+            tag = CCO
+        }
+    }
+    default = no
+
+    focus = {
+        id = CCO_army_loyalty
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = 2
+        y = 0
+        completion_reward = { 
+            add_stability = 0.02
+        }
+    }
+
+    focus = {
+        id = CCO_call_strategos_friends #<- strategos protectorate
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = -4
+        y = 1
+        relative_position_id = CCO_army_loyalty
+        completion_reward = { 
+            add_stability = 0.02
+        }
+        prerequisite = { focus = CCO_army_loyalty }
+    }
+
+    focus = {
+        id = CCO_southern_coast
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = 0
+        y = 1
+        relative_position_id = CCO_call_strategos_friends
+        completion_reward = { 
+            add_stability = 0.02
+        }
+        prerequisite = { focus = CCO_call_strategos_friends }
+    }
+
+    focus = {
+        id = CCO_cooperate_with_nationalists
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = -2
+        y = 1
+        relative_position_id = CCO_army_loyalty
+        completion_reward = { 
+            add_stability = 0.02
+        }
+        prerequisite = { focus = CCO_army_loyalty }
+    }
+
+    focus = {
+        id = CCO_prevent_ideological_split
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = 0
+        y = 1
+        relative_position_id = CCO_cooperate_with_nationalists
+        completion_reward = { 
+            add_stability = 0.02
+        }
+        prerequisite = { focus = CCO_cooperate_with_nationalists }
+    }
+
+    focus = {
+        id = CCO_seize_depos
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = 0
+        y = 1
+        relative_position_id = CCO_army_loyalty
+        completion_reward = { 
+            add_stability = 0.02
+        }
+        prerequisite = { focus = CCO_army_loyalty }
+    }
+
+    focus = {
+        id = CCO_redirect_munition_shipments
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = 0
+        y = 1
+        relative_position_id = CCO_seize_depos
+        completion_reward = { 
+            add_stability = 0.02
+        }
+        prerequisite = { focus = CCO_seize_depos }
+    }
+
+    focus = {
+        id = CCO_sway_industrialists
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = 2
+        y = 1
+        relative_position_id = CCO_army_loyalty
+        completion_reward = { 
+            add_stability = 0.02
+        }
+        prerequisite = { focus = CCO_army_loyalty }
+    }
+
+    focus = {
+        id = CCO_arm_loyalists
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = 4
+        y = 1
+        relative_position_id = CCO_army_loyalty
+        completion_reward = { 
+            add_stability = 0.02
+        }
+        prerequisite = { focus = CCO_army_loyalty }
+    }
+
+    focus = {
+        id = CCO_infiltrate_airforce
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = 1
+        y = 1
+        relative_position_id = CCO_sway_industrialists
+        completion_reward = { 
+            add_stability = 0.02
+        }
+        prerequisite = { focus = CCO_sway_industrialists}
+        prerequisite = { focus = CCO_arm_loyalists}
+    }
+
+    focus = {
+        id = CCO_underground_railroad
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = 1
+        y = 1
+        relative_position_id = CCO_redirect_munition_shipments
+        completion_reward = { 
+            add_stability = 0.02
+        }
+        prerequisite = { focus = CCO_redirect_munition_shipments }
+        prerequisite = { focus = CCO_sway_industrialists }
+    }
+}

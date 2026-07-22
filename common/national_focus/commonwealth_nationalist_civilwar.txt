@@ -1,0 +1,251 @@
+focus_tree = {
+    id = commonwealth_nationalist_civilwar
+
+    country = {
+        factor = 0
+        
+        modifier = {
+            add = 10
+            tag = CNA
+        }
+    }
+    default = no
+
+    focus = {
+        id = CNA_our_mission
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = 2
+        y = 0
+        #relative_position_id = COM_royal_speech
+        completion_reward = { 
+            add_stability = 0.02
+        }
+    }
+
+    focus = {
+        id = CNA_exploit_enemy_radicalism
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = -2
+        y = 1
+        relative_position_id = CNA_our_mission
+        completion_reward = { 
+            add_stability = 0.02
+        }
+        prerequisite = {
+            focus = CNA_our_mission
+        }
+    }
+
+    focus = {
+        id = CNA_military_administration
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = 0
+        y = 1
+        relative_position_id = CNA_our_mission
+        completion_reward = { 
+            add_stability = 0.02
+        }
+        prerequisite = {
+            focus = CNA_our_mission
+        }
+    }
+
+    focus = {
+        id = CNA_sway_the_young
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = 3
+        y = 1
+        relative_position_id = CNA_our_mission
+        completion_reward = { 
+            add_stability = 0.02
+        }
+        prerequisite = {
+            focus = CNA_our_mission
+        }
+    }
+
+    focus = {
+        id = CNA_tale_of_two_militaries
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = 0
+        y = 1
+        relative_position_id = CNA_sway_the_young
+        completion_reward = { 
+            add_stability = 0.02
+        }
+        prerequisite = {
+            focus = CNA_sway_the_young
+        }
+    }
+
+    focus = {
+        id = CNA_anti_communism
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = -1
+        y = 1
+        relative_position_id = CNA_exploit_enemy_radicalism
+        completion_reward = { 
+            add_stability = 0.02
+        }
+        prerequisite = {
+            focus = CNA_exploit_enemy_radicalism
+        }
+    }
+
+    focus = {
+        id = CNA_expand_our_reach
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = 1
+        y = 1
+        relative_position_id = CNA_exploit_enemy_radicalism
+        completion_reward = { 
+            add_stability = 0.02
+        }
+        prerequisite = {
+            focus = CNA_exploit_enemy_radicalism
+        }
+        prerequisite = {
+            focus = CNA_military_administration
+        }
+    }
+
+    focus = {
+        id = CNA_encourage_defections
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = 1
+        y = 1
+        relative_position_id = CNA_military_administration
+        completion_reward = { 
+            add_stability = 0.02
+        }
+        prerequisite = {
+            focus = CNA_military_administration
+        }
+    }
+
+    focus = {
+        id = CNA_nationalize_industries
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = 1
+        y = 1
+        relative_position_id = CNA_anti_communism
+        completion_reward = { 
+            add_stability = 0.02
+        }
+        prerequisite = {
+            focus = CNA_anti_communism
+        }
+        prerequisite = {
+            focus = CNA_expand_our_reach
+        }
+    }
+
+    focus = {
+        id = CNA_invincible_army
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = 1
+        y = 1
+        relative_position_id = CNA_expand_our_reach
+        completion_reward = { 
+            add_stability = 0.02
+        }
+        prerequisite = {
+            focus = CNA_expand_our_reach
+        }
+        prerequisite = {
+            focus = CNA_encourage_defections
+        }
+    }
+
+    focus = {
+        id = CNA_defensive_posture
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = 0
+        y = 1
+        relative_position_id = CNA_nationalize_industries
+        completion_reward = { 
+            add_stability = 0.02
+        }
+        prerequisite = {
+            focus = CNA_nationalize_industries
+        }
+        prerequisite = {
+            focus = CNA_invincible_army
+        }
+    }
+
+    focus = {
+        id = CNA_rapid_expansion
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = 0
+        y = 1
+        relative_position_id = CNA_invincible_army
+        completion_reward = { 
+            add_stability = 0.02
+        }
+        prerequisite = {
+            focus = CNA_nationalize_industries
+        }
+        prerequisite = {
+            focus = CNA_invincible_army
+        }
+    }
+
+    focus = {
+        id = CNA_partisan_training
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = -1
+        y = 1
+        relative_position_id = CNA_defensive_posture
+        completion_reward = { 
+            add_stability = 0.02
+        }
+        prerequisite = {
+            focus = CNA_defensive_posture
+        }
+    }
+
+    focus = {
+        id = CNA_national_rebirth
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = 1
+        y = 1
+        relative_position_id = CNA_defensive_posture
+        completion_reward = { 
+            add_stability = 0.02
+        }
+        prerequisite = {
+            focus = CNA_defensive_posture
+            focus = CNA_rapid_expansion
+        }
+    }
+
+    focus = {
+        id = CNA_breakthrough_doctrine
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = 1
+        y = 1
+        relative_position_id = CNA_rapid_expansion
+        completion_reward = { 
+            add_stability = 0.02
+        }
+        prerequisite = {
+            focus = CNA_rapid_expansion
+        }
+    }
+}

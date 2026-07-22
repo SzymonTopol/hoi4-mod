@@ -238,6 +238,10 @@ country_event = { #Too little too late
         
         # Wrapped in is_ai = no so it only forces the tag switch if a human is playing!
 
+        CCO = { load_focus_tree = commonwealth_conservative_civilwar}
+        CLB = { load_focus_tree = commonwealth_liberal_civilwar}
+        CMO = { load_focus_tree = commonwealth_monarchist_civilwar}
+
         # ==========================================
         # THIS ACTUALLY STARTS THE MISSIONS & SCRAMBLE
         # ==========================================
@@ -753,7 +757,7 @@ country_event = { # CNA Breakaway
         # Release the fringe faction
         96 = { add_core_of = CNA }
         CNA = { transfer_state = 96 }
-        CNA = { load_focus_tree = empty_focus }
+        CNA = { load_focus_tree = commonwealth_nationalist_civilwar }
     }
 
     option = {
@@ -777,7 +781,7 @@ country_event = { # CCM Breakaway
     immediate = {
         45 = { add_core_of = CCM }
         CCM = { transfer_state = 45 }
-        CCM = { load_focus_tree = empty_focus }
+        CCM = { load_focus_tree = commonwealth_communist_civilwar }
     }
 
     option = {

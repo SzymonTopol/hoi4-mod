@@ -1,0 +1,168 @@
+focus_tree = {
+    id = commonwealth_monarchist_civilwar
+
+    country = {
+        factor = 0
+        
+        modifier = {
+            add = 10
+            tag = CMO
+        }
+    }
+    default = no
+
+    focus = {
+        id = CMO_his_majesty_call
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = 2
+        y = 0
+        completion_reward = { 
+            add_stability = 0.02
+        }
+    }
+
+    focus = {
+        id = CMO_szlachtas_response
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = 0
+        y = 1
+        relative_position_id = CMO_his_majesty_call
+        completion_reward = { 
+            add_stability = 0.02
+        }
+        prerequisite = {
+            focus = CMO_his_majesty_call
+        }
+    }
+
+    focus = {
+        id = CMO_food_supply
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = -3
+        y = 1
+        relative_position_id = CMO_szlachtas_response
+        completion_reward = { 
+            add_stability = 0.02
+        }
+        prerequisite = {
+            focus = CMO_szlachtas_response
+        }
+    }
+
+    focus = {
+        id = CMO_cavalry_support
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = 0
+        y = 1
+        relative_position_id = CMO_szlachtas_response
+        completion_reward = { 
+            add_stability = 0.02
+        }
+        prerequisite = {
+            focus = CMO_szlachtas_response
+        }
+    }
+
+    focus = {
+        id = CMO_noble_commanders
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = 3
+        y = 1
+        relative_position_id = CMO_szlachtas_response
+        completion_reward = { 
+            add_stability = 0.02
+        }
+        prerequisite = {
+            focus = CMO_szlachtas_response
+        }
+    }
+
+    focus = {
+        id = CMO_reliable_messengers
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = 2
+        y = 1
+        relative_position_id = CMO_food_supply
+        completion_reward = { 
+            add_stability = 0.02
+        }
+        prerequisite = {
+            focus = CMO_food_supply
+        }
+        prerequisite = {
+            focus = CMO_cavalry_support
+        }
+    }
+
+    focus = {
+        id = CMO_in_defense_of_nation
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = 1
+        y = 1
+        relative_position_id = CMO_cavalry_support
+        completion_reward = { 
+            add_stability = 0.02
+        }
+        prerequisite = {
+            focus = CMO_cavalry_support
+        }
+    }
+
+    focus = {
+        id = CMO_united_by_faith
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = 1
+        y = 1
+        relative_position_id = CMO_reliable_messengers
+        completion_reward = { 
+            add_stability = 0.02
+        }
+        prerequisite = {
+            focus = CMO_reliable_messengers
+        }
+        prerequisite = {
+            focus = CMO_in_defense_of_nation
+        }
+    }
+
+    focus = {
+        id = CMO_old_traditions
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = 2
+        y = 2
+        relative_position_id = CMO_cavalry_support
+        completion_reward = { 
+            add_stability = 0.02
+        }
+        prerequisite = {
+            focus = CMO_cavalry_support
+        }
+        prerequisite = {
+            focus = CMO_noble_commanders
+        }
+    }
+
+    focus = {
+        id = CMO_new_equipment
+        icon = GFX_focus_CZE_appeal_to_the_castle
+        cost = 5
+        x = 0
+        y = 1
+        relative_position_id = CMO_old_traditions
+        completion_reward = { 
+            add_stability = 0.02
+        }
+        prerequisite = {
+            focus = CMO_old_traditions
+        }
+    }
+}
