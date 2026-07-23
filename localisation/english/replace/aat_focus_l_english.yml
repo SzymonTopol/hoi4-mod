@@ -38,3 +38,243 @@ COM_fight_corruption_desc: "Corruption can defeat even the greatest state, we sh
 
 COM_rebalancing_the_system: "Rebalancing the System"
 COM_rebalancing_the_system_desc: "An overhaul of the system brings with itslef a breath of fresh air, while negating dissadvantages."
+
+#Commonwealth - Military (conservatives)
+
+COM_military_cabinet: "Military Cabinet"
+COM_military_cabinet_desc: "The military had stepped in, to bring back the order."
+
+COM_recal_advisors: "Recall Advisors"
+COM_recal_advisors_desc: "We will recall our many advisors that were sent to various states all over the world. Their experteise is needed in their homeland."
+
+COM_disband_sejm: "Disband Sejm"
+COM_disband_sejm_desc: "Sejm is by far the biggest obstacle to us. All that whining about majority votes or independed reviev councils are designed to burry us with the bureucracy. We will declare the current session of the Sejm void."
+
+COM_postpone_elections: "Postpone Elections"
+COM_postpone_elections_desc: "With no Sejm in our way, we will postpone elections to let the situation deescalate, keeping the Sejm disbanded without a clear end date."
+
+COM_declare_martial_law: "Declare Martial Law"
+COM_declare_martial_law_desc: "Time is now. Martial Law will give full power to us and our supporters, allowing for the sweeping changes in the Commonwealth without opposition."
+
+#Commonwealth - Sejm (liberals)
+
+COM_expanded_sejm_session: "Expanded Sejm Session"
+COM_expanded_sejm_session_desc: "Sejm reigned in their defacto powers. It is time to make good use of them."
+
+COM_emergency_powers: "Emergency Powers"
+COM_emergency_powers_desc: "With 60% majority the current Sejm session can award itself extra dictatorial powers to see their needs to fruition."
+
+COM_arrest_oppositon_leaders: "Arrest Opposition Leaders"
+COM_arrest_oppositon_leaders_desc: "Opposition is just slowing us down and adjitaning the populus. Few high profile arrests will put them in their place."
+
+COM_demobilise_army: "Demobilise the Army"
+COM_demobilise_army_desc: "Army is displaying dangerous signs of insubordination. We will disband most of the unruly units, while we still have enough leverage."
+
+COM_cancel_szlachta_convention: "Cancel Szlachta Convention"
+COM_cancel_szlachta_convention_desc: "Szlachta's attempts to elect a new king are a threat to our expanded powers. We can use said powers and declare cancelation of their silly convention. The unchallenged parliamentary rule can finally come to Commonwealth."
+
+#Commonwealth - Regency (monarchists)
+
+COM_regency_council: "Regency Council"
+COM_regency_council_desc: "Our quick action allowed us to form a regency council even without a king selected. It is a great victory for our faction."
+
+COM_szlachta_convention: "Szlachta Convention"
+COM_szlachta_convention_desc: "Szlachta's Convetion - a great tradition of Commonwealth's nobility. Weeks of important debates, votes, as well as folkloric plays and even better celebrations."
+
+COM_transfer_units: "Transfer Units"
+COM_transfer_units_desc: "A decent bunch of officers still have a noble background. With enough persuasion, we can get these units to follow our orders."
+
+COM_new_candidates: "New Candidates"
+COM_new_candidates_desc: "A great number of candidates for the throne are available. Creating a sense of excitement around the selection process."
+
+COM_vote_of_no_confidence: "Vote of No Confidence"
+COM_vote_of_no_confidence_desc: "The time is right to challenge the Sejm's authority. Their constant nimbling at our ancestrial rights and the monarchy's authority is a threat to the Commonwealth. We will call for a vote of no confidence in the current Sejm session, in aim to dissolve it."
+
+###################################
+# Commonwealth civil war factions #
+###################################
+
+CCO_army_loyalty: "Army Loyalty"
+CCO_army_loyalty_desc: "empty"
+
+CCO_call_strategos_friends: "Call Strategos' Friends"
+CCO_call_strategos_friends_desc: "empty"
+
+CCO_southern_coast: "Southern Coast"
+CCO_southern_coast_desc: "empty"
+
+CCO_cooperate_with_nationalists: "Cooperate with the Nationalists"
+CCO_cooperate_with_nationalists_desc: "empty"
+
+CCO_prevent_ideological_split: "Prevent Ideological Split"
+CCO_prevent_ideological_split_desc: "empty"
+
+CCO_seize_depots: "Seize the Depots"
+CCO_seize_depots_desc: "empty"
+
+CCO_redirect_munition_shipments: "Redirect Munition Shipments"
+CCO_redirect_munition_shipments_desc: "empty"
+
+CCO_sway_industrialists: "Sway the Industrialists"
+CCO_sway_industrialists_desc: "empty"
+
+CCO_arm_loyalists: "Arm the Loyalists"
+CCO_arm_loyalists_desc: "empty"
+
+CCO_infiltrate_airforce: "Infiltrate the Airforce"
+CCO_infiltrate_airforce_desc: "empty"
+
+CCO_underground_railroad: "Underground Railroad"
+CCO_underground_railroad_desc: "empty"
+
+###
+
+CLB_northern_sympathizers: "Northern Sympathizers"
+CLB_northern_sympathizers_desc: "empty"
+
+CLB_redirect_funds: "Redirect Funds"
+CLB_redirect_funds_desc: "empty"
+
+CLB_media_war: "Media War"
+CLB_media_war_desc: "empty"
+
+CLB_pull_administration_favors: "Pull Administration Favors"
+CLB_pull_administration_favors_desc: "empty"
+
+CLB_arm_students: "Arm the Students"
+CLB_arm_students_desc: "empty"
+
+CLB_dismiss_radical_agitators: "Dismiss Radical Agitators"
+CLB_dismiss_radical_agitators_desc: "empty"
+
+CLB_appeal_to_population: "Appeal to the Population"
+CLB_appeal_to_population_desc: "empty"
+
+CLB_gdansk_transit_commision: "Gdansk Transit Commission"
+CLB_gdansk_transit_commision_desc: "empty"
+
+CLB_profesional_training: "Profesional Training"
+CLB_profesional_training_desc: "empty"
+
+###
+
+CMO_his_majesty_call: "His Majesty's Call"
+CMO_his_majesty_call_desc: "empty"
+
+CMO_szlachtas_response: "Szlachta's Response"
+CMO_szlachtas_response_desc: "empty"
+
+CMO_food_supply: "Food Supply"
+CMO_food_supply_desc: "empty"
+
+CMO_cavalry_support: "Cavalry Support"
+CMO_cavalry_support_desc: "empty"
+
+CMO_noble_commanders: "Noble Commanders"
+CMO_noble_commanders_desc: "empty"
+
+CMO_reliable_messengers: "Reliable Messengers"
+CMO_reliable_messengers_desc: "empty"
+
+CMO_in_defense_of_nation: "In Defense of the Nation"
+CMO_in_defense_of_nation_desc: "empty"
+
+CMO_united_by_faith: "United by Faith"
+CMO_united_by_faith_desc: "empty"
+
+CMO_old_traditions: "Old Traditions"
+CMO_old_traditions_desc: "empty"
+
+CMO_new_equipment: "New Equipment"
+CMO_new_equipment_desc: "empty"
+
+###
+
+CNA_our_mission: "Our Mission"
+CNA_our_mission_desc: "empty"
+
+CNA_exploit_enemy_radicalism: "Exploit Enemy Radicalism"
+CNA_exploit_enemy_radicalism_desc: "empty"
+
+CNA_military_administration: "Military Administration"
+CNA_military_administration_desc: "empty"
+
+CNA_sway_the_young: "Sway the Young"
+CNA_sway_the_young_desc: "empty"
+
+CNA_tale_of_two_militaries: "A Tale of Two Militaries"
+CNA_tale_of_two_militaries_desc: "empty"
+
+CNA_anti_communism: "Anti-Communism"
+CNA_anti_communism_desc: "empty"
+
+CNA_expand_our_reach: "Expand Our Reach"
+CNA_expand_our_reach_desc: "empty"
+
+CNA_encourage_defections: "Encourage Defections"
+CNA_encourage_defections_desc: "empty"
+
+CNA_nationalize_industries: "Nationalize the Industry"
+CNA_nationalize_industries_desc: "empty"
+
+CNA_invincible_army: "Invincible Army"
+CNA_invincible_army_desc: "empty"
+
+CNA_defensive_posture: "Defensive Posture"
+CNA_defensive_posture_desc: "empty"
+
+CNA_rapid_expansion: "Rapid Expansion"
+CNA_rapid_expansion_desc: "empty"
+
+CNA_partisan_training: "Partisan Training"
+CNA_partisan_training_desc: "empty"
+
+CNA_national_rebirth: "National Rebirth"
+CNA_national_rebirth_desc: "empty"
+
+CNA_breakthrough_doctrine: "Breakthrough Doctrine"
+CNA_breakthrough_doctrine_desc: "empty"
+
+###
+
+CCM_revolution_approaches: "Revolution Approaches"
+CCM_revolution_approaches_desc: "empty"
+
+CCM_reform_people_council: "Reform the People's Council"
+CCM_reform_people_council_desc: "empty"
+
+CCM_red_army: "Red Army"
+CCM_red_army_desc: "empty"
+
+CCM_international_brigades: "International Brigades"
+CCM_international_brigades_desc: "empty"
+
+CCM_common_soldiers: "Common Soldiers"
+CCM_common_soldiers_desc: "empty"
+
+CCM_sway_youth: "Sway the Youth"
+CCM_sway_youth_desc: "empty"
+
+CCM_mountain_staches: "Mountain Staches"
+CCM_mountain_staches_desc: "empty"
+
+CCM_forward_batalions: "Forward Batalions"
+CCM_forward_batalions_desc: "empty"
+
+CCM_new_supporters: "New Supporters"
+CCM_new_supporters_desc: "empty"
+
+CCM_means_of_production: "Means of Production"
+CCM_means_of_production_desc: "empty"
+
+CCM_land_aquistion: "Land Aquistion"
+CCM_land_aquistion_desc: "empty"
+
+CCM_way_of_word: "Way of the Word"
+CCM_way_of_word_desc: "empty"
+
+CCM_sound_of_rifle: "Sound of a Rifle"
+CCM_sound_of_rifle_desc: "empty"
+
+CCM_roar_of_revolution: "The Roar of Revolution"
+CCM_roar_of_revolution_desc: "empty"

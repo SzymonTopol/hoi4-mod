@@ -75,7 +75,7 @@ focus_tree = {
     }
 
     focus = {
-        id = CCO_seize_depos
+        id = CCO_seize_depots
         icon = GFX_focus_CZE_appeal_to_the_castle
         cost = 5
         x = 0
@@ -93,11 +93,11 @@ focus_tree = {
         cost = 5
         x = 0
         y = 1
-        relative_position_id = CCO_seize_depos
+        relative_position_id = CCO_seize_depots
         completion_reward = { 
             add_stability = 0.02
         }
-        prerequisite = { focus = CCO_seize_depos }
+        prerequisite = { focus = CCO_seize_depots }
     }
 
     focus = {

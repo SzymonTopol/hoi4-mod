@@ -83,7 +83,7 @@ focus_tree = {
     }
 
     focus = {
-        id = CLB_dismiss_radical_adjitators
+        id = CLB_dismiss_radical_agitators
         icon = GFX_focus_CZE_appeal_to_the_castle
         cost = 5
         x = 3

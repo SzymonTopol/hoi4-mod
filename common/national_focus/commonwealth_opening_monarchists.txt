@@ -70,7 +70,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = COM_vote_of_no_confidence
+		id = COM_vote_of_no_confidences
 		icon = GFX_goal_generic_major_war
 		cost = 1
 		x = 0
