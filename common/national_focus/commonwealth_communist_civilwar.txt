@@ -18,7 +18,7 @@ focus_tree = {
 
     focus = {
         id = CCM_revolution_approaches
-        icon = GFX_focus_CZE_appeal_to_the_castle
+        icon = GFX_focus_ARG_women_in_industry
         cost = 5
         x = 2
         y = 0
