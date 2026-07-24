@@ -8,8 +8,7 @@ state={
 	}
 
 	history={
-		owner = UNT
-		add_core_of = UNT
+		owner = OCC
 		victory_points = {
 			9737 20 
 		}
@@ -25,10 +24,13 @@ state={
 			}
 
 		}
+		add_core_of = OCC
 
 	}
 
-	provinces={ 6621 6762 6777 9737 11565 }
+	provinces={
+		6621 6762 6777 9737 11565 
+	}
 	manpower=1140400
 	buildings_max_level_factor=1.000
 	state_category=city

@@ -4,11 +4,14 @@ state={
 	name="STATE_26" # Auveregne
 	manpower = 877800
 	
+	resources = {
+		coal = 2 # initial distribution / 140 total
+	}
+
 	state_category = town
 
 	history={
-		owner = UNT
-		add_core_of = UNT
+		owner = OCC
 		victory_points = {
 			3594 3 
 		}
@@ -17,9 +20,12 @@ state={
 			industrial_complex = 1
 
 		}
+		add_core_of = OCC
 	}
 
-	provinces={ 590 769 3594 3754 6644 6773 6789 9593 9607 9748 11576 }
+	provinces={
+		590 769 3594 3754 6644 6773 6789 9593 9607 9748 11576 
+	}
 
 	local_supplies=6.0 
 }
