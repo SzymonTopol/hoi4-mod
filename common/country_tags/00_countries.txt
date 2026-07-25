@@ -416,6 +416,7 @@ SCA = "countries/Strategic_crossings_administration.txt"
 
 
 OCC = "countries/Occitania.txt" #BYŁY DUPLIKAT
+IBP = "countries/Iberian_Protectorate.txt"
 
 #Kraje wojny domowej Rzeczpospolitej
 CCO = "countries/Commonwealth_conservatives.txt"

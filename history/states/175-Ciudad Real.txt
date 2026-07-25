@@ -3,8 +3,7 @@ state={
 	name="STATE_175"
 
 	history={
-		owner = UNT
-		add_core_of = UNT
+		owner = IBP
 		victory_points = {
 			6832 1 
 		}
@@ -13,10 +12,13 @@ state={
 			infrastructure = 3 #was: 6
 
 		}
+		add_core_of = IBP
 
 	}
 
-	provinces={ 3953 6800 6832 6896 9778 9828 9881 11863 12081 13229 }
+	provinces={
+		3953 6800 6832 6896 9778 9828 9881 11863 12081 13229 
+	}
 	manpower=526903
 	buildings_max_level_factor=1.000
 	state_category=rural

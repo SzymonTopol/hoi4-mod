@@ -6,11 +6,11 @@ state={
 	}
 
 	history={
-		owner = UNT
-		add_core_of = UNT
+		owner = IBP
 		victory_points = {
 			740 10
 		}
+		add_core_of = IBP
 		buildings = {
 			infrastructure = 3 #was: 6
 			industrial_complex = 1
@@ -23,7 +23,9 @@ state={
 
 	}
 
-	provinces={ 740 3735 6756 13233 }
+	provinces={
+		740 3735 6756 13233 
+	}
 	manpower=928094
 	buildings_max_level_factor=1.000
 	state_category=town
