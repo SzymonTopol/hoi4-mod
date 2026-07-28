@@ -13,7 +13,7 @@ state={
 		add_core_of = COM
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 2
+			industrial_complex = 0
 		}
 
 		1939.3.14 = {

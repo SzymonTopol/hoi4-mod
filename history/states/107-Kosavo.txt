@@ -8,8 +8,6 @@ state={
 		add_core_of = COM
 		buildings = {
 			infrastructure = 3
-			arms_factory = 3
-			industrial_complex = 4
 			air_base = 5
 
 		}

@@ -14,7 +14,6 @@ state={
 		add_core_of = COM
 		buildings = {
 			infrastructure = 3
-			arms_factory = 1
 		}
 	}
 	provinces={ 577 9548 }

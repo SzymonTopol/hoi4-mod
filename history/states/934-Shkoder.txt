@@ -14,8 +14,7 @@ state = {
             9780 3 
         }
         buildings = {
-            infrastructure = 2
-            industrial_complex = 1
+            infrastructure = 1
 		}
 		add_claim_by = ITA
 		1939.4.12 = {

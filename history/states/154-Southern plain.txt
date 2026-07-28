@@ -11,8 +11,6 @@ state = {
 		add_core_of = COM
 		buildings = {
 			infrastructure = 3 #was: 6
-			industrial_complex = 3
-			arms_factory = 1
 			air_base = 2
 		}
 		victory_points = {
