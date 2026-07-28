@@ -13,7 +13,7 @@ focus_tree = {
 
 	focus = {
 		id = COM_military_cabinet
-		icon = GFX_goal_generic_major_war
+		icon = GFX_focus_GER_strengthen_the_proletarian_international
 		cost = 2
 		x = 3
 		y = 0
@@ -24,8 +24,8 @@ focus_tree = {
 
 	focus = {
 		id = COM_recal_advisors
-		icon = GFX_goal_generic_major_war
-		cost = 1
+		icon = GFX_focus_CZE_build_infantry
+		cost = 5
 		x = 0
 		y = 1
 		relative_position_id = COM_military_cabinet
@@ -38,8 +38,8 @@ focus_tree = {
 
 	focus = {
 		id = COM_disband_sejm
-		icon = GFX_goal_generic_major_war
-		cost = 1
+		icon = GFX_focus_INS_sideline_the_volksraad
+		cost = 2
 		x = -1
 		y = 1
 		relative_position_id = COM_recal_advisors
@@ -55,8 +55,8 @@ focus_tree = {
 
 	focus = {
 		id = COM_postpone_elections
-		icon = GFX_goal_generic_major_war
-		cost = 1
+		icon = GFX_focus_DEN_civilian_preparations
+		cost = 2
 		x = 1
 		y = 1
 		relative_position_id = COM_recal_advisors
@@ -69,8 +69,8 @@ focus_tree = {
 
 	focus = {
 		id = COM_declare_martial_law
-		icon = GFX_goal_generic_major_war
-		cost = 1
+		icon = GFX_focus_CHL_departemento_de_las_tropas_nacistas_de_asalto
+		cost = 3
 		x = 1
 		y = 1
 		relative_position_id = COM_disband_sejm

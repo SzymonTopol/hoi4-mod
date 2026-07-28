@@ -47,6 +47,7 @@ puppet = SCA
 puppet = MEK
 puppet = SHL
 puppet = HLS
+puppet = IBP
 
 create_faction = Commonwealth
 add_to_faction = CCR
@@ -68,6 +69,7 @@ add_to_faction = SCA
 add_to_faction = MEK
 add_to_faction = SHL
 add_to_faction = HLS
+add_to_faction = IBP
 
 set_convoys = 20
 

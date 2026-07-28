@@ -13,8 +13,8 @@ focus_tree = {
 
 	focus = {
 		id = COM_regency_council
-		icon = GFX_goal_generic_major_war
-		cost = 2
+		icon = GFX_focus_BEL_national_redoubt_at_antwerp
+		cost = 1
 		x = 3
 		y = 0
 		completion_reward = { 
@@ -27,8 +27,8 @@ focus_tree = {
 
 	focus = {
 		id = COM_szlachta_convention
-		icon = GFX_goal_generic_major_war
-		cost = 1
+		icon = GFX_focus_ARG_march_to_la_casa_rosada
+		cost = 2
 		x = -1
 		y = 1
 		relative_position_id = COM_regency_council
@@ -40,8 +40,8 @@ focus_tree = {
 
 	focus = {
 		id = COM_transfer_units
-		icon = GFX_goal_generic_major_war
-		cost = 1
+		icon = GFX_SOV_barrier_troops_ccp_2d_sov_compatibility
+		cost = 2
 		x = 1
 		y = 1
 		relative_position_id = COM_regency_council
@@ -54,8 +54,8 @@ focus_tree = {
 
 	focus = {
 		id = COM_new_candidate
-		icon = GFX_goal_generic_major_war
-		cost = 1
+		icon = GFX_focus_CHL_invite_french_aristocracy
+		cost = 4
 		x = 1
 		y = 1
 		relative_position_id = COM_szlachta_convention
@@ -71,8 +71,8 @@ focus_tree = {
 
 	focus = {
 		id = COM_vote_of_no_confidences
-		icon = GFX_goal_generic_major_war
-		cost = 1
+		icon = GFX_focus_ARG_keep_it_in_the_party
+		cost = 5
 		x = 0
 		y = 1
 		relative_position_id = COM_new_candidate

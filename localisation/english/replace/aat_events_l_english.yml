@@ -61,6 +61,10 @@ commonwealth.12.t:0 "[cw_loser.GetNameDefCap] Defeated!"
 commonwealth.12.d:0 "Following a brutal series of campaigns, the breakaway government of [cw_loser.GetNameDef] has officially collapsed. All of their remaining territory and stockpiled equipment have fallen under [cw_winner.GetAdjective] control."
 commonwealth.12.a:0 "The war continues."
 
+commonwealth.13.t:0 "The Commonwealth Hegemony Shatters"
+commonwealth.13.d:0 "Following the total political deadlock within the Commonwealth, its global sphere of influence suddenly found itself without the parent state. Many of Commonwealth Protectorates are already experiencing waves of protests. The Dominion of North America sees its coffers rapidly drying up without supplies from Europe, while Yunnan Expedition suddenly finds itself cut off in the middle of Asia. \n \nAt the same time states like Occitania and Silberstrom Republik are now free to operate however they see fit."
+commonwealth.13.a:0 "The end of an era."
+
 mapmode_com_scramble_map_mode:0 "Commonwealth Scramble"
 mapmode_com_scramble_map_mode_name:0 "Commonwealth Scramble Map"
 mapmode_com_scramble_map_mode_desc:0 "Shows the current territorial claims of all breakaway factions during the crisis."

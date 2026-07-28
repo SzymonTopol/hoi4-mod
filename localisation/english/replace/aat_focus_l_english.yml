@@ -238,43 +238,43 @@ CNA_breakthrough_doctrine_desc: "empty"
 ###
 
 CCM_revolution_approaches: "Revolution Approaches"
-CCM_revolution_approaches_desc: "empty"
+CCM_revolution_approaches_desc: "As the Commonwealth teeters on the edge of civil war, the time has come for us to finally make moves to bring the proletarian revolution to our state."
 
 CCM_reform_people_council: "Reform the People's Council"
-CCM_reform_people_council_desc: "empty"
+CCM_reform_people_council_desc: "The People's Council is a legislative body tasked with maintaining civilian control over our territories. It has to be both strong and flexible to prepare for the coming storm."
 
 CCM_red_army: "Red Army"
-CCM_red_army_desc: "empty"
+CCM_red_army_desc: "The teeth of the Revolution. These new units will serve as a foundation for any future expansions of the military."
 
 CCM_international_brigades: "International Brigades"
-CCM_international_brigades_desc: "empty"
+CCM_international_brigades_desc: "We cannot hope to accomplish the Revolution on our own. We will send out a call to all our communist brethren abroad."
 
 CCM_common_soldiers: "Common Soldiers"
-CCM_common_soldiers_desc: "empty"
+CCM_common_soldiers_desc: "The common soldiery is discontented with the goals of their stubborn superiors. If we play our cards right, we might sway some of them to our side."
 
 CCM_sway_youth: "Sway the Youth"
-CCM_sway_youth_desc: "empty"
+CCM_sway_youth_desc: "The youth has been the fuel of our recent successes, allowing us to grow both in numbers and in strength. Gaining even more young supporters will serve us greatly."
 
-CCM_mountain_staches: "Mountain Staches"
-CCM_mountain_staches_desc: "empty"
+CCM_mountain_stashes: "Mountain Stashes"
+CCM_mountain_stashes_desc: "Caches hidden deep inside the mountains of the south will finally see their use come to fruition."
 
-CCM_forward_batalions: "Forward Batalions"
-CCM_forward_batalions_desc: "empty"
+CCM_forward_batalions: "Forward Battalions"
+CCM_forward_batalions_desc: "Our doctrine of attack has to evolve if we are to succeed in our goals. We will create a designated branch of the military to be our spear on the frontline."
 
 CCM_new_supporters: "New Supporters"
-CCM_new_supporters_desc: "empty"
+CCM_new_supporters_desc: "While the youth and common soldiery give us a head start, we need to diversify our reach to gain more supporters from other social classes. This will allow us to grow in both strength and numbers."
 
 CCM_means_of_production: "Means of Production"
-CCM_means_of_production_desc: "empty"
+CCM_means_of_production_desc: "Without wartime oversight, the factories of the Commonwealth will be unable to keep up with our needs. We will take control of them to ensure that they serve the Revolution."
 
-CCM_land_aquistion: "Land Aquistion"
-CCM_land_aquistion_desc: "empty"
+CCM_land_aquistion: "Land Acquisition"
+CCM_land_aquistion_desc: "No revolution can be successful without land redistribution. We will confiscate the land of the rich and give it to the poor to ensure that they will support us in our goals."
 
 CCM_way_of_word: "Way of the Word"
-CCM_way_of_word_desc: "empty"
+CCM_way_of_word_desc: "The spoken word carries us forward..."
 
 CCM_sound_of_rifle: "Sound of a Rifle"
-CCM_sound_of_rifle_desc: "empty"
+CCM_sound_of_rifle_desc: "...the sound of a rifle gives us the strength..."
 
 CCM_roar_of_revolution: "The Roar of Revolution"
-CCM_roar_of_revolution_desc: "empty"
+CCM_roar_of_revolution_desc: "...and the revolution will set the Commonwealth ablaze!"

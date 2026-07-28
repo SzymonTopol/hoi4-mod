@@ -226,6 +226,9 @@ country_event = { #Too little too late
     is_triggered_only = yes
 
     immediate = {
+        # --- NEW ADDITION: Queues the newspaper event for 33 days later ---
+        news_event = { id = commonwealth.13 days = 33 }
+        
         load_focus_tree = empty_focus
         
         88 = { add_core_of = CCO }
@@ -312,6 +315,7 @@ country_event = { #The Commonwealth Civil War - setup krajów, przeniesienie kon
         CCO = {
             division_template = {
                 name = "Elite Guard"
+                template_counter = 3
                 regiments = {
                     infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 }
                     infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 }
@@ -332,6 +336,7 @@ country_event = { #The Commonwealth Civil War - setup krajów, przeniesienie kon
         CLB = {
             division_template = {
                 name = "Elite Guard"
+                template_counter = 26
                 regiments = {
                     infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 }
                     infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 }
@@ -352,6 +357,7 @@ country_event = { #The Commonwealth Civil War - setup krajów, przeniesienie kon
         CMO = {
             division_template = {
                 name = "Elite Guard"
+                template_counter = 61
                 regiments = {
                     infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 }
                     infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 }
@@ -446,34 +452,7 @@ country_event = { #The Commonwealth Civil War - setup krajów, przeniesienie kon
             }
         }
 
-        # 2. Perform state transfers with zero overlaps!
-        every_state = {
-            limit = { has_state_flag = marked_by_CCO }
-            add_core_of = CCO
-            CCO = { transfer_state = PREV }
-        }
-        every_state = {
-            limit = { has_state_flag = marked_by_CLB }
-            add_core_of = CLB
-            CLB = { transfer_state = PREV }
-        }
-        every_state = {
-            limit = { has_state_flag = marked_by_CMO }
-            add_core_of = CMO
-            CMO = { transfer_state = PREV }
-        }
-        every_state = {
-            limit = { has_state_flag = marked_by_CNA }
-            add_core_of = CNA
-            CNA = { transfer_state = PREV }
-        }
-        every_state = {
-            limit = { has_state_flag = marked_by_CCM }
-            add_core_of = CCM
-            CCM = { transfer_state = PREV }
-        }
-
-        # 2. Now perform clean state transfers with zero overlaps!
+        # 2. Perform clean state transfers with zero overlaps!
         every_state = {
             limit = { has_state_flag = marked_by_CCO }
             add_core_of = CCO
@@ -508,6 +487,7 @@ country_event = { #The Commonwealth Civil War - setup krajów, przeniesienie kon
         CCO = {
             division_template = {
                 name = "Conservative Militia"
+                template_counter = 6
                 regiments = {
                     infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 }
                     infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 }
@@ -530,6 +510,7 @@ country_event = { #The Commonwealth Civil War - setup krajów, przeniesienie kon
         CLB = {
             division_template = {
                 name = "Liberal Militia"
+                template_counter = 7
                 regiments = {
                     infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 }
                     infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 }
@@ -552,6 +533,7 @@ country_event = { #The Commonwealth Civil War - setup krajów, przeniesienie kon
         CMO = {
             division_template = {
                 name = "Royalist Militia"
+                template_counter = 58
                 regiments = {
                     infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 }
                     infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 }
@@ -574,6 +556,7 @@ country_event = { #The Commonwealth Civil War - setup krajów, przeniesienie kon
             CNA = {
                 division_template = {
                     name = "Fringe Militia"
+                    template_counter = 1
                     regiments = {
                         infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 }
                         infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 }
@@ -595,17 +578,18 @@ country_event = { #The Commonwealth Civil War - setup krajów, przeniesienie kon
                     }
                 }
                 division_template = {
-                name = "Elite Force"
-                regiments = {
-                    infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 }
-                    infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 }
-                    infantry = { x = 2 y = 0 } infantry = { x = 2 y = 1 } infantry = { x = 2 y = 2 }
+                    name = "Elite Force"
+                    template_counter = 56
+                    regiments = {
+                        infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 }
+                        infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 }
+                        infantry = { x = 2 y = 0 } infantry = { x = 2 y = 1 } infantry = { x = 2 y = 2 }
+                    }
+                    support = {
+                        artillery = { x = 0 y = 0 }
+                        engineer = { x = 0 y = 1 }
+                    }
                 }
-                support = {
-                    artillery = { x = 0 y = 0 }
-                    engineer = { x = 0 y = 1 }
-                }
-            }
             }
 
             96 = {
@@ -619,6 +603,7 @@ country_event = { #The Commonwealth Civil War - setup krajów, przeniesienie kon
             CCM = {
                 division_template = {
                     name = "Revolutionary Militia"
+                    template_counter = 14
                     regiments = {
                         infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 }
                         infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 }
@@ -641,17 +626,18 @@ country_event = { #The Commonwealth Civil War - setup krajów, przeniesienie kon
                 }
 
                 division_template = {
-                name = "Elite Force"
-                regiments = {
-                    infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 }
-                    infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 }
-                    infantry = { x = 2 y = 0 } infantry = { x = 2 y = 1 } infantry = { x = 2 y = 2 }
+                    name = "Elite Force"
+                    template_counter = 69
+                    regiments = {
+                        infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 }
+                        infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 }
+                        infantry = { x = 2 y = 0 } infantry = { x = 2 y = 1 } infantry = { x = 2 y = 2 }
+                    }
+                    support = {
+                        artillery = { x = 0 y = 0 }
+                        engineer = { x = 0 y = 1 }
+                    }
                 }
-                support = {
-                    artillery = { x = 0 y = 0 }
-                    engineer = { x = 0 y = 1 }
-                }
-            }
             }
             45 = {
                 create_unit = { owner = CCM division = "name = \"Elite Force\" division_template = \"Elite Force\" start_equipment_factor = 1.0 start_experience_factor = 0.3" }
@@ -663,31 +649,53 @@ country_event = { #The Commonwealth Civil War - setup krajów, przeniesienie kon
         # ==========================================
         # POINT 4: FAILSAFES FOR 96 & 45
         # ==========================================
+        
         if = {
             limit = { NOT = { country_exists = CNA } }
-            CCO = {transfer_state = 96 }
+            CCO = {
+                transfer_state = 96
+                # Create a specific template so they get the weak CNA icon
+                division_template = {
+                    name = "Auxiliary Militia"
+                    template_counter = 1
+                    regiments = {
+                        infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 }
+                        infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 }
+                    }
+                }
+            }
             96 = {
                 add_core_of = CCO
-                create_unit = { owner = CCO division = "name = \"Conservative Militia\" division_template = \"Conservative Militia\" start_equipment_factor = 0.7" }
-                create_unit = { owner = CCO division = "name = \"Conservative Militia\" division_template = \"Conservative Militia\" start_equipment_factor = 0.7" }
-                create_unit = { owner = CCO division = "name = \"Conservative Militia\" division_template = \"Conservative Militia\" start_equipment_factor = 0.7" }
-                create_unit = { owner = CCO division = "name = \"Conservative Militia\" division_template = \"Conservative Militia\" start_equipment_factor = 0.7" }
-                create_unit = { owner = CCO division = "name = \"Conservative Militia\" division_template = \"Conservative Militia\" start_equipment_factor = 0.7" }
-                create_unit = { owner = CCO division = "name = \"Conservative Militia\" division_template = \"Conservative Militia\" start_equipment_factor = 0.7" }
+                create_unit = { owner = CCO division = "name = \"Auxiliary Militia\" division_template = \"Auxiliary Militia\" start_equipment_factor = 0.7" }
+                create_unit = { owner = CCO division = "name = \"Auxiliary Militia\" division_template = \"Auxiliary Militia\" start_equipment_factor = 0.7" }
+                create_unit = { owner = CCO division = "name = \"Auxiliary Militia\" division_template = \"Auxiliary Militia\" start_equipment_factor = 0.7" }
+                create_unit = { owner = CCO division = "name = \"Auxiliary Militia\" division_template = \"Auxiliary Militia\" start_equipment_factor = 0.7" }
+                create_unit = { owner = CCO division = "name = \"Auxiliary Militia\" division_template = \"Auxiliary Militia\" start_equipment_factor = 0.7" }
+                create_unit = { owner = CCO division = "name = \"Auxiliary Militia\" division_template = \"Auxiliary Militia\" start_equipment_factor = 0.7" }
             }
-
         }
         if = {
             limit = { NOT = { country_exists = CCM } }
-            CLB = {transfer_state = 45 }
+            CLB = {
+                transfer_state = 45 
+                # Create a specific template so they get the weak CCM icon
+                division_template = {
+                    name = "Local Militia"
+                    template_counter = 14
+                    regiments = {
+                        infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 }
+                        infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 }
+                    }
+                }
+            }
             45 = {
                 add_core_of = CLB
-                create_unit = { owner = CLB division = "name = \"Liberal Militia\" division_template = \"Liberal Militia\" start_equipment_factor = 0.7" }
-                create_unit = { owner = CLB division = "name = \"Liberal Militia\" division_template = \"Liberal Militia\" start_equipment_factor = 0.7" }
-                create_unit = { owner = CLB division = "name = \"Liberal Militia\" division_template = \"Liberal Militia\" start_equipment_factor = 0.7" }
-                create_unit = { owner = CLB division = "name = \"Liberal Militia\" division_template = \"Liberal Militia\" start_equipment_factor = 0.7" }
-                create_unit = { owner = CLB division = "name = \"Liberal Militia\" division_template = \"Liberal Militia\" start_equipment_factor = 0.7" }
-                create_unit = { owner = CLB division = "name = \"Liberal Militia\" division_template = \"Liberal Militia\" start_equipment_factor = 0.7" }
+                create_unit = { owner = CLB division = "name = \"Local Militia\" division_template = \"Local Militia\" start_equipment_factor = 0.7" }
+                create_unit = { owner = CLB division = "name = \"Local Militia\" division_template = \"Local Militia\" start_equipment_factor = 0.7" }
+                create_unit = { owner = CLB division = "name = \"Local Militia\" division_template = \"Local Militia\" start_equipment_factor = 0.7" }
+                create_unit = { owner = CLB division = "name = \"Local Militia\" division_template = \"Local Militia\" start_equipment_factor = 0.7" }
+                create_unit = { owner = CLB division = "name = \"Local Militia\" division_template = \"Local Militia\" start_equipment_factor = 0.7" }
+                create_unit = { owner = CLB division = "name = \"Local Militia\" division_template = \"Local Militia\" start_equipment_factor = 0.7" }
             }
         }
     }
@@ -820,5 +828,38 @@ country_event = { #Fall of faction X to the faction Y
 
     option = {
         name = commonwealth.12.a
+    }
+}
+
+news_event = { # Commonwealth Collapse Newspaper
+    id = commonwealth.13
+    title = commonwealth.13.t
+    desc = commonwealth.13.d
+    picture = GFX_news_event_generic_riot # Feel free to change to a specific newspaper GFX
+
+    major = yes
+    is_triggered_only = yes
+
+    immediate = {
+        COM = {
+            # 1. Scope to every puppet COM currently owns
+            every_subject_country = {
+                # 2. Scope back to COM (the Overlord MUST be the one executing the release)
+                COM = { 
+                    set_autonomy = {
+                        target = PREV # PREV refers to the subject we just scoped from
+                        autonomy_state = autonomy_free
+                    }
+                }
+            }
+            
+            # 3. Delete the faction safely now that everyone is out
+            dismantle_faction = yes
+        }
+        set_global_flag = COM_hegemony_lost
+    }
+
+    option = {
+        name = commonwealth.13.a
     }
 }

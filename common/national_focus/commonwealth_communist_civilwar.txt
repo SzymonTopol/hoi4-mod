@@ -19,24 +19,31 @@ focus_tree = {
     focus = {
         id = CCM_revolution_approaches
         icon = GFX_focus_ARG_women_in_industry
-        cost = 5
+        cost = 1
         x = 2
         y = 0
-        #relative_position_id = COM_royal_speech
         completion_reward = { 
-            add_stability = 0.02
+            add_stability = 0.05
+            add_popularity = {
+                ideology = communism
+                popularity = 0.10
+            }
         }
     }
 
     focus = {
         id = CCM_reform_people_council
-        icon = GFX_focus_CZE_appeal_to_the_castle
-        cost = 5
+        icon = GFX_focus_CHI_registry_of_property
+        cost = 1
         x = 0
         y = 1
         relative_position_id = CCM_revolution_approaches
         completion_reward = { 
-            add_stability = 0.02
+            add_political_power = 50
+            add_popularity = {
+                ideology = communism
+                popularity = 0.15
+            }
         }
         prerequisite = {
             focus = CCM_revolution_approaches
@@ -45,13 +52,34 @@ focus_tree = {
 
     focus = {
         id = CCM_red_army
-        icon = GFX_focus_CZE_appeal_to_the_castle
-        cost = 5
+        icon = GFX_focus_GER_liberate_exploited_colonial_workers
+        cost = 1
         x = 0
         y = 1
         relative_position_id = CCM_reform_people_council
         completion_reward = { 
-            add_stability = 0.02
+            add_war_support = 0.10
+            division_template = {
+                name = "Red Guard"
+                template_counter = 3
+                regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } 
+                            infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 }
+                artillery_brigade = { x = 2 y = 0 } }
+                support = {
+                    artillery = {
+                        x = 0
+                        y = 0
+                    }
+                    engineer = {
+                        x = 0
+                        y = 1
+                    }
+                }
+            }
+            45 = {
+                    create_unit = { owner = CCM division = "name = \"Red Guard\" division_template = \"Red Guard\" start_equipment_factor = 1.0 start_experience_factor = 0.25" }
+                    create_unit = { owner = CCM division = "name = \"Red Guard\" division_template = \"Red Guard\" start_equipment_factor = 1.0 start_experience_factor = 0.25" }
+                }
         }
         prerequisite = {
             focus = CCM_reform_people_council
@@ -60,13 +88,13 @@ focus_tree = {
 
     focus = {
         id = CCM_international_brigades
-        icon = GFX_focus_CZE_appeal_to_the_castle
-        cost = 5
+        icon = GFX_focus_BUL_support_macedonian_organizations
+        cost = 2
         x = -3
         y = 1
         relative_position_id = CCM_red_army
         completion_reward = { 
-            add_stability = 0.02
+            add_manpower = 10000
         }
         prerequisite = {
             focus = CCM_red_army
@@ -75,13 +103,18 @@ focus_tree = {
 
     focus = {
         id = CCM_common_soldiers
-        icon = GFX_focus_CZE_appeal_to_the_castle
-        cost = 5
+        icon = GFX_focus_FIN_finnish_federation_of_trade_unions
+        cost = 3
         x = -1
         y = 1
         relative_position_id = CCM_red_army
         completion_reward = { 
-            add_stability = 0.02
+            45 = {
+                    create_unit = { owner = CCM division = "name = \"Red Guard\" division_template = \"Red Guard\" start_equipment_factor = 0.5 start_experience_factor = 0.1" }
+                    create_unit = { owner = CCM division = "name = \"Red Guard\" division_template = \"Red Guard\" start_equipment_factor = 0.5 start_experience_factor = 0.1" }
+                    create_unit = { owner = CCM division = "name = \"Red Guard\" division_template = \"Red Guard\" start_equipment_factor = 0.5 start_experience_factor = 0.1" }
+                    create_unit = { owner = CCM division = "name = \"Red Guard\" division_template = \"Red Guard\" start_equipment_factor = 0.5 start_experience_factor = 0.1" }
+                }
         }
         prerequisite = {
             focus = CCM_red_army
@@ -90,13 +123,14 @@ focus_tree = {
 
     focus = {
         id = CCM_sway_youth
-        icon = GFX_focus_CZE_appeal_to_the_castle
-        cost = 5
+        icon = GFX_focus_PER_stage_mass_protests
+        cost = 3
         x = 1
         y = 1
         relative_position_id = CCM_red_army
         completion_reward = { 
             add_stability = 0.02
+            add_war_support = 0.05
         }
         prerequisite = {
             focus = CCM_red_army
@@ -104,14 +138,25 @@ focus_tree = {
     }
 
     focus = {
-        id = CCM_mountain_staches
-        icon = GFX_focus_CZE_appeal_to_the_castle
-        cost = 5
+        id = CCM_mountain_stashes
+        icon = GFX_focus_FIN_oy_alkoholiliike
+        cost = 2
         x = 3
         y = 1
         relative_position_id = CCM_red_army
         completion_reward = { 
-            add_stability = 0.02
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 2000
+            }
+            add_equipment_to_stockpile = {
+                type = support_equipment
+                amount = 200
+            }
+            add_equipment_to_stockpile = {
+                type = artillery_equipment
+                amount = 15
+            }
         }
         prerequisite = {
             focus = CCM_red_army
@@ -120,13 +165,14 @@ focus_tree = {
 
     focus = {
         id = CCM_forward_batalions
-        icon = GFX_focus_CZE_appeal_to_the_castle
+        icon = GFX_focus_CHL_departemento_de_las_tropas_nacistas_de_asalto
         cost = 5
         x = 1
         y = 1
         relative_position_id = CCM_international_brigades
         completion_reward = { 
-            add_stability = 0.02
+            add_war_support = 0.10
+            add_command_power = 20
         }
         prerequisite = {
             focus = CCM_international_brigades
@@ -138,13 +184,17 @@ focus_tree = {
 
     focus = {
         id = CCM_new_supporters
-        icon = GFX_focus_CZE_appeal_to_the_castle
-        cost = 5
+        icon = GFX_focus_GER_support_the_proletarian_uprising
+        cost = 4
         x = 1
         y = 1
         relative_position_id = CCM_common_soldiers
         completion_reward = { 
-            add_stability = 0.02
+            add_manpower = 20000
+            add_popularity = {
+                ideology = communism
+                popularity = 0.03
+            }
         }
         prerequisite = {
             focus = CCM_common_soldiers
@@ -156,28 +206,33 @@ focus_tree = {
 
     focus = {
         id = CCM_means_of_production
-        icon = GFX_focus_CZE_appeal_to_the_castle
+        icon = GFX_focus_CHI_planned_economy
         cost = 5
         x = 0
         y = 1
-        relative_position_id = CCM_mountain_staches
+        relative_position_id = CCM_mountain_stashes
         completion_reward = { 
-            add_stability = 0.02
+            add_offsite_building = {
+                type = arms_factory
+                level = 3
+            }
         }
         prerequisite = {
-            focus = CCM_mountain_staches
+            focus = CCM_mountain_stashes
         }
     }
 
     focus = {
         id = CCM_land_aquistion
-        icon = GFX_focus_CZE_appeal_to_the_castle
-        cost = 5
+        icon = GFX_focus_HUN_a_revolutionary_greater_hungary
+        cost = 4
         x = -1
         y = 1
         relative_position_id = CCM_means_of_production
         completion_reward = { 
-            add_stability = 0.02
+            every_owned_state = {
+                add_extra_state_shared_building_slots = 1
+            }
         }
         prerequisite = {
             focus = CCM_sway_youth
@@ -189,13 +244,13 @@ focus_tree = {
 
     focus = {
         id = CCM_way_of_word
-        icon = GFX_focus_CZE_appeal_to_the_castle
+        icon = GFX_focus_GER_the_peoples_victory
         cost = 5
         x = 0
         y = 2
         relative_position_id = CCM_new_supporters
         completion_reward = { 
-            add_stability = 0.02
+            add_stability = 0.20
         }
         prerequisite = {
             focus = CCM_forward_batalions
@@ -210,13 +265,17 @@ focus_tree = {
 
     focus = {
         id = CCM_sound_of_rifle
-        icon = GFX_focus_CZE_appeal_to_the_castle
+        icon = GFX_SOV_a_global_class_struggle_ccp_2d_sov_compatibility
         cost = 5
         x = 0
         y = 1
         relative_position_id = CCM_way_of_word
         completion_reward = { 
-            add_stability = 0.02
+            add_war_support = 0.10
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 5000
+            }
         }
         prerequisite = {
             focus = CCM_way_of_word
@@ -225,16 +284,20 @@ focus_tree = {
 
     focus = {
         id = CCM_roar_of_revolution
-        icon = GFX_focus_CZE_appeal_to_the_castle
+        icon = GFX_focus_ETH_callout_to_the_world
         cost = 5
         x = 0
         y = 1
         relative_position_id = CCM_sound_of_rifle
-        completion_reward = { 
-            add_stability = 0.02
-        }
         prerequisite = {
             focus = CCM_sound_of_rifle
+        }
+        completion_reward = { 
+            add_stability = 0.02
+            
+            # Dynamically adds 10% attack and 20% surrender limit
+            add_to_variable = { com_extra_attack_var = 0.10 }
+            add_to_variable = { com_demoralization_var = 0.20 }
         }
     }
 }

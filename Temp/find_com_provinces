@@ -1,0 +1,81 @@
+import os
+import re
+import json
+
+def extract_tag_states(states_dir, target_tag="COM"):
+    target_tag = target_tag.upper()
+    # Using a dictionary with state_id as the key for faster lookups in Script 2
+    results = {} 
+
+    if not os.path.exists(states_dir):
+        print(f"Error: Path '{states_dir}' does not exist.")
+        return results
+
+    for filename in os.listdir(states_dir):
+        if not filename.endswith(".txt"):
+            continue
+
+        filepath = os.path.join(states_dir, filename)
+        
+        # UTF-8 with sig handles files saved with BOM, common in Paradox games
+        with open(filepath, 'r', encoding='utf-8-sig', errors='ignore') as f:
+            content = f.read()
+
+        # Strip comments so commented-out code doesn't falsely trigger the regex
+        content = re.sub(r'#.*', '', content)
+
+        # Check state owner
+        owner_match = re.search(r'owner\s*=\s*"?([A-Z0-9]{3})"?', content)
+        if not owner_match or owner_match.group(1).upper() != target_tag:
+            continue
+
+        # Extract State ID
+        id_match = re.search(r'\bid\s*=\s*(\d+)', content)
+        state_id = int(id_match.group(1)) if id_match else None
+        
+        if not state_id:
+            continue
+
+        # Extract State Name
+        name_match = re.search(r'name\s*=\s*"([^"]+)"', content)
+        state_name = name_match.group(1) if name_match else f"State_{state_id}"
+
+        # Extract Province IDs
+        prov_match = re.search(r'provinces\s*=\s*\{([^}]+)\}', content, re.DOTALL)
+        provinces = [int(p) for p in prov_match.group(1).split() if p.isdigit()] if prov_match else []
+
+        # Extract Victory Points
+        vp_matches = re.findall(r'victory_points\s*=\s*\{\s*(\d+)\s+(\d+)\s*\}', content)
+        victory_points = {int(prov): int(val) for prov, val in vp_matches}
+
+        # Store in the results dictionary
+        results[state_id] = {
+            "name": state_name,
+            "provinces": provinces,
+            "victory_points": victory_points,
+            "file": filename
+        }
+
+    return results
+
+def export_to_json(data, filename):
+    """Writes the extracted data to a JSON file for the next script."""
+    with open(filename, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=4)
+    print(f"\nSUCCESS: Exported {len(data)} states to '{filename}'")
+
+# --- EXECUTION ---
+if __name__ == "__main__":
+    # ---> INSERT YOUR MAP OVERRIDE PATH HERE <---
+    STATES_PATH = r"C:\Users\Szymon & Kuba\Documents\Paradox Interactive\Hearts of Iron IV\mod\hoi4-mod\history\states"
+    TARGET_TAG = "COM"
+    OUTPUT_FILE = f"{TARGET_TAG}_oob_data.json"
+    
+    print(f"Scanning '{STATES_PATH}' for {TARGET_TAG} states...")
+    
+    extracted_data = extract_tag_states(STATES_PATH, TARGET_TAG)
+    
+    if extracted_data:
+        export_to_json(extracted_data, OUTPUT_FILE)
+    else:
+        print("No states found. Check your folder path and tag!")
