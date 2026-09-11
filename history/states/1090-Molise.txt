@@ -1,0 +1,24 @@
+
+state={
+	id=1090
+	name="STATE_1090"
+	manpower = 1311784
+
+	state_category = metropolis
+
+	history={
+		owner = UNT
+		add_core_of = UNT
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 2
+		}
+	}
+
+	provinces={
+		3923 3966
+	}
+
+	local_supplies=15.0 
+}

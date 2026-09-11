@@ -1,0 +1,27 @@
+
+state={
+	id=1092
+	name="STATE_1092"
+	manpower = 1311784
+
+	state_category = metropolis
+
+	history={
+		owner = UNT
+		add_core_of = UNT
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 2
+		}
+		victory_points = { #Foggia
+			883 3
+		}
+	}
+
+	provinces={
+		883 6843 6939 6980
+	}
+
+	local_supplies=15.0 
+}

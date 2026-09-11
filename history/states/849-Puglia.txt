@@ -16,9 +16,7 @@ state = {
 		victory_points = { #Taranto
 			11837 15 
 		}
-		victory_points = { #Foggia
-			883 3
-		}
+		
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -32,12 +30,7 @@ state = {
 			}
 		}
 
-		1939.1.1 = {
-			buildings = {
-				dockyard = 5
-			}
-		}
 	}
-	provinces = { 883 6843 6939 6979 6980 9784 11837 11998 }
+	provinces = { 6979 9784 11837 11998 }
 	local_supplies = 0.000
 }

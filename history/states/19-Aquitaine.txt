@@ -10,7 +10,7 @@ state={
 	history={
 		owner = OCC
 		victory_points = {
-			9737 20 
+			9737 6 
 		}
 		buildings = {
 			infrastructure = 3

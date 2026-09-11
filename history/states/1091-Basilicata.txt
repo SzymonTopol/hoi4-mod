@@ -1,0 +1,27 @@
+
+state={
+	id=1091
+	name="STATE_1091"
+	manpower = 1311784
+
+	state_category = metropolis
+
+	history={
+		owner = UNT
+		add_core_of = UNT
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 2
+		}
+		victory_points = { #Potenza
+			3958 5
+		}
+	}
+
+	provinces={
+		851 3958 3968 6972 9856
+	}
+
+	local_supplies=15.0 
+}

@@ -2,7 +2,7 @@
 state = {
 	id = 161
 	name = "STATE_161"
-	manpower = 3202401
+	manpower = 2202401
 	
 	state_category = large_city
 	
@@ -16,9 +16,7 @@ state = {
 		victory_points = { #Bologna
 			6606 5
 		}
-		victory_points = { #Ferrara
-			6793 3
-		}
+		
 		victory_points = { #Parma
 			9752 1
 		}
@@ -26,13 +24,10 @@ state = {
 			infrastructure = 4 #was: 7
 			industrial_complex = 1
 			air_base = 2
-			782 = {
-				naval_base = 2
-			}
 		}
 	}
 
-	provinces = { 782 3773 3976 6606 6790 6793 6985 9752 9924 }
+	provinces = { 3773 3976 6606 6790 6985 9752 }
 
 	local_supplies = 0.0 
 }

@@ -1,0 +1,30 @@
+
+state={
+	id=1088
+	name="STATE_1088"
+	manpower = 1311784
+
+	state_category = city
+
+	history={
+		owner = UNT
+		add_core_of = UNT
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 2
+			782 = {
+				naval_base = 2
+			}
+		}
+		victory_points = { #Ferrara
+			6793 4
+		}
+	}
+
+	provinces={
+		782 6793 9924
+	}
+
+	local_supplies=15.0 
+}
