@@ -12,4 +12,19 @@ ideas = {
             picture = CZE_planning_bonus
         }
     }
+
+    country = {
+        #Revolutionary Zeal
+        ccm_revolutionary_zeal = {
+            allowed = {
+                always = yes
+            }
+            modifier = {
+                war_support_factor = 0.20
+                surrender_limit = 0.30
+                army_attack_factor = 0.10
+            }
+            picture = PRC_hundred_regiments_offensive
+        }
+    }
 }

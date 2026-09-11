@@ -293,11 +293,9 @@ focus_tree = {
             focus = CCM_sound_of_rifle
         }
         completion_reward = { 
-            add_stability = 0.02
-            
-            # Dynamically adds 10% attack and 20% surrender limit
-            add_to_variable = { com_extra_attack_var = 0.10 }
-            add_to_variable = { com_demoralization_var = 0.20 }
+            CCM = { add_ideas = ccm_revolutionary_zeal }
+
+                
         }
     }
 }
