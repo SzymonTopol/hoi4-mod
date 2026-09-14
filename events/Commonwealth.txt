@@ -841,6 +841,7 @@ news_event = { # Commonwealth Collapse Newspaper
     is_triggered_only = yes
 
     immediate = {
+        set_global_flag = commonwealth_13_fired
         COM = {
             # 1. Scope to every puppet COM currently owns
             every_subject_country = {
@@ -861,5 +862,103 @@ news_event = { # Commonwealth Collapse Newspaper
 
     option = {
         name = commonwealth.13.a
+    }
+}
+
+country_event = {
+    id = commonwealth.14
+    title = commonwealth.14.t
+    desc = commonwealth.14.d
+
+    fire_only_once = yes
+
+    trigger = {
+        OR = { tag = CCO tag = CMO tag = CLB tag = CNA tag = CCM }
+        
+        has_global_flag = commonwealth_13_fired
+        
+        has_war = no
+        
+        NOT = {
+            any_other_country = {
+                OR = { tag = CCO tag = CMO tag = CLB tag = CNA tag = CCM }
+                exists = yes
+                has_capitulated = no
+            }
+        }
+    }
+
+    immediate = {
+
+        every_owned_state = {
+            remove_core_of = CCO
+            remove_core_of = CMO
+            remove_core_of = CLB
+            remove_core_of = CNA
+            remove_core_of = CCM
+            
+            remove_claim_by = CCO
+            remove_claim_by = CMO
+            remove_claim_by = CLB
+            remove_claim_by = CNA
+            remove_claim_by = CCM
+        }
+
+        COM = { transfer_state = 10 }
+
+        if = {
+            limit = { 
+                is_ai = no
+            }
+            COM = { change_tag_from = ROOT }
+        } 
+    }
+
+    option = {
+        name = commonwealth.14.a
+        # Scope everything else to COM, since ROOT is still the winning faction
+        COM = {
+            # Annex the remainder of the winning faction's territory
+            annex_country = { target = ROOT }
+
+            # Set popularities to the 25-25-25-25 split
+            set_popularities = {
+                democratic = 25
+                fascism = 25
+                communism = 25
+                neutrality = 25
+            }
+
+            # Check who ROOT (the winner) was, and apply the correct setup
+            if = {
+                limit = { ROOT = { original_tag = CCO } }
+                set_politics = { ruling_party = neutrality elections_allowed = no }
+                load_focus_tree = commonwealth_conservatives_postCivilWar
+            }
+            else_if = {
+                limit = { ROOT = { original_tag = CMO } }
+                set_politics = { ruling_party = neutrality elections_allowed = no }
+                set_cosmetic_tag = COM_CMO_victory
+                load_focus_tree = commonwealth_monarchists_postCivilWar
+            }
+            else_if = {
+                limit = { ROOT = { original_tag = CLB } }
+                set_politics = { ruling_party = democratic elections_allowed = yes }
+                load_focus_tree = commonwealth_liberals_postCivilWar
+            }
+            else_if = {
+                limit = { ROOT = { original_tag = CNA } }
+                set_politics = { ruling_party = fascism elections_allowed = no }
+                load_focus_tree = commonwealth_nationalists_postCivilWar
+            }
+            else_if = {
+                limit = { ROOT = { original_tag = CCM } }
+                set_politics = { ruling_party = communism elections_allowed = no }
+                load_focus_tree = commonwealth_communists_postCivilWar
+            }
+        }
+        
+        # Cleanup
+        clr_global_flag = commonwealth_13_fired
     }
 }

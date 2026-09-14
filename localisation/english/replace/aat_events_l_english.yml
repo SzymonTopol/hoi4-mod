@@ -74,3 +74,7 @@ view_clb_secured_states_on_map:0 "Secured States"
 view_cmo_secured_states_on_map:0 "Secured States"
 view_cna_secured_states_on_map:0 "Secured States"
 view_ccm_secured_states_on_map:0 "Secured States"
+
+commonwealth.14.t:0 "Civil War Ends"
+commonwealth.14.d:0 "After months of fighting, the Commonwealth Civil War has finally come to an end. We managed to survive and thrive over our enemies. Having came out on top, we now have the opportunity to rebuild the Commonwealth and restore its former glory."
+commonwealth.14.a:0 "The Commonwealth will rise again!" 

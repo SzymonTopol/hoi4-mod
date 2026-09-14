@@ -1,0 +1,4 @@
+COM_CMO_victory = {
+    color = rgb { 153 0 95 }
+    color_ui = rgb { 153 0 95 }
+}

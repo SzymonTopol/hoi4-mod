@@ -1,0 +1,21 @@
+focus_tree = {
+	id = commonwealth_monarchists_postCivilWar
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = COM
+		}
+	}
+
+	focus = {
+        id = CMO_postCivilWar
+        icon = GFX_focus_ARG_women_in_industry
+        cost = 1
+        x = 2
+        y = 0
+    }
+
+}
