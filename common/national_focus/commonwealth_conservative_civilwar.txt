@@ -263,17 +263,15 @@ focus_tree = {
         relative_position_id = CCO_sway_industrialists
         
         completion_reward = { 
-            # Master DLC Check for "By Blood Alone"
+            # Master DLC Check for BBA
             if = {
                 limit = { has_dlc = "By Blood Alone" }
-                
-                # 1. Grant the BBA Chassis Tech
+                          
                 if = {
                     limit = { NOT = { has_tech = basic_small_airframe } }
                     set_technology = { basic_small_airframe = 1 }
                 }
 
-                # 2. Silently assemble the variant with the correct base-game slot names
                 hidden_effect = {
                     create_equipment_variant = {
                         name = "Thunder A-11"
@@ -286,7 +284,6 @@ focus_tree = {
                     }
                 }
 
-                # 3. Add the designed variant to the stockpile
                 add_equipment_to_stockpile = {
                     type = small_plane_airframe_1
                     variant_name = "Thunder A-11"
@@ -295,15 +292,12 @@ focus_tree = {
                 }
             }
             else = {
-                # Non-BBA Fallback (Vanilla System)
-                
-                # 1. Grant the Vanilla Fighter Tech
+                # Non-BBA Fallback
                 if = {
                     limit = { NOT = { has_tech = fighter1 } }
                     set_technology = { fighter1 = 1 }
                 }
 
-                # 2. Add standard fighter equipment
                 add_equipment_to_stockpile = {
                     type = fighter_equipment_1
                     amount = 200

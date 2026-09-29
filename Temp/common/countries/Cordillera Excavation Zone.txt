@@ -1,3 +1,0 @@
-color = { 100 100 100 }
-graphical_culture = commonwealth_2d
-graphical_culture_2d = commonwealth_2d

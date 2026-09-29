@@ -1,7 +1,7 @@
 ideas = {
 
 	country = {
-		non_playable_country = {
+		non_playable_country = { #Name self-evident, only for UNT so that it can't do anything else
 			picture = usa_great_depression_3
 			
 			allowed = {

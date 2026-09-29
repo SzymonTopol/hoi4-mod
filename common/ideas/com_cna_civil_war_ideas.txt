@@ -1,6 +1,6 @@
 ideas = {
     hidden_ideas = {
-        
+        #These ideas technically work as a hidden modifier for the CNA (so that i don't make 10-ish new ideas, just have them get stronger and stronger as the times passes)
         CNA_exploit_radicalism_modifier = {
             allowed = { always = yes }
             targeted_modifier = { tag = CCO army_attack_factor = 0.025 }

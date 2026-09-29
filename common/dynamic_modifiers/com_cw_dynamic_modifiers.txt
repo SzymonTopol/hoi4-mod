@@ -1,8 +1,7 @@
-com_state_lost_demoralization = {
-    icon = GFX_idea_POL_the_peasants_strike # Added the full sprite prefix here
+com_state_lost_demoralization = { #Dynamic modifier lowering/increasing surrender limit and army defense factor (based on amount of lost core states)
+    icon = GFX_idea_POL_the_peasants_strike
     enable = { always = yes }
     
-    # Dynamic modifiers ARE allowed to read variables!
     surrender_limit = com_demoralization_var 
     army_defence_factor = com_demoralization_var
 }

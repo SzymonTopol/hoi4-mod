@@ -1,6 +1,8 @@
 add_namespace = news
 
 # Silencing the 4th International
+# I am not 100% if that worked. If not, i need to go into vanilla files and actually coppy
+# the OG file name to overwrite the event
 news_event = {
     id = news.173
     hidden = yes

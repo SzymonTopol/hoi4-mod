@@ -397,7 +397,7 @@ CCR = "countries/Cossack_crownland.txt"
 SPT = "countries/Strategos_protectorate.txt"
 
 BAY = "countries/Bavaria.txt" #BYŁY DUPLIKAT
-BRG = "countries/Brandenburg.txt" #DUUUUUUŻY PROBLEM
+BRG = "countries/Brandenburg.txt"
 RHI = "countries/Rhineland.txt" #BYŁY DUPLIKAT
 WEI = "countries/Weimar.txt"
 HAN = "countries/Hanover.txt" #BYŁY DUPLIKAT

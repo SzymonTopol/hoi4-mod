@@ -217,11 +217,9 @@ focus_tree = {
         relative_position_id = CLB_pull_administration_favors
         
         completion_reward = { 
-            # Master DLC Check branches the logic immediately
             if = {
                 limit = { has_dlc = "No Step Back" }
                 
-                # 1. Grant NSB Chassis Techs
                 if = {
                     limit = { NOT = { has_tech = gwtank_chassis } }
                     set_technology = { gwtank_chassis = 1 }
@@ -231,7 +229,6 @@ focus_tree = {
                     set_technology = { basic_light_tank_chassis = 1 }
                 }
 
-                # 2. Silently assemble the variant
                 hidden_effect = {
                     create_equipment_variant = {
                         name = "Light Tank Mk. I"
@@ -247,7 +244,6 @@ focus_tree = {
                     }
                 }
 
-                # 3. Add the specific variant to the stockpile
                 add_equipment_to_stockpile = {
                     type = light_tank_chassis_1
                     variant_name = "Light Tank Mk. I"
@@ -255,7 +251,6 @@ focus_tree = {
                 }
             }
             else = {
-                # Non-NSB Fallback (Uses base game tech and equipment pools)
                 if = {
                     limit = { NOT = { has_tech = gwtank } }
                     set_technology = { gwtank = 1 }
@@ -271,7 +266,6 @@ focus_tree = {
                 }
             }
 
-            # Global effects applied regardless of DLC
             division_template = {
                 name = "Light Tank Division"
                 template_counter = 0

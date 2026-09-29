@@ -307,10 +307,10 @@ focus_tree = {
                 support = {
                     artillery = { x = 0 y = 0 }
                     engineer = { x = 0 y = 1 }
+                    recon = { x = 0 y = 2 }
                 }
             }
             random_controlled_state = {
-                # Added loop to clean up the repetitive create_unit blocks
                 create_unit = { owner = CNA division = "name = \"Breakthrough specialists\" division_template = \"Breakthrough specialists\" start_equipment_factor = 1.0 start_experience_factor = 0.35" }
                 create_unit = { owner = CNA division = "name = \"Breakthrough specialists\" division_template = \"Breakthrough specialists\" start_equipment_factor = 1.0 start_experience_factor = 0.35" }
                 create_unit = { owner = CNA division = "name = \"Breakthrough specialists\" division_template = \"Breakthrough specialists\" start_equipment_factor = 1.0 start_experience_factor = 0.35" }

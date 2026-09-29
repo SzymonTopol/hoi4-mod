@@ -1,4 +1,4 @@
-com_civil_war_breakaway_timers_category = {
+com_civil_war_breakaway_timers_category = { #Timers at the top of the decision category, that count down towards release of Nationalist and Communist factions
 
     release_cna_mission = {
         icon = GFX_decision_generic_political_discourse
@@ -49,7 +49,12 @@ com_civil_war_breakaway_timers_category = {
 
 com_civil_war_scramble_category = {
 
-    claim_com_state_decision = {
+    #Very large and a bit convoluted decision
+    #In a nutshell it makes every Commonwealth state 'markable' so that the splinter factions can claim them.
+    #Claiming is fine tuned to make each faciton go for roughly the same core area, while allowing for some randomness
+    #Splinter CNA and CCM factions have logner cooldown to reflect their smaller base of support
+    #While CCO has by far the shortest cooldown due to them figthing essentially CLB and CMO on the main front and having the CCM in their rear
+    claim_com_state_decision = {  
         icon = GFX_decision_generic_operation
         
         allowed = { 
@@ -132,6 +137,7 @@ com_civil_war_scramble_category = {
                 } 
             }
 
+            #Extra modifiers for bordering states, so we don't get border gore and so that the factions can expand in a more organic way
             modifier = {
                 add = 200
                 FROM = {
@@ -163,7 +169,7 @@ com_civil_war_scramble_category = {
             }
 
             # ==================================================
-            # ORGANIC TIE-BREAKERS (Breaks 1-1 Determinism)
+            # ORGANIC TIE-BREAKERS (Breaks 1-1 Determinism) <-- creates more varied claiming patterns
             # ==================================================
             
             modifier = {
@@ -233,7 +239,7 @@ com_civil_war_scramble_category = {
             if = { limit = { tag = CNA } add_to_array = { cna_marked_states = FROM } }
             if = { limit = { tag = CCM } add_to_array = { ccm_marked_states = FROM } }
 
-            if = {
+            if = { #States off the limit - spawning points for the factions
                 limit = {
                     NOT = {
                         any_state = {

@@ -1,3 +1,0 @@
-color = { 100 100 50 }
-graphical_culture = germanic_2d
-graphical_culture_2d = germanic_2d

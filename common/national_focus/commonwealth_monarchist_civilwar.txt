@@ -17,8 +17,7 @@ focus_tree = {
         cost = 2
         x = 2
         y = 0
-        completion_reward = { 
-            #Later here will be an event here to choose the ruler (will need to be connected in case if Royalist win civil war, to transfer the ruler)
+        completion_reward = {
             country_event = { id = commonwealth.16}
         }
     }
@@ -86,7 +85,6 @@ focus_tree = {
                 }
             }
             random_controlled_state = {
-                # Added loop to clean up the repetitive create_unit blocks
                 create_unit = { owner = CMO division = "name = \"Hussar Division\" division_template = \"Hussar Division\" start_equipment_factor = 1.0 start_experience_factor = 0.40" }
                 create_unit = { owner = CMO division = "name = \"Hussar Division\" division_template = \"Hussar Division\" start_equipment_factor = 1.0 start_experience_factor = 0.40" }
                 create_unit = { owner = CMO division = "name = \"Hussar Division\" division_template = \"Hussar Division\" start_equipment_factor = 1.0 start_experience_factor = 0.40" }
@@ -183,6 +181,21 @@ focus_tree = {
         y = 2
         relative_position_id = CMO_cavalry_support
         completion_reward = { 
+            division_template = {
+                name = "Cavalry Division" #Changed from the Hussar Division, as AI kept decomisioning the template (which caused errors when trying to spawn units from this focus)
+                template_counter = 37
+                regiments = { 
+                    cavalry = { x = 0 y = 0 } cavalry = { x = 0 y = 1 } cavalry = { x = 0 y = 2 } 
+                    cavalry = { x = 1 y = 0 } cavalry = { x = 1 y = 1 } cavalry = { x = 1 y = 2 }
+                    cavalry = { x = 2 y = 0 } cavalry = { x = 2 y = 1 } cavalry = { x = 2 y = 2 }
+                }
+                support = {
+                    recon = {
+                        x = 0
+                        y = 0
+                    }
+                }
+            }
             random_controlled_state = {
                 create_unit = { owner = CMO division = "name = \"Hussar Division\" division_template = \"Hussar Division\" start_equipment_factor = 1.0 start_experience_factor = 0.40" }
                 create_unit = { owner = CMO division = "name = \"Hussar Division\" division_template = \"Hussar Division\" start_equipment_factor = 1.0 start_experience_factor = 0.40" }

@@ -7,26 +7,27 @@ on_actions = {
                 FROM = { OR = { tag = CCO tag = CLB tag = CMO tag = CNA tag = CCM } }
             }
             
-            # 1. Save targets for the dynamic event text
+            # Save targets for the dynamic event text
             ROOT = { save_global_event_target_as = cw_loser }
             FROM = { save_global_event_target_as = cw_winner }
 
-            # 2. Give the winner cores 
+            # Give the winner cores 
             ROOT = {
                 every_owned_state = {
                     add_core_of = FROM
                 }
             }
 
-            # 3. Annex the loser
+            # Annex the loser
             FROM = {
                 annex_country = {
                     target = ROOT
-                    # transfer_troops = yes # <- nie działa, bo gra usuwa jednostki zanim da sygnał o kapitualcji 
+                    #transfering units doesn't work properly, so taking on the equipment itself is fine
                 }
             }
             
-            # 4. Broadcast the news to all surviving factions
+            # Broadcast the news to all surviving factions
+            # One day i might change it so that, if it was the final opponet capping, the event won't fire
             every_country = {
                 limit = {
                     OR = { tag = CCO tag = CLB tag = CMO tag = CNA tag = CCM }

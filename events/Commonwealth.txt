@@ -197,7 +197,6 @@ country_event = { #a deep breath
         
         custom_effect_tooltip = commonwealth_unlock_focuses_tt
         
-        # set_politics = { ruling_party = neutrality }
         retire_character = COM_interregnum
         
         add_country_leader_role = {
@@ -226,10 +225,9 @@ country_event = { #Too little too late
     is_triggered_only = yes
 
     immediate = {
-        # --- NEW ADDITION: Queues the newspaper event for 33 days later ---
-        news_event = { id = commonwealth.13 days = 33 }
+        news_event = { id = commonwealth.13 days = 33 } # drops the Commonwealth Hegemony shattered a bit over a month later
         
-        load_focus_tree = empty_focus
+        load_focus_tree = empty_focus #so that AI won't do anything funny
         
         88 = { add_core_of = CCO }
         807 = { add_core_of = CLB }
@@ -254,32 +252,25 @@ country_event = { #Too little too late
         COM_vaclav_veress = { set_nationality = CLB }
         COM_georgi_kvaternik = { set_nationality = CLB }
         
-        # Transfer to CMO
-        # ==========================================
-        # CHARACTER TRANSFERS FROM COM TO CMO
-        # ==========================================
-        
-        # 1. Transfer the characters
+        # Transfer to CMO        
         COM_kurt_benes = { set_nationality = CMO }
         COM_sergej_tito = { set_nationality = CMO }
         COM_fricis_bortnowski = { set_nationality = CMO }
         COM_pavlo_racovita = { set_nationality = CMO }
 
-        # COM_andrzej_erdos = { set_nationality = CMO }
-        # COM_konstantin_schuschnigg = { set_nationality = CMO }
-        # COM_carol_pats = { set_nationality = CMO }
-
-        # Wrapped in is_ai = no so it only forces the tag switch if a human is playing!
+        
         CCO = { load_focus_tree = commonwealth_conservative_civilwar }
         CLB = { load_focus_tree = commonwealth_liberal_civilwar }
         CMO = { load_focus_tree = commonwealth_monarchist_civilwar }
 
         # ==========================================
-        # THIS ACTUALLY STARTS THE MISSIONS & SCRAMBLE
+        # STARTING THE MISSIONS & SCRAMBLE
         # ==========================================
         CCO = { activate_mission = release_cna_mission }
         CLB = { activate_mission = release_ccm_mission }
 
+        #Tagswitch
+        # Wrapped in is_ai = no so it only forces the tag switch if a human is playing
         if = {
             limit = { 
                 is_ai = no
@@ -301,7 +292,6 @@ country_event = { #Too little too late
             }
             CMO = { change_tag_from = ROOT }
         }
-        # Offset flags removed! All active factions will now grab their first state simultaneously on Day 1.
 
         # Clean up the flags
         clr_country_flag = COM_chose_conservatives
@@ -327,12 +317,11 @@ country_event = { #The Commonwealth Civil War - setup krajów, przeniesienie kon
 
     immediate = {
         
-        COM = {
-            # 1. Delete all 80k troops in the field
+        COM = { #A needed workaround, since CCM were getting all the COM guns (since the tag was technically getting 'annexed' by them)
+        #So every unit is disbanded and most of the equipment is destroyed, 
             every_country_division = {
                 destroy_unit = yes
             }
-            # 2. Drain the void stockpile so CCM loots absolutely nothing
             add_equipment_to_stockpile = { type = infantry_equipment amount = -999999 }
             add_equipment_to_stockpile = { type = artillery_equipment amount = -999999 }
             add_equipment_to_stockpile = { type = support_equipment amount = -999999 }
@@ -340,7 +329,7 @@ country_event = { #The Commonwealth Civil War - setup krajów, przeniesienie kon
         }
 
         # ==========================================
-        # POINT 1: THE ELITE GUARD TEMPLATE & SPAWN
+        # THE ELITE GUARD TEMPLATE & SPAWN #3 per faction
         # ==========================================
         CCO = {
             division_template = {
@@ -406,10 +395,10 @@ country_event = { #The Commonwealth Civil War - setup krajów, przeniesienie kon
         }
 
         # =====================================================================
-        # PHASE 1: RESOLVE OVERLAPPING CLAIMS & TRANSFER STATES
+        # RESOLVE OVERLAPPING CLAIMS & TRANSFER STATES
         # =====================================================================
         
-        # 1. First, loop through all states to resolve conflicts randomly
+        # First, loop through all states to resolve conflicts randomly
         every_state = {
             limit = {
                 # Find states that have more than one mark flag
@@ -482,7 +471,7 @@ country_event = { #The Commonwealth Civil War - setup krajów, przeniesienie kon
             }
         }
 
-        # 2. Perform clean state transfers with zero overlaps!
+        # Perform clean state transfers that don't have conflicts
         every_state = {
             limit = { has_state_flag = marked_by_CCO }
             add_core_of = CCO
@@ -510,7 +499,7 @@ country_event = { #The Commonwealth Civil War - setup krajów, przeniesienie kon
         }
 
         # ==========================================
-        # PHASE 2: SPAWN 2 MILITIAS PER OWNED STATE
+        # SPAWN 2 MILITIAS PER OWNED STATE
         # ==========================================
         
         # Conservatives
@@ -570,7 +559,7 @@ country_event = { #The Commonwealth Civil War - setup krajów, przeniesienie kon
                 }
             }
             
-            every_owned_state = { #Z jakiegoś powodu rojaliści mają problemy z utrzymaniem się (mniejsza eko, więc damy im więcej wyposażenia na dzień dobry)
+            every_owned_state = { #Monarchist got a strong focus tree with both cavalry (ideal for this war), and +10k of equimpment, so there is no need buffing them here
                 create_unit = {
                     owner = CMO 
                     division = "name = \"Royalist Militia\" division_template = \"Royalist Militia\" start_equipment_factor = 0.3"
@@ -677,14 +666,13 @@ country_event = { #The Commonwealth Civil War - setup krajów, przeniesienie kon
         }
 
         # ==========================================
-        # POINT 4: FAILSAFES FOR 96 & 45
+        # FAILSAFES FOR 96 and 45 (if the CNA/CCM splits don't happen)
         # ==========================================
         
         if = {
             limit = { NOT = { country_exists = CNA } }
             CCO = {
                 transfer_state = 96
-                # Create a specific template so they get the weak CNA icon
                 division_template = {
                     name = "Auxiliary Militia"
                     template_counter = 1
@@ -708,7 +696,6 @@ country_event = { #The Commonwealth Civil War - setup krajów, przeniesienie kon
             limit = { NOT = { country_exists = CCM } }
             CLB = {
                 transfer_state = 45 
-                # Create a specific template so they get the weak CCM icon
                 division_template = {
                     name = "Local Militia"
                     template_counter = 14
@@ -800,12 +787,12 @@ country_event = { # CNA Breakaway
 
     option = {
         name = commonwealth.9.a
-        trigger = { is_ai = no } # Stops the AI from stealing your camera
+        trigger = { is_ai = no }
         CNA = { change_tag_from = ROOT }
     }
     option = {
         name = commonwealth.9.b
-        ai_chance = { base = 100 } # AI stays put safely
+        ai_chance = { base = 100 } # AI stays put safely so no funky swapping of camera happens
     }
 }
 
@@ -824,12 +811,12 @@ country_event = { # CCM Breakaway
 
     option = {
         name = commonwealth.10.a
-        trigger = { is_ai = no } # Stops the AI from stealing your camera
+        trigger = { is_ai = no }
         CCM = { change_tag_from = ROOT }
     }
     option = {
         name = commonwealth.10.b
-        ai_chance = { base = 100 } # AI stays put safely
+        ai_chance = { base = 100 } # AI stays put safely so no funky swapping of camera happens
     }
 }
 
@@ -865,26 +852,24 @@ news_event = { # Commonwealth Collapse Newspaper
     id = commonwealth.13
     title = commonwealth.13.t
     desc = commonwealth.13.d
-    picture = GFX_news_event_generic_riot # Feel free to change to a specific newspaper GFX
+    picture = GFX_news_event_generic_riot
 
     major = yes
     is_triggered_only = yes
 
     immediate = {
+        #Releasing every puppet COM currently owns, and disbanding the faction
         set_global_flag = commonwealth_13_fired
         COM = {
-            # 1. Scope to every puppet COM currently owns
             every_subject_country = {
-                # 2. Scope back to COM (the Overlord MUST be the one executing the release)
                 COM = { 
                     set_autonomy = {
-                        target = PREV # PREV refers to the subject we just scoped from
+                        target = PREV
                         autonomy_state = autonomy_free
                     }
                 }
             }
             
-            # 3. Delete the faction safely now that everyone is out
             dismantle_faction = yes
         }
         set_global_flag = COM_hegemony_lost
@@ -895,7 +880,7 @@ news_event = { # Commonwealth Collapse Newspaper
     }
 }
 
-country_event = {
+country_event = { # End of the Civil War -> swap from the faction tag to COM
     id = commonwealth.14
     title = commonwealth.14.t
     desc = commonwealth.14.d
@@ -904,7 +889,9 @@ country_event = {
 
     trigger = {
         OR = { tag = CCO tag = CMO tag = CLB tag = CNA tag = CCM }
-        has_global_flag = commonwealth_13_fired
+        has_global_flag = commonwealth_13_fired #Makes sure the Commonwealth Collapse actually fired
+        #The reason this is important is that without it, this event could fire in the first day of the game (since no splinter factions exist yet)
+        #So the commonwealth.13 event is a key flag here (as it fires 33 days after the initial release of the splinter factions)
         has_war = no
         NOT = {
             any_other_country = {
@@ -930,10 +917,12 @@ country_event = {
             remove_claim_by = CCM
         }
 
+        # Transfer the state to COM
         COM = { transfer_state = 10 }
+        # The reason the swap is done in 2 steps (initial giving just warsaw, and the choice giving the rest of the states)
+        # is that doing this in one swoop gives the 'game over' message that i want to avoid
 
-        # --- PRE-ANNEXATION CHECK FOR CMO LEADER ---
-        # Checks the active parallel CMO leader before they are annexed
+        # Pre annexation check for CMO leader (CMO can take any of the 3 options)
         if = {
             limit = { tag = CMO }
             if = { 
@@ -954,7 +943,7 @@ country_event = {
         }
 
         # ==========================================
-        # GENERAL TRANSFERS (UNTOUCHED)
+        # GENERAL TRANSFERS
         # ==========================================
         if = {
             limit = { tag = CCO }
@@ -1002,15 +991,17 @@ country_event = {
 
     option = {
         name = commonwealth.14.a
-        
+        # Why so much fuss with changing leaders this way?
+        # Hoi4 refused to cooperate with changing these fellas from one tag to another
+        # So i just made the parallel leaders in COM (they are only needed on different tags for the duration of the civil war)
         COM = {
             annex_country = { target = ROOT }
             
-            # 1. Globally retire the primary provisional interim leaders
+            # Globally retire the primary provisional interim leaders
             retire_character = COM_extended_sejm
             retire_character = COM_military_cabinet
             
-            # 2. Setup politics and handle remaining character retirements
+            # Setup politics and handle remaining character retirements
             if = {
                 limit = { ROOT = { original_tag = CCO } }
                 set_politics = { ruling_party = neutrality elections_allowed = no }
@@ -1058,13 +1049,6 @@ country_event = {
                     retire_character = COM_konstantin_schuschnigg
                     add_country_leader_role = { character = COM_carol_pats promote_leader = yes country_leader = { ideology = despotism } }
                 }
-                # else = {
-                #     # Regency Council wins
-                #     retire_character = COM_andrzej_erdos
-                #     retire_character = COM_konstantin_schuschnigg
-                #     retire_character = COM_carol_pats
-                #     add_country_leader_role = { character = COM_regency_council promote_leader = yes country_leader = { ideology = oligarchism } }
-                # }
             }
             else_if = {
                 limit = { ROOT = { original_tag = CLB } }
@@ -1102,7 +1086,7 @@ country_event = {
     }
 }
 
-country_event = {
+country_event = { # Adding a reactionary spirit to CCO <- makes taking down CCM much easier, but has a timer to do it
     id = commonwealth.15
     title = commonwealth.15.t
     desc = commonwealth.15.d
@@ -1126,7 +1110,7 @@ country_event = {
     }
 }
 
-country_event = { 
+country_event = { #election for the CMO leader (Andrzej Erdos, Konstantin Schuschnigg, or Carol Pats)
     id = commonwealth.16
     title = commonwealth.16.t
     desc = commonwealth.16.d

@@ -64,7 +64,8 @@ focus_tree = {
 				ideology = neutrality
 				popularity = 0.05
 			}
-			country_event = { id = commonwealth.16 }
+			country_event = { id = commonwealth.16 } #this has no way of firing here (the same event can fire in the CMO focus tree). 
+			#Here it is as a 'illusion' that this focus tree is legit and won't just lead to outbreak of civil war before player can choose a king
 		}
 		prerequisite = {focus = COM_szlachta_convention}
 		prerequisite = {focus = COM_transfer_units}

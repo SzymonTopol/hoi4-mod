@@ -1,6 +1,6 @@
 ideas = {
 	country = {
-		
+		#Initial set of ideas for the COM pre-civil war (these will be changed based on which faction wins the civil war)
 		COM_slowly_stagnating_economy = {
 			picture = ETH_customs_barrier_ITA
 			allowed = { always = yes }

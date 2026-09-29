@@ -1,3 +1,0 @@
-color = { 100 100 255 }
-graphical_culture = southern_european_2d
-graphical_culture_2d = southern_european_2d
