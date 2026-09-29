@@ -1,1 +1,5 @@
 .vscode/settings.json
+
+gfx/leaders/**/*.dds
+gfx/leaders/**/*.tga
+gfx/leaders/**/*.png

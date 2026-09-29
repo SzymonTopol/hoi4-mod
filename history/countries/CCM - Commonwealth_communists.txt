@@ -33,15 +33,15 @@ set_politics = {
 }
 
 set_popularities = {
-	democratic = 25
-	fascism = 25
-	communism = 25
-	neutrality = 25
+	democratic = 30
+	fascism = 5
+	communism = 60
+	neutrality = 5
 }
 
-create_country_leader = { #TEMP LEADER
-	name = "Łuki Postrożny"
-	desc = ""
-	picture = GFX_portrait_Ahmed_Ben_Bella
-	ideology = stalinism
-}
+# ==========================================
+# CCM - Communist Faction
+# ==========================================
+recruit_character = CCM_aristotle_astrouski
+recruit_character = COM_tadeusz_pavlenko
+recruit_character = COM_radaslau_kukiel

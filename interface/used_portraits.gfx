@@ -1,0 +1,134 @@
+spriteTypes = {
+	# COM - Commonwealth
+	spriteType = {
+		name = "GFX_COM_sigismund_v"
+		texturefile = "gfx/leaders/LIT/portrait_lit_antanas_smetona.dds"
+	}
+
+    # --- CNA: FRINGE FACTION (1 Leader, 3 Generals) ---
+    spriteType = {
+        name = "GFX_portrait_CNA_leader_edvard_dumitrescu" # Czech + Romanian
+        texturefile = "gfx/leaders/CZE/Portrait_Czech_Edvard_Benes.dds" 
+    }
+    spriteType = {
+        name = "GFX_portrait_CNA_general_milan_drakos" # Yugoslav + Greek
+        texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds" 
+    }
+    spriteType = {
+        name = "GFX_portrait_CNA_general_kostas_tesarik" # Greek + Czech
+        texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds" 
+    }
+    spriteType = {
+        name = "GFX_portrait_CNA_general_ion_sosabowski" # Romanian + Polish
+        texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds" 
+    }
+
+    # --- CCM: FRINGE FACTION (1 Leader, 2 Generals) ---
+    spriteType = {
+        name = "GFX_portrait_CCM_leader_aristotle_astrouski" # Greek + Belarusian
+        texturefile = "gfx/leaders/GRE/portrait_gre_aristotle_onassis.dds" 
+    }
+    spriteType = {
+        name = "GFX_portrait_CCM_general_tadeusz_pavlenko" # Polish + Ukrainian
+        texturefile = "gfx/leaders/BLR/portrait_BLR_radaslau_astrouski.dds" 
+    }
+    spriteType = {
+        name = "GFX_portrait_CCM_general_radaslau_kukiel" # Belarusian + Polish
+        texturefile = "gfx/leaders/POL/portrait_POL_stanislaw_sosabowski.dds" 
+    }
+
+    # --- CLB: MAJOR FACTION (1 Leader, 1 FM, 4 Generals) ---
+    spriteType = {
+        name = "GFX_portrait_CLB_leader_josip_antonescu" # Yugoslav + Romanian
+        texturefile = "gfx/leaders/YUG/Portrait_Yugoslavia_Josip_Broz_Tito.dds" 
+    }
+    spriteType = {
+        name = "GFX_portrait_CLB_field_marshal_radu_bortnowski" # Romanian + Polish
+        texturefile = "gfx/leaders/ROM/Portrait_Romania_Ion_Antonescu.dds" 
+    }
+    spriteType = {
+        name = "GFX_portrait_CLB_general_vaclav_veress" # Czech + Hungarian
+        texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds" 
+    }
+    spriteType = {
+        name = "GFX_portrait_CLB_general_gyorgy_buks" # Hungarian + Latvian
+        texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds" 
+    }
+    spriteType = {
+        name = "GFX_portrait_CLB_general_georgi_kvaternik" # Bulgarian + Croatian
+        texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds" 
+    }
+    spriteType = {
+        name = "GFX_portrait_CLB_general_vilis_popov" # Latvian + Bulgarian
+        texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds" 
+    }
+
+    # --- CCO: MAJOR FACTION (1 Leader, 1 FM, 5 Generals) ---
+    spriteType = {
+        name = "GFX_portrait_CCO_leader_boris_racovita" # Bulgarian + Romanian
+        texturefile = "gfx/leaders/BUL/Portrait_Bulgaria_Boris_III.dds" 
+    }
+    spriteType = {
+        name = "GFX_portrait_CCO_field_marshal_stanislaw_hindy" # Polish + Hungarian
+        texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds" 
+    }
+    spriteType = {
+        name = "GFX_portrait_CCO_general_dmytro_cukavac" # Ukrainian + Yugoslav
+        texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds" 
+    }
+    spriteType = {
+        name = "GFX_portrait_CCO_general_zivorad_shandruk" # Yugoslav + Ukrainian
+        texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds" 
+    }
+    spriteType = {
+        name = "GFX_portrait_CCO_general_jacek_kalafatovic" # Polish + Yugoslav
+        texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds" 
+    }
+    spriteType = {
+        name = "GFX_portrait_CCO_general_alexandros_vojcechovsky" # Greek + Czech
+        texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds" 
+    }
+    spriteType = {
+        name = "GFX_portrait_CCO_general_mykhailo_lacis" # Ukrainian + Latvian
+        texturefile = "gfx/leaders/UKR/portrait_UKR_mykhailo_omelianovych_pavlenko.dds" 
+    }
+
+    # --- CMO: MAJOR FACTION (3 Leaders, 1 FM, 5 Generals) ---
+    spriteType = {
+        name = "GFX_portrait_CMO_leader_andrzej_erdos" # polish + hungarian
+        texturefile = "gfx/leaders/HUN/Portrait_Hungary_Miklos_Horthy.dds" 
+    }
+    spriteType = {
+        name = "GFX_portrait_CMO_leader_konstantin_schuschnigg" # Estonian + Austrian
+        texturefile = "gfx/leaders/EST/portrait_est_konstantin_pats.dds" 
+    }
+    spriteType = {
+        name = "GFX_portrait_CMO_leader_carol_pats" # Romanian + Estonian
+        texturefile = "gfx/leaders/Europe/portrait_europe_generic_4.dds" 
+    }
+    spriteType = {
+        name = "GFX_portrait_CMO_field_marshal_kurt_benes" # Austrian + Czech
+        texturefile = "gfx/leaders/AUS/Portrait_Austria_Kurt_Schuschnigg.dds" 
+    }
+    spriteType = {
+        name = "GFX_portrait_CMO_general_marian_onassis" # Polish + Greek
+        texturefile = "gfx/leaders/POL/portrait_POL_marian_kukiel.dds" 
+    }
+    spriteType = {
+        name = "GFX_portrait_CMO_general_sergej_tito" # Czech + Yugoslav
+        texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds" 
+    }
+    spriteType = {
+        name = "GFX_portrait_CMO_general_danilo_seyss_inquart" # Yugoslav + Austrian
+        texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds" 
+    }
+    spriteType = {
+        name = "GFX_portrait_CMO_general_fricis_bortnowski" # Latvian + Polish
+        texturefile = "gfx/leaders/LAT/portrait_lat_vilis_lacis.dds" 
+    }
+    spriteType = {
+        name = "GFX_portrait_CMO_general_pavlo_racovita" # Ukrainian + Romanian
+        texturefile = "gfx/leaders/UKR/portrait_UKR_pavlo_shandruk.dds" 
+    }
+
+}

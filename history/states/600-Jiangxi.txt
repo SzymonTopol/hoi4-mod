@@ -3,7 +3,8 @@ state={
 	name="STATE_600"
 
 	history={
-		owner = UNT
+		add_core_of = GNN
+		owner = GNN
 		add_core_of = UNT
 		buildings = {
 			infrastructure = 2

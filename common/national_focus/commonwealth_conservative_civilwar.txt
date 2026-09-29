@@ -13,142 +13,321 @@ focus_tree = {
 
     focus = {
         id = CCO_army_loyalty
-        icon = GFX_focus_CZE_appeal_to_the_castle
-        cost = 5
+        icon = GFX_goal_rhineland
+        cost = 1
         x = 2
         y = 0
         completion_reward = { 
-            add_stability = 0.02
+            division_template = {
+                name = "Army Loyalists"
+                template_counter = 27
+                regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } 
+                            infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 }
+                            infantry = { x = 2 y = 0 } infantry = { x = 2 y = 1 } infantry = { x = 2 y = 2 }
+                artillery_brigade = { x = 3 y = 0 } }
+                support = {
+                    artillery = {
+                        x = 0
+                        y = 0
+                    }
+                    engineer = {
+                        x = 0
+                        y = 1
+                    }
+                }
+            }
+            random_controlled_state = {
+                    create_unit = { owner = CCO division = "name = \"Army Loyalists\" division_template = \"Army Loyalists\" start_equipment_factor = 1.0 start_experience_factor = 0.55" }
+                    create_unit = { owner = CCO division = "name = \"Army Loyalists\" division_template = \"Army Loyalists\" start_equipment_factor = 1.0 start_experience_factor = 0.55" }
+                    create_unit = { owner = CCO division = "name = \"Army Loyalists\" division_template = \"Army Loyalists\" start_equipment_factor = 1.0 start_experience_factor = 0.55" }
+                    create_unit = { owner = CCO division = "name = \"Army Loyalists\" division_template = \"Army Loyalists\" start_equipment_factor = 1.0 start_experience_factor = 0.55" }
+                    create_unit = { owner = CCO division = "name = \"Army Loyalists\" division_template = \"Army Loyalists\" start_equipment_factor = 1.0 start_experience_factor = 0.55" }
+                    create_unit = { owner = CCO division = "name = \"Army Loyalists\" division_template = \"Army Loyalists\" start_equipment_factor = 1.0 start_experience_factor = 0.55" }
+                    create_unit = { owner = CCO division = "name = \"Army Loyalists\" division_template = \"Army Loyalists\" start_equipment_factor = 1.0 start_experience_factor = 0.55" }
+                    create_unit = { owner = CCO division = "name = \"Army Loyalists\" division_template = \"Army Loyalists\" start_equipment_factor = 1.0 start_experience_factor = 0.55" }
+                    create_unit = { owner = CCO division = "name = \"Army Loyalists\" division_template = \"Army Loyalists\" start_equipment_factor = 1.0 start_experience_factor = 0.55" }
+                    create_unit = { owner = CCO division = "name = \"Army Loyalists\" division_template = \"Army Loyalists\" start_equipment_factor = 1.0 start_experience_factor = 0.55" }
+                }
         }
     }
 
     focus = {
         id = CCO_call_strategos_friends #<- strategos protectorate
-        icon = GFX_focus_CZE_appeal_to_the_castle
-        cost = 5
+        icon = GFX_focus_generic_phone
+        cost = 3
         x = -4
         y = 1
         relative_position_id = CCO_army_loyalty
         completion_reward = { 
-            add_stability = 0.02
+            add_stability = 0.05
+            add_war_support = 0.10
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 200
+            }
+            add_equipment_to_stockpile = {
+                type = support_equipment
+                amount = 100
+            }
         }
         prerequisite = { focus = CCO_army_loyalty }
     }
 
     focus = {
         id = CCO_southern_coast
-        icon = GFX_focus_CZE_appeal_to_the_castle
+        icon = GFX_goal_generic_position_armies
         cost = 5
         x = 0
         y = 1
         relative_position_id = CCO_call_strategos_friends
+        available = {
+            any_controlled_state = {
+                is_coastal = yes
+            }
+        }
         completion_reward = { 
-            add_stability = 0.02
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 5000
+            }
         }
         prerequisite = { focus = CCO_call_strategos_friends }
     }
 
     focus = {
         id = CCO_cooperate_with_nationalists
-        icon = GFX_focus_CZE_appeal_to_the_castle
-        cost = 5
+        icon = GFX_goal_molotov_ribbentrop_pact
+        cost = 2
         x = -2
         y = 1
+        available = {
+            NOT = {country_exists = CNA}
+        }
         relative_position_id = CCO_army_loyalty
         completion_reward = { 
-            add_stability = 0.02
+            add_popularity = {
+                ideology = fascism
+                popularity = 0.03
+            }
+            add_war_support = 0.05
         }
         prerequisite = { focus = CCO_army_loyalty }
     }
 
     focus = {
         id = CCO_prevent_ideological_split
-        icon = GFX_focus_CZE_appeal_to_the_castle
-        cost = 5
+        icon = GFX_goal_generic_alliance
+        cost = 2
         x = 0
         y = 1
+        available = {
+            NOT = {
+                has_country_flag = CNA_realsed
+            }
+        }
         relative_position_id = CCO_cooperate_with_nationalists
         completion_reward = { 
-            add_stability = 0.02
+            add_popularity = {
+                ideology = fascism
+                popularity = 0.15
+            }
+            set_country_flag = cancel_cna_release
         }
         prerequisite = { focus = CCO_cooperate_with_nationalists }
     }
 
     focus = {
         id = CCO_seize_depots
-        icon = GFX_focus_CZE_appeal_to_the_castle
+        icon = GFX_focus_generic_reinforcing_the_supply_network
         cost = 5
         x = 0
         y = 1
         relative_position_id = CCO_army_loyalty
         completion_reward = { 
-            add_stability = 0.02
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 5000
+            }
+            add_equipment_to_stockpile = {
+                type = support_equipment
+                amount = 200
+            }
+            add_equipment_to_stockpile = {
+                type = anti_air_equipment
+                amount = 400
+            }
         }
         prerequisite = { focus = CCO_army_loyalty }
     }
 
     focus = {
         id = CCO_redirect_munition_shipments
-        icon = GFX_focus_CZE_appeal_to_the_castle
+        icon = GFX_focus_generic_turning_a_blind_eye
         cost = 5
         x = 0
         y = 1
         relative_position_id = CCO_seize_depots
         completion_reward = { 
-            add_stability = 0.02
+            add_offsite_building = {
+                type = arms_factory
+                level = 2
+            }
         }
         prerequisite = { focus = CCO_seize_depots }
     }
 
     focus = {
         id = CCO_sway_industrialists
-        icon = GFX_focus_CZE_appeal_to_the_castle
+        icon = GFX_goal_generic_construct_civ_factory
         cost = 5
         x = 2
         y = 1
         relative_position_id = CCO_army_loyalty
+        available = {
+            num_of_factories > 20
+        }
         completion_reward = { 
-            add_stability = 0.02
+            random_owned_state = {
+
+                add_extra_state_shared_building_slots = 2
+
+                add_building_construction = {
+                type = industrial_complex
+                level = 2
+                instant_build = yes
+                }
+            }
+            random_owned_state = {
+
+                add_extra_state_shared_building_slots = 2
+
+                add_building_construction = {
+                type = industrial_complex
+                level = 2
+                instant_build = yes
+                }
+            }
         }
         prerequisite = { focus = CCO_army_loyalty }
     }
 
     focus = {
         id = CCO_arm_loyalists
-        icon = GFX_focus_CZE_appeal_to_the_castle
+        icon = GFX_focus_hol_war_on_pacifism
         cost = 5
         x = 4
         y = 1
         relative_position_id = CCO_army_loyalty
         completion_reward = { 
-            add_stability = 0.02
+            division_template = {
+                name = "Conservative Regiment"
+                template_counter = 70
+                regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } 
+                            mountaineers = { x = 1 y = 0 } mountaineers = { x = 1 y = 1 } mountaineers = { x = 1 y = 2 } }
+                support = {
+                    artillery = {
+                        x = 0
+                        y = 0
+                    }
+                    engineer = {
+                        x = 0
+                        y = 1
+                    }
+                }
+            }
+
+            random_owned_state = {
+                create_unit = { owner = CCO division = "name = \"Conservative Regiment\" division_template = \"Conservative Regiment\" start_equipment_factor = 1.0 start_experience_factor = 0.3" }
+                create_unit = { owner = CCO division = "name = \"Conservative Regiment\" division_template = \"Conservative Regiment\" start_equipment_factor = 1.0 start_experience_factor = 0.3" }
+            }
+
+            random_owned_state = {
+                create_unit = { owner = CCO division = "name = \"Conservative Regiment\" division_template = \"Conservative Regiment\" start_equipment_factor = 1.0 start_experience_factor = 0.3" }
+                create_unit = { owner = CCO division = "name = \"Conservative Regiment\" division_template = \"Conservative Regiment\" start_equipment_factor = 1.0 start_experience_factor = 0.3" }
+            }
+
+            random_owned_state = {
+                create_unit = { owner = CCO division = "name = \"Conservative Regiment\" division_template = \"Conservative Regiment\" start_equipment_factor = 1.0 start_experience_factor = 0.3" }
+                create_unit = { owner = CCO division = "name = \"Conservative Regiment\" division_template = \"Conservative Regiment\" start_equipment_factor = 1.0 start_experience_factor = 0.3" }
+            }
         }
         prerequisite = { focus = CCO_army_loyalty }
     }
 
     focus = {
         id = CCO_infiltrate_airforce
-        icon = GFX_focus_CZE_appeal_to_the_castle
+        icon = GFX_goal_generic_air_fighter2
         cost = 5
         x = 1
         y = 1
         relative_position_id = CCO_sway_industrialists
+        
         completion_reward = { 
-            add_stability = 0.02
+            # Master DLC Check for "By Blood Alone"
+            if = {
+                limit = { has_dlc = "By Blood Alone" }
+                
+                # 1. Grant the BBA Chassis Tech
+                if = {
+                    limit = { NOT = { has_tech = basic_small_airframe } }
+                    set_technology = { basic_small_airframe = 1 }
+                }
+
+                # 2. Silently assemble the variant with the correct base-game slot names
+                hidden_effect = {
+                    create_equipment_variant = {
+                        name = "Thunder A-11"
+                        type = small_plane_airframe_1
+                        parent_version = 0
+                        modules = {
+                            fixed_main_weapon_slot = light_mg_2x
+                            engine_type_slot = engine_1_1x
+                        }
+                    }
+                }
+
+                # 3. Add the designed variant to the stockpile
+                add_equipment_to_stockpile = {
+                    type = small_plane_airframe_1
+                    variant_name = "Thunder A-11"
+                    amount = 200
+                    producer = ROOT
+                }
+            }
+            else = {
+                # Non-BBA Fallback (Vanilla System)
+                
+                # 1. Grant the Vanilla Fighter Tech
+                if = {
+                    limit = { NOT = { has_tech = fighter1 } }
+                    set_technology = { fighter1 = 1 }
+                }
+
+                # 2. Add standard fighter equipment
+                add_equipment_to_stockpile = {
+                    type = fighter_equipment_1
+                    amount = 200
+                    producer = ROOT
+                }
+            }
         }
-        prerequisite = { focus = CCO_sway_industrialists}
-        prerequisite = { focus = CCO_arm_loyalists}
+        
+        prerequisite = { focus = CCO_sway_industrialists }
+        prerequisite = { focus = CCO_arm_loyalists }
     }
 
     focus = {
         id = CCO_underground_railroad
-        icon = GFX_focus_CZE_appeal_to_the_castle
-        cost = 5
+        icon = GFX_focus_generic_railroad
+        cost = 10
         x = 1
         y = 1
         relative_position_id = CCO_redirect_munition_shipments
         completion_reward = { 
-            add_stability = 0.02
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 10000
+            }
         }
         prerequisite = { focus = CCO_redirect_munition_shipments }
         prerequisite = { focus = CCO_sway_industrialists }

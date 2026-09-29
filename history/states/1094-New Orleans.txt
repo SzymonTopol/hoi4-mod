@@ -1,0 +1,32 @@
+
+state={
+	id=1094
+	name="STATE_1094"
+	manpower = 1523237
+
+	state_category = metropolis
+
+	history={
+		owner = SCA
+		add_core_of = SCA
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 2
+			7552 = {
+				naval_base = 5
+
+			}
+		}
+		victory_points = {
+			7552 10 
+		}
+		
+	}
+
+	provinces={
+		7552 12398
+	}
+
+	local_supplies=15.0 
+}

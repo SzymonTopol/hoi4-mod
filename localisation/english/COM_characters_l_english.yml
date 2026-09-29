@@ -21,3 +21,43 @@
 
  COM_regency_council_trait:0 "Awaiting a Monarch"
  COM_regency_council_trait_desc:0 "The state is governed by a council of nobles holding the throne in trust. While it maintains tradition, the lack of a true monarch leaves the nation feeling adrift."
+
+ # CNA - Nationalist Faction
+ COM_edvard_dumitrescu:0 "Edvard Dumitrescu"
+ COM_milan_drakos:0 "Milan Drakos"
+ COM_kostas_tesarik:0 "Kostas Tesarik"
+ COM_ion_sosabowski:0 "Ion Sosabowski"
+ 
+ # CCM - Communist Faction
+ COM_aristotle_astrouski:0 "Aristotle Astrouski"
+ COM_tadeusz_pavlenko:0 "Tadeusz Pavlenko"
+ COM_radaslau_kukiel:0 "Radaslau Kukiel"
+ 
+ # CLB - Liberal Faction
+ COM_josip_antonescu:0 "Josip Antonescu"
+ COM_radu_bortnowski:0 "Radu Bortnowski"
+ COM_vaclav_veress:0 "Vaclav Veress"
+ COM_gyorgy_buks:0 "Gyorgy Buks"
+ COM_georgi_kvaternik:0 "Georgi Kvaternik"
+ COM_vilis_popov:0 "Vilis Popov"
+ 
+ # CCO - Conservative Faction
+ COM_boris_racovita:0 "Boris Racovita"
+ COM_stanislaw_hindy:0 "Stanislaw Hindy"
+ COM_dmytro_cukavac:0 "Dmytro Cukavac"
+ COM_zivorad_shandruk:0 "Zivorad Shandruk"
+ COM_jacek_kalafatovic:0 "Jacek Kalafatovic"
+ COM_alexandros_vojcechovsky:0 "Alexandros Vojcechovsky"
+ COM_mykhailo_lacis:0 "Mykhailo Lacis"
+ 
+ # CMO - Monarchist Faction
+ COM_andrzej_erdos:0 "Andrzej Erdos"
+ COM_konstantin_schuschnigg:0 "Konstantin Schuschnigg"
+ COM_carol_pats:0 "Carol Pats"
+ COM_kurt_benes:0 "Kurt Benes"
+ COM_marian_onassis:0 "Marian Onassis"
+ COM_sergej_tito:0 "Sergej Tito"
+ COM_danilo_seyss_inquart:0 "Danilo Seyss-Inquart"
+ COM_fricis_bortnowski:0 "Fricis Bortnowski"
+ COM_pavlo_racovita:0 "Pavlo Racovita"
+ CMO_regency_council_name:0 "Regency Council"

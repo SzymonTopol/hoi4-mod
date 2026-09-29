@@ -1,0 +1,13 @@
+add_namespace = news
+
+# Silencing the 4th International
+news_event = {
+    id = news.173
+    hidden = yes
+    
+    is_triggered_only = yes
+
+    trigger = {
+        always = no
+    }
+}

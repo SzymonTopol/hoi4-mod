@@ -7,8 +7,8 @@ state={
 	#resources={
 	#}
 	history={
-		owner = UNT
-		add_core_of = UNT
+		owner = SAV
+		add_core_of = SAV
 		buildings = {
 			infrastructure = 1 
 			industrial_complex = 1

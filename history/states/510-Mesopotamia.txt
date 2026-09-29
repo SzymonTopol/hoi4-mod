@@ -11,9 +11,8 @@ state = {
 	state_category = rural
 
 	history = {
-
-		owner = UNT
-		add_core_of = UNT
+		owner = SST
+		add_core_of = SST
 
 		buildings = {
 			infrastructure = 1

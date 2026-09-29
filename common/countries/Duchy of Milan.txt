@@ -1,0 +1,3 @@
+color = { 143 150 105 }
+graphical_culture = southern_european_2d
+graphical_culture_2d = southern_european_2d

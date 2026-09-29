@@ -1,0 +1,16 @@
+DNA = {
+	male = {
+		names = {
+			Jakub Kacper Filip Szymon Aleksandr Aleksey Adolfas Aadu Alberts Karel Ezekiel Alajos Adrian Aleksandar Blagoje Adamantios Adelin Abner Adam Albert Alexander Charles John Frederick Douglas Patrick Leonard
+		}
+	}
+	female = {
+		names = {
+			Zofia Wiktoria Alina Anna Birute Imbi Julija Marie Sandra Agnes Andrea Aleksandra Agata Alexandra Adorata Mary Jane Kate Eleanor Emma Lea Olivia Alice Florence
+		}
+	}
+	surnames = {
+		Nowak Kowalski Abramov Adamkus Aamisepp Abakovskis Havlíček Lugmair Andrássy Chifu Agura Adzic Altanis Adamescu Abbott Abercrombie Allen Ames Grey Elliot Hamilton Gordon
+	}
+	callsigns = { "Globalist" "The Overseer" "Atlas" "Titan" "Maverick" "White Eagle" "North Star" "Apollo" }
+}

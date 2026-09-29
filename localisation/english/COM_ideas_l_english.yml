@@ -22,3 +22,24 @@
 
  ccm_revolutionary_zeal:0 "Revolutionary Zeal"
  ccm_revolutionary_zeal_desc:0 "The people are inspired by the revolutionary spirit, and are willing to fight for the cause!"
+
+ cco_reactionary_spirit:0 "Reactionary Spirit"
+ cco_reactionary_spirit_desc:0 "The gloves are off, we will teach these commies a lesson."
+
+ cmo_noble_commanders_idea:0 "Noble Commanders" #the national spirit
+ cmo_united_by_faith_idea:0 "United by Faith"
+
+ CNA_exploit_radicalism_modifier:0 "Exploit enemy radicalsm"
+ CNA_military_admin_modifier:0 "Military Administration"
+ CNA_sway_the_young_modifier:0 "Young Sway"
+ CNA_tale_of_two_militaries_modifier:0 "Two Militaries"
+ CNA_anti_communist_modifier:0 "Anti-Communism"
+ CNA_expand_our_reach_modifier:0 "Expanded Reach"
+ CNA_encourage_defections_modifier:0 "Defecting enemies"
+ CNA_nationalize_industries_modifier:0 "Nationalized Industry"
+ CNA_invincible_army_modifier:0 "Invincible Army"
+ CNA_defensive_posture_modifier:0 "Defensive Posturing"
+ CNA_rapid_expansion_modifier:0 "Rapid Expansion"
+ CNA_partisan_training_modifier:0 "Partisan Training"
+ CNA_national_rebirth_modifier:0 "National Rebirth"
+ CNA_breakthrough_doctrine_modifier:0 "Breakthrough Doctrine"

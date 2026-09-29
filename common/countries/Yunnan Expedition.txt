@@ -1,0 +1,3 @@
+color = { 92 16 72 }
+graphical_culture = commonwealth_2d
+graphical_culture_2d = commonwealth_2d

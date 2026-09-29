@@ -2,17 +2,21 @@
 state={
 	id=1090
 	name="STATE_1090"
-	manpower = 1311784
+	manpower = 3311784
 
 	state_category = metropolis
 
 	history={
-		owner = UNT
+		add_core_of = NPR
+		owner = NPR
 		add_core_of = UNT
 		buildings = {
 			infrastructure = 4
-			arms_factory = 1
-			industrial_complex = 2
+			arms_factory = 2
+			industrial_complex = 4
+		}
+		victory_points = {
+			3966 2 #Vasto
 		}
 	}
 

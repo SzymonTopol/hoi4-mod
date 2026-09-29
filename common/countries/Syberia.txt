@@ -1,0 +1,3 @@
+color = { 200 200 200 }
+graphical_culture = eastern_european_2d
+graphical_culture_2d = eastern_european_2d

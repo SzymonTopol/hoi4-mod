@@ -2,8 +2,7 @@
 state = {
 	id = 117
 	name = "STATE_117" # Campania
-	manpower = 4240000 # (Campania 3697k + Basilicato 543k )  # was 5333611 before Puglia state was added
-	
+	manpower = 6240000
 	state_category = city
 	resources = { #TODO_Manu: Check resource split (Puglia is now a different state)
 		aluminium = 10 # was: 16 (TODO_Manu: This WAS before my time. Check)
@@ -11,7 +10,8 @@ state = {
 	}
 
 	history = {
-		owner = UNT
+		add_core_of = NPR
+		owner = NPR
 		add_core_of = UNT
 		victory_points = {
 			819 20 

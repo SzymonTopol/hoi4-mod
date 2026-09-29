@@ -10,7 +10,8 @@ state= {
 	state_category = town
 
 	history= {
-		owner = UNT
+		add_core_of = CBA
+		owner = CBA
 		add_core_of = UNT
 		buildings = {
 			infrastructure = 2

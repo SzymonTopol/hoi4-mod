@@ -5,7 +5,8 @@ state= {
 	state_category = city
 	history=
 	{
-		owner = UNT
+		add_core_of = MIN
+		owner = MIN
 		add_core_of = UNT
 		buildings = {
 			infrastructure = 2

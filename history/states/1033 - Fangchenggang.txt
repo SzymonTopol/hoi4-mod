@@ -8,8 +8,8 @@ state = {
 	}
 
 	history = {
-		owner = UNT
-		add_core_of = UNT
+		owner = GXI
+		add_core_of = GXI
 
 		buildings = {
 			infrastructure = 2

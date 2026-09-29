@@ -5,7 +5,8 @@ state = {
 	state_category = town
 
 	history = {
-		owner = UNT
+		add_core_of = SAV
+		owner = SAV
 		add_core_of = UNT
 		add_claim_by = SPM
 		victory_points = {
@@ -16,6 +17,7 @@ state = {
 		}
 		buildings = {
 			infrastructure = 2
+			industrial_complex = 2
 			9909 = {
 				naval_base = 2
 			}		

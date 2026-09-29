@@ -7,7 +7,8 @@ state=
 	state_category = large_town
 	history=
 	{
-		owner = UNT
+		add_core_of = HFE
+		owner = HFE
 		add_core_of = UNT
 		buildings = {
 			infrastructure = 3 #was: 5

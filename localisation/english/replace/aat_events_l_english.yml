@@ -78,3 +78,13 @@ view_ccm_secured_states_on_map:0 "Secured States"
 commonwealth.14.t:0 "Civil War Ends"
 commonwealth.14.d:0 "After months of fighting, the Commonwealth Civil War has finally come to an end. We managed to survive and thrive over our enemies. Having came out on top, we now have the opportunity to rebuild the Commonwealth and restore its former glory."
 commonwealth.14.a:0 "The Commonwealth will rise again!" 
+
+commonwealth.15.t:0 "War against the Revolutionaries"
+commonwealth.15.d:0 "At last, with the outbreak of the civil war, we can destroy the communst menace once and for all."
+commonwealth.15.a:0 "§RWe will purge the state clean§!"
+
+commonwealth.16.t:0 "The Grand Election"
+commonwealth.16.d:0 "Country without a leader is like a car without a driver. We can't postpone such an earnest task much longer."
+commonwealth.16.a:0 "Long live the next Jagiellon!"
+commonwealth.16.b:0 "Ancient roots are restored!"
+commonwealth.16.c:1 "Vote moves much more west"

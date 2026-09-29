@@ -33,15 +33,15 @@ set_politics = {
 }
 
 set_popularities = {
-	democratic = 25
-	fascism = 25
-	communism = 25
-	neutrality = 25
+	democratic = 81
+	fascism = 1
+	communism = 12
+	neutrality = 6
 }
 
-create_country_leader = { #TEMP LEADER
-	name = "Łuki Postrożny"
-	desc = ""
-	picture = GFX_portrait_Ahmed_Ben_Bella
-	ideology = liberalism
-}
+# ==========================================
+# CLB - Liberal Faction (Major)
+# ==========================================
+recruit_character = CLB_josip_antonescu
+recruit_character = COM_gyorgy_buks
+recruit_character = COM_vilis_popov

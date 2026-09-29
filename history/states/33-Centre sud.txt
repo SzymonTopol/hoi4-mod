@@ -10,8 +10,8 @@ state={
 		victory_points = {
 			651 1
 		}
-		owner = UNT
-		add_core_of = UNT
+		owner = LUT
+		add_core_of = LUT
 		
 		buildings = {
 			infrastructure = 3

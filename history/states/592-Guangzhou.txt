@@ -10,7 +10,8 @@ state={
 	}
 
 	history={
-		owner = UNT
+		add_core_of = YUE
+		owner = YUE
 		add_core_of = UNT
 		
 		buildings = {

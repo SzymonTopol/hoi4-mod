@@ -1,0 +1,91 @@
+add_namespace = south_american_events
+
+# Silencing the Chilean Earthquake
+country_event = {
+	id = south_american_events.13
+	title = south_american_events.13.t
+	desc = south_american_events.13.d
+	picture = GFX_report_event_CHL_chillan_earthquake
+
+    is_triggered_only = yes
+
+	trigger = {
+        always = no
+		# controls_state = 279
+		
+		# date > 1939.1.18
+
+		# has_dlc = "Trial of Allegiance"
+	}
+
+	hidden = no
+
+	fire_only_once = yes 
+
+	option = {
+		name = south_american_events.13.a
+		ai_chance = {
+			base = 100
+		}
+
+		add_stability = -0.05
+
+		add_manpower = -4000
+
+		add_timed_idea = {
+			idea = CHL_relief_efforts_idea
+			days = 360
+		}
+		custom_effect_tooltip = CHL_relief_efforts_idea_tt
+		effect_tooltip = {
+			CHL_anarchic_society_level_down = yes
+		}
+
+		IF = {
+			limit = {
+				original_tag = CHL
+			}
+			CHL_anarchic_society_level_up = yes
+		}
+
+		news_event = { 
+			id = south_american_news.13 
+			days = 3
+			random_days = 6
+		}
+	}
+
+	option = {
+		name = south_american_events.13.b
+		ai_chance = {
+			base = 0
+			
+			modifier = {
+				add = 100
+				is_historical_focus_on = no
+			}
+			
+		}
+
+		add_stability = -0.15
+
+		add_manpower = -4000
+
+		add_command_power = 25
+
+		IF = {
+			limit = {
+				original_tag = CHL
+			}
+			CHL_anarchic_society_level_up = yes
+		}
+
+		news_event = { 
+			id = south_american_news.13 
+			days = 3
+			random_days = 6
+		}
+
+	}
+
+}

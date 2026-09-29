@@ -11,7 +11,8 @@ state = {
 	}
 
 	history = {
-		owner = UNT
+		add_core_of = GNR
+		owner = GNR
 		add_core_of = UNT
 		victory_points = { #Bologna
 			6606 5

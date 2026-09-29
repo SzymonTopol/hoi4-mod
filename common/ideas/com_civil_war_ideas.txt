@@ -27,4 +27,56 @@ ideas = {
             picture = PRC_hundred_regiments_offensive
         }
     }
+
+    country = {
+    #Reactionary spirit
+    cco_reactionary_spirit = {
+        allowed = {
+            always = yes
+        }
+        
+        targeted_modifier = {
+            tag = CCM
+            attack_bonus_against = 0.80
+            defense_bonus_against = 0.80
+        }
+        
+        picture = AUS_farr
+    }
+}
+
+    country = {
+        #Noble commanders
+
+    cmo_noble_commanders_idea = {
+        allowed = {
+            always = yes
+        }
+        modifier = {
+            army_attack_factor = 0.2
+            army_speed_factor = 0.1
+            supply_consumption_factor = 0.05
+        }
+        picture = FRA_scw_intervention_nationalists_focus
+    }
+    }
+
+    country = {
+        #United by faith
+        cmo_united_by_faith_idea = {
+            allowed = {
+                always = yes
+            }
+            targeted_modifier = {
+                tag = CCO
+                attack_bonus_against = 0.15
+                defense_bonus_against = 0.15
+            }
+            modifier = {
+                out_of_supply_factor = -0.1
+            }
+            picture = ITA_papal_state_ns
+        }
+        
+    }
 }

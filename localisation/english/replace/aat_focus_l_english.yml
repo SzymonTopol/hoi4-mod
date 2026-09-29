@@ -95,145 +95,145 @@ COM_vote_of_no_confidence_desc: "The time is right to challenge the Sejm's autho
 ###################################
 
 CCO_army_loyalty: "Army Loyalty"
-CCO_army_loyalty_desc: "empty"
+CCO_army_loyalty_desc: "If we are to survive this coming conflict, we need to ensure that army will stay loyal to our side."
 
 CCO_call_strategos_friends: "Call Strategos' Friends"
-CCO_call_strategos_friends_desc: "empty"
+CCO_call_strategos_friends_desc: "Strategs Protectorate was oryginaly created thanks to a heavy resolve from our faction. It is time to call in their obligations."
 
 CCO_southern_coast: "Southern Coast"
-CCO_southern_coast_desc: "empty"
+CCO_southern_coast_desc: "To secure international trade, so vital to our resolve, we will push our adversaries from our way, by any means necessary."
 
 CCO_cooperate_with_nationalists: "Cooperate with the Nationalists"
-CCO_cooperate_with_nationalists_desc: "empty"
+CCO_cooperate_with_nationalists_desc: "Nationalists had been a growing thorn in our side. Their brash and aggresive posturing alienating pottiential supporters, while their fervor disrupts our meetings. Despite this, we need to find a common way with them, if we are to win this war."
 
 CCO_prevent_ideological_split: "Prevent Ideological Split"
-CCO_prevent_ideological_split_desc: "empty"
+CCO_prevent_ideological_split_desc: "United we stand, divided we fall."
 
 CCO_seize_depots: "Seize the Depots"
-CCO_seize_depots_desc: "empty"
+CCO_seize_depots_desc: "What good is a soldier without a gun or ammunition?"
 
 CCO_redirect_munition_shipments: "Redirect Munition Shipments"
-CCO_redirect_munition_shipments_desc: "empty"
+CCO_redirect_munition_shipments_desc: "Logistic system in the Commonwealth is a beast. Very few actually know how to navigate it. Luckily for us, few new friends offered to change the delivery address of these munitions."
 
 CCO_sway_industrialists: "Sway the Industrialists"
-CCO_sway_industrialists_desc: "empty"
+CCO_sway_industrialists_desc: "Prominent industrialists and manufacturers are more than keen to 'accedentally' send their shipments into the lands controlled by our side when we send them money. Why let good product go to waste?"
 
 CCO_arm_loyalists: "Arm the Loyalists"
-CCO_arm_loyalists_desc: "empty"
+CCO_arm_loyalists_desc: "Our cause rallies devout men, they are itching to fight for what is right. We will help them do that."
 
 CCO_infiltrate_airforce: "Infiltrate the Airforce"
-CCO_infiltrate_airforce_desc: "empty"
+CCO_infiltrate_airforce_desc: "Airforce wasn't a big interest to us in the years prior. But now we will do anything to gain an edge over them. There are more than enough Conservative sympathizers in the airforce."
 
 CCO_underground_railroad: "Underground Railroad"
-CCO_underground_railroad_desc: "empty"
+CCO_underground_railroad_desc: "With the near total controll of the pre-war logistic systems and support of key industrial figures, we can launch an unprecedented campaign. No matter where, our troops will be well fed and well equipped to take on the enemy."
 
 ###
 
 CLB_northern_sympathizers: "Northern Sympathizers"
-CLB_northern_sympathizers_desc: "empty"
+CLB_northern_sympathizers_desc: "Our fortune led us north. The Baltic coast, full of traders universities is a perfect staging ground."
 
 CLB_redirect_funds: "Redirect Funds"
-CLB_redirect_funds_desc: "empty"
+CLB_redirect_funds_desc: "Extensive investments we fought so hard to implement, have to be unfortunatelly cut short, as our nation tears itself apart."
 
 CLB_media_war: "Media War"
-CLB_media_war_desc: "empty"
+CLB_media_war_desc: "War is brewing not only on land, but in the press, TV and radio. If we are to win this struggle against the adversaries, we need to make sure that our people are well informed of our glorious goals."
 
 CLB_pull_administration_favors: "Pull Administration Favors"
-CLB_pull_administration_favors_desc: "empty"
+CLB_pull_administration_favors_desc: "While we believe Strategic Crossings Administration needs to stay out of this war and protect its holdings. They might as well lend a helping hand to those, who made them exist in the first place."
 
 CLB_arm_students: "Arm the Students"
-CLB_arm_students_desc: "empty"
+CLB_arm_students_desc: "Studens are a force not to be wreakend with, seizing their enthusiasm and devotion will lead us to victory."
 
 CLB_dismiss_radical_agitators: "Dismiss Radical Agitators"
-CLB_dismiss_radical_agitators_desc: "empty"
+CLB_dismiss_radical_agitators_desc: "Communists agitators are tearing us apart. We need to act quickly and stop them before our more radical sympathizers break away."
 
 CLB_appeal_to_population: "Appeal to the Population"
-CLB_appeal_to_population_desc: "empty"
+CLB_appeal_to_population_desc: "During 2nd Punic War citizens of the Roman Republic, in an unprecedented act of patriotism donated their treasures to keep the war going. This time is no different, our civilization is at stake."
 
 CLB_gdansk_transit_commision: "Gdansk Transit Commission"
-CLB_gdansk_transit_commision_desc: "empty"
+CLB_gdansk_transit_commision_desc: "Controll over Gdansk allows us to retain valuable trade with the remaining Baltic ports."
 
 CLB_profesional_training: "Profesional Training"
-CLB_profesional_training_desc: "empty"
+CLB_profesional_training_desc: "Tanks are the future of warfare, their speed and agility allows for sweeping offensives against stationary enemy."
 
 ###
 
 CMO_his_majesty_call: "His Majesty's Call"
-CMO_his_majesty_call_desc: "empty"
+CMO_his_majesty_call_desc: "Our Monarch, (whomever that turns out to be), needs our help. Faced with enemies on all sides we will not surrender."
 
 CMO_szlachtas_response: "Szlachta's Response"
-CMO_szlachtas_response_desc: "empty"
+CMO_szlachtas_response_desc: "The Nobility of Commonwealth has a long and expansive history of standing up to anything that threatens the Commonwealth. This will not change now."
 
 CMO_food_supply: "Food Supply"
-CMO_food_supply_desc: "empty"
+CMO_food_supply_desc: "Lands of Zapadozia are one of the most arable areas in europe, their yeilds guarantee a stable food supply for the duration of the war."
 
 CMO_cavalry_support: "Cavalry Support"
-CMO_cavalry_support_desc: "empty"
+CMO_cavalry_support_desc: "Winged Hussars are the basis of Commonwealth offensive capabilities, their charge breaks enemy lines and wins wars."
 
 CMO_noble_commanders: "Noble Commanders"
-CMO_noble_commanders_desc: "empty"
+CMO_noble_commanders_desc: "Szlachta is a special kind of Nobility, well respeced amongst its peers and deeply patriotic."
 
 CMO_reliable_messengers: "Reliable Messengers"
-CMO_reliable_messengers_desc: "empty"
+CMO_reliable_messengers_desc: "Quick respondence to opportunities is only possible if our messengers arrive on time."
 
 CMO_in_defense_of_nation: "In Defense of the Nation"
-CMO_in_defense_of_nation_desc: "empty"
+CMO_in_defense_of_nation_desc: "The final hour of Commonwealth Approaches, we will be ready to defend it until our last breath."
 
 CMO_united_by_faith: "United by Faith"
-CMO_united_by_faith_desc: "empty"
+CMO_united_by_faith_desc: "We are one and indivisible in face of our enemies wrath."
 
 CMO_old_traditions: "Old Traditions"
-CMO_old_traditions_desc: "empty"
+CMO_old_traditions_desc: "Traditions of our ancestors led us so far, there is much to learn from them."
 
 CMO_new_equipment: "New Equipment"
-CMO_new_equipment_desc: "empty"
+CMO_new_equipment_desc: "While our ancestry is important, we cannot forgoe modernization efforts."
 
 ###
 
 CNA_our_mission: "Our Mission"
-CNA_our_mission_desc: "empty"
+CNA_our_mission_desc: "Conservatives are too blind to see that the Nationalism is the true way to save the Commonwealth. Their loss."
 
 CNA_exploit_enemy_radicalism: "Exploit Enemy Radicalism"
-CNA_exploit_enemy_radicalism_desc: "empty"
+CNA_exploit_enemy_radicalism_desc: "We were the first to leave Conservatives, but there are still many young people sympathetic to our cause in their ranks. We have to change that."
 
 CNA_military_administration: "Military Administration"
-CNA_military_administration_desc: "empty"
+CNA_military_administration_desc: "Efficent Military Administration will allow us to conduct the war swiftly and efficently."
 
 CNA_sway_the_young: "Sway the Young"
-CNA_sway_the_young_desc: "empty"
+CNA_sway_the_young_desc: "Most of our supporters come from the younger generation, their ferociousness and devotion is key for us."
 
 CNA_tale_of_two_militaries: "A Tale of Two Militaries"
-CNA_tale_of_two_militaries_desc: "empty"
+CNA_tale_of_two_militaries_desc: "Swaths of loyal militias are great for holding the line, but we cannot forget about the state military. Their expertise is extreemly important to us."
 
 CNA_anti_communism: "Anti-Communism"
-CNA_anti_communism_desc: "empty"
+CNA_anti_communism_desc: "The Left Radicals are the biggest threat to the Commonwealth since the faithul battle of Grunwald back in the 1410, we CANNOT let them spread their influence even a bit."
 
 CNA_expand_our_reach: "Expand Our Reach"
-CNA_expand_our_reach_desc: "empty"
+CNA_expand_our_reach_desc: "Without any industrial background we are destined to loose in the long term."
 
 CNA_encourage_defections: "Encourage Defections"
-CNA_encourage_defections_desc: "empty"
+CNA_encourage_defections_desc: "With a little push, we could just get our enemies to surrender by themselves, by encouraging their most discrounteld supporters to defect."
 
 CNA_nationalize_industries: "Nationalize the Industry"
-CNA_nationalize_industries_desc: "empty"
+CNA_nationalize_industries_desc: "Having purged the communist elements in our lands, and establishing a basic industry, we can move a step further and seize complete controll over the industiral apparatus of the state. Giving us significant leverage."
 
 CNA_invincible_army: "Invincible Army"
-CNA_invincible_army_desc: "empty"
+CNA_invincible_army_desc: "We are undefeated, we are unbreakable, we are invincible."
 
 CNA_defensive_posture: "Defensive Posture"
-CNA_defensive_posture_desc: "empty"
+CNA_defensive_posture_desc: "Despite our best efforts we are still few in numbers. We have to keep controll over the gains we currently posess."
 
 CNA_rapid_expansion: "Rapid Expansion"
-CNA_rapid_expansion_desc: "empty"
+CNA_rapid_expansion_desc: "Sweeping offensives deep into enemy territory will put them on the backfoot and give us the initiative."
 
 CNA_partisan_training: "Partisan Training"
-CNA_partisan_training_desc: "empty"
+CNA_partisan_training_desc: "Further specialization of our non-regular units gives them the chance to hold down the enemy advance, while profesional units regroup."
 
 CNA_national_rebirth: "National Rebirth"
-CNA_national_rebirth_desc: "empty"
+CNA_national_rebirth_desc: "We are the saviours of the Commonwealth. Under our rule, the Commonwealth will be reborn!"
 
 CNA_breakthrough_doctrine: "Breakthrough Doctrine"
-CNA_breakthrough_doctrine_desc: "empty"
+CNA_breakthrough_doctrine_desc: "Overwhelming firepower, combined with gruelling attacks is bound to create an opening in the enemy lines. An opening which we can exploit."
 
 ###
 

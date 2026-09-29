@@ -11,7 +11,8 @@ state={
 	}
 
 	history={
-		owner = UNT
+		add_core_of = SAK
+		owner = SAK
 		add_core_of = UNT
 		buildings = {
 			infrastructure = 2

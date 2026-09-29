@@ -76,7 +76,7 @@ focus_tree = {
                     }
                 }
             }
-            45 = {
+            random_controlled_state = {
                     create_unit = { owner = CCM division = "name = \"Red Guard\" division_template = \"Red Guard\" start_equipment_factor = 1.0 start_experience_factor = 0.25" }
                     create_unit = { owner = CCM division = "name = \"Red Guard\" division_template = \"Red Guard\" start_equipment_factor = 1.0 start_experience_factor = 0.25" }
                 }
@@ -109,7 +109,7 @@ focus_tree = {
         y = 1
         relative_position_id = CCM_red_army
         completion_reward = { 
-            45 = {
+            random_controlled_state = {
                     create_unit = { owner = CCM division = "name = \"Red Guard\" division_template = \"Red Guard\" start_equipment_factor = 0.5 start_experience_factor = 0.1" }
                     create_unit = { owner = CCM division = "name = \"Red Guard\" division_template = \"Red Guard\" start_equipment_factor = 0.5 start_experience_factor = 0.1" }
                     create_unit = { owner = CCM division = "name = \"Red Guard\" division_template = \"Red Guard\" start_equipment_factor = 0.5 start_experience_factor = 0.1" }
@@ -265,7 +265,7 @@ focus_tree = {
 
     focus = {
         id = CCM_sound_of_rifle
-        icon = GFX_SOV_a_global_class_struggle_ccp_2d_sov_compatibility
+        icon = GFX_focus_CHI_meritocratic_principles
         cost = 8
         x = 0
         y = 1

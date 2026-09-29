@@ -13,3 +13,20 @@
 
  release_ccm_mission:0 "Communists grow impatient"
  release_ccm_mission_desc:0 "The Communist faction is growing impatient with the current state of affairs and is looking to take matters into their own hands."
+ 
+ com_civil_war_scramble_category:"Scramble for the Commonwealth"
+ com_civil_war_scramble_category_desc:"Lines are being drawn. The conflict over the control of the Commonwealth will end in a bloody gauntlet."
+
+ com_civil_war_breakaway_timers_category:"Establishment vs Radical split"
+ com_civil_war_breakaway_timers_category_desc:"Our faction isn't as homogenous as we would like it to be. The frige ideologies are demanding more and more. We have to force them to cooperate, or we risk splitting our faction apart."
+ 
+ CNA_realsed:0 "Nationalists split off"
+ succeed_cna_early_flag: "Nationalists split off"
+ cancel_cna_release:0 "Party split prevented"
+
+ CCM_realsed:0 "Communist split off"
+ succeed_ccm_early_flag:0 "Communist split off"
+ cancel_ccm_release:0"Party split prevented"
+ 
+
+ com_state_secured_tt:0 "establised a foothold"

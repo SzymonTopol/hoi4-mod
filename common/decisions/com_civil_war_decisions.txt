@@ -1,19 +1,16 @@
-com_civil_war_scramble_category = {
+com_civil_war_breakaway_timers_category = {
 
-    # ----------------------------------------------------
-    # BREAKAWAY TIMERS (Missions)
-    # ----------------------------------------------------
     release_cna_mission = {
         icon = GFX_decision_generic_political_discourse
         allowed = { tag = CCO }
         
-        fire_only_once = yes # Stops the mission from looping
+        fire_only_once = yes
         
         available = {
             has_country_flag = succeed_cna_early_flag
         }
         
-        days_mission_timeout = 25 
+        days_mission_timeout = 40 
         is_good = no 
         
         cancel_trigger = {
@@ -21,6 +18,7 @@ com_civil_war_scramble_category = {
         }
         
         timeout_effect = { 
+            set_country_flag = CNA_realsed
             country_event = { id = commonwealth.9 } 
         } 
     }
@@ -29,27 +27,28 @@ com_civil_war_scramble_category = {
         icon = GFX_decision_generic_political_discourse
         allowed = { tag = CLB }
         
-        fire_only_once = yes # Stops the mission from looping
+        fire_only_once = yes
         
         available = {
             has_country_flag = succeed_ccm_early_flag
         }
         
-        days_mission_timeout = 25 
+        days_mission_timeout = 40
         is_good = no
         
         cancel_trigger = {
             has_country_flag = cancel_ccm_release
         }
         
-        timeout_effect = { 
+        timeout_effect = {
+            set_country_flag = CCM_realsed
             country_event = { id = commonwealth.10 } 
         } 
     }
+}
 
-    # ----------------------------------------------------
-    # THE SCRAMBLE DECISION (Simultaneous FFA & Working Blobbing)
-    # ----------------------------------------------------
+com_civil_war_scramble_category = {
+
     claim_com_state_decision = {
         icon = GFX_decision_generic_operation
         
@@ -80,77 +79,59 @@ com_civil_war_scramble_category = {
         ai_will_do = {
             base = 1
             
-            # ==========================================
-            # UNIQUE FACTION WISH LISTS
-            # ==========================================
             modifier = {
-                add = 2000
+                add = 500
                 ROOT = { tag = CCO }
-                FROM = { 
-                    OR = { state = 65 } OR = { state = 66 } OR = { state = 67 } OR = { state = 762 } 
-                    OR = { state = 74 } OR = { state = 72 } OR = { state = 69 } OR = { state = 9 } 
-                    OR = { state = 75 } OR = { state = 972 } OR = { state = 4 } OR = { state = 70 } 
-                    OR = { state = 71 } OR = { state = 73 } OR = { state = 89 } OR = { state = 91 } 
-                    OR = { state = 93 } OR = { state = 94 } OR = { state = 92 } OR = { state = 10 } 
-                    OR = { state = 90 } OR = { state = 199 } OR = { state = 198 } OR = { state = 664 }
-                    OR = { state = 43 } OR = { state = 154 } OR = { state = 76 } OR = { state = 83 } 
-                    OR = { state = 84 } OR = { state = 82 } OR = { state = 764 } OR = { state = 109 } 
-                    OR = { state = 155 } OR = { state = 974 } OR = { state = 973 } OR = { state = 975 } 
-                    OR = { state = 976 } OR = { state = 152 } OR = { state = 102 } OR = { state = 736 } 
-                    OR = { state = 853 } OR = { state = 852 } OR = { state = 103 } OR = { state = 104 } 
-                    OR = { state = 804 }     
+                FROM = { #Expected array: 65, 66, 67, 762, 72, 74, 9, 69, 75, 972, 70, 71, 664
+                    OR = { state = 65 } OR = { state = 66 } OR = { state = 67 } 
+                    OR = { state = 762 } OR = { state = 72 } OR = { state = 74 } 
+                    OR = { state = 9 } OR = { state = 69 } OR = { state = 75 } 
+                    OR = { state = 972 } OR = { state = 70 } OR = { state = 71 } 
+                    OR = { state = 664 }
                 }
             }
             modifier = {
-                add = 2000
+                add = 500 #Expected array: 85, 62, 63, 68, 86, 98, 97, 763, 814, 5, 763, 188, 189
                 ROOT = { tag = CLB }
                 FROM = { 
-                    OR = { state = 62 } OR = { state = 63 } OR = { state = 68 } OR = { state = 86 } 
-                    OR = { state = 87 } OR = { state = 98 } OR = { state = 97 } OR = { state = 5 } 
-                    OR = { state = 85 } OR = { state = 763 } OR = { state = 188 } OR = { state = 814 } 
-                    OR = { state = 11 } OR = { state = 815 } OR = { state = 189 } OR = { state = 190 } 
-                    OR = { state = 809 } OR = { state = 808 } OR = { state = 12 } OR = { state = 13 } 
-                    OR = { state = 813 } OR = { state = 812 } OR = { state = 811 } 
+                    OR = { state = 85 } OR = { state = 62 } OR = { state = 63 }
+                    OR = { state = 68 } OR = { state = 86 } OR = { state = 98 }
+                    OR = { state = 97 } OR = { state = 763 } OR = { state = 814 }
+                    OR = { state = 5 } OR = { state = 763 } OR = { state = 188 }
+                    OR = { state = 189 }
+
                 } 
             }
             modifier = {
-                add = 2000
+                add = 500 #Expected array: 193 225 220 240 221 228 218 227 226 200 196 137 197
                 ROOT = { tag = CMO }
                 FROM = {
-                    OR = { state = 204 } OR = { state = 241 } OR = { state = 224 } OR = { state = 194 } 
-                    OR = { state = 193 } OR = { state = 225 } OR = { state = 220 } OR = { state = 240 } 
-                    OR = { state = 228 } OR = { state = 221 } OR = { state = 227 } OR = { state = 226 } 
-                    OR = { state = 200 } OR = { state = 218 } OR = { state = 196 } OR = { state = 137 } 
-                    OR = { state = 201 } OR = { state = 202 } OR = { state = 203 } OR = { state = 199 } 
-                    OR = { state = 198 } OR = { state = 197 } OR = { state = 192 } OR = { state = 834 }
-                    OR = { state = 78 } OR = { state = 79 } OR = { state = 766 } OR = { state = 46 } 
-                    OR = { state = 83 } OR = { state = 84 } OR = { state = 81 } OR = { state = 801 } 
-                    OR = { state = 211 } OR = { state = 212 } OR = { state = 341 } OR = { state = 48 } 
-                    OR = { state = 184 } OR = { state = 77 } OR = { state = 971 } OR = { state = 10 } 
+                    OR = { state = 193 } OR = { state = 225 } OR = { state = 220 }
+                    OR = { state = 240 } OR = { state = 221 } OR = { state = 228 } 
+                    OR = { state = 218 } OR = { state = 227 } OR = { state = 226 } 
+                    OR = { state = 200 } OR = { state = 196 } OR = { state = 137 }
+                    OR = { state = 197 }
+
                 } 
             }
             modifier = {
-                add = 2000
+                add = 500 #Expected array: 809 808 810 12 210 207 815 809
                 ROOT = { tag = CNA }
                 FROM = { 
-                    OR = { state = 808 } OR = { state = 809 } OR = { state = 815 } OR = { state = 11 } 
-                    OR = { state = 784 } OR = { state = 95 } OR = { state = 206 } OR = { state = 207 } 
+                    OR = { state = 809 } OR = { state = 808 } OR = { state = 810 }
+                    OR = { state = 12 } OR = { state = 210 } OR = { state = 207 }
+                    OR = { state = 815 } OR = { state = 809 }
                 } 
             }
-            modifier = {
-                add = 2000
+            modifier = { #Expected array: 764 82 81 107 108 48
+                add = 500
                 ROOT = { tag = CCM }
                 FROM = { 
-                    OR = { state = 155 } OR = { state = 974 } OR = { state = 973 } OR = { state = 109 } 
-                    OR = { state = 764 } OR = { state = 82 } OR = { state = 107 } OR = { state = 108 }  
+                    OR = { state = 764 } OR = { state = 82 } OR = { state = 81 }
+                    OR = { state = 107 } OR = { state = 108 } OR = { state = 48 }
                 } 
             }
 
-            # ==================================================
-            # WORKING BLOBBING LOGIC (Contiguous + Core Anchors)
-            # ==================================================
-            
-            # Modifier 1: Reward states that expand your active frontline (+100)
             modifier = {
                 add = 200
                 FROM = {
@@ -166,8 +147,6 @@ com_civil_war_scramble_category = {
                 }
             }
 
-            # Modifier 2: Heavily reward filling out tiles touching your physical starting capitals (+150)
-            # This mathematically creates a "cluster" shape around their cores instead of a thin snake
             modifier = {
                 add = 300
                 FROM = {
@@ -182,16 +161,48 @@ com_civil_war_scramble_category = {
                     }
                 }
             }
+
+            # ==================================================
+            # ORGANIC TIE-BREAKERS (Breaks 1-1 Determinism)
+            # ==================================================
+            
+            modifier = {
+                add = 25
+                FROM = { is_core_of = ROOT }
+            }
+            
+            modifier = {
+                add = 15
+                FROM = { 
+                    industrial_complex > 0 
+                }
+            }
+            
+            modifier = {
+                add = 15
+                FROM = { 
+                    arms_factory > 0 
+                }
+            }
+            
+            modifier = {
+                add = 10
+                FROM = { infrastructure > 2 }
+            }
+            
+            modifier = {
+                add = 10
+                FROM = { infrastructure > 4 }
+            }
         }
 
         complete_effect = {
-            # THE SPLIT COOLDOWN LOGIC 
             if = {
                 limit = { OR = { tag = CLB tag = CMO } }
                 set_country_flag = { flag = com_scramble_cooldown value = 1 days = 2 }
             }
 
-            if = { #Z uwagi na centralne położenie konserwatystów, ich cooldown jest krótszy
+            if = {
                 limit = { tag = CCO }
                 set_country_flag = { flag = com_scramble_cooldown value = 1 days = 2 }
             }
@@ -216,15 +227,12 @@ com_civil_war_scramble_category = {
                 }
             }
 
-            # ARRAY ADDITION FOR MAP HIGHLIGHTS
             if = { limit = { tag = CCO } add_to_array = { cco_marked_states = FROM } }
             if = { limit = { tag = CLB } add_to_array = { clb_marked_states = FROM } }
             if = { limit = { tag = CMO } add_to_array = { cmo_marked_states = FROM } }
             if = { limit = { tag = CNA } add_to_array = { cna_marked_states = FROM } }
             if = { limit = { tag = CCM } add_to_array = { ccm_marked_states = FROM } }
 
-            # ENDGAME CHECK
-            # ENDGAME CHECK
             if = {
                 limit = {
                     NOT = {
@@ -242,7 +250,6 @@ com_civil_war_scramble_category = {
                 }
                 set_global_flag = ready_for_COM_civil_war
                 
-                # Target CCO specifically so the backend setup ONLY runs once!
                 CCO = { country_event = { id = commonwealth.8 days = 5 } } 
             }
         }

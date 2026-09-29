@@ -48,6 +48,25 @@ puppet = MEK
 puppet = SHL
 puppet = HLS
 puppet = IBP
+puppet = LUT
+puppet = SAV
+puppet = MIL
+puppet = TYR
+puppet = VNT
+puppet = GNR
+puppet = PEN
+puppet = TEX
+puppet = DNA
+puppet = CBA
+puppet = PIN
+puppet = CEZ
+puppet = GXI
+puppet = YUE
+puppet = GNN
+puppet = MIN
+puppet = WUU
+puppet = YNE
+puppet = NPO
 
 create_faction = Commonwealth
 add_to_faction = CCR
@@ -70,6 +89,25 @@ add_to_faction = MEK
 add_to_faction = SHL
 add_to_faction = HLS
 add_to_faction = IBP
+add_to_faction = LUT
+add_to_faction = SAV
+add_to_faction = MIL
+add_to_faction = TYR
+add_to_faction = VNT
+add_to_faction = GNR
+add_to_faction = PEN
+add_to_faction = TEX
+add_to_faction = DNA
+add_to_faction = CBA
+add_to_faction = PIN
+add_to_faction = CEZ
+add_to_faction = GXI
+add_to_faction = YUE
+add_to_faction = GNN
+add_to_faction = MIN
+add_to_faction = WUU
+add_to_faction = YNE
+add_to_faction = NPO
 
 set_convoys = 20
 
@@ -86,6 +124,16 @@ recruit_character = COM_military_cabinet
 recruit_character = COM_extended_sejm
 recruit_character = COM_regency_council
 
+#Past the civil war characters
+recruit_character = COM_josip_antonescu #CLB
+recruit_character = COM_boris_racovita #CCO
+recruit_character = COM_aristotle_astrouski #CCM
+recruit_character = COM_edvard_dumitrescu #CNA
+
+recruit_character = COM_andrzej_erdos #CMO
+recruit_character = COM_konstantin_schuschnigg #CMO
+recruit_character = COM_carol_pats #CMO
+
 
 set_popularities = {
 	democratic = 20
@@ -101,3 +149,23 @@ add_ideas = {
 	COM_overextended_military
 	COM_against_all_odds
 }
+
+# ==========================================
+# COM - Unified Commonwealth (Pre-War)
+# Includes ~75% of generals from CLB, CCO, and CMO. 
+# Leaders omitted as requested.
+# ==========================================
+# From CLB
+recruit_character = COM_radu_bortnowski
+recruit_character = COM_vaclav_veress
+recruit_character = COM_georgi_kvaternik
+# From CCO
+recruit_character = COM_stanislaw_hindy
+recruit_character = COM_dmytro_cukavac
+recruit_character = COM_zivorad_shandruk
+recruit_character = COM_mykhailo_lacis
+# From CMO
+recruit_character = COM_kurt_benes
+recruit_character = COM_sergej_tito
+recruit_character = COM_fricis_bortnowski
+recruit_character = COM_pavlo_racovita

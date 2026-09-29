@@ -2,10 +2,11 @@
 state = {
 	id = 849
 	name = "STATE_849"
-	manpower = 2642000 
+	manpower = 4871361
 	state_category = city
 	history = {
-		owner = UNT
+		add_core_of = TAR
+		owner = TAR
 		add_core_of = UNT
 		victory_points = { #Bari
 			9784 3
@@ -19,8 +20,9 @@ state = {
 		
 		buildings = {
 			infrastructure = 2
+			arms_factory = 1
 			industrial_complex = 1
-			dockyard = 4
+			dockyard = 2
 			air_base = 5
 			11837 = { #Taranto
 				naval_base = 10

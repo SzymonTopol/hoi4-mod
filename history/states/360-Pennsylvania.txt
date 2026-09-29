@@ -12,7 +12,8 @@ state={
 
 
 	history={
-		owner = UNT
+		add_core_of = PEN
+		owner = PEN
 		add_core_of = UNT
 		buildings = {
 			infrastructure = 4 #was: 8

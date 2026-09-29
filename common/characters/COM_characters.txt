@@ -4,7 +4,8 @@ characters = {
         name = COM_sigismund_v_name
         portraits = {
             civilian = {
-                large = "gfx/leaders/LIT/portrait_lit_antanas_smetona.dds"
+                # large = "gfx/leaders/LIT/portrait_lit_antanas_smetona.dds"
+                large = GFX_COM_sigismund_v
             }
         }
         country_leader = {
@@ -31,6 +32,12 @@ characters = {
                 large = "gfx/leaders/SWE/Portrait_SWE_nordic_defense_council.dds"
             }
         }
+		# country_leader = {
+        #     ideology = despotism # Make sure this matches CMO's ruling sub-ideology
+        #     traits = { }
+        #     expire = "1965.1.1"
+        #     id = -1
+        # }
     }
 
     COM_extended_sejm = {
@@ -40,14 +47,552 @@ characters = {
                 large = "gfx/leaders/POL/Portrait_POL_the_sejm.dds"
             }
         }
+		# country_leader = {
+        #     ideology = liberalism # Make sure this matches CMO's ruling sub-ideology
+        #     traits = { }
+        #     expire = "1965.1.1"
+        #     id = -1
+        # }
     }
 
     COM_regency_council = {
-        name = COM_regency_council_name
-        portraits = {
-            civilian = {
-                large = "gfx/leaders/RAJ/Portrait_RAJ_the_board_of_directors.dds"
-            }
-        }
-    }
+		name = COM_regency_council_name
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/RAJ/Portrait_RAJ_the_board_of_directors.dds"
+			}
+		}
+	}
+
+	CMO_regency_council = { #Regency Council for CMO, cause paradox character swapping is a bit quirky
+		name = CMO_regency_council_name
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/RAJ/Portrait_RAJ_the_board_of_directors.dds"
+			}
+		}
+		country_leader = {
+			ideology = oligarchism
+            traits = { COM_regency_council_trait }
+			expire = "1965.1.1"
+			id = -1
+		}
+	}
+	# ==========================================
+	# CNA: NATIONALIST FACTION (Fringe)
+	# ==========================================
+
+	COM_edvard_dumitrescu = {
+		name = "Edvard Dumitrescu"
+		portraits = {
+			civilian = { large = GFX_portrait_CNA_leader_edvard_dumitrescu }
+		}
+		country_leader = {
+			ideology = fascism_ideology # Or your mod's specific sub-ideology
+			traits = { dictator }
+			expire = "1965.1.1"
+		}
+	}
+
+	CNA_edvard_dumitrescu = {
+		name = "Edvard Dumitrescu"
+		portraits = {
+			civilian = { large = GFX_portrait_CNA_leader_edvard_dumitrescu }
+		}
+		# country_leader = {
+		# 	ideology = fascism_ideology # Or your mod's specific sub-ideology
+		# 	traits = { dictator }
+		# 	expire = "1965.1.1"
+		# }
+	}
+
+	COM_milan_drakos = {
+		name = "Milan Drakos"
+		portraits = {
+			army = { large = GFX_portrait_CNA_general_milan_drakos }
+		}
+		corps_commander = {
+			traits = { infantry_officer trickster }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	COM_kostas_tesarik = {
+		name = "Kostas Tesarik"
+		portraits = {
+			army = { large = GFX_portrait_CNA_general_kostas_tesarik }
+		}
+		corps_commander = {
+			traits = { cavalry_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+	COM_ion_sosabowski = {
+		name = "Ion Sosabowski"
+		portraits = {
+			army = { large = GFX_portrait_CNA_general_ion_sosabowski }
+		}
+		corps_commander = {
+			traits = { panzer_leader }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+
+	# ==========================================
+	# CCM: COMMUNIST FACTION (Fringe)
+	# ==========================================
+
+	COM_aristotle_astrouski = {
+		name = "Aristotle Astrouski"
+		portraits = {
+			civilian = { large = GFX_portrait_CCM_leader_aristotle_astrouski }
+		}
+		country_leader = {
+			ideology = marxism
+			traits = { dictator } # Vanilla generic trait
+			expire = "1965.1.1"
+		}
+	}
+
+	CCM_aristotle_astrouski = {
+		name = "Aristotle Astrouski"
+		portraits = {
+			civilian = { large = GFX_portrait_CCM_leader_aristotle_astrouski }
+		}
+		# country_leader = {
+		# 	ideology = marxism
+		# 	traits = { dictator } # Vanilla generic trait
+		# 	expire = "1965.1.1"
+		# }
+	}
+
+	COM_tadeusz_pavlenko = {
+		name = "Tadeusz Pavlenko"
+		portraits = {
+			army = { large = GFX_portrait_CCM_general_tadeusz_pavlenko }
+		}
+		corps_commander = {
+			traits = { harsh_leader }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+	COM_radaslau_kukiel = {
+		name = "Radaslau Kukiel"
+		portraits = {
+			army = { large = GFX_portrait_CCM_general_radaslau_kukiel }
+		}
+		corps_commander = {
+			traits = { infantry_officer old_guard }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+	# ==========================================
+	# CLB: LIBERAL FACTION (Major)
+	# ==========================================
+
+	COM_josip_antonescu = {
+		name = "Josip Antonescu"
+		portraits = {
+			civilian = { large = GFX_portrait_CLB_leader_josip_antonescu }
+		}
+		country_leader = {
+			ideology = liberalism
+			traits = { popular_figurehead }
+			expire = "1965.1.1"
+		}
+	}
+
+	CLB_josip_antonescu = {
+		name = "Josip Antonescu"
+		portraits = {
+			civilian = { large = GFX_portrait_CLB_leader_josip_antonescu }
+		}
+		# country_leader = {
+		# 	ideology = liberalism
+		# 	traits = { popular_figurehead }
+		# 	expire = "1965.1.1"
+		# }
+	}
+
+	COM_radu_bortnowski = {
+		name = "Radu Bortnowski"
+		portraits = {
+			army = { large = GFX_portrait_CLB_field_marshal_radu_bortnowski }
+		}
+		field_marshal = {
+			traits = { defensive_doctrine old_guard }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+
+	COM_vaclav_veress = {
+		name = "Vaclav Veress"
+		portraits = {
+			army = { large = GFX_portrait_CLB_general_vaclav_veress }
+		}
+		corps_commander = {
+			traits = { infantry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+	COM_gyorgy_buks = {
+		name = "Gyorgy Buks"
+		portraits = {
+			army = { large = GFX_portrait_CLB_general_gyorgy_buks }
+		}
+		corps_commander = {
+			traits = { old_guard }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+
+	COM_georgi_kvaternik = {
+		name = "Georgi Kvaternik"
+		portraits = {
+			army = { large = GFX_portrait_CLB_general_georgi_kvaternik }
+		}
+		corps_commander = {
+			traits = { cavalry_officer cautious }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+
+	COM_vilis_popov = {
+		name = "Vilis Popov"
+		portraits = {
+			army = { large = GFX_portrait_CLB_general_vilis_popov }
+		}
+		corps_commander = {
+			traits = { engineer trickster }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+
+	# ==========================================
+	# CCO: CONSERVATIVE FACTION (Major)
+	# ==========================================
+
+	COM_boris_racovita = {
+		name = "Boris Racovita"
+		portraits = {
+			civilian = { large = GFX_portrait_CCO_leader_boris_racovita }
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { autocratic_imperialist }
+			expire = "1965.1.1"
+		}
+	}
+
+	CCO_boris_racovita = {
+		name = "Boris Racovita"
+		portraits = {
+			civilian = { large = GFX_portrait_CCO_leader_boris_racovita }
+		}
+		# country_leader = {
+		# 	ideology = despotism
+		# 	traits = { autocratic_imperialist }
+		# 	expire = "1965.1.1"
+		# }
+	}
+
+	COM_stanislaw_hindy = {
+		name = "Stanislaw Hindy"
+		portraits = {
+			army = { large = GFX_portrait_CCO_field_marshal_stanislaw_hindy }
+		}
+		field_marshal = {
+			traits = { offensive_doctrine }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+	COM_dmytro_cukavac = {
+		name = "Dmytro Cukavac"
+		portraits = {
+			army = { large = GFX_portrait_CCO_general_dmytro_cukavac }
+		}
+		corps_commander = {
+			traits = { mountaineer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+	COM_zivorad_shandruk = {
+		name = "Zivorad Shandruk"
+		portraits = {
+			army = { large = GFX_portrait_CCO_general_zivorad_shandruk }
+		}
+		corps_commander = {
+			traits = { panzer_leader }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+	COM_jacek_kalafatovic = {
+		name = "Jacek Kalafatovic"
+		portraits = {
+			army = { large = GFX_portrait_CCO_general_jacek_kalafatovic }
+		}
+		corps_commander = {
+			traits = { cautious }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+	COM_alexandros_vojcechovsky = {
+		name = "Alexandros Vojcechovsky"
+		portraits = {
+			army = { large = GFX_portrait_CCO_general_alexandros_vojcechovsky }
+		}
+		corps_commander = {
+			traits = { infantry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 2
+		}
+	}
+
+	COM_mykhailo_lacis = {
+		name = "Mykhailo Lacis"
+		portraits = {
+			army = { large = GFX_portrait_CCO_general_mykhailo_lacis }
+		}
+		corps_commander = {
+			traits = { brilliant_strategist infantry_officer }
+			skill = 5
+			attack_skill = 4
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+
+	# ==========================================
+	# CMO: MONARCHIST FACTION (Major)
+	# ==========================================
+
+	COM_andrzej_erdos = {
+		name = "Andrzej Erdos"
+		portraits = {
+			civilian = { large = GFX_portrait_CMO_leader_andrzej_erdos }
+		}
+		# country_leader = {
+		# 	ideology = despotism
+		# 	traits = { dictator }
+		# 	expire = "1965.1.1"
+		# }
+	}
+
+	CMO_andrzej_erdos = {
+		name = "Andrzej Erdos"
+		portraits = {
+			civilian = { large = GFX_portrait_CMO_leader_andrzej_erdos }
+		}
+		# country_leader = {
+		# 	ideology = despotism
+		# 	traits = { dictator }
+		# 	expire = "1965.1.1"
+		# }
+	}
+
+	COM_konstantin_schuschnigg = {
+		name = "Konstantin Schuschnigg"
+		portraits = {
+			civilian = { large = GFX_portrait_CMO_leader_konstantin_schuschnigg }
+		}
+		# country_leader = {
+		# 	ideology = centrism
+		# 	traits = { constitutional_monarch } # Assuming non-aligned monarchist
+		# 	expire = "1965.1.1"
+		# }
+	}
+
+	CMO_konstantin_schuschnigg = {
+		name = "Konstantin Schuschnigg"
+		portraits = {
+			civilian = { large = GFX_portrait_CMO_leader_konstantin_schuschnigg }
+		}
+		# country_leader = {
+		# 	ideology = centrism
+		# 	traits = { constitutional_monarch } # Assuming non-aligned monarchist
+		# 	expire = "1965.1.1"
+		# }
+	}
+
+	COM_carol_pats = {
+		name = "Carol Pats"
+		portraits = {
+			civilian = { large = GFX_portrait_CMO_leader_carol_pats }
+		}
+		# country_leader = {
+		# 	ideology = despotism
+		# 	traits = { dictator }
+		# 	expire = "1965.1.1"
+		# }
+	}
+
+	CMO_carol_pats = {
+		name = "Carol Pats"
+		portraits = {
+			civilian = { large = GFX_portrait_CMO_leader_carol_pats }
+		}
+		# country_leader = {
+		# 	ideology = despotism
+		# 	traits = { dictator }
+		# 	expire = "1965.1.1"
+		# }
+	}
+
+	COM_kurt_benes = {
+		name = "Kurt Benes"
+		portraits = {
+			army = { large = GFX_portrait_CMO_field_marshal_kurt_benes }
+		}
+		field_marshal = {
+			traits = { logistics_wizard defensive_doctrine }
+			skill = 5
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+
+	COM_marian_onassis = {
+		name = "Marian Onassis"
+		portraits = {
+			army = { large = GFX_portrait_CMO_general_marian_onassis }
+		}
+		corps_commander = {
+			traits = { cavalry_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+
+	COM_sergej_tito = {
+		name = "Sergej Tito"
+		portraits = {
+			army = { large = GFX_portrait_CMO_general_sergej_tito }
+		}
+		corps_commander = {
+			traits = { infantry_officer }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+	COM_danilo_seyss_inquart = {
+		name = "Danilo Seyss-Inquart"
+		portraits = {
+			army = { large = GFX_portrait_CMO_general_danilo_seyss_inquart }
+		}
+		corps_commander = {
+			traits = { politically_connected }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+
+	COM_fricis_bortnowski = {
+		name = "Fricis Bortnowski"
+		portraits = {
+			army = { large = GFX_portrait_CMO_general_fricis_bortnowski }
+		}
+		corps_commander = {
+			traits = { panzer_leader }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+	COM_pavlo_racovita = {
+		name = "Pavlo Racovita"
+		portraits = {
+			army = { large = GFX_portrait_CMO_general_pavlo_racovita }
+		}
+		corps_commander = {
+			traits = { ranger }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
 }

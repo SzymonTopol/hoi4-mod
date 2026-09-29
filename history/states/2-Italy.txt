@@ -6,7 +6,8 @@ state = {
 	state_category = city
 
 	history = {
-		owner = UNT
+		add_core_of = PAP
+		owner = PAP
 		add_core_of = UNT
 		victory_points = { 9904 40 } #Rome
 		victory_points = { 11846 1 } #Anzio (was 5)

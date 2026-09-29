@@ -11,10 +11,11 @@ state = {
 	}
 
 	history = {
+		add_core_of = TYR
 		victory_points = { #Bolzano
 			11598 1
 		}
-		owner = UNT
+		owner = TYR
 		add_core_of = UNT
 		buildings = {
 			infrastructure = 2 # was 3 before split

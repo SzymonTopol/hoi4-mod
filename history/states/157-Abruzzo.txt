@@ -2,12 +2,13 @@
 state = {
 	id = 157
 	name = "STATE_157"
-	manpower = 2979335
+	manpower = 579335
 	
 	state_category = city
 
 	history = {
-		owner = UNT
+		add_core_of = PAP
+		owner = PAP
 		add_core_of = UNT
 		buildings = {
 			infrastructure = 3 #was: 6
@@ -16,6 +17,9 @@ state = {
 			6831 = {
 				naval_base = 1
 			}
+		}
+		victory_points = {
+			9838 3 #Pescara
 		}
 	}
 

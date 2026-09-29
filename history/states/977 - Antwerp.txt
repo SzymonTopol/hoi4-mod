@@ -11,8 +11,8 @@ state = {
 
 	history = {
 
-		owner = UNT
-		add_core_of = UNT
+		owner = LUT
+		add_core_of = LUT
 
 		victory_points = { 
 			6598 30 

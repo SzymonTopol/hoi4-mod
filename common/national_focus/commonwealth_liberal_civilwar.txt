@@ -13,24 +13,28 @@ focus_tree = {
 
     focus = {
         id = CLB_northern_sympathizers
-        icon = GFX_focus_CZE_appeal_to_the_castle
-        cost = 5
+        icon = GFX_focus_generic_coastal_fort
+        cost = 2
         x = 2
         y = 0
         completion_reward = { 
-            add_stability = 0.02
+            add_stability = 0.15
+            add_manpower = 40000
         }
     }
 
     focus = {
         id = CLB_redirect_funds
-        icon = GFX_focus_CZE_appeal_to_the_castle
+        icon = GFX_focus_SWI_issue_war_bonds
         cost = 5
         x = -3
         y = 1
         relative_position_id = CLB_northern_sympathizers
         completion_reward = { 
-            add_stability = 0.02
+            add_offsite_building = {
+                type = industrial_complex
+                level = 5
+            }
         }
         prerequisite = {
             focus = CLB_northern_sympathizers
@@ -39,13 +43,13 @@ focus_tree = {
 
     focus = {
         id = CLB_media_war
-        icon = GFX_focus_CZE_appeal_to_the_castle
+        icon = GFX_goal_generic_propaganda
         cost = 5
         x = -2
         y = 2
         relative_position_id = CLB_northern_sympathizers
         completion_reward = { 
-            add_stability = 0.02
+            add_war_support = 0.10
         }
         prerequisite = {
             focus = CLB_northern_sympathizers
@@ -53,14 +57,17 @@ focus_tree = {
     }
 
     focus = {
-        id = CLB_pull_administration_favors #SCA <- przejściowscy
-        icon = GFX_focus_CZE_appeal_to_the_castle
+        id = CLB_pull_administration_favors #SCA <- Strategic crossings
+        icon = GFX_focus_AFG_establish_darulaman
         cost = 5
         x = -1
         y = 1
         relative_position_id = CLB_northern_sympathizers
         completion_reward = { 
-            add_stability = 0.02
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 8000
+            }
         }
         prerequisite = {
             focus = CLB_northern_sympathizers
@@ -69,13 +76,41 @@ focus_tree = {
 
     focus = {
         id = CLB_arm_students
-        icon = GFX_focus_CZE_appeal_to_the_castle
+        icon = GFX_focus_GER_support_the_proletarian_uprising
         cost = 5
         x = 1
         y = 1
         relative_position_id = CLB_northern_sympathizers
         completion_reward = { 
-            add_stability = 0.02
+            division_template = {
+                name = "Student Brigade"
+                template_counter = 26
+                regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } 
+                            infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 }            
+                            infantry = { x = 2 y = 0 } infantry = { x = 2 y = 1 } infantry = { x = 2 y = 2 }
+                            infantry = { x = 3 y = 0 } infantry = { x = 3 y = 1 } infantry = { x = 3 y = 2 }
+                        }
+                support = {
+                    artillery = {
+                        x = 0
+                        y = 0
+                    }
+                    engineer = {
+                        x = 0
+                        y = 1
+                    }
+                }
+            }
+
+            random_controlled_state = {
+                create_unit = { owner = CLB division = "name = \"Student Brigade\" division_template = \"Student Brigade\" start_equipment_factor = 1.0 start_experience_factor = 0.3" }
+                create_unit = { owner = CLB division = "name = \"Student Brigade\" division_template = \"Student Brigade\" start_equipment_factor = 1.0 start_experience_factor = 0.3" }
+            }
+
+            random_controlled_state = {
+                create_unit = { owner = CLB division = "name = \"Student Brigade\" division_template = \"Student Brigade\" start_equipment_factor = 1.0 start_experience_factor = 0.3" }
+                create_unit = { owner = CLB division = "name = \"Student Brigade\" division_template = \"Student Brigade\" start_equipment_factor = 1.0 start_experience_factor = 0.3" }
+            }
         }
         prerequisite = {
             focus = CLB_northern_sympathizers
@@ -84,13 +119,23 @@ focus_tree = {
 
     focus = {
         id = CLB_dismiss_radical_agitators
-        icon = GFX_focus_CZE_appeal_to_the_castle
-        cost = 5
+        icon = GFX_focus_BRA_end_the_state_of_emergency
+        cost = 3
         x = 3
         y = 1
+        available = {
+            NOT = { 
+                has_country_flag = CCM_realsed
+            }
+        }
         relative_position_id = CLB_northern_sympathizers
         completion_reward = { 
-            add_stability = 0.02
+            add_popularity = {
+                ideology = communism
+                popularity = -0.10
+            }
+            add_manpower = -150
+            set_country_flag = cancel_ccm_release
         }
         prerequisite = {
             focus = CLB_northern_sympathizers
@@ -99,13 +144,17 @@ focus_tree = {
 
     focus = {
         id = CLB_appeal_to_population
-        icon = GFX_focus_CZE_appeal_to_the_castle
+        icon = GFX_focus_BRA_ethical_internationalism
         cost = 5
         x = 4
         y = 2
         relative_position_id = CLB_northern_sympathizers
         completion_reward = { 
-            add_stability = 0.02
+            add_manpower = 100000
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 6000
+            }
         }
         prerequisite = {
             focus = CLB_northern_sympathizers
@@ -114,13 +163,41 @@ focus_tree = {
 
     focus = {
         id = CLB_gdansk_transit_commision
-        icon = GFX_focus_CZE_appeal_to_the_castle
-        cost = 5
+        icon = GFX_focus_CHI_planned_economy
+        cost = 6
         x = 5
         y = 1
+
+        available = {
+            owns_state = 85
+        }
+
         relative_position_id = CLB_northern_sympathizers
         completion_reward = { 
-            add_stability = 0.02
+            85 = {
+
+                add_extra_state_shared_building_slots = 3
+
+                add_building_construction = {
+                type = arms_factory
+                level = 3
+                instant_build = yes
+                }
+            }
+            random_owned_state = {
+
+                add_extra_state_shared_building_slots = 3
+
+                add_building_construction = {
+                type = arms_factory
+                level = 3
+                instant_build = yes
+                }
+            }
+            add_offsite_building = {
+                type = arms_factory
+                level = 3
+            }
         }
         prerequisite = {
             focus = CLB_northern_sympathizers
@@ -133,14 +210,93 @@ focus_tree = {
 
     focus = {
         id = CLB_profesional_training
-        icon = GFX_focus_CZE_appeal_to_the_castle
+        icon = GFX_focus_generic_tank_assault
         cost = 5
         x = 1
         y = 1
         relative_position_id = CLB_pull_administration_favors
+        
         completion_reward = { 
-            add_stability = 0.02
+            # Master DLC Check branches the logic immediately
+            if = {
+                limit = { has_dlc = "No Step Back" }
+                
+                # 1. Grant NSB Chassis Techs
+                if = {
+                    limit = { NOT = { has_tech = gwtank_chassis } }
+                    set_technology = { gwtank_chassis = 1 }
+                }
+                if = {
+                    limit = { NOT = { has_tech = basic_light_tank_chassis } }
+                    set_technology = { basic_light_tank_chassis = 1 }
+                }
+
+                # 2. Silently assemble the variant
+                hidden_effect = {
+                    create_equipment_variant = {
+                        name = "Light Tank Mk. I"
+                        type = light_tank_chassis_1
+                        parent_version = 0
+                        modules = {
+                            main_armament_slot = tank_heavy_machine_gun
+                            turret_type_slot = tank_light_two_man_tank_turret
+                            suspension_type_slot = tank_bogie_suspension
+                            armor_type_slot = tank_riveted_armor
+                            engine_type_slot = tank_gasoline_engine
+                        }
+                    }
+                }
+
+                # 3. Add the specific variant to the stockpile
+                add_equipment_to_stockpile = {
+                    type = light_tank_chassis_1
+                    variant_name = "Light Tank Mk. I"
+                    amount = 500
+                }
+            }
+            else = {
+                # Non-NSB Fallback (Uses base game tech and equipment pools)
+                if = {
+                    limit = { NOT = { has_tech = gwtank } }
+                    set_technology = { gwtank = 1 }
+                }
+                if = {
+                    limit = { NOT = { has_tech = basic_light_tank } }
+                    set_technology = { basic_light_tank = 1 }
+                }
+
+                add_equipment_to_stockpile = {
+                    type = light_tank_equipment_1
+                    amount = 500
+                }
+            }
+
+            # Global effects applied regardless of DLC
+            division_template = {
+                name = "Light Tank Division"
+                template_counter = 0
+                regiments = { 
+                    light_armor = { x = 0 y = 0 } 
+                    light_armor = { x = 0 y = 1 } 
+                    light_armor = { x = 0 y = 2 } 
+                    light_armor = { x = 1 y = 0 } 
+                    light_armor = { x = 1 y = 1 } 
+                    light_armor = { x = 1 y = 2 }
+                }
+            }
+
+            random_controlled_state = {
+                create_unit = { owner = ROOT division = "name = \"Light Tank Division\" division_template = \"Light Tank Division\" start_equipment_factor = 1.0 start_experience_factor = 0.4" }
+                create_unit = { owner = ROOT division = "name = \"Light Tank Division\" division_template = \"Light Tank Division\" start_equipment_factor = 1.0 start_experience_factor = 0.4" }
+                
+            }
+
+            random_controlled_state = {
+                create_unit = { owner = ROOT division = "name = \"Light Tank Division\" division_template = \"Light Tank Division\" start_equipment_factor = 1.0 start_experience_factor = 0.4" }
+                create_unit = { owner = ROOT division = "name = \"Light Tank Division\" division_template = \"Light Tank Division\" start_equipment_factor = 1.0 start_experience_factor = 0.4" }
+            }
         }
+        
         prerequisite = {
             focus = CLB_pull_administration_favors
         }

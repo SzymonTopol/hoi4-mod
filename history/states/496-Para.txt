@@ -12,8 +12,9 @@ state = {
 	}
 
 	history = {
+		add_core_of = TAP
 
-		owner = UNT
+		owner = TAP
 		add_core_of = UNT
 
 		victory_points = {

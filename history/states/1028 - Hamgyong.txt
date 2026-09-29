@@ -12,8 +12,8 @@ state = {
 
 	history = {
 
-		owner = UNT
-		add_core_of = UNT
+		owner = HOK
+		add_core_of = HOK
 
 		buildings = {
 			infrastructure = 2

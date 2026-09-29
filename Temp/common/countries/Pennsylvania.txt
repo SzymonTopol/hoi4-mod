@@ -1,0 +1,3 @@
+color = { 0 50 150 }
+graphical_culture = western_2d
+graphical_culture_2d = western_2d

@@ -64,7 +64,7 @@ on_actions = {
                     }
                     
                     # Worsen the penalty
-                    subtract_from_variable = { com_demoralization_var = 0.025 }
+                    subtract_from_variable = { com_demoralization_var = 0.015 }
                     
                     # Cap at -50%
                     if = {
@@ -87,7 +87,7 @@ on_actions = {
                 
                 ROOT = {
                     # Heal the penalty
-                    add_to_variable = { com_demoralization_var = 0.025 }
+                    add_to_variable = { com_demoralization_var = 0.015 }
                     
                     # Remove entirely if back to 0
                     if = {

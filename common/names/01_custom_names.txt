@@ -25,81 +25,105 @@ UNT = {
 # --- COMMONWEALTH FACTIONS (Polish Fallback Style) ---
 
 COM = {
-	male = { names = { Jakub Kacper Filip Szymon Jan Antoni Michał Wojciech Mateusz Bartosz Tomasz Grzegorz Zbigniew Piotr Maksymilian Paweł Łukasz Marcin Igor Leszek } }
-	female = { names = { "Zofia" "Wiktoria" "Natalia" "Renata" "Elżbieta" } }
-	surnames = { "Kowalczyk" "Wójcik" "Woźniak" "Mazur" "Krawczyk" "Kaczmarek" }
-	callsigns = { "Easy Kill" "Demon" }
-	prefix = o_operation
-	operation = { 0 = { o_default_operation } }
-	use_geographical_default_operation_names = yes
-	offensive_operation_suffix = o_strat_offensive_default
-	defensive_operation_suffix = o_strat_defensive_default
-	naval_operation_suffix = o_strat_naval_default
+	male = {
+		names = {
+			Jakub Kacper Filip Szymon Jan Antoni Michał Wojciech Aleksandr Aleksey Andrey Anton Boris Dmitry Fyodor Gennady Adolfas Aleksandras Algirdas Aadu Alar Aleksander Alberts Andrejs Karel Josef Jaroslav František Ezekiel Maximilian Felix Erich Alajos Albert Álmos Adrian Alexandru Andrei Anton Aleksandar Andrey Asen Atanas Blagoje Bozidar Branko Adamantios Alexandros Anastasios Adelin Adita Aleodor
+		}
+	}
+	female = {
+		names = {
+			Zofia Wiktoria Natalia Renata Alina Alevtina Aliya Anna Anya Birute Morta Kristina Imbi Jaana Johanna Julija Laima Signe Marie Hana Božena Sandra Maria Hannah Hildegard Agnes Eva Adelaida Andrea Adriana Beatrice Aleksandra Aleksandrina Bilyana Agata Agatha Barbara Alexandra Adriane Agathe Adorata Agripina
+		}
+	}
+	surnames = {
+		Nowak Kowalski Wiśniewski Kamiński Abramov Abyzov Akhnazarov Akimenko Adamkus Almenas Avizienis Aamisepp Aavik Adams Abakovskis Apsenieks Balodis Havlíček Dvořák Novák Lugmair Neudinger Muller Schmidt Andrássy Apponyi Aulich Chifu Angelescu Antonescu Agura Balabanov Balkanski Adzic Arandelovic Belimarkovic Altanis Charalambis Christakis-Zografos Adamescu Aldea Andrei
+	}
+	callsigns = { "The Winged Hussar" "White Eagle" "The Tsar" "Balkan Ghost" "Danube" "Carpathian" "Spartan" "Zeus" "Hades" }
 }
 
 CCO = {
-	male = { names = { Jakub Kacper Filip Szymon Jan Antoni Michał Wojciech Mateusz Bartosz Tomasz Grzegorz Zbigniew Piotr Maksymilian Paweł Łukasz Marcin Igor Leszek } }
-	female = { names = { "Zofia" "Wiktoria" "Natalia" "Renata" "Elżbieta" } }
-	surnames = { "Kowalczyk" "Wójcik" "Woźniak" "Mazur" "Krawczyk" "Kaczmarek" }
-	callsigns = { "Easy Kill" "Demon" }
-	prefix = o_operation
-	operation = { 0 = { o_default_operation } }
-	use_geographical_default_operation_names = yes
-	offensive_operation_suffix = o_strat_offensive_default
-	defensive_operation_suffix = o_strat_defensive_default
-	naval_operation_suffix = o_strat_naval_default
+	male = {
+		names = {
+			Jakub Kacper Filip Szymon Jan Antoni Michał Wojciech Aleksandr Aleksey Andrey Anton Boris Dmitry Fyodor Gennady Adolfas Aleksandras Algirdas Aadu Alar Aleksander Alberts Andrejs Karel Josef Jaroslav František Ezekiel Maximilian Felix Erich Alajos Albert Álmos Adrian Alexandru Andrei Anton Aleksandar Andrey Asen Atanas Blagoje Bozidar Branko Adamantios Alexandros Anastasios Adelin Adita Aleodor
+		}
+	}
+	female = {
+		names = {
+			Zofia Wiktoria Natalia Renata Alina Alevtina Aliya Anna Anya Birute Morta Kristina Imbi Jaana Johanna Julija Laima Signe Marie Hana Božena Sandra Maria Hannah Hildegard Agnes Eva Adelaida Andrea Adriana Beatrice Aleksandra Aleksandrina Bilyana Agata Agatha Barbara Alexandra Adriane Agathe Adorata Agripina
+		}
+	}
+	surnames = {
+		Nowak Kowalski Wiśniewski Kamiński Abramov Abyzov Akhnazarov Akimenko Adamkus Almenas Avizienis Aamisepp Aavik Adams Abakovskis Apsenieks Balodis Havlíček Dvořák Novák Lugmair Neudinger Muller Schmidt Andrássy Apponyi Aulich Chifu Angelescu Antonescu Agura Balabanov Balkanski Adzic Arandelovic Belimarkovic Altanis Charalambis Christakis-Zografos Adamescu Aldea Andrei
+	}
+	callsigns = { "The Winged Hussar" "White Eagle" "The Tsar" "Balkan Ghost" "Danube" "Carpathian" "Spartan" "Zeus" "Hades" }
 }
 
 CLB = {
-	male = { names = { Jakub Kacper Filip Szymon Jan Antoni Michał Wojciech Mateusz Bartosz Tomasz Grzegorz Zbigniew Piotr Maksymilian Paweł Łukasz Marcin Igor Leszek } }
-	female = { names = { "Zofia" "Wiktoria" "Natalia" "Renata" "Elżbieta" } }
-	surnames = { "Kowalczyk" "Wójcik" "Woźniak" "Mazur" "Krawczyk" "Kaczmarek" }
-	callsigns = { "Easy Kill" "Demon" }
-	prefix = o_operation
-	operation = { 0 = { o_default_operation } }
-	use_geographical_default_operation_names = yes
-	offensive_operation_suffix = o_strat_offensive_default
-	defensive_operation_suffix = o_strat_defensive_default
-	naval_operation_suffix = o_strat_naval_default
+	male = {
+		names = {
+			Jakub Kacper Filip Szymon Jan Antoni Michał Wojciech Aleksandr Aleksey Andrey Anton Boris Dmitry Fyodor Gennady Adolfas Aleksandras Algirdas Aadu Alar Aleksander Alberts Andrejs Karel Josef Jaroslav František Ezekiel Maximilian Felix Erich Alajos Albert Álmos Adrian Alexandru Andrei Anton Aleksandar Andrey Asen Atanas Blagoje Bozidar Branko Adamantios Alexandros Anastasios Adelin Adita Aleodor
+		}
+	}
+	female = {
+		names = {
+			Zofia Wiktoria Natalia Renata Alina Alevtina Aliya Anna Anya Birute Morta Kristina Imbi Jaana Johanna Julija Laima Signe Marie Hana Božena Sandra Maria Hannah Hildegard Agnes Eva Adelaida Andrea Adriana Beatrice Aleksandra Aleksandrina Bilyana Agata Agatha Barbara Alexandra Adriane Agathe Adorata Agripina
+		}
+	}
+	surnames = {
+		Nowak Kowalski Wiśniewski Kamiński Abramov Abyzov Akhnazarov Akimenko Adamkus Almenas Avizienis Aamisepp Aavik Adams Abakovskis Apsenieks Balodis Havlíček Dvořák Novák Lugmair Neudinger Muller Schmidt Andrássy Apponyi Aulich Chifu Angelescu Antonescu Agura Balabanov Balkanski Adzic Arandelovic Belimarkovic Altanis Charalambis Christakis-Zografos Adamescu Aldea Andrei
+	}
+	callsigns = { "The Winged Hussar" "White Eagle" "The Tsar" "Balkan Ghost" "Danube" "Carpathian" "Spartan" "Zeus" "Hades" }
 }
 
 CMO = {
-	male = { names = { Jakub Kacper Filip Szymon Jan Antoni Michał Wojciech Mateusz Bartosz Tomasz Grzegorz Zbigniew Piotr Maksymilian Paweł Łukasz Marcin Igor Leszek } }
-	female = { names = { "Zofia" "Wiktoria" "Natalia" "Renata" "Elżbieta" } }
-	surnames = { "Kowalczyk" "Wójcik" "Woźniak" "Mazur" "Krawczyk" "Kaczmarek" }
-	callsigns = { "Easy Kill" "Demon" }
-	prefix = o_operation
-	operation = { 0 = { o_default_operation } }
-	use_geographical_default_operation_names = yes
-	offensive_operation_suffix = o_strat_offensive_default
-	defensive_operation_suffix = o_strat_defensive_default
-	naval_operation_suffix = o_strat_naval_default
+	male = {
+		names = {
+			Jakub Kacper Filip Szymon Jan Antoni Michał Wojciech Aleksandr Aleksey Andrey Anton Boris Dmitry Fyodor Gennady Adolfas Aleksandras Algirdas Aadu Alar Aleksander Alberts Andrejs Karel Josef Jaroslav František Ezekiel Maximilian Felix Erich Alajos Albert Álmos Adrian Alexandru Andrei Anton Aleksandar Andrey Asen Atanas Blagoje Bozidar Branko Adamantios Alexandros Anastasios Adelin Adita Aleodor
+		}
+	}
+	female = {
+		names = {
+			Zofia Wiktoria Natalia Renata Alina Alevtina Aliya Anna Anya Birute Morta Kristina Imbi Jaana Johanna Julija Laima Signe Marie Hana Božena Sandra Maria Hannah Hildegard Agnes Eva Adelaida Andrea Adriana Beatrice Aleksandra Aleksandrina Bilyana Agata Agatha Barbara Alexandra Adriane Agathe Adorata Agripina
+		}
+	}
+	surnames = {
+		Nowak Kowalski Wiśniewski Kamiński Abramov Abyzov Akhnazarov Akimenko Adamkus Almenas Avizienis Aamisepp Aavik Adams Abakovskis Apsenieks Balodis Havlíček Dvořák Novák Lugmair Neudinger Muller Schmidt Andrássy Apponyi Aulich Chifu Angelescu Antonescu Agura Balabanov Balkanski Adzic Arandelovic Belimarkovic Altanis Charalambis Christakis-Zografos Adamescu Aldea Andrei
+	}
+	callsigns = { "The Winged Hussar" "White Eagle" "The Tsar" "Balkan Ghost" "Danube" "Carpathian" "Spartan" "Zeus" "Hades" }
 }
 
 CNA = {
-	male = { names = { Jakub Kacper Filip Szymon Jan Antoni Michał Wojciech Mateusz Bartosz Tomasz Grzegorz Zbigniew Piotr Maksymilian Paweł Łukasz Marcin Igor Leszek } }
-	female = { names = { "Zofia" "Wiktoria" "Natalia" "Renata" "Elżbieta" } }
-	surnames = { "Kowalczyk" "Wójcik" "Woźniak" "Mazur" "Krawczyk" "Kaczmarek" }
-	callsigns = { "Easy Kill" "Demon" }
-	prefix = o_operation
-	operation = { 0 = { o_default_operation } }
-	use_geographical_default_operation_names = yes
-	offensive_operation_suffix = o_strat_offensive_default
-	defensive_operation_suffix = o_strat_defensive_default
-	naval_operation_suffix = o_strat_naval_default
+	male = {
+		names = {
+			Jakub Kacper Filip Szymon Jan Antoni Michał Wojciech Aleksandr Aleksey Andrey Anton Boris Dmitry Fyodor Gennady Adolfas Aleksandras Algirdas Aadu Alar Aleksander Alberts Andrejs Karel Josef Jaroslav František Ezekiel Maximilian Felix Erich Alajos Albert Álmos Adrian Alexandru Andrei Anton Aleksandar Andrey Asen Atanas Blagoje Bozidar Branko Adamantios Alexandros Anastasios Adelin Adita Aleodor
+		}
+	}
+	female = {
+		names = {
+			Zofia Wiktoria Natalia Renata Alina Alevtina Aliya Anna Anya Birute Morta Kristina Imbi Jaana Johanna Julija Laima Signe Marie Hana Božena Sandra Maria Hannah Hildegard Agnes Eva Adelaida Andrea Adriana Beatrice Aleksandra Aleksandrina Bilyana Agata Agatha Barbara Alexandra Adriane Agathe Adorata Agripina
+		}
+	}
+	surnames = {
+		Nowak Kowalski Wiśniewski Kamiński Abramov Abyzov Akhnazarov Akimenko Adamkus Almenas Avizienis Aamisepp Aavik Adams Abakovskis Apsenieks Balodis Havlíček Dvořák Novák Lugmair Neudinger Muller Schmidt Andrássy Apponyi Aulich Chifu Angelescu Antonescu Agura Balabanov Balkanski Adzic Arandelovic Belimarkovic Altanis Charalambis Christakis-Zografos Adamescu Aldea Andrei
+	}
+	callsigns = { "The Winged Hussar" "White Eagle" "The Tsar" "Balkan Ghost" "Danube" "Carpathian" "Spartan" "Zeus" "Hades" }
 }
 
 CCM = {
-	male = { names = { Jakub Kacper Filip Szymon Jan Antoni Michał Wojciech Mateusz Bartosz Tomasz Grzegorz Zbigniew Piotr Maksymilian Paweł Łukasz Marcin Igor Leszek } }
-	female = { names = { "Zofia" "Wiktoria" "Natalia" "Renata" "Elżbieta" } }
-	surnames = { "Kowalczyk" "Wójcik" "Woźniak" "Mazur" "Krawczyk" "Kaczmarek" }
-	callsigns = { "Easy Kill" "Demon" }
-	prefix = o_operation
-	operation = { 0 = { o_default_operation } }
-	use_geographical_default_operation_names = yes
-	offensive_operation_suffix = o_strat_offensive_default
-	defensive_operation_suffix = o_strat_defensive_default
-	naval_operation_suffix = o_strat_naval_default
+	male = {
+		names = {
+			Jakub Kacper Filip Szymon Jan Antoni Michał Wojciech Aleksandr Aleksey Andrey Anton Boris Dmitry Fyodor Gennady Adolfas Aleksandras Algirdas Aadu Alar Aleksander Alberts Andrejs Karel Josef Jaroslav František Ezekiel Maximilian Felix Erich Alajos Albert Álmos Adrian Alexandru Andrei Anton Aleksandar Andrey Asen Atanas Blagoje Bozidar Branko Adamantios Alexandros Anastasios Adelin Adita Aleodor
+		}
+	}
+	female = {
+		names = {
+			Zofia Wiktoria Natalia Renata Alina Alevtina Aliya Anna Anya Birute Morta Kristina Imbi Jaana Johanna Julija Laima Signe Marie Hana Božena Sandra Maria Hannah Hildegard Agnes Eva Adelaida Andrea Adriana Beatrice Aleksandra Aleksandrina Bilyana Agata Agatha Barbara Alexandra Adriane Agathe Adorata Agripina
+		}
+	}
+	surnames = {
+		Nowak Kowalski Wiśniewski Kamiński Abramov Abyzov Akhnazarov Akimenko Adamkus Almenas Avizienis Aamisepp Aavik Adams Abakovskis Apsenieks Balodis Havlíček Dvořák Novák Lugmair Neudinger Muller Schmidt Andrássy Apponyi Aulich Chifu Angelescu Antonescu Agura Balabanov Balkanski Adzic Arandelovic Belimarkovic Altanis Charalambis Christakis-Zografos Adamescu Aldea Andrei
+	}
+	callsigns = { "The Winged Hussar" "White Eagle" "The Tsar" "Balkan Ghost" "Danube" "Carpathian" "Spartan" "Zeus" "Hades" }
 }
 
 
@@ -230,4 +254,22 @@ FRK = {
 	callsigns = { "Bubi" "Assi" }
 	prefix = o_unternehmen
 	operation = { 0 = { o_ostwind } }
+}
+
+# --- Iberian Protectorate --- 
+
+IBP = {
+	male = {
+		names = {
+			"Alejandro" "Carlos" "Diego" "Juan" "Miguel" 
+		}
+	}
+	female = {
+		names = {
+			"Ana" "Carmen" "Isabel" "Maria" "Sofia"
+		}
+	}
+	surnames = {
+		"Alonso" "Fernández" "García" "López" "Martínez"
+	}
 }

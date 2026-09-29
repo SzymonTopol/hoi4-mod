@@ -1,0 +1,116 @@
+ideas = {
+    hidden_ideas = {
+        
+        CNA_exploit_radicalism_modifier = {
+            allowed = { always = yes }
+            targeted_modifier = { tag = CCO army_attack_factor = 0.025 }
+            targeted_modifier = { tag = CMO army_attack_factor = 0.025 }
+            modifier = {
+                weekly_manpower = 250
+            }
+        }
+
+        CNA_military_admin_modifier = {
+            allowed = { always = yes }
+            modifier = {
+                consumer_goods_expected_value = -0.05 
+                war_support_weekly = 0.002
+                production_speed_buildings_factor = 0.10
+            }
+        }
+
+        CNA_sway_the_young_modifier = {
+            allowed = { always = yes }
+            modifier = {
+                army_attack_factor = 0.05
+                army_speed_factor = 0.04
+            }
+        }
+
+        CNA_tale_of_two_militaries_modifier = {
+            allowed = { always = yes }
+            modifier = {
+                army_attack_factor = 0.05
+                army_defence_factor = 0.05
+                army_speed_factor = 0.04
+            }
+        }
+
+        CNA_anti_communist_modifier = {
+            allowed = { always = yes }
+            targeted_modifier = { tag = CCM army_attack_factor = 0.10 }
+            targeted_modifier = { tag = CLB army_attack_factor = 0.05 }
+        }
+
+        CNA_expand_our_reach_modifier = {
+            allowed = { always = yes }
+            modifier = {
+                production_speed_buildings_factor = 0.05
+                production_factory_efficiency_gain_factor = 0.06
+            }
+        }
+
+        CNA_encourage_defections_modifier = {
+            allowed = { always = yes }
+            modifier = {
+                weekly_manpower = 1000
+            }
+        }
+
+        CNA_nationalize_industries_modifier = {
+            allowed = { always = yes }
+            modifier = {
+                production_factory_efficiency_gain_factor = 0.10
+            }
+        }
+
+        CNA_invincible_army_modifier = {
+            allowed = { always = yes }
+            modifier = {
+                army_attack_factor = 0.10
+                army_defence_factor = 0.10
+            }
+        }
+
+        CNA_defensive_posture_modifier = {
+            allowed = { always = yes }
+            modifier = {
+                army_defence_factor = 0.20
+                max_dig_in = 12
+            }
+        }
+
+        CNA_rapid_expansion_modifier = {
+            allowed = { always = yes }
+            modifier = {
+                army_attack_factor = 0.05
+                breakthrough_factor = 0.05
+            }
+            targeted_modifier = { tag = CLB army_attack_factor = 0.02 }
+            targeted_modifier = { tag = CMO army_attack_factor = 0.02 }
+        }
+
+        CNA_partisan_training_modifier = {
+            allowed = { always = yes }
+            modifier = {
+                out_of_supply_factor = -0.20
+            }
+        }
+
+        CNA_breakthrough_doctrine_modifier = {
+            allowed = { always = yes }
+            modifier = {
+                breakthrough_factor = 0.20
+                army_attack_factor = 0.02
+            }
+        }
+
+        CNA_national_rebirth_modifier = {
+            allowed = { always = yes }
+            modifier = {
+                army_core_attack_factor = 0.15
+                army_core_defence_factor = 0.15
+            }
+        }
+    }
+}

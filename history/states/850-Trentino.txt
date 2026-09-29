@@ -7,10 +7,11 @@ state = {
 	state_category = town
 
 	history = {
+		add_core_of = TYR
 		victory_points = { #Trento
 			9598 1
 		}
-		owner = UNT
+		owner = TYR
 		add_core_of = UNT
 		buildings = {
 			infrastructure = 2 #was 3 before split

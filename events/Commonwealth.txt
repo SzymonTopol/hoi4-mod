@@ -239,11 +239,40 @@ country_event = { #Too little too late
         CLB = { transfer_state = 807 }
         CMO = { transfer_state = 259 }
         
-        # Wrapped in is_ai = no so it only forces the tag switch if a human is playing!
+        # ==========================================
+        # CHARACTER TRANSFERS FROM COM TO FACTIONS
+        # ==========================================
+        
+        # Transfer to CCO
+        COM_stanislaw_hindy = { set_nationality = CCO }
+        COM_dmytro_cukavac = { set_nationality = CCO }
+        COM_zivorad_shandruk = { set_nationality = CCO }
+        COM_mykhailo_lacis = { set_nationality = CCO }
+        
+        # Transfer to CLB
+        COM_radu_bortnowski = { set_nationality = CLB }
+        COM_vaclav_veress = { set_nationality = CLB }
+        COM_georgi_kvaternik = { set_nationality = CLB }
+        
+        # Transfer to CMO
+        # ==========================================
+        # CHARACTER TRANSFERS FROM COM TO CMO
+        # ==========================================
+        
+        # 1. Transfer the characters
+        COM_kurt_benes = { set_nationality = CMO }
+        COM_sergej_tito = { set_nationality = CMO }
+        COM_fricis_bortnowski = { set_nationality = CMO }
+        COM_pavlo_racovita = { set_nationality = CMO }
 
-        CCO = { load_focus_tree = commonwealth_conservative_civilwar}
-        CLB = { load_focus_tree = commonwealth_liberal_civilwar}
-        CMO = { load_focus_tree = commonwealth_monarchist_civilwar}
+        # COM_andrzej_erdos = { set_nationality = CMO }
+        # COM_konstantin_schuschnigg = { set_nationality = CMO }
+        # COM_carol_pats = { set_nationality = CMO }
+
+        # Wrapped in is_ai = no so it only forces the tag switch if a human is playing!
+        CCO = { load_focus_tree = commonwealth_conservative_civilwar }
+        CLB = { load_focus_tree = commonwealth_liberal_civilwar }
+        CMO = { load_focus_tree = commonwealth_monarchist_civilwar }
 
         # ==========================================
         # THIS ACTUALLY STARTS THE MISSIONS & SCRAMBLE
@@ -279,6 +308,7 @@ country_event = { #Too little too late
         clr_country_flag = COM_chose_liberals
         clr_country_flag = COM_chose_monarchists
     }
+    
     option = {
          name = commonwealth.7.a
          custom_effect_tooltip = commonwealth_can_mark_states_for_civil_war_tt
@@ -543,11 +573,11 @@ country_event = { #The Commonwealth Civil War - setup krajów, przeniesienie kon
             every_owned_state = { #Z jakiegoś powodu rojaliści mają problemy z utrzymaniem się (mniejsza eko, więc damy im więcej wyposażenia na dzień dobry)
                 create_unit = {
                     owner = CMO 
-                    division = "name = \"Royalist Militia\" division_template = \"Royalist Militia\" start_equipment_factor = 0.7"
+                    division = "name = \"Royalist Militia\" division_template = \"Royalist Militia\" start_equipment_factor = 0.3"
                 }
                 create_unit = {
                     owner = CMO 
-                    division = "name = \"Royalist Militia\" division_template = \"Royalist Militia\" start_equipment_factor = 0.7"
+                    division = "name = \"Royalist Militia\" division_template = \"Royalist Militia\" start_equipment_factor = 0.3"
                 }
             }
         }
@@ -874,11 +904,8 @@ country_event = {
 
     trigger = {
         OR = { tag = CCO tag = CMO tag = CLB tag = CNA tag = CCM }
-        
         has_global_flag = commonwealth_13_fired
-        
         has_war = no
-        
         NOT = {
             any_other_country = {
                 OR = { tag = CCO tag = CMO tag = CLB tag = CNA tag = CCM }
@@ -889,7 +916,6 @@ country_event = {
     }
 
     immediate = {
-
         every_owned_state = {
             remove_core_of = CCO
             remove_core_of = CMO
@@ -906,59 +932,247 @@ country_event = {
 
         COM = { transfer_state = 10 }
 
+        # --- PRE-ANNEXATION CHECK FOR CMO LEADER ---
+        # Checks the active parallel CMO leader before they are annexed
         if = {
-            limit = { 
-                is_ai = no
+            limit = { tag = CMO }
+            if = { 
+                limit = { has_country_leader = { character = CMO_andrzej_erdos } } 
+                COM = { set_country_flag = CMO_winner_erdos } 
             }
+            else_if = { 
+                limit = { has_country_leader = { character = CMO_konstantin_schuschnigg } } 
+                COM = { set_country_flag = CMO_winner_schuschnigg } 
+            }
+            else_if = { 
+                limit = { has_country_leader = { character = CMO_carol_pats } } 
+                COM = { set_country_flag = CMO_winner_pats } 
+            }
+            else = { 
+                COM = { set_country_flag = CMO_winner_regency } 
+            }
+        }
+
+        # ==========================================
+        # GENERAL TRANSFERS (UNTOUCHED)
+        # ==========================================
+        if = {
+            limit = { tag = CCO }
+            COM_stanislaw_hindy = { set_nationality = COM }
+            COM_dmytro_cukavac = { set_nationality = COM }
+            COM_zivorad_shandruk = { set_nationality = COM }
+            COM_jacek_kalafatovic = { set_nationality = COM }
+            COM_alexandros_vojcechovsky = { set_nationality = COM }
+            COM_mykhailo_lacis = { set_nationality = COM }
+        }
+        else_if = {
+            limit = { tag = CLB }
+            COM_radu_bortnowski = { set_nationality = COM }
+            COM_vaclav_veress = { set_nationality = COM }
+            COM_gyorgy_buks = { set_nationality = COM }
+            COM_georgi_kvaternik = { set_nationality = COM }
+            COM_vilis_popov = { set_nationality = COM }
+        }
+        else_if = {
+            limit = { tag = CMO }
+            COM_kurt_benes = { set_nationality = COM }
+            COM_sergej_tito = { set_nationality = COM }
+            COM_fricis_bortnowski = { set_nationality = COM }
+            COM_pavlo_racovita = { set_nationality = COM }
+            COM_marian_onassis = { set_nationality = COM }
+            COM_danilo_seyss_inquart = { set_nationality = COM }
+        }
+        else_if = {
+            limit = { tag = CNA }
+            COM_milan_drakos = { set_nationality = COM }
+            COM_kostas_tesarik = { set_nationality = COM }
+            COM_ion_sosabowski = { set_nationality = COM }
+        }
+        else_if = {
+            limit = { tag = CCM }
+            COM_tadeusz_pavlenko = { set_nationality = COM }
+            COM_radaslau_kukiel = { set_nationality = COM }
+        }
+
+        if = {
+            limit = { is_ai = no }
             COM = { change_tag_from = ROOT }
         } 
     }
 
     option = {
         name = commonwealth.14.a
-        # Scope everything else to COM, since ROOT is still the winning faction
+        
         COM = {
-            # Annex the remainder of the winning faction's territory
             annex_country = { target = ROOT }
-
-            # Set popularities to the 25-25-25-25 split
-            set_popularities = {
-                democratic = 25
-                fascism = 25
-                communism = 25
-                neutrality = 25
-            }
-
-            # Check who ROOT (the winner) was, and apply the correct setup
+            
+            # 1. Globally retire the primary provisional interim leaders
+            retire_character = COM_extended_sejm
+            retire_character = COM_military_cabinet
+            
+            # 2. Setup politics and handle remaining character retirements
             if = {
                 limit = { ROOT = { original_tag = CCO } }
                 set_politics = { ruling_party = neutrality elections_allowed = no }
                 load_focus_tree = commonwealth_conservatives_postCivilWar
+                set_popularities = { democratic = 12 fascism = 20 communism = 8 neutrality = 60 }
+                
+                # Retire the unneeded CMO candidates & Regency Council
+                retire_character = COM_regency_council
+                retire_character = COM_andrzej_erdos
+                retire_character = COM_konstantin_schuschnigg
+                retire_character = COM_carol_pats
+                
+                # Promote the parallel CCO leader in COM
+                add_country_leader_role = { character = COM_boris_racovita promote_leader = yes country_leader = { ideology = despotism } }
             }
             else_if = {
                 limit = { ROOT = { original_tag = CMO } }
                 set_politics = { ruling_party = neutrality elections_allowed = no }
                 set_cosmetic_tag = COM_CMO_victory
                 load_focus_tree = commonwealth_monarchists_postCivilWar
+                set_popularities = { democratic = 10 fascism = 12 communism = 6 neutrality = 72 }
+
+                # Retire the CCO option
+                retire_character = COM_boris_racovita
+
+                # Retire the 2 losers of the CMO election and promote the winner
+                if = {
+                    limit = { has_country_flag = CMO_winner_erdos }
+                    retire_character = COM_regency_council
+                    retire_character = COM_konstantin_schuschnigg
+                    retire_character = COM_carol_pats
+                    add_country_leader_role = { character = COM_andrzej_erdos promote_leader = yes country_leader = { ideology = despotism } }
+                }
+                else_if = {
+                    limit = { has_country_flag = CMO_winner_schuschnigg }
+                    retire_character = COM_regency_council
+                    retire_character = COM_andrzej_erdos
+                    retire_character = COM_carol_pats
+                    add_country_leader_role = { character = COM_konstantin_schuschnigg promote_leader = yes country_leader = { ideology = centrism } }
+                }
+                else_if = {
+                    limit = { has_country_flag = CMO_winner_pats }
+                    retire_character = COM_regency_council
+                    retire_character = COM_andrzej_erdos
+                    retire_character = COM_konstantin_schuschnigg
+                    add_country_leader_role = { character = COM_carol_pats promote_leader = yes country_leader = { ideology = despotism } }
+                }
+                # else = {
+                #     # Regency Council wins
+                #     retire_character = COM_andrzej_erdos
+                #     retire_character = COM_konstantin_schuschnigg
+                #     retire_character = COM_carol_pats
+                #     add_country_leader_role = { character = COM_regency_council promote_leader = yes country_leader = { ideology = oligarchism } }
+                # }
             }
             else_if = {
                 limit = { ROOT = { original_tag = CLB } }
                 set_politics = { ruling_party = democratic elections_allowed = yes }
                 load_focus_tree = commonwealth_liberals_postCivilWar
+                set_popularities = { democratic = 49 fascism = 13 communism = 7 neutrality = 31 }
+                
+                # Retire remaining non-aligned leader roles
+                retire_character = COM_regency_council
             }
             else_if = {
                 limit = { ROOT = { original_tag = CNA } }
                 set_politics = { ruling_party = fascism elections_allowed = no }
                 load_focus_tree = commonwealth_nationalists_postCivilWar
+                set_popularities = { democratic = 12 fascism = 38 communism = 8 neutrality = 42 }
+                
+                retire_character = COM_regency_council
             }
             else_if = {
                 limit = { ROOT = { original_tag = CCM } }
                 set_politics = { ruling_party = communism elections_allowed = no }
                 load_focus_tree = commonwealth_communists_postCivilWar
+                set_popularities = { democratic = 28 fascism = 18 communism = 32 neutrality = 22 }
+                
+                retire_character = COM_regency_council
             }
         }
         
         # Cleanup
+        clr_country_flag = CMO_winner_erdos
+        clr_country_flag = CMO_winner_schuschnigg
+        clr_country_flag = CMO_winner_pats
+        clr_country_flag = CMO_winner_regency
         clr_global_flag = commonwealth_13_fired
+    }
+}
+
+country_event = {
+    id = commonwealth.15
+    title = commonwealth.15.t
+    desc = commonwealth.15.d
+    picture = GFX_report_event_generic_polish_machinegunners
+
+    fire_only_once = yes
+
+    trigger = {
+        tag = CCO
+        has_war_with = CCM
+    }
+
+    option = {
+        name = commonwealth.15.a
+        
+        CCO = {add_timed_idea = {
+            idea = cco_reactionary_spirit
+            days = 90
+        }
+        }
+    }
+}
+
+country_event = { 
+    id = commonwealth.16
+    title = commonwealth.16.t
+    desc = commonwealth.16.d
+    picture = GFX_report_event_SWI_open_air_gathering
+
+    is_triggered_only = yes
+
+    option = {
+        name = commonwealth.16.a # Choose Andrzej Erdos
+        
+        retire_character = CMO_regency_council
+        
+        add_country_leader_role = {
+            character = CMO_andrzej_erdos
+            promote_leader = yes
+            country_leader = {
+                ideology = despotism
+            }
+        }
+    }
+
+    option = {
+        name = commonwealth.16.b # Choose Konstantin Schuschnigg
+        
+        retire_character = CMO_regency_council
+        
+        add_country_leader_role = {
+            character = CMO_konstantin_schuschnigg
+            promote_leader = yes
+            country_leader = {
+                ideology = centrism
+            }
+        }
+    }
+
+    option = {
+        name = commonwealth.16.c # Choose Carol Pats
+        
+        retire_character = CMO_regency_council
+        
+        add_country_leader_role = {
+            character = CMO_carol_pats
+            promote_leader = yes
+            country_leader = {
+                ideology = despotism
+            }
+        }
     }
 }

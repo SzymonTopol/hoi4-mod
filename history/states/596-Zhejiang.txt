@@ -6,7 +6,8 @@ state=
 	state_category = city
 	history=
 	{
-		owner = UNT
+		add_core_of = WUU
+		owner = WUU
 		add_core_of = UNT
 		
 		victory_points = { 

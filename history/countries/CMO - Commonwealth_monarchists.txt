@@ -33,15 +33,18 @@ set_politics = {
 }
 
 set_popularities = {
-	democratic = 25
-	fascism = 25
-	communism = 25
-	neutrality = 25
+	democratic = 8
+	fascism = 5
+	communism = 7
+	neutrality = 80
 }
 
-create_country_leader = { #TEMP LEADER
-	name = "Łuki Postrożny"
-	desc = ""
-	picture = GFX_portrait_Ahmed_Ben_Bella
-	ideology = despotism
-}
+# ==========================================
+# CMO - Monarchist Faction (Major)
+# ==========================================
+recruit_character = CMO_regency_council
+recruit_character = CMO_andrzej_erdos
+recruit_character = CMO_konstantin_schuschnigg
+recruit_character = CMO_carol_pats
+recruit_character = COM_marian_onassis
+recruit_character = COM_danilo_seyss_inquart

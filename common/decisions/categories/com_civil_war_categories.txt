@@ -1,5 +1,16 @@
+com_civil_war_breakaway_timers_category = {
+    icon = GFX_decision_generic_political_discourse
+    priority = 105
+    
+    allowed = {
+        OR = { tag = CCO tag = CLB }
+    }
+}
+
 com_civil_war_scramble_category = {
-    icon = generic_operations
+    icon = GFX_decision_category_NOR_monarchist_prep
+    picture = GFX_decision_cat_picture_spreading_the_red_flame
+    priority = 100
     
     allowed = {
         OR = {
@@ -15,35 +26,25 @@ com_civil_war_scramble_category = {
         name = view_cco_secured_states_on_map
         target_array = ROOT.cco_marked_states
         zoom = 600
-        
     }
-
     on_map_area = {
         name = view_clb_secured_states_on_map
         target_array = ROOT.clb_marked_states
         zoom = 600
-        
     }
-
     on_map_area = {
         name = view_cmo_secured_states_on_map
         target_array = ROOT.cmo_marked_states
         zoom = 600
-        
     }
-
     on_map_area = {
         name = view_cna_secured_states_on_map
         target_array = ROOT.cna_marked_states
         zoom = 600
-        
     }
-
     on_map_area = {
         name = view_ccm_secured_states_on_map
         target_array = ROOT.ccm_marked_states
         zoom = 600
-        
     }
-
 }

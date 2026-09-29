@@ -7,7 +7,8 @@ state={
 	state_category = town
 
 	history={
-		owner = UNT
+		add_core_of = SYB
+		owner = SYB
 		add_core_of = UNT
 		victory_points = {
 			9292 5

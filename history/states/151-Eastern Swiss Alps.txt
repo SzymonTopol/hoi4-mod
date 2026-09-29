@@ -8,7 +8,8 @@ state={
 		aluminium=15 # was: 24
 	}
 	history={
-		owner = UNT
+		add_core_of = MIL
+		owner = MIL
 		add_core_of = UNT
 		victory_points = { 658 1 }
 		buildings = {

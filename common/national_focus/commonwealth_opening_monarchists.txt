@@ -53,7 +53,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = COM_new_candidate
+		id = COM_new_candidates
 		icon = GFX_focus_CHL_invite_french_aristocracy
 		cost = 4
 		x = 1
@@ -64,22 +64,23 @@ focus_tree = {
 				ideology = neutrality
 				popularity = 0.05
 			}
+			country_event = { id = commonwealth.16 }
 		}
 		prerequisite = {focus = COM_szlachta_convention}
 		prerequisite = {focus = COM_transfer_units}
 	}
 
 	focus = {
-		id = COM_vote_of_no_confidences
+		id = COM_vote_of_no_confidence
 		icon = GFX_focus_ARG_keep_it_in_the_party
 		cost = 5
 		x = 0
 		y = 1
-		relative_position_id = COM_new_candidate
+		relative_position_id = COM_new_candidates
 		completion_reward = { 
 			add_stability = -0.60
 		}
-		prerequisite = {focus = COM_new_candidate}
+		prerequisite = {focus = COM_new_candidates}
 	}
 
 

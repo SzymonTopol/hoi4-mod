@@ -1,0 +1,16 @@
+ARA = {
+	male = {
+		names = {
+			Sepé Amaru Amapytu Aratiri Ka'akupe Katupyry Kuarahy Marangatu Mba’ehory Pytuna Tabaré Tainã-Kan Tatapytu Tuvicha Yamandú Ygary
+		}
+	}
+	female = {
+		names = {
+			Juliana Anahí Cambuci Irupé Ko'êtî Naiá Tajy Poty Yrasêma Ysyry Gloria
+		}
+	}
+	surnames = {
+		Tiaraju Nheçu Flores Gaona Granada Godoy Plá Galvany Quattrocchi Tsiweyenki Elizeche Chemei Wasmosy
+	}
+	callsigns = { }
+}
