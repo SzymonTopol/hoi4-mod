@@ -1,0 +1,276 @@
+﻿l_english:
+
+# Commonwealth
+
+COM_royal_speech: "The Royal Speech"
+COM_royal_speech_desc: "The people of the Commonwealth are losing faith in our great state; a rousing speech shall bring their spirits up. Without them, we cannot achieve anything."
+
+COM_tour_to_lublin: "Tour to Lublin"
+COM_tour_to_lublin_desc: "Lublin is the birthplace of the Commonwealth. In this city over 300 years ago, the delegates of Poland and Lithuania agreed to form a state, which flourished and climbed the international ranks. A visit there will remind every citizen of our great past, in hopes of rekindling their pride and eagerness to reform the Commonwealth."
+
+COM_commonwealth_tour: "Commonwealth Tour"
+COM_commonwealth_tour_desc: "A grand tour across the vast lands of the crown, while long and costly, will prove invaluable for our future endeavors."
+
+COM_one_step_forward: "One Step Forward"
+COM_one_step_forward_desc: "With the people reassured, it is time to move towards more urgent matters that plague the Commonwealth!"
+
+COM_left_crackdown: "Crackdown on the Left"
+COM_left_crackdown_desc: "The radical left, which had festered in the ranks of the liberals, is growing in power. With their claims of a supposed upcoming revolution and the overthrow of the monarchy, it's more than expected of us to stomp out this little bug while it's still small."
+
+COM_right_crackdown: "Crackdown on the Right"
+COM_right_crackdown_desc: "Nationalist fervor rises amongst the young. Their demands become more blatant as their support expands. Their involvement in the political landscape of this country shall be curtailed."
+
+COM_pommeranian_excercises: "Pomeranian Exercises"
+COM_pommeranian_excercises_desc: "The Armed Forces of the Commonwealth have to be ready at all times to fight the enemies of the state. In order to achieve that, we have to make sure that they are in their peak physical condition."
+
+COM_grand_sejm_meeting: "Grand Sejm Meeting"
+COM_grand_sejm_meeting_desc: "The monarch cannot deal with all the Commonwealth problems by himself; we must ensure cooperation with the state apparatus, mostly with the legislative body of the Sejm, for that a Grand Meeting will be called."
+
+COM_appoint_new_administrators: "Appoint New Administrators"
+COM_appoint_new_administrators_desc: "An expanded pool of administrators will help relieve the strain on our bureaucracy."
+
+COM_fight_corruption: "Fight Corruption"
+COM_fight_corruption_desc: "Corruption can defeat even the greatest state; we shall not allow it to expand ever more."
+
+COM_rebalancing_the_system: "Rebalancing the System"
+COM_rebalancing_the_system_desc: "An overhaul of the system brings with itself a breath of fresh air, while negating disadvantages."
+
+# Commonwealth - Military (conservatives)
+
+COM_military_cabinet: "Military Cabinet"
+COM_military_cabinet_desc: "The military has stepped in to bring back order."
+
+COM_recall_advisors: "Recall Advisors"
+COM_recall_advisors_desc: "We will recall our many advisors that were sent to various states all over the world. Their expertise is needed in their homeland."
+
+COM_disband_sejm: "Disband Sejm"
+COM_disband_sejm_desc: "The Sejm is by far the biggest obstacle to us. All that whining about majority votes or independent review councils is designed to bury us with bureaucracy. We will declare the current session of the Sejm void."
+
+COM_postpone_elections: "Postpone Elections"
+COM_postpone_elections_desc: "With no Sejm in our way, we will postpone elections to let the situation de-escalate, keeping the Sejm disbanded without a clear end date."
+
+COM_declare_martial_law: "Declare Martial Law"
+COM_declare_martial_law_desc: "The time is now. Martial Law will give full power to us and our supporters, allowing for sweeping changes in the Commonwealth without opposition."
+
+# Commonwealth - Sejm (liberals)
+
+COM_expanded_sejm_session: "Expanded Sejm Session"
+COM_expanded_sejm_session_desc: "The Sejm has reined in their de facto powers. It is time to make good use of them."
+
+COM_emergency_powers: "Emergency Powers"
+COM_emergency_powers_desc: "With a 60% majority, the current Sejm session can award itself extra dictatorial powers to see their needs to fruition."
+
+COM_arrest_oppositon_leaders: "Arrest Opposition Leaders"
+COM_arrest_oppositon_leaders_desc: "The opposition is just slowing us down and agitating the populace. A few high-profile arrests will put them in their place."
+
+COM_demobilise_army: "Demobilize the Army"
+COM_demobilise_army_desc: "The Army is displaying dangerous signs of insubordination. We will disband most of the unruly units while we still have enough leverage."
+
+COM_cancel_szlachta_convention: "Cancel Szlachta Convention"
+COM_cancel_szlachta_convention_desc: "The Szlachta's attempts to elect a new king are a threat to our expanded powers. We can use said powers and declare the cancellation of their silly convention. Unchallenged parliamentary rule can finally come to the Commonwealth."
+
+# Commonwealth - Regency (monarchists)
+
+COM_regency_council: "Regency Council"
+COM_regency_council_desc: "Our quick action allowed us to form a regency council even without a king selected. It is a great victory for our faction."
+
+COM_szlachta_convention: "Szlachta Convention"
+COM_szlachta_convention_desc: "The Szlachta's Convention - a great tradition of the Commonwealth's nobility. Weeks of important debates, votes, as well as folkloric plays and even better celebrations."
+
+COM_transfer_units: "Transfer Units"
+COM_transfer_units_desc: "A decent bunch of officers still have a noble background. With enough persuasion, we can get these units to follow our orders."
+
+COM_new_candidates: "New Candidates"
+COM_new_candidates_desc: "A great number of candidates for the throne are available, creating a sense of excitement around the selection process."
+
+COM_vote_of_no_confidence: "Vote of No Confidence"
+COM_vote_of_no_confidence_desc: "The time is right to challenge the Sejm's authority. Their constant nibbling at our ancestral rights and the monarchy's authority is a threat to the Commonwealth. We will call for a vote of no confidence in the current Sejm session, in aim to dissolve it."
+
+###################################
+# Commonwealth civil war factions #
+###################################
+
+CCO_army_loyalty: "Army Loyalty"
+CCO_army_loyalty_desc: "If we are to survive this coming conflict, we need to ensure that the army will stay loyal to our side."
+
+CCO_call_strategos_friends: "Call Strategos' Friends"
+CCO_call_strategos_friends_desc: "The Strategos Protectorate was originally created thanks to heavy resolve from our faction. It is time to call in their obligations."
+
+CCO_southern_coast: "Southern Coast"
+CCO_southern_coast_desc: "To secure international trade, so vital to our resolve, we will push our adversaries from our way, by any means necessary."
+
+CCO_cooperate_with_nationalists: "Cooperate with the Nationalists"
+CCO_cooperate_with_nationalists_desc: "Nationalists had been a growing thorn in our side. Their brash and aggressive posturing alienates potential supporters, while their fervor disrupts our meetings. Despite this, we need to find common ground with them if we are to win this war."
+
+CCO_prevent_ideological_split: "Prevent Ideological Split"
+CCO_prevent_ideological_split_desc: "United we stand, divided we fall."
+
+CCO_seize_depots: "Seize the Depots"
+CCO_seize_depots_desc: "What good is a soldier without a gun or ammunition?"
+
+CCO_redirect_munition_shipments: "Redirect Munition Shipments"
+CCO_redirect_munition_shipments_desc: "The logistics system in the Commonwealth is a beast. Very few actually know how to navigate it. Luckily for us, a few new friends offered to change the delivery address of these munitions."
+
+CCO_sway_industrialists: "Sway the Industrialists"
+CCO_sway_industrialists_desc: "Prominent industrialists and manufacturers are more than keen to 'accidentally' send their shipments into the lands controlled by our side when we send them money. Why let good product go to waste?"
+
+CCO_arm_loyalists: "Arm the Loyalists"
+CCO_arm_loyalists_desc: "Our cause rallies devout men; they are itching to fight for what is right. We will help them do that."
+
+CCO_infiltrate_airforce: "Infiltrate the Airforce"
+CCO_infiltrate_airforce_desc: "The airforce wasn't a big interest to us in the years prior. But now we will do anything to gain an edge over them. There are more than enough Conservative sympathizers in the airforce."
+
+CCO_underground_railroad: "Underground Railroad"
+CCO_underground_railroad_desc: "With near-total control of the pre-war logistics systems and support of key industrial figures, we can launch an unprecedented campaign. No matter where, our troops will be well fed and well equipped to take on the enemy."
+
+###
+
+CLB_northern_sympathizers: "Northern Sympathizers"
+CLB_northern_sympathizers_desc: "Our fortune led us north. The Baltic coast, full of traders and universities, is a perfect staging ground."
+
+CLB_redirect_funds: "Redirect Funds"
+CLB_redirect_funds_desc: "Extensive investments we fought so hard to implement have to be unfortunately cut short, as our nation tears itself apart."
+
+CLB_media_war: "Media War"
+CLB_media_war_desc: "War is brewing not only on land but in the press, TV, and radio. If we are to win this struggle against the adversaries, we need to make sure that our people are well informed of our glorious goals."
+
+CLB_pull_administration_favors: "Pull Administration Favors"
+CLB_pull_administration_favors_desc: "While we believe Strategic Crossings Administration needs to stay out of this war and protect its holdings, they might as well lend a helping hand to those who made them exist in the first place."
+
+CLB_arm_students: "Arm the Students"
+CLB_arm_students_desc: "Students are a force to be reckoned with; seizing their enthusiasm and devotion will lead us to victory."
+
+CLB_dismiss_radical_agitators: "Dismiss Radical Agitators"
+CLB_dismiss_radical_agitators_desc: "Communist agitators are tearing us apart. We need to act quickly and stop them before our more radical sympathizers break away."
+
+CLB_appeal_to_population: "Appeal to the Population"
+CLB_appeal_to_population_desc: "During the 2nd Punic War, citizens of the Roman Republic, in an unprecedented act of patriotism, donated their treasures to keep the war going. This time is no different; our civilization is at stake."
+
+CLB_gdansk_transit_commision: "Gdansk Transit Commission"
+CLB_gdansk_transit_commision_desc: "Control over Gdansk allows us to retain valuable trade with the remaining Baltic ports."
+
+CLB_profesional_training: "Professional Training"
+CLB_profesional_training_desc: "Tanks are the future of warfare; their speed and agility allow for sweeping offensives against a stationary enemy."
+
+###
+
+CMO_his_majesty_call: "His Majesty's Call"
+CMO_his_majesty_call_desc: "Our Monarch (whomever that turns out to be) needs our help. Faced with enemies on all sides, we will not surrender."
+
+CMO_szlachtas_response: "Szlachta's Response"
+CMO_szlachtas_response_desc: "The Nobility of the Commonwealth has a long and expansive history of standing up to anything that threatens the Commonwealth. This will not change now."
+
+CMO_food_supply: "Food Supply"
+CMO_food_supply_desc: "The lands of Zapadozia are some of the most arable areas in Europe; their yields guarantee a stable food supply for the duration of the war."
+
+CMO_cavalry_support: "Cavalry Support"
+CMO_cavalry_support_desc: "Winged Hussars are the basis of Commonwealth offensive capabilities; their charge breaks enemy lines and wins wars."
+
+CMO_noble_commanders: "Noble Commanders"
+CMO_noble_commanders_desc: "The Szlachta is a special kind of Nobility, well respected amongst its peers and deeply patriotic."
+
+CMO_reliable_messengers: "Reliable Messengers"
+CMO_reliable_messengers_desc: "Quick response to opportunities is only possible if our messengers arrive on time."
+
+CMO_in_defense_of_nation: "In Defense of the Nation"
+CMO_in_defense_of_nation_desc: "The final hour of the Commonwealth approaches; we will be ready to defend it until our last breath."
+
+CMO_united_by_faith: "United by Faith"
+CMO_united_by_faith_desc: "We are one and indivisible in the face of our enemies' wrath."
+
+CMO_old_traditions: "Old Traditions"
+CMO_old_traditions_desc: "The traditions of our ancestors led us so far; there is much to learn from them."
+
+CMO_new_equipment: "New Equipment"
+CMO_new_equipment_desc: "While our ancestry is important, we cannot forgo modernization efforts."
+
+###
+
+CNA_our_mission: "Our Mission"
+CNA_our_mission_desc: "Conservatives are too blind to see that Nationalism is the true way to save the Commonwealth. Their loss."
+
+CNA_exploit_enemy_radicalism: "Exploit Enemy Radicalism"
+CNA_exploit_enemy_radicalism_desc: "We were the first to leave the Conservatives, but there are still many young people sympathetic to our cause in their ranks. We have to change that."
+
+CNA_military_administration: "Military Administration"
+CNA_military_administration_desc: "Efficient Military Administration will allow us to conduct the war swiftly and efficiently."
+
+CNA_sway_the_young: "Sway the Young"
+CNA_sway_the_young_desc: "Most of our supporters come from the younger generation; their ferociousness and devotion are key for us."
+
+CNA_tale_of_two_militaries: "A Tale of Two Militaries"
+CNA_tale_of_two_militaries_desc: "Swaths of loyal militias are great for holding the line, but we cannot forget about the state military. Their expertise is extremely important to us."
+
+CNA_anti_communism: "Anti-Communism"
+CNA_anti_communism_desc: "The Left Radicals are the biggest threat to the Commonwealth since the fateful battle of Grunwald back in 1410. We CANNOT let them spread their influence even a bit."
+
+CNA_expand_our_reach: "Expand Our Reach"
+CNA_expand_our_reach_desc: "Without any industrial background, we are destined to lose in the long term."
+
+CNA_encourage_defections: "Encourage Defections"
+CNA_encourage_defections_desc: "With a little push, we could just get our enemies to surrender by themselves by encouraging their most disgruntled supporters to defect."
+
+CNA_nationalize_industries: "Nationalize the Industry"
+CNA_nationalize_industries_desc: "Having purged the communist elements in our lands and established a basic industry, we can move a step further and seize complete control over the industrial apparatus of the state, giving us significant leverage."
+
+CNA_invincible_army: "Invincible Army"
+CNA_invincible_army_desc: "We are undefeated, we are unbreakable, we are invincible."
+
+CNA_defensive_posture: "Defensive Posture"
+CNA_defensive_posture_desc: "Despite our best efforts, we are still few in numbers. We have to keep control over the gains we currently possess."
+
+CNA_rapid_expansion: "Rapid Expansion"
+CNA_rapid_expansion_desc: "Sweeping offensives deep into enemy territory will put them on the back foot and give us the initiative."
+
+CNA_partisan_training: "Partisan Training"
+CNA_partisan_training_desc: "Further specialization of our non-regular units gives them the chance to hold down the enemy advance while professional units regroup."
+
+CNA_national_rebirth: "National Rebirth"
+CNA_national_rebirth_desc: "We are the saviors of the Commonwealth. Under our rule, the Commonwealth will be reborn!"
+
+CNA_breakthrough_doctrine: "Breakthrough Doctrine"
+CNA_breakthrough_doctrine_desc: "Overwhelming firepower, combined with grueling attacks, is bound to create an opening in the enemy lines. An opening which we can exploit."
+
+###
+
+CCM_revolution_approaches: "Revolution Approaches"
+CCM_revolution_approaches_desc: "As the Commonwealth teeters on the edge of civil war, the time has come for us to finally make moves to bring the proletarian revolution to our state."
+
+CCM_reform_people_council: "Reform the People's Council"
+CCM_reform_people_council_desc: "The People's Council is a legislative body tasked with maintaining civilian control over our territories. It has to be both strong and flexible to prepare for the coming storm."
+
+CCM_red_army: "Red Army"
+CCM_red_army_desc: "The teeth of the Revolution. These new units will serve as a foundation for any future expansions of the military."
+
+CCM_international_brigades: "International Brigades"
+CCM_international_brigades_desc: "We cannot hope to accomplish the Revolution on our own. We will send out a call to all our communist brethren abroad."
+
+CCM_common_soldiers: "Common Soldiers"
+CCM_common_soldiers_desc: "The common soldiery is discontented with the goals of their stubborn superiors. If we play our cards right, we might sway some of them to our side."
+
+CCM_sway_youth: "Sway the Youth"
+CCM_sway_youth_desc: "The youth have been the fuel of our recent successes, allowing us to grow both in numbers and in strength. Gaining even more young supporters will serve us greatly."
+
+CCM_mountain_stashes: "Mountain Stashes"
+CCM_mountain_stashes_desc: "Caches hidden deep inside the mountains of the south will finally see their use come to fruition."
+
+CCM_forward_batalions: "Forward Battalions"
+CCM_forward_batalions_desc: "Our doctrine of attack has to evolve if we are to succeed in our goals. We will create a designated branch of the military to be our spear on the frontline."
+
+CCM_new_supporters: "New Supporters"
+CCM_new_supporters_desc: "While the youth and common soldiery give us a head start, we need to diversify our reach to gain more supporters from other social classes. This will allow us to grow in both strength and numbers."
+
+CCM_means_of_production: "Means of Production"
+CCM_means_of_production_desc: "Without wartime oversight, the factories of the Commonwealth will be unable to keep up with our needs. We will take control of them to ensure that they serve the Revolution."
+
+CCM_land_aquistion: "Land Acquisition"
+CCM_land_aquistion_desc: "No revolution can be successful without land redistribution. We will confiscate the land of the rich and give it to the poor to ensure that they will support us in our goals."
+
+CCM_way_of_word: "Way of the Word"
+CCM_way_of_word_desc: "The spoken word carries us forward..."
+
+CCM_sound_of_rifle: "Sound of a Rifle"
+CCM_sound_of_rifle_desc: "...the sound of a rifle gives us the strength..."
+
+CCM_roar_of_revolution: "The Roar of Revolution"
+CCM_roar_of_revolution_desc: "...and the revolution will set the Commonwealth ablaze!"

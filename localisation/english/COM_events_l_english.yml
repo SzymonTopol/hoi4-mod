@@ -1,10 +1,6 @@
 ﻿l_english:
 
-#############################################
-################### NASZE ###################
-#############################################
-
-#Commonwealth
+# Commonwealth
 
 commonwealth.1.t: "The King has died!"
 commonwealth.1.d: "Earlier this morning, Sigismund V was leaving his mansion when disaster struck. His leg slipped on the stairs, causing our monarch to tumble all the way down and fracture his spine. This event threw a wrench into his plans of reforming the state. As the procession carrying his body moves forward in Warsaw, the question on many minds is: What now?"
@@ -34,35 +30,35 @@ commonwealth.6.c: "§RThe Regency council moves forward§!"
 commonwealth_unlock_focuses_tt: "Unlocks new focuses"
 
 commonwealth.7.t: "Too little too late"
-commonwealth.7.d: "Despite our best efforts, the situation within the Commonwealth has deteriorated beyond repair. Seeing no other way, our opponents began amasing guns and supporters. If we are to survive, we must do the same."
+commonwealth.7.d: "Despite our best efforts, the situation within the Commonwealth has deteriorated beyond repair. Seeing no other way, our opponents began amassing guns and supporters. If we are to survive, we must do the same."
 commonwealth.7.a: "Time for action is now"
 commonwealth_can_mark_states_for_civil_war_tt: "Unlocks the ability to secure states for the civil war via decision tab."
 
 commonwealth.8.t: "The Commonwealth Civil War - backend"
-commonwealth.8.d: "The last few weeks cemented the Commonwealth's fate. Each side solidified their own part of Commonwealth and are gearing up for the biggest hurdle of their lives. THIS IS A BACKEND EVENT, IT SHOULD NOT BE SEEN BY PLAYERS. IT IS USED TO SETUP THE CIVIL WAR."
+commonwealth.8.d: "The last few weeks cemented the Commonwealth's fate. Each side solidified their own part of the Commonwealth and are gearing up for the biggest hurdle of their lives. THIS IS A BACKEND EVENT, IT SHOULD NOT BE SEEN BY PLAYERS. IT IS USED TO SETUP THE CIVIL WAR."
 commonwealth.8.a: "FOR THE COMMONWEALTH!"
 
 commonwealth.9.t: "Nationalists leave the faction"
-commonwealth.9.d: "Growing tensions between the old guard of the party and a new radical wing boiled over. The nationalists despite lower support decided to leave our faction and begun setting up their own cells in the north east."
-commonwealth.9.a: "The Commonwealth will be roborn!"
+commonwealth.9.d: "Growing tensions between the old guard of the party and a new radical wing boiled over. The nationalists, despite lower support, decided to leave our faction and begun setting up their own cells in the northeast."
+commonwealth.9.a: "The Commonwealth will be reborn!"
 commonwealth.9.b: "These radicals only made us look bad."
 
 commonwealth.10.t: "Communists move their revolution south"
 commonwealth.10.d: "Unable to find a compromise solution, the communist faction left the coalition and decided to pitch their wagon to the insurgent hideouts around Backa."
 commonwealth.10.a: "Revolution begins now."
-commonwealth.10.b: "They weren't usefull anyways"
+commonwealth.10.b: "They weren't useful anyways"
 
 commonwealth.11.t: "The Commonwealth Civil War"
-commonwealth.11.d: "The last few weeks cemented the Commonwealth's fate. Each side solidified their own part of Commonwealth and are gearing up for the biggest hurdle of their lives."
+commonwealth.11.d: "The last few weeks cemented the Commonwealth's fate. Each side solidified their own part of the Commonwealth and are gearing up for the biggest hurdle of their lives."
 commonwealth.11.a: "FOR THE COMMONWEALTH!"
-commonwealth_civilwar_info_tt: "§RLoosing land will worsen the situtation for your faction, lowering the defense and surrender limit.§!"
+commonwealth_civilwar_info_tt: "§RLosing land will worsen the situation for your faction, lowering the defense and surrender limit.§!"
 
 commonwealth.12.t:0 "[cw_loser.GetNameDefCap] Defeated!"
 commonwealth.12.d:0 "Following a brutal series of campaigns, the breakaway government of [cw_loser.GetNameDef] has officially collapsed. All of their remaining territory and stockpiled equipment have fallen under [cw_winner.GetAdjective] control."
 commonwealth.12.a:0 "The war continues."
 
 commonwealth.13.t:0 "The Commonwealth Hegemony Shatters"
-commonwealth.13.d:0 "Following the total political deadlock within the Commonwealth, its global sphere of influence suddenly found itself without the parent state. Many of Commonwealth Protectorates are already experiencing waves of protests. The Dominion of North America sees its coffers rapidly drying up without supplies from Europe, while Yunnan Expedition suddenly finds itself cut off in the middle of Asia. \n \nAt the same time states like Occitania and Silberstrom Republik are now free to operate however they see fit."
+commonwealth.13.d:0 "Following the total political deadlock within the Commonwealth, its global sphere of influence suddenly found itself without the parent state. Many of the Commonwealth Protectorates are already experiencing waves of protests. The Dominion of North America sees its coffers rapidly drying up without supplies from Europe, while the Yunnan Expedition suddenly finds itself cut off in the middle of Asia. \n \nAt the same time, states like Occitania and Silberstrom Republik are now free to operate however they see fit."
 commonwealth.13.a:0 "The end of an era."
 
 mapmode_com_scramble_map_mode:0 "Commonwealth Scramble"
@@ -76,15 +72,15 @@ view_cna_secured_states_on_map:0 "Secured States"
 view_ccm_secured_states_on_map:0 "Secured States"
 
 commonwealth.14.t:0 "Civil War Ends"
-commonwealth.14.d:0 "After months of fighting, the Commonwealth Civil War has finally come to an end. We managed to survive and thrive over our enemies. Having came out on top, we now have the opportunity to rebuild the Commonwealth and restore its former glory."
+commonwealth.14.d:0 "After months of fighting, the Commonwealth Civil War has finally come to an end. We managed to survive and thrive over our enemies. Having come out on top, we now have the opportunity to rebuild the Commonwealth and restore its former glory."
 commonwealth.14.a:0 "The Commonwealth will rise again!" 
 
 commonwealth.15.t:0 "War against the Revolutionaries"
-commonwealth.15.d:0 "At last, with the outbreak of the civil war, we can destroy the communst menace once and for all."
+commonwealth.15.d:0 "At last, with the outbreak of the civil war, we can destroy the communist menace once and for all."
 commonwealth.15.a:0 "§RWe will purge the state clean§!"
 
 commonwealth.16.t:0 "The Grand Election"
-commonwealth.16.d:0 "Country without a leader is like a car without a driver. We can't postpone such an earnest task much longer."
+commonwealth.16.d:0 "A country without a leader is like a car without a driver. We can't postpone such an earnest task much longer."
 commonwealth.16.a:0 "Long live the next Jagiellon!"
 commonwealth.16.b:0 "Ancient roots are restored!"
 commonwealth.16.c:1 "Vote moves much more west"
